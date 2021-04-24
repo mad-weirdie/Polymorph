@@ -1,109 +1,261 @@
 Using pre-set license
 Built from '2020.3/release' branch; Version is '2020.3.1f1 (77a89f25062f) revision 7841951'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home; OS build 19041.928; Version 2004; 64bit' Language: 'en' Physical Memory: 32728 MB
+OS: 'Windows 10 Home; OS build 19042.928; Version 2009; 64bit' Language: 'en' Physical Memory: 16245 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
-E:\containment_zone\Unity\Editor\Unity.exe
+C:\Program Files\Unity\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-E:/containment_zone/Polymorph
+C:/Users/meera/Documents/GitHub/Polymorph
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-51865
-Successfully changed project path to: E:/containment_zone/Polymorph
-E:/containment_zone/Polymorph
+54273
+Successfully changed project path to: C:/Users/meera/Documents/GitHub/Polymorph
+C:/Users/meera/Documents/GitHub/Polymorph
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 23.82 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 18.84 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.1f1 (77a89f25062f)
-[Subsystems] Discovering subsystems at path E:/containment_zone/Unity/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path E:/containment_zone/Polymorph/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/meera/Documents/GitHub/Polymorph/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1070 Ti (ID=0x1b82)
+    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f15)
     Vendor:   
-    VRAM:     8079 MB
-    Driver:   27.21.14.6109
+    VRAM:     5980 MB
+    Driver:   27.21.14.5730
 Initialize mono
-Mono path[0] = 'E:/containment_zone/Unity/Editor/Data/Managed'
-Mono path[1] = 'E:/containment_zone/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'E:/containment_zone/Unity/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56992
+Mono path[0] = 'C:/Program Files/Unity/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56384
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: E:/containment_zone/Unity/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
-Register platform support module: E:/containment_zone/Unity/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.004336 seconds.
+Register platform support module: C:/Program Files/Unity/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001836 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 23.35 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 20.68 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.180 seconds
+- Completed reload, in  0.942 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.000895 seconds.
+Registered in 0.000495 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.17 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.802 seconds
+- Completed reload, in  0.661 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.20 ms, found 0 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1113 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 56.9 MB.
-System memory in use after: 57.0 MB.
+System memory in use before: 56.8 MB.
+System memory in use after: 56.9 MB.
 
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1555.
-Total: 2.514500 ms (FindLiveObjects: 0.187400 ms CreateObjectMapping: 0.083100 ms MarkObjects: 2.154300 ms  DeleteObjects: 0.088000 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets
-  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6374019befeac6ce670f13ba9960efb') in 0.008188 seconds
-  Import took 0.009702 seconds .
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1556.
+Total: 1.670900 ms (FindLiveObjects: 0.124200 ms CreateObjectMapping: 0.064400 ms MarkObjects: 1.381600 ms  DeleteObjects: 0.099900 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.203235 seconds.
-  path: Assets
-  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6374019befeac6ce670f13ba9960efb') in 0.002795 seconds
-  Import took 0.004983 seconds .
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ebf38c81e9a03a2b85261b2e89c1a4d') in 0.009435 seconds
+  Import took 0.011076 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000762 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.638 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1111 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 58.1 MB.
+System memory in use after: 57.4 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 1561.
+Total: 1.768400 ms (FindLiveObjects: 0.157500 ms CreateObjectMapping: 0.049200 ms MarkObjects: 1.080700 ms  DeleteObjects: 0.480400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000417 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.17 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.619 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.17 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1110 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 58.0 MB.
+System memory in use after: 57.4 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 1564.
+Total: 1.719500 ms (FindLiveObjects: 0.190800 ms CreateObjectMapping: 0.032600 ms MarkObjects: 1.038800 ms  DeleteObjects: 0.456600 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.562330 seconds.
-  path: Assets/Scripts
-  artifactKey: Guid(35b9c5be782369d49a90337b995f17a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts using Guid(35b9c5be782369d49a90337b995f17a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00ea8085f2851e5dc8eb92b4806b44d9') in 0.005953 seconds
-  Import took 0.007490 seconds .
+  Time since last request: 48.107331 seconds.
+  path: Assets/Models/Crow
+  artifactKey: Guid(d6beddd0546d23949b712b8ea3df7fc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Crow using Guid(d6beddd0546d23949b712b8ea3df7fc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9130f68d36f05a0bfee9556a35fbfb68') in 0.008143 seconds
+  Import took 0.010074 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 4.988303 seconds.
-  path: Assets/Models
-  artifactKey: Guid(fc6240d70d2623347a30bf44304452dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models using Guid(fc6240d70d2623347a30bf44304452dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '609206a68538e19d1db87f41f604ef5e') in 0.005959 seconds
-  Import took 0.007815 seconds .
+  Time since last request: 2.346764 seconds.
+  path: Assets/Models/Crow/Models
+  artifactKey: Guid(8724fee87b308e241bb97f9c2b7dbc8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Crow/Models using Guid(8724fee87b308e241bb97f9c2b7dbc8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c4f9f393f6b72c4536562edb187410a') in 0.007462 seconds
+  Import took 0.009156 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.067145 seconds.
+  path: Assets/Models/Crow/Models/Crow_LOD0.fbx
+  artifactKey: Guid(be0f8a5450ac2c94ba43b7c6c42909a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Crow/Models/Crow_LOD0.fbx using Guid(be0f8a5450ac2c94ba43b7c6c42909a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b162a070e6a1fd1eee6696835c5b63d') in 0.374036 seconds
+  Import took 0.376003 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Assets/Models/Crow/Models/Crow_LOD1.fbx
+  artifactKey: Guid(382a8faf377e2a545ab64efc19a5f90a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Crow/Models/Crow_LOD1.fbx using Guid(382a8faf377e2a545ab64efc19a5f90a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b1d84eb6f4ed3526c7e436215791c5d') in 0.030696 seconds
+  Import took 0.032865 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/Models/Crow/Models/Crow_LOD3.fbx
+  artifactKey: Guid(e017c28f03df246448928dad4cb0e85e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Crow/Models/Crow_LOD3.fbx using Guid(e017c28f03df246448928dad4cb0e85e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ac1b8dd22c9878c338971727687c505') in 0.021088 seconds
+  Import took 0.023151 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/Models/Crow/Models/Crow_LOD2.fbx
+  artifactKey: Guid(e3c00962afbec1340b7bcd1b92c84610) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Crow/Models/Crow_LOD2.fbx using Guid(e3c00962afbec1340b7bcd1b92c84610) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3c349b21d114fcaff0e35118fd90f61') in 0.024113 seconds
+  Import took 0.026265 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.251132 seconds.
+  path: Assets/Models/Tortoise/Models/Tortoise_LOD0.fbx
+  artifactKey: Guid(2ffdb764e15843d4d8f886dcaf2088c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Tortoise/Models/Tortoise_LOD0.fbx using Guid(2ffdb764e15843d4d8f886dcaf2088c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2192b3cc269c85c2fdd2564e9b766554') in 0.026147 seconds
+  Import took 0.028285 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/Models/Tortoise/Models/Tortoise_LOD1.fbx
+  artifactKey: Guid(96fae0f8569e8af43bb76d0ceb02ef4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Tortoise/Models/Tortoise_LOD1.fbx using Guid(96fae0f8569e8af43bb76d0ceb02ef4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12df0a05641e207bc0e2b0dce15d5482') in 0.029117 seconds
+  Import took 0.031135 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/Models/Tortoise/Models/Tortoise_LOD2.fbx
+  artifactKey: Guid(877ca4fb1e45ba741bca92dc996ae239) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Tortoise/Models/Tortoise_LOD2.fbx using Guid(877ca4fb1e45ba741bca92dc996ae239) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa9af9a2bba62281450fe1f7e2fc3930') in 0.018878 seconds
+  Import took 0.021009 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Assets/Models/Tortoise/Models/Tortoise_LOD3.fbx
+  artifactKey: Guid(a4abf7d376550bf4aa69c740a70e2980) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Tortoise/Models/Tortoise_LOD3.fbx using Guid(a4abf7d376550bf4aa69c740a70e2980) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b92f32ca8ef6e8bc4ce43c0649d9217') in 0.026846 seconds
+  Import took 0.028882 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000136 seconds.
+  path: Assets/Models/Tortoise/Models/Tortoise_LOD2.fbx
+  artifactKey: Guid(877ca4fb1e45ba741bca92dc996ae239) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Tortoise/Models/Tortoise_LOD2.fbx using Guid(877ca4fb1e45ba741bca92dc996ae239) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa9af9a2bba62281450fe1f7e2fc3930') in 0.031023 seconds
+  Import took 0.032932 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.158277 seconds.
+  path: Assets/Models/Tortoise/Prefabs/Tortoise.prefab
+  artifactKey: Guid(81f092561090b8a478b811250e9e061d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Tortoise/Prefabs/Tortoise.prefab using Guid(81f092561090b8a478b811250e9e061d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8aab51f247dbe4b8c9a44e0be95ac8f6') in 0.024401 seconds
+  Import took 0.026892 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/Models/Tortoise/Prefabs/Tortoise_LOD3.prefab
+  artifactKey: Guid(e3b94f924956b044f8d359158f85490d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Tortoise/Prefabs/Tortoise_LOD3.prefab using Guid(e3b94f924956b044f8d359158f85490d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3c52304a29bd122a775703891b3ed85') in 0.015984 seconds
+  Import took 0.018220 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000131 seconds.
+  path: Assets/Models/Tortoise/Prefabs/Tortoise_LOD0.prefab
+  artifactKey: Guid(1c8aae2558df9604bbc1163854c43250) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Tortoise/Prefabs/Tortoise_LOD0.prefab using Guid(1c8aae2558df9604bbc1163854c43250) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c6742b6e9008cfcbf521ba898b0e7b9') in 0.016245 seconds
+  Import took 0.018770 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/Models/Tortoise/Prefabs/Tortoise_LOD2.prefab
+  artifactKey: Guid(b1473bf25c6b7e241a695d590f111c5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Tortoise/Prefabs/Tortoise_LOD2.prefab using Guid(b1473bf25c6b7e241a695d590f111c5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f4508b7f0bdd253c23e9f50beb45a32') in 0.016368 seconds
+  Import took 0.019170 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/Models/Tortoise/Prefabs/Tortoise_LOD1.prefab
+  artifactKey: Guid(379c80ee7a989014c8e7e768617b343f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Tortoise/Prefabs/Tortoise_LOD1.prefab using Guid(379c80ee7a989014c8e7e768617b343f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '313096a73c98bfc613643e934b7dd220') in 0.017763 seconds
+  Import took 0.020541 seconds .
 
