@@ -25,14 +25,14 @@ RenderSettings:
   m_AmbientGroundColor: {r: 0.04780181, g: 0.2264151, b: 0, a: 1}
   m_AmbientIntensity: 1.2
   m_AmbientMode: 3
-  m_SubtractiveShadowColor: {r: 0, g: 0, b: 0, a: 1}
+  m_SubtractiveShadowColor: {r: 0.29049486, g: 0.4418459, b: 0.5660378, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: e25e74c10a54f124583ba22b4947e471, type: 2}
   m_HaloStrength: 0.63
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
   m_HaloTexture: {fileID: 0}
   m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
-  m_DefaultReflectionMode: 0
+  m_DefaultReflectionMode: 1
   m_DefaultReflectionResolution: 128
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 0.8
