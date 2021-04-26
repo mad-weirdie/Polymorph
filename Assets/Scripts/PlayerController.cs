@@ -89,6 +89,10 @@ public class PlayerController : MonoBehaviour
 
         //Update variables that rely on activePlayer.
         activeAnims = activePlayer.GetComponent<Animator>();
+        ShapeVariables activeAbilityScript = activePlayer.GetComponent<ShapeVariables>();
+        //get our movement values from the shape
+        baseSpeed = activeAbilityScript.animalSpeed;
+        turnSpeed = activeAbilityScript.turnSpeed;
     }
 
 
