@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     //Shapeshifting attributes
     private GameObject activePlayer;
     private Animator activeAnims;
+    public ShapeVariables activeScript; //ref to shape's variables. Used to call per-shape functions.
     public List<GameObject> characters;
     
     
@@ -18,11 +19,12 @@ public class PlayerController : MonoBehaviour
 
     private Vector3 playerMoveInput;
     Quaternion m_Rotation;
-    private Rigidbody rigidBody;
+    public Rigidbody rigidBody; //public, gotten in code. Could be done via pass by ref instead?
 
     private Transform cameraTrans;
     private bool isWalking;
     private bool wasWalking; //Were we walking last frame?
+    public bool isGrounded;
 
     // Start is called before the first frame update
     void Start()
@@ -107,6 +109,7 @@ public class PlayerController : MonoBehaviour
         //Update variables that rely on activePlayer.
         activeAnims = activePlayer.GetComponent<Animator>();
         ShapeVariables activeAbilityScript = activePlayer.GetComponent<ShapeVariables>();
+        activeScript = activeAbilityScript;
         //get our movement values from the shape
         baseSpeed = activeAbilityScript.animalSpeed;
         turnSpeed = activeAbilityScript.turnSpeed;
@@ -122,5 +125,7 @@ public class PlayerController : MonoBehaviour
     }
 
     private void OnJump() {
+        print("Thing done!");
+        activeScript.OnJump(false);
     }
 }
