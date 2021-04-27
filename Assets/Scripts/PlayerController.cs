@@ -21,6 +21,8 @@ public class PlayerController : MonoBehaviour
     private Rigidbody rigidBody;
 
     private Transform cameraTrans;
+    private bool isWalking;
+    private bool wasWalking; //Were we walking last frame?
 
     // Start is called before the first frame update
     void Start()
@@ -52,21 +54,24 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         playerMoveInput.Normalize();
-        bool isWalking;
         isWalking = !Mathf.Approximately(playerMoveInput.x, 0f) || !Mathf.Approximately(playerMoveInput.z, 0f);
         activeAnims.SetBool("IsWalking", isWalking);
 
-        Vector3 moveDirection = cameraTrans.forward * playerMoveInput.z + cameraTrans.right * playerMoveInput.x;
-        moveDirection.y = 0f;
 
-        Vector3 desiredForward = Vector3.RotateTowards (transform.forward, moveDirection, turnSpeed * Time.deltaTime, 0f);
-        //print(desiredForward);
-        m_Rotation = Quaternion.LookRotation(desiredForward);
-        //print(m_Rotation);
-        //Now, actually move!
+
+        Vector3 moveMagnitude = cameraTrans.forward * playerMoveInput.z + cameraTrans.right * playerMoveInput.x;  //Get the player's movement, relative to the camera.
+        moveMagnitude.y = 0f;
+        
+        //Instead 
+        Vector3 facing = transform.forward;
+        facing.y = 0f;
         
 
-        rigidBody.MovePosition(rigidBody.position + moveDirection* baseSpeed);
+        Vector3 desiredForward = Vector3.RotateTowards(facing, moveMagnitude, turnSpeed * Time.deltaTime, 0f);
+        //print(desiredForward);
+        m_Rotation = Quaternion.LookRotation(desiredForward);
+        //Now, actually move!
+        rigidBody.MovePosition(rigidBody.position + moveMagnitude * baseSpeed);
         rigidBody.MoveRotation(m_Rotation);
 
     }
@@ -104,6 +109,8 @@ public class PlayerController : MonoBehaviour
         //get our movement values from the shape
         baseSpeed = activeAbilityScript.animalSpeed;
         turnSpeed = activeAbilityScript.turnSpeed;
+        print("speed set to:");
+        print(turnSpeed);
     }
 
 
