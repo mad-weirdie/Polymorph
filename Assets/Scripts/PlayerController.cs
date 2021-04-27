@@ -57,7 +57,8 @@ public class PlayerController : MonoBehaviour
         isWalking = !Mathf.Approximately(playerMoveInput.x, 0f) || !Mathf.Approximately(playerMoveInput.z, 0f);
         activeAnims.SetBool("IsWalking", isWalking);
 
-
+        //TODO: Figure out slope underneath player and find out if we want them to slide or not. Maybe climbable slope is based on character?
+        //guide here for a good way to implement it: http://thehiddensignal.com/unity-angle-of-sloped-ground-under-player/
 
         Vector3 moveMagnitude = cameraTrans.forward * playerMoveInput.z + cameraTrans.right * playerMoveInput.x;  //Get the player's movement, relative to the camera.
         moveMagnitude.y = 0f;
@@ -109,8 +110,6 @@ public class PlayerController : MonoBehaviour
         //get our movement values from the shape
         baseSpeed = activeAbilityScript.animalSpeed;
         turnSpeed = activeAbilityScript.turnSpeed;
-        print("speed set to:");
-        print(turnSpeed);
     }
 
 
