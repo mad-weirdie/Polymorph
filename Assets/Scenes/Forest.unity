@@ -4219,7 +4219,7 @@ MonoBehaviour:
   turnSpeed: 15
   player: {fileID: 871672591}
   script: {fileID: 0}
-  flyingHeight: 2
+  flyingHeight: 100000
 --- !u!65 &1086448023
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6826,7 +6826,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1889926963}
-  m_LocalRotation: {x: 0.28531095, y: 0.000000016491203, z: -0.0000000049091704, w: 0.95843506}
+  m_LocalRotation: {x: 0.28531095, y: -0.000000016491192, z: 0.0000000049091673, w: 0.95843506}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:

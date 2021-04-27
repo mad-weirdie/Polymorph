@@ -19,7 +19,7 @@ public class CrowVars : ShapeVariables
     {
         //Actions that happen on the space bar being pressed, like jumping or flying.
         print("jump!");
-        script.rigidBody.MovePosition(script.rigidBody.position + height);
+        script.rigidBody.AddForce(height);
 
     }
 }
