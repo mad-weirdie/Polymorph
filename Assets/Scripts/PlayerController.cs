@@ -26,6 +26,9 @@ public class PlayerController : MonoBehaviour
     private bool wasWalking; //Were we walking last frame?
     public bool isGrounded;
 
+    public bool canPush;
+    public Rigidbody pushableObject;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -146,5 +149,17 @@ public class PlayerController : MonoBehaviour
             characters[1].GetComponent<Collider>().isTrigger = false;
 
         }
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        ContactPoint contact = collision.contacts[0];
+        pushableObject = contact.otherCollider.GetComponent<Rigidbody>();
+        if (pushableObject != null)
+        {
+            pushableObject.AddForce(new Vector3(0, 0, 0));
+            print("yeah");
+        }
+        
     }
 }

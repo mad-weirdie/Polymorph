@@ -1550,10 +1550,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1978476416}
     m_Modifications:
-    - target: {fileID: 0}
-      propertyPath: m_Convex
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 9001149719726596574, guid: 22191d491cab859409492e28128322b8, type: 3}
       propertyPath: m_Name
       value: Stump_05
@@ -3322,7 +3318,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 634364886}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 33e4ffb3ecf43774ab3c4e233073b4d3, type: 3}
   m_Name: 
@@ -3331,6 +3327,23 @@ MonoBehaviour:
   turnSpeed: 20
   player: {fileID: 871672591}
   script: {fileID: 0}
+--- !u!114 &634364888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634364886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c4a65b615d88704e95910a34d5a4c6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animalSpeed: 0.04
+  turnSpeed: 20
+  player: {fileID: 871672591}
+  script: {fileID: 0}
+  pushStrength: 2
 --- !u!136 &634364889
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4688,6 +4701,8 @@ MonoBehaviour:
   turnSpeed: 10
   rigidBody: {fileID: 0}
   isGrounded: 0
+  canPush: 0
+  pushableObject: {fileID: 0}
 --- !u!4 &871672593
 Transform:
   m_ObjectHideFlags: 0
@@ -7896,15 +7911,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: be0f8a5450ac2c94ba43b7c6c42909a9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 15.54
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: be0f8a5450ac2c94ba43b7c6c42909a9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.1
+      value: 2.69
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: be0f8a5450ac2c94ba43b7c6c42909a9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.003282547
+      value: 21.46
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: be0f8a5450ac2c94ba43b7c6c42909a9, type: 3}
       propertyPath: m_LocalRotation.w
@@ -10995,7 +11010,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1889926963}
-  m_LocalRotation: {x: 0.27165708, y: 0.516591, z: -0.17709108, w: 0.7924487}
+  m_LocalRotation: {x: 0.27165702, y: 0.5165911, z: -0.17709105, w: 0.79244876}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
