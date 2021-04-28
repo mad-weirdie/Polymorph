@@ -87,6 +87,10 @@ public class PlayerController : MonoBehaviour
 
     void OnShapeShift()
     {
+        print(characters.Count);
+        if (characters.Count == 1)
+            return;
+
         // Swap between characters.
         Transform pos = activePlayer.transform;
         activePlayer.SetActive(false);
@@ -127,5 +131,20 @@ public class PlayerController : MonoBehaviour
     private void OnJump() {
         print("Thing done!");
         activeScript.OnJump(false);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Crow") && characters.Count < 2)
+        {
+            print("Aquire Crow");
+
+            //
+            characters.Add(GameObject.Instantiate(other.gameObject, this.transform, false));
+
+            // Disable the trigger
+            characters[1].GetComponent<Collider>().isTrigger = false;
+
+        }
     }
 }
