@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     private Animator activeAnims;
     public ShapeVariables activeScript; //ref to shape's variables. Used to call per-shape functions.
     public List<GameObject> characters;
+    public List<string> charnames; //used to quickly check whether we have a shape or not
     
     
     //Movement code attributes
@@ -142,16 +143,21 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Crow") && characters.Count < 2)
+        print(other.name);
+        if (other.gameObject.CompareTag("Animal") && !charnames.Contains(other.name))
         {
             print("Aquire Crow");
 
             // Instantiate the crow
             characters.Add(GameObject.Instantiate(other.gameObject, this.transform, false));
+            charnames.Add(other.name);
 
             // Disable the trigger
             characters[1].GetComponent<Collider>().isTrigger = false;
-
+            characters[1].active = false; //disable animal
+            characters[1].transform.parent = transform;
+            characters[1].transform.localRotation = Quaternion.identity;
+            characters[1].transform.localPosition = Vector3.zero;
         }
 
         if (other.gameObject.CompareTag("Interactable")) // NOTE: tags checking may be better
