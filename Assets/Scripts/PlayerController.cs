@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-
 public class PlayerController : MonoBehaviour
 {
     //Shapeshifting attributes
@@ -12,7 +11,6 @@ public class PlayerController : MonoBehaviour
     public ShapeVariables activeScript; //ref to shape's variables. Used to call per-shape functions.
     public List<GameObject> characters;
     public List<string> charnames; //used to quickly check whether we have a shape or not
-    
     
     //Movement code attributes
     public float baseSpeed = 10f; //TODO: Character based speeds
@@ -27,11 +25,9 @@ public class PlayerController : MonoBehaviour
     private bool wasWalking; //Were we walking last frame?
     public bool isGrounded;
 
-    private GameObject interactableObj;
-    public Vector3 pullDirection;
-    public float pullSpeed;
-
     private int numShapes;
+
+    public DialogueController wizard;
 
     // Start is called before the first frame update
     void Start()
@@ -50,23 +46,12 @@ public class PlayerController : MonoBehaviour
         activePlayer = characters[0];
         ShapeShiftUpdate();
         rigidBody = GetComponent<Rigidbody>();
-        if (rigidBody == null) { print("AH BEANS"); }
-
-        interactableObj = null;
-        numShapes = 0;
-
     }
 
     // Update is called once per frame
     void Update()
     {
         m_Rotation = Quaternion.identity;
-
-        if (interactableObj != null)
-        {
-
-
-        }
     }
 
     private void FixedUpdate()
@@ -144,6 +129,12 @@ public class PlayerController : MonoBehaviour
         activeScript.OnJump(false);
     }
 
+    private void OnClick()
+    {
+        print("yaya");
+        wizard.Notify();
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         print(other.name);
@@ -163,8 +154,5 @@ public class PlayerController : MonoBehaviour
             characters[numShapes].transform.localRotation = Quaternion.identity;
             characters[numShapes].transform.localPosition = Vector3.zero;
         }
-
-        if (other.gameObject.CompareTag("Interactable")) // NOTE: tags checking may be better
-            interactableObj = other.gameObject;
     }
 }
