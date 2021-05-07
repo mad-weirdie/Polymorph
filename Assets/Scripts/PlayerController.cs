@@ -31,6 +31,8 @@ public class PlayerController : MonoBehaviour
     public Vector3 pullDirection;
     public float pullSpeed;
 
+    private int numShapes;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -51,6 +53,7 @@ public class PlayerController : MonoBehaviour
         if (rigidBody == null) { print("AH BEANS"); }
 
         interactableObj = null;
+        numShapes = 0;
 
     }
 
@@ -146,18 +149,19 @@ public class PlayerController : MonoBehaviour
         print(other.name);
         if (other.gameObject.CompareTag("Animal") && !charnames.Contains(other.name))
         {
-            print("Aquire Crow");
+            print("Aquire new animal");
+            numShapes++;
 
             // Instantiate the crow
             characters.Add(GameObject.Instantiate(other.gameObject, this.transform, false));
             charnames.Add(other.name);
 
             // Disable the trigger
-            characters[1].GetComponent<Collider>().isTrigger = false;
-            characters[1].active = false; //disable animal
-            characters[1].transform.parent = transform;
-            characters[1].transform.localRotation = Quaternion.identity;
-            characters[1].transform.localPosition = Vector3.zero;
+            characters[numShapes].GetComponent<Collider>().isTrigger = false;
+            characters[numShapes].active = false; //disable animal
+            characters[numShapes].transform.parent = transform;
+            characters[numShapes].transform.localRotation = Quaternion.identity;
+            characters[numShapes].transform.localPosition = Vector3.zero;
         }
 
         if (other.gameObject.CompareTag("Interactable")) // NOTE: tags checking may be better
