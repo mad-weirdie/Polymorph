@@ -26,8 +26,9 @@ public class PlayerController : MonoBehaviour
     private bool wasWalking; //Were we walking last frame?
     public bool isGrounded;
 
-    public bool canPush;
-    public Rigidbody pushableObject;
+    private GameObject interactableObj;
+    public Vector3 pullDirection;
+    public float pullSpeed;
 
     // Start is called before the first frame update
     void Start()
@@ -48,12 +49,20 @@ public class PlayerController : MonoBehaviour
         rigidBody = GetComponent<Rigidbody>();
         if (rigidBody == null) { print("AH BEANS"); }
 
+        interactableObj = null;
+
     }
 
     // Update is called once per frame
     void Update()
     {
         m_Rotation = Quaternion.identity;
+
+        if (interactableObj != null)
+        {
+
+
+        }
     }
 
     private void FixedUpdate()
@@ -81,12 +90,6 @@ public class PlayerController : MonoBehaviour
         rigidBody.MoveRotation(m_Rotation);
 
     }
-
-    void OnAnimatorMove()
-    {
-
-    }
-
 
     void OnShapeShift()
     {
@@ -117,6 +120,7 @@ public class PlayerController : MonoBehaviour
         activeAnims = activePlayer.GetComponent<Animator>();
         ShapeVariables activeAbilityScript = activePlayer.GetComponent<ShapeVariables>();
         activeScript = activeAbilityScript;
+
         //get our movement values from the shape
         baseSpeed = activeAbilityScript.animalSpeed;
         turnSpeed = activeAbilityScript.turnSpeed;
@@ -142,24 +146,15 @@ public class PlayerController : MonoBehaviour
         {
             print("Aquire Crow");
 
-            //
+            // Instantiate the crow
             characters.Add(GameObject.Instantiate(other.gameObject, this.transform, false));
 
             // Disable the trigger
             characters[1].GetComponent<Collider>().isTrigger = false;
 
         }
-    }
 
-    void OnCollisionEnter(Collision collision)
-    {
-        ContactPoint contact = collision.contacts[0];
-        pushableObject = contact.otherCollider.GetComponent<Rigidbody>();
-        if (pushableObject != null)
-        {
-            pushableObject.AddForce(new Vector3(0, 0, 0));
-            print("yeah");
-        }
-        
+        if (other.gameObject.CompareTag("Interactable")) // NOTE: tags checking may be better
+            interactableObj = other.gameObject;
     }
 }

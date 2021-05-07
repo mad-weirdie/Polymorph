@@ -20,7 +20,7 @@ public class PushableObject : MonoBehaviour
 
     void OnCollisionStay(Collision player)
     {
-        rigidBody.AddForce(new Vector3(0, 0, 0));
+        //rigidBody.AddForce(0, 10, 0);
     }
 
 }
