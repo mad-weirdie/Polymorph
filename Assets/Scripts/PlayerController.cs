@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
     public Rigidbody rigidBody; //public, gotten in code. Could be done via pass by ref instead?
 
     public GameObject CinemachineCamera;
+    CinemachineFreeLook cam;
     private Transform cameraTrans;
     private float currentZoom = 5f;
     public float minzoom = 5f;
@@ -41,7 +42,7 @@ public class PlayerController : MonoBehaviour
     {
         //Camera obj
         cameraTrans = Camera.main.transform;
- 
+        cam = CinemachineCamera.GetComponent<CinemachineFreeLook>();
 
         // Set all other game objects to not active.
         foreach (GameObject character in characters)
@@ -61,13 +62,14 @@ public class PlayerController : MonoBehaviour
     {
         m_Rotation = Quaternion.identity;
 
-        CinemachineFreeLook cam = CinemachineCamera.GetComponent<CinemachineFreeLook>();
+        
 
         print(currentZoom);
         float newDist = Mathf.Lerp(cam.m_Orbits[0].m_Radius, currentZoom, Time.deltaTime * zoomSpeed);
         cam.m_Orbits[0].m_Radius = newDist;
         cam.m_Orbits[1].m_Radius = newDist;
         cam.m_Orbits[2].m_Radius = newDist;
+        
     }
 
     private void FixedUpdate()
@@ -123,12 +125,22 @@ public class PlayerController : MonoBehaviour
 
         //Update variables that rely on activePlayer.
         activeAnims = activePlayer.GetComponent<Animator>();
+        activeAnims.SetBool("IsWalking", isWalking);
         ShapeVariables activeAbilityScript = activePlayer.GetComponent<ShapeVariables>();
         activeScript = activeAbilityScript;
 
         //get our movement values from the shape
         baseSpeed = activeAbilityScript.animalSpeed;
         turnSpeed = activeAbilityScript.turnSpeed;
+
+        
+        for (int i = 0; i < 3; i++) {
+            print("asdasd");
+            CinemachineComposer comp = cam.GetRig(i).GetCinemachineComponent<CinemachineComposer>();
+            comp.m_TrackedObjectOffset.x = activeAbilityScript.shapeOffsets.x;
+            comp.m_TrackedObjectOffset.y = activeAbilityScript.shapeOffsets.y;
+            comp.m_TrackedObjectOffset.z = activeAbilityScript.shapeOffsets.z;
+        }
     }
 
 

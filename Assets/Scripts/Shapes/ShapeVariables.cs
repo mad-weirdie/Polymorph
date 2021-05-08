@@ -10,6 +10,8 @@ public class ShapeVariables : MonoBehaviour
     public float turnSpeed = 2f; // do we want this?
     public GameObject player; //Ref so that actions can affect the player.
 
+    public Vector3 shapeOffsets;
+
     public PlayerController script;
     public virtual void Start()
     {
