@@ -69,7 +69,7 @@ public class PlayerController : MonoBehaviour
 
         
 
-        print(currentZoom);
+        //print(currentZoom);
         float newDist = Mathf.Lerp(cam.m_Orbits[0].m_Radius, currentZoom, Time.deltaTime * zoomSpeed);
         cam.m_Orbits[0].m_Radius = newDist;
         cam.m_Orbits[1].m_Radius = newDist;
@@ -208,32 +208,30 @@ public class PlayerController : MonoBehaviour
 
         
         print(currentZoom);
-        
-
-
 
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        print(other.name);
         if (other.gameObject.CompareTag("Animal") && !charnames.Contains(other.name))
         {
             int activeIndex;
-            print("Aquire new animal");
 
             if (other.name == "Horse")
             {
+                CharacterWheel.transform.GetChild(ind_HORSE).gameObject.SetActive(true);
                 characters[ind_HORSE] = GameObject.Instantiate(other.gameObject, this.transform, false);
                 activeIndex = ind_HORSE;
             }
             else if (other.name == "Raccoon")
             {
+                CharacterWheel.transform.GetChild(ind_RACCOON).gameObject.SetActive(true);
                 characters[ind_RACCOON] = GameObject.Instantiate(other.gameObject, this.transform, false);
                 activeIndex = ind_RACCOON;
             }
             else if (other.name == "Crow")
             {
+                CharacterWheel.transform.GetChild(ind_CROW).gameObject.SetActive(true);
                 characters[ind_CROW] = GameObject.Instantiate(other.gameObject, this.transform, false);
                 activeIndex = ind_CROW;
             }
