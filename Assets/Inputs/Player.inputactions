@@ -60,6 +60,38 @@
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "ShapeShiftTurtle",
+                    "type": "Button",
+                    "id": "194434a2-9d3b-487c-ba49-a0eca04e6975",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "ShapeShiftHorse",
+                    "type": "Button",
+                    "id": "3870d765-aaa7-4bfb-a4a4-f742a46de0d1",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "ShapeShiftRaccoon",
+                    "type": "Button",
+                    "id": "831bc05e-1677-4514-a576-d0500cc72178",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "ShapeShiftCrow",
+                    "type": "Button",
+                    "id": "02b890b0-d7cf-404e-92b8-57a493eae952",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -324,6 +356,50 @@
                     "processors": "",
                     "groups": "Keyboard&Mouse",
                     "action": "Zoom",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "735a90d9-2a55-4d01-945d-7c0c45bb89f8",
+                    "path": "<Keyboard>/1",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ShapeShiftTurtle",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "feff82fe-4918-45b0-9369-fe6e82ab4ace",
+                    "path": "<Keyboard>/2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ShapeShiftHorse",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "eea5bd11-8c66-4782-a332-74fc6fbea3ed",
+                    "path": "<Keyboard>/3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ShapeShiftRaccoon",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d66adf6e-c37a-4541-a1dc-ea514cb7d562",
+                    "path": "<Keyboard>/4",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ShapeShiftCrow",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

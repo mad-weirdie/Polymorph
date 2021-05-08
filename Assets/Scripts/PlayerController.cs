@@ -33,7 +33,13 @@ public class PlayerController : MonoBehaviour
     private bool wasWalking; //Were we walking last frame?
     public bool isGrounded;
 
-    private int numShapes;
+    /* Index values in the character array for the animals */
+    private int ind_TURTLE = 0;
+    private int ind_HORSE = 1;
+    private int ind_RACCOON = 2;
+    private int ind_CROW = 3;
+
+    public GameObject CharacterWheel;
 
     public DialogueController wizard;
 
@@ -44,17 +50,16 @@ public class PlayerController : MonoBehaviour
         cameraTrans = Camera.main.transform;
         cam = CinemachineCamera.GetComponent<CinemachineFreeLook>();
 
-        // Set all other game objects to not active.
-        foreach (GameObject character in characters)
-        {
-            character.SetActive(false);
-        }
-
         // Start as tortoise
         characters[0].SetActive(true);
         activePlayer = characters[0];
         ShapeShiftUpdate();
         rigidBody = GetComponent<Rigidbody>();
+
+        for (int i = 1; i < 4; i++)
+        {
+            characters.Add(null);
+        }
     }
 
     // Update is called once per frame
@@ -98,25 +103,10 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    void OnShapeShift()
+    public void ShapeShiftTo(int animal_index)
     {
-        print(characters.Count);
-        if (characters.Count == 1)
-            return;
-
-        // Swap between characters.
-        Transform pos = activePlayer.transform;
         activePlayer.SetActive(false);
-
-        if (activePlayer.name == characters[0].name)
-        {
-            activePlayer = characters[1];
-        }
-        else
-        {
-            activePlayer = characters[0];
-        }
-
+        activePlayer = characters[animal_index];
         activePlayer.SetActive(true);
         ShapeShiftUpdate();
     }
@@ -140,6 +130,47 @@ public class PlayerController : MonoBehaviour
             comp.m_TrackedObjectOffset.x = activeAbilityScript.shapeOffsets.x;
             comp.m_TrackedObjectOffset.y = activeAbilityScript.shapeOffsets.y;
             comp.m_TrackedObjectOffset.z = activeAbilityScript.shapeOffsets.z;
+        }
+    }
+
+    void OnShapeShift()
+    {
+        // Open the character wheel
+        CharacterWheel.SetActive(!CharacterWheel.activeSelf);
+    }
+
+    void OnShapeShiftHorse()
+    {
+        print("Horse");
+        if (characters[ind_HORSE] != null && CharacterWheel.activeSelf)
+        {
+            ShapeShiftTo(ind_HORSE);
+        }
+    }
+
+    void OnShapeShiftTurtle()
+    {
+        print("Turtle");
+        if (characters[ind_TURTLE] != null && CharacterWheel.activeSelf)
+        {
+            ShapeShiftTo(ind_TURTLE);
+        }
+    }
+
+    void OnShapeShiftRaccoon()
+    {
+        print("Raccoon");
+        if (characters[ind_RACCOON] != null && CharacterWheel.activeSelf)
+        {
+            ShapeShiftTo(ind_RACCOON);
+        }
+    }
+    void OnShapeShiftCrow()
+    {
+        print("CROW");
+        if (characters[ind_CROW] != null && CharacterWheel.activeSelf)
+        {
+            ShapeShiftTo(ind_CROW);
         }
     }
 
@@ -188,19 +219,35 @@ public class PlayerController : MonoBehaviour
         print(other.name);
         if (other.gameObject.CompareTag("Animal") && !charnames.Contains(other.name))
         {
+            int activeIndex;
             print("Aquire new animal");
-            numShapes++;
 
-            // Instantiate the crow
-            characters.Add(GameObject.Instantiate(other.gameObject, this.transform, false));
+            if (other.name == "Horse")
+            {
+                characters[ind_HORSE] = GameObject.Instantiate(other.gameObject, this.transform, false);
+                activeIndex = ind_HORSE;
+            }
+            else if (other.name == "Raccoon")
+            {
+                characters[ind_RACCOON] = GameObject.Instantiate(other.gameObject, this.transform, false);
+                activeIndex = ind_RACCOON;
+            }
+            else if (other.name == "Crow")
+            {
+                characters[ind_CROW] = GameObject.Instantiate(other.gameObject, this.transform, false);
+                activeIndex = ind_CROW;
+            }
+            else
+                return;
+
             charnames.Add(other.name);
 
             // Disable the trigger
-            characters[numShapes].GetComponent<Collider>().isTrigger = false;
-            characters[numShapes].active = false; //disable animal
-            characters[numShapes].transform.parent = transform;
-            characters[numShapes].transform.localRotation = Quaternion.identity;
-            characters[numShapes].transform.localPosition = Vector3.zero;
+            characters[activeIndex].GetComponent<Collider>().isTrigger = false;
+            characters[activeIndex].SetActive(false); //disable animal
+            characters[activeIndex].transform.parent = transform;
+            characters[activeIndex].transform.localRotation = Quaternion.identity;
+            characters[activeIndex].transform.localPosition = Vector3.zero;
         }
     }
 }
