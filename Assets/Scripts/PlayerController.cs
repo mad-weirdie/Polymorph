@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Cinemachine;
 
 public class PlayerController : MonoBehaviour
 {
@@ -20,7 +21,13 @@ public class PlayerController : MonoBehaviour
     Quaternion m_Rotation;
     public Rigidbody rigidBody; //public, gotten in code. Could be done via pass by ref instead?
 
+    public GameObject CinemachineCamera;
     private Transform cameraTrans;
+    private float currentZoom = 5f;
+    public float minzoom = 5f;
+    public float maxzoom = 8f;
+    public float zoomSpeed = 20f;
+
     private bool isWalking;
     private bool wasWalking; //Were we walking last frame?
     public bool isGrounded;
@@ -34,6 +41,7 @@ public class PlayerController : MonoBehaviour
     {
         //Camera obj
         cameraTrans = Camera.main.transform;
+ 
 
         // Set all other game objects to not active.
         foreach (GameObject character in characters)
@@ -52,6 +60,14 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         m_Rotation = Quaternion.identity;
+
+        CinemachineFreeLook cam = CinemachineCamera.GetComponent<CinemachineFreeLook>();
+
+        print(currentZoom);
+        float newDist = Mathf.Lerp(cam.m_Orbits[0].m_Radius, currentZoom, Time.deltaTime * zoomSpeed);
+        cam.m_Orbits[0].m_Radius = newDist;
+        cam.m_Orbits[1].m_Radius = newDist;
+        cam.m_Orbits[2].m_Radius = newDist;
     }
 
     private void FixedUpdate()
@@ -133,6 +149,26 @@ public class PlayerController : MonoBehaviour
     {
         print("yaya");
         wizard.Notify();
+    }
+
+    private void OnZoom(InputValue input) {
+        Vector2 vec = input.Get<Vector2>();
+        int sign = 1;
+        if (vec.y == 0) {
+            return; //0 signals the wheel isn't moving anymore.
+        }
+        if (vec.y < 0f) {
+            sign = -1;
+        }
+        print((zoomSpeed * sign));
+        currentZoom = Mathf.Clamp(currentZoom + (zoomSpeed * sign), minzoom, maxzoom);
+
+        
+        print(currentZoom);
+        
+
+
+
     }
 
     private void OnTriggerEnter(Collider other)
