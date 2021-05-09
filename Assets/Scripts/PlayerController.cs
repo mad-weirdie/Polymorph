@@ -22,13 +22,16 @@ public class PlayerController : MonoBehaviour
     public Rigidbody rigidBody; //public, gotten in code. Could be done via pass by ref instead?
 
     public GameObject CinemachineCamera;
-    CinemachineFreeLook cam;
+    private CinemachineFreeLook cam;
     private Transform cameraTrans;
+    public float prev_x_speed;
+    public float prev_y_speed;
     private float currentZoom = 5f;
     public float minzoom = 5f;
     public float maxzoom = 8f;
     public float zoomSpeed = 20f;
 
+    public bool movementEnabled;
     private bool isWalking;
     private bool wasWalking; //Were we walking last frame?
     public bool isGrounded;
@@ -45,10 +48,14 @@ public class PlayerController : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {
+    { 
+        movementEnabled = false;
         //Camera obj
         cameraTrans = Camera.main.transform;
         cam = CinemachineCamera.GetComponent<CinemachineFreeLook>();
+
+        prev_x_speed = cam.m_XAxis.m_MaxSpeed;
+        prev_y_speed = cam.m_YAxis.m_MaxSpeed;
 
         // Start as tortoise
         characters[0].SetActive(true);
@@ -62,47 +69,54 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
         m_Rotation = Quaternion.identity;
 
-
-
         //print(currentZoom);
-        float newDist = Mathf.Lerp(cam.m_Orbits[0].m_Radius, currentZoom, Time.deltaTime * zoomSpeed);
+        float newDist = Mathf.Lerp(cam.m_Orbits[0].m_Radius, currentZoom, zoomSpeed);
+
         cam.m_Orbits[0].m_Radius = newDist;
         cam.m_Orbits[1].m_Radius = newDist;
         cam.m_Orbits[2].m_Radius = newDist;
-        
-        
-
     }
 
     private void FixedUpdate()
     {
-        playerMoveInput.Normalize();
-        isWalking = !Mathf.Approximately(playerMoveInput.x, 0f) || !Mathf.Approximately(playerMoveInput.z, 0f);
-        activeAnims.SetBool("IsWalking", isWalking);
+        if (movementEnabled)
+        {
+            cam.m_XAxis.m_MaxSpeed = prev_x_speed;
+            cam.m_YAxis.m_MaxSpeed = prev_y_speed;
 
-        //TODO: Figure out slope underneath player and find out if we want them to slide or not. Maybe climbable slope is based on character?
-        //guide here for a good way to implement it: http://thehiddensignal.com/unity-angle-of-sloped-ground-under-player/
+            playerMoveInput.Normalize();
+            isWalking = !Mathf.Approximately(playerMoveInput.x, 0f) || !Mathf.Approximately(playerMoveInput.z, 0f);
+            activeAnims.SetBool("IsWalking", isWalking);
 
-        Vector3 moveMagnitude = cameraTrans.forward * playerMoveInput.z + cameraTrans.right * playerMoveInput.x;  //Get the player's movement, relative to the camera.
-        moveMagnitude.y = 0f;
+            //TODO: Figure out slope underneath player and find out if we want them to slide or not. Maybe climbable slope is based on character?
+            //guide here for a good way to implement it: http://thehiddensignal.com/unity-angle-of-sloped-ground-under-player/
 
-        //Instead 
-        Vector3 facing = transform.forward;
-        facing.y = 0f;
+            Vector3 moveMagnitude = cameraTrans.forward * playerMoveInput.z + cameraTrans.right * playerMoveInput.x;  //Get the player's movement, relative to the camera.
+            moveMagnitude.y = 0f;
+
+            //Instead 
+            Vector3 facing = transform.forward;
+            facing.y = 0f;
 
 
-        Vector3 desiredForward = Vector3.RotateTowards(facing, moveMagnitude, turnSpeed * Time.deltaTime, 0f);
-        //print(desiredForward);
-        m_Rotation = Quaternion.LookRotation(desiredForward);
-        //Now, actually move!
-        rigidBody.MovePosition(rigidBody.position + moveMagnitude * baseSpeed);
-        rigidBody.MoveRotation(m_Rotation);
-
+            Vector3 desiredForward = Vector3.RotateTowards(facing, moveMagnitude, turnSpeed * Time.deltaTime, 0f);
+            //print(desiredForward);
+            m_Rotation = Quaternion.LookRotation(desiredForward);
+            //Now, actually move!
+            rigidBody.MovePosition(rigidBody.position + moveMagnitude * baseSpeed);
+            rigidBody.MoveRotation(m_Rotation);
+        }
+        else
+        {
+            //prev_x_speed = cam.m_XAxis.m_MaxSpeed;
+            //prev_y_speed = cam.m_YAxis.m_MaxSpeed;
+            cam.m_XAxis.m_MaxSpeed = 0.0f;
+            cam.m_YAxis.m_MaxSpeed = 0.0f;
+        }
     }
 
     public void ShapeShiftTo(int animal_index)
@@ -126,7 +140,7 @@ public class PlayerController : MonoBehaviour
         baseSpeed = activeAbilityScript.animalSpeed;
         turnSpeed = activeAbilityScript.turnSpeed;
 
-        /*
+        
         for (int i = 0; i < 3; i++)
         {
             print("asdasd");
@@ -135,7 +149,7 @@ public class PlayerController : MonoBehaviour
             comp.m_TrackedObjectOffset.y = activeAbilityScript.shapeOffsets.y;
             comp.m_TrackedObjectOffset.z = activeAbilityScript.shapeOffsets.z;
         }
-        */
+        
     }
 
     void OnShapeShift()
