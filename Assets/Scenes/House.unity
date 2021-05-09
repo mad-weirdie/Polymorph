@@ -2628,7 +2628,7 @@ MonoBehaviour:
   m_LookaheadSmoothing: 0
   m_LookaheadIgnoreY: 0
   m_HorizontalDamping: 0.3
-  m_VerticalDamping: 0
+  m_VerticalDamping: 0.3
   m_ScreenX: 0.5
   m_ScreenY: 0.5
   m_DeadZoneWidth: 0
@@ -8679,7 +8679,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1527408901}
-  m_LocalRotation: {x: -0.047289547, y: 0.94758594, z: -0.26819253, w: -0.16708486}
+  m_LocalRotation: {x: -0.047289565, y: 0.94758594, z: -0.26819253, w: -0.16708492}
   m_LocalPosition: {x: -3.281052, y: 4.1647997, z: 3.9640443}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -10572,15 +10572,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9212556784102788742, guid: 800db384af6757d4f8cef0b236e19025, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.27915746
+      value: 0.27915743
       objectReference: {fileID: 0}
     - target: {fileID: 9212556784102788742, guid: 800db384af6757d4f8cef0b236e19025, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.25684005
+      value: 0.25684002
       objectReference: {fileID: 0}
     - target: {fileID: 9212556784102788742, guid: 800db384af6757d4f8cef0b236e19025, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.077765666
+      value: -0.07776566
       objectReference: {fileID: 0}
     - target: {fileID: 9212556784359814972, guid: 800db384af6757d4f8cef0b236e19025, type: 3}
       propertyPath: m_XAxis.Value
@@ -10752,11 +10752,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9212556785104537218, guid: 800db384af6757d4f8cef0b236e19025, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.258212
+      value: 0.25821206
       objectReference: {fileID: 0}
     - target: {fileID: 9212556785104537218, guid: 800db384af6757d4f8cef0b236e19025, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.073080994
+      value: -0.07308101
       objectReference: {fileID: 0}
     - target: {fileID: 9212556785104537229, guid: 800db384af6757d4f8cef0b236e19025, type: 3}
       propertyPath: m_Lens.NearClipPlane
