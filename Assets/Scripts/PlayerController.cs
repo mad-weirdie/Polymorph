@@ -71,10 +71,10 @@ public class PlayerController : MonoBehaviour
 
         //print(currentZoom);
         float newDist = Mathf.Lerp(cam.m_Orbits[0].m_Radius, currentZoom, Time.deltaTime * zoomSpeed);
-        /*cam.m_Orbits[0].m_Radius = newDist;
+        cam.m_Orbits[0].m_Radius = newDist;
         cam.m_Orbits[1].m_Radius = newDist;
         cam.m_Orbits[2].m_Radius = newDist;
-        */
+        
         
 
     }
