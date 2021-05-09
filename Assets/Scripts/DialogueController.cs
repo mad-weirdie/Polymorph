@@ -9,6 +9,7 @@ public class DialogueController : MonoBehaviour
     string[] dialogueLines;
     public TMP_Text dialogueText;
     public int currentLine;
+    private bool show_dialogue_box;
 
     public bool dialogueHappening;
     public PlayerController player;
@@ -22,6 +23,7 @@ public class DialogueController : MonoBehaviour
         }
         currentLine = 0;
         dialogueHappening = true;
+        show_dialogue_box = true;
         player.movementEnabled = false;
     }
 
@@ -39,6 +41,7 @@ public class DialogueController : MonoBehaviour
             dialogueText.text = "";
             dialogueHappening = false;
             player.movementEnabled = true;
+            show_dialogue_box = false;
         }
     }
 }
