@@ -10,6 +10,9 @@ public class DialogueController : MonoBehaviour
     public TMP_Text dialogueText;
     public int currentLine;
 
+    public bool dialogueHappening;
+    public PlayerController player;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +21,8 @@ public class DialogueController : MonoBehaviour
             dialogueLines = (textFile.text.Split('\n'));
         }
         currentLine = 0;
+        dialogueHappening = true;
+        player.movementEnabled = false;
     }
 
     // Update is called once per frame
@@ -28,6 +33,12 @@ public class DialogueController : MonoBehaviour
             string dialogue = dialogueLines[currentLine];
             dialogueText.text = dialogue;
             currentLine++;
+        }
+        else
+        {
+            dialogueText.text = "";
+            dialogueHappening = false;
+            player.movementEnabled = true;
         }
     }
 }
