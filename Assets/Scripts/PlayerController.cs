@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
     public ShapeVariables activeScript; //ref to shape's variables. Used to call per-shape functions.
     public List<GameObject> characters;
     public List<string> charnames; //used to quickly check whether we have a shape or not
-    
+
     //Movement code attributes
     public float baseSpeed = 10f; //TODO: Character based speeds
     public float turnSpeed = 10f;
@@ -67,14 +67,16 @@ public class PlayerController : MonoBehaviour
     {
         m_Rotation = Quaternion.identity;
 
-        
+
 
         //print(currentZoom);
         float newDist = Mathf.Lerp(cam.m_Orbits[0].m_Radius, currentZoom, Time.deltaTime * zoomSpeed);
-        cam.m_Orbits[0].m_Radius = newDist;
+        /*cam.m_Orbits[0].m_Radius = newDist;
         cam.m_Orbits[1].m_Radius = newDist;
         cam.m_Orbits[2].m_Radius = newDist;
+        */
         
+
     }
 
     private void FixedUpdate()
@@ -88,11 +90,11 @@ public class PlayerController : MonoBehaviour
 
         Vector3 moveMagnitude = cameraTrans.forward * playerMoveInput.z + cameraTrans.right * playerMoveInput.x;  //Get the player's movement, relative to the camera.
         moveMagnitude.y = 0f;
-        
+
         //Instead 
         Vector3 facing = transform.forward;
         facing.y = 0f;
-        
+
 
         Vector3 desiredForward = Vector3.RotateTowards(facing, moveMagnitude, turnSpeed * Time.deltaTime, 0f);
         //print(desiredForward);
@@ -111,7 +113,8 @@ public class PlayerController : MonoBehaviour
         ShapeShiftUpdate();
     }
 
-    void ShapeShiftUpdate() {
+    void ShapeShiftUpdate()
+    {
 
         //Update variables that rely on activePlayer.
         activeAnims = activePlayer.GetComponent<Animator>();
@@ -123,14 +126,16 @@ public class PlayerController : MonoBehaviour
         baseSpeed = activeAbilityScript.animalSpeed;
         turnSpeed = activeAbilityScript.turnSpeed;
 
-        
-        for (int i = 0; i < 3; i++) {
+        /*
+        for (int i = 0; i < 3; i++)
+        {
             print("asdasd");
             CinemachineComposer comp = cam.GetRig(i).GetCinemachineComponent<CinemachineComposer>();
             comp.m_TrackedObjectOffset.x = activeAbilityScript.shapeOffsets.x;
             comp.m_TrackedObjectOffset.y = activeAbilityScript.shapeOffsets.y;
             comp.m_TrackedObjectOffset.z = activeAbilityScript.shapeOffsets.z;
         }
+        */
     }
 
     void OnShapeShift()
@@ -183,7 +188,8 @@ public class PlayerController : MonoBehaviour
         playerMoveInput.z = vec.y; //Y is height in 3d, but we want our y to handle movement on the Z plane.
     }
 
-    private void OnJump() {
+    private void OnJump()
+    {
         print("Thing done!");
         activeScript.OnJump(false);
     }
@@ -194,19 +200,22 @@ public class PlayerController : MonoBehaviour
         wizard.Notify();
     }
 
-    private void OnZoom(InputValue input) {
+    private void OnZoom(InputValue input)
+    {
         Vector2 vec = input.Get<Vector2>();
         int sign = 1;
-        if (vec.y == 0) {
+        if (vec.y == 0)
+        {
             return; //0 signals the wheel isn't moving anymore.
         }
-        if (vec.y < 0f) {
+        if (vec.y < 0f)
+        {
             sign = -1;
         }
         print((zoomSpeed * sign));
         currentZoom = Mathf.Clamp(currentZoom + (zoomSpeed * sign), minzoom, maxzoom);
 
-        
+
         print(currentZoom);
 
     }
