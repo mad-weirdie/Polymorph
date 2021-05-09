@@ -5,27 +5,57 @@ using TMPro;
 
 public class DialogueController : MonoBehaviour
 {
-    public TextAsset textFile;
-    string[] dialogueLines;
-    public TMP_Text dialogueText;
-    public int currentLine;
-    private bool show_dialogue_box;
+    // Turn off dialogue for debugging
+    public bool dialogueEnabled;
 
-    public bool dialogueHappening;
+    // Input file for dialogue
+    // Found in Assets->Text Files
+    public TextAsset textFile;
+    // Array to store lines of dialogue
+    string[] dialogueLines;
+    // The Text Mesh Pro GameObject which displays the on-screen text
+    public TMP_Text dialogueText;
+    // Keep track of which line to display
+    // This also enables us to check if we have run out of dialogue
+    private int currentLine;
+
+    // Know if we are  in the middle of dialogue right now
+    // We use this to pause player and camera movement during "cutscenes"
+    private bool dialogueHappening;
     public PlayerController player;
 
-    // Start is called before the first frame update
+    // Controls the fade in/out of the dialogue box when dialogue is happening
+    private Animator dialogueAnim;
+    public GameObject dialogueBox;
+
+    // ========================================================================
+
     void Start()
     {
-        if (textFile != null)
+        dialogueHappening = false;
+        // Don't try to retrieve any components if dialogue is disabled
+        if (!dialogueEnabled)
         {
-            dialogueLines = (textFile.text.Split('\n'));
-            currentLine = 0;
-            dialogueHappening = true;
-            show_dialogue_box = true;
-            player.movementEnabled = false;
+            print("what??");
+            return;
         }
-        
+        // Otherwise, read in the lines of dialogue from the text file
+        else
+        {
+            // Get animator component
+            dialogueAnim = dialogueBox.GetComponent<Animator>();
+            // Turn off the shaded dialogue box initially 
+            dialogueAnim.SetBool("dialogueHappening", false);
+            // Check a text file actually exists
+            if (textFile != null)
+            {
+                dialogueLines = (textFile.text.Split('\n'));
+                currentLine = 0;
+                dialogueHappening = true;
+                player.movementEnabled = false;
+            }
+        }
+
     }
 
     // Update is called once per frame
@@ -33,6 +63,7 @@ public class DialogueController : MonoBehaviour
     {
         if (dialogueHappening)
         {
+            dialogueAnim.SetBool("dialogueHappening", true);
             if (currentLine < dialogueLines.Length)
             {
                 string dialogue = dialogueLines[currentLine];
@@ -43,8 +74,8 @@ public class DialogueController : MonoBehaviour
             {
                 dialogueText.text = "";
                 dialogueHappening = false;
+                dialogueAnim.SetBool("dialogueHappening", dialogueHappening);
                 player.movementEnabled = true;
-                show_dialogue_box = false;
             }
         }
         else

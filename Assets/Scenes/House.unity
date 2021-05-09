@@ -733,7 +733,6 @@ GameObject:
   - component: {fileID: 100370388}
   - component: {fileID: 100370389}
   - component: {fileID: 100370390}
-  - component: {fileID: 100370391}
   m_Layer: 5
   m_Name: Title Screen
   m_TagString: Untagged
@@ -879,18 +878,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &100370391
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 100370383}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7cf41c2b4feeba4497180d9d3824e3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &104010171 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4460512390022345474, guid: 589d0016399410146ba9085463e57136, type: 3}
@@ -2050,11 +2037,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c86c000bfd083749bf31de7c637f58e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogueEnabled: 1
   textFile: {fileID: 4900000, guid: 225b17ad23477ff4c8d0731abe55d430, type: 3}
   dialogueText: {fileID: 347709558}
-  currentLine: 0
-  dialogueHappening: 0
   player: {fileID: 387479433}
+  dialogueBox: {fileID: 919565559}
 --- !u!1001 &357771651
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6456,7 +6443,6 @@ GameObject:
   - component: {fileID: 919565560}
   - component: {fileID: 919565562}
   - component: {fileID: 919565561}
-  - component: {fileID: 919565564}
   - component: {fileID: 919565563}
   m_Layer: 5
   m_Name: Dialogue Box Panel
@@ -6541,23 +6527,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &919565564
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 919565559}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c86c000bfd083749bf31de7c637f58e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textFile: {fileID: 4900000, guid: 225b17ad23477ff4c8d0731abe55d430, type: 3}
-  dialogueText: {fileID: 347709558}
-  currentLine: 0
-  dialogueHappening: 0
-  player: {fileID: 387479433}
 --- !u!1001 &960779372
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8710,7 +8679,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1527408901}
-  m_LocalRotation: {x: -0.047289565, y: 0.94758594, z: -0.26819253, w: -0.16708492}
+  m_LocalRotation: {x: -0.047289547, y: 0.94758594, z: -0.26819253, w: -0.16708486}
   m_LocalPosition: {x: -3.281052, y: 4.1647997, z: 3.9640443}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -10603,15 +10572,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9212556784102788742, guid: 800db384af6757d4f8cef0b236e19025, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.27915743
+      value: 0.27915746
       objectReference: {fileID: 0}
     - target: {fileID: 9212556784102788742, guid: 800db384af6757d4f8cef0b236e19025, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.25684002
+      value: 0.25684005
       objectReference: {fileID: 0}
     - target: {fileID: 9212556784102788742, guid: 800db384af6757d4f8cef0b236e19025, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.07776566
+      value: -0.077765666
       objectReference: {fileID: 0}
     - target: {fileID: 9212556784359814972, guid: 800db384af6757d4f8cef0b236e19025, type: 3}
       propertyPath: m_XAxis.Value
@@ -10783,11 +10752,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9212556785104537218, guid: 800db384af6757d4f8cef0b236e19025, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.25821206
+      value: 0.258212
       objectReference: {fileID: 0}
     - target: {fileID: 9212556785104537218, guid: 800db384af6757d4f8cef0b236e19025, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.07308101
+      value: -0.073080994
       objectReference: {fileID: 0}
     - target: {fileID: 9212556785104537229, guid: 800db384af6757d4f8cef0b236e19025, type: 3}
       propertyPath: m_Lens.NearClipPlane
