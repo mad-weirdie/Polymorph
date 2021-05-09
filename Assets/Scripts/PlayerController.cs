@@ -7,12 +7,14 @@ using Cinemachine;
 public class PlayerController : MonoBehaviour
 {
     //Shapeshifting attributes
+    [Header("Shapeshift Settings")]
     private GameObject activePlayer;
     private Animator activeAnims;
     public ShapeVariables activeScript; //ref to shape's variables. Used to call per-shape functions.
     public List<GameObject> characters;
     public List<string> charnames; //used to quickly check whether we have a shape or not
 
+    [Header("Movement code")]
     //Movement code attributes
     public float baseSpeed = 10f; //TODO: Character based speeds
     public float turnSpeed = 10f;
@@ -21,6 +23,7 @@ public class PlayerController : MonoBehaviour
     Quaternion m_Rotation;
     public Rigidbody rigidBody; //public, gotten in code. Could be done via pass by ref instead?
 
+    [Header("Camera code")]
     public GameObject CinemachineCamera;
     private CinemachineFreeLook cam;
     private Transform cameraTrans;
@@ -30,6 +33,7 @@ public class PlayerController : MonoBehaviour
     public float minzoom = 5f;
     public float maxzoom = 8f;
     public float zoomSpeed = 20f;
+
 
     public bool movementEnabled;
     private bool isWalking;
@@ -45,6 +49,8 @@ public class PlayerController : MonoBehaviour
     public GameObject CharacterWheel;
 
     public DialogueController wizard;
+
+    public PuzzleController current_puzzle;
 
     // Start is called before the first frame update
     void Start()
@@ -271,4 +277,14 @@ public class PlayerController : MonoBehaviour
             characters[activeIndex].transform.localPosition = Vector3.zero;
         }
     }
+
+    void OnReset(InputValue input) {
+        if (current_puzzle != null) {
+            print("RESET!");
+            current_puzzle.ResetPuzzle();
+        
+        }
+    
+    }
+
 }
