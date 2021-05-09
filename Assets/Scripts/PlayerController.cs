@@ -210,7 +210,6 @@ public class PlayerController : MonoBehaviour
 
     private void OnClick()
     {
-        print("yaya");
         wizard.Notify();
     }
 

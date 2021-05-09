@@ -20,28 +20,36 @@ public class DialogueController : MonoBehaviour
         if (textFile != null)
         {
             dialogueLines = (textFile.text.Split('\n'));
+            currentLine = 0;
+            dialogueHappening = true;
+            show_dialogue_box = true;
+            player.movementEnabled = false;
         }
-        currentLine = 0;
-        dialogueHappening = true;
-        show_dialogue_box = true;
-        player.movementEnabled = false;
+        
     }
 
     // Update is called once per frame
     public void Notify()
     {
-        if (currentLine < dialogueLines.Length)
+        if (dialogueHappening)
         {
-            string dialogue = dialogueLines[currentLine];
-            dialogueText.text = dialogue;
-            currentLine++;
+            if (currentLine < dialogueLines.Length)
+            {
+                string dialogue = dialogueLines[currentLine];
+                dialogueText.text = dialogue;
+                currentLine++;
+            }
+            else
+            {
+                dialogueText.text = "";
+                dialogueHappening = false;
+                player.movementEnabled = true;
+                show_dialogue_box = false;
+            }
         }
         else
         {
-            dialogueText.text = "";
-            dialogueHappening = false;
             player.movementEnabled = true;
-            show_dialogue_box = false;
         }
     }
 }
