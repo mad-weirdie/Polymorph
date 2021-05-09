@@ -1,6 +1,23 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-5602686514484837810
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
+  m_Name: Global Volume - House
+  m_EditorClassIdentifier: 
+  components:
+  - {fileID: 5016643742258326321}
+  - {fileID: 6353798925729297347}
+  - {fileID: 4671304392165094202}
+  - {fileID: 1996065116676392987}
+--- !u!114 &1996065116676392987
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -31,7 +48,7 @@ MonoBehaviour:
     m_Value: 0
     min: -100
     max: 100
---- !u!114 &-4369620158474806497
+--- !u!114 &4671304392165094202
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -47,12 +64,12 @@ MonoBehaviour:
   m_AdvancedMode: 0
   shadows:
     m_OverrideState: 0
-    m_Value: {x: 0.6175121, y: 0.90405756, z: 1, w: 0.21576764}
+    m_Value: {x: 0.47943848, y: 1, z: 0.58155227, w: 0.21576764}
   midtones:
     m_OverrideState: 1
-    m_Value: {x: 0.98449296, y: 0.93238914, z: 1, w: 0.11120327}
+    m_Value: {x: 0.99016076, y: 0.88577944, z: 1, w: 0.11120327}
   highlights:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: {x: 1, y: 0.8896057, z: 0.96994966, w: -0.10456411}
   shadowsStart:
     m_OverrideState: 0
@@ -70,7 +87,7 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 1
     min: 0
---- !u!114 &-689786193580341342
+--- !u!114 &5016643742258326321
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -132,7 +149,7 @@ MonoBehaviour:
     m_Value: 0
     min: -180
     max: 180
---- !u!114 &-293823363267845713
+--- !u!114 &6353798925729297347
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -170,20 +187,3 @@ MonoBehaviour:
     m_Value: -27
     min: -100
     max: 100
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
-  m_Name: Global Volume - Lighting Profile
-  m_EditorClassIdentifier: 
-  components:
-  - {fileID: -689786193580341342}
-  - {fileID: -293823363267845713}
-  - {fileID: -4369620158474806497}
-  - {fileID: -5602686514484837810}
