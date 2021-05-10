@@ -84,11 +84,14 @@ public class PlayerController : MonoBehaviour
         m_Rotation = Quaternion.identity;
 
         //print(currentZoom);
-        float newDist = Mathf.Lerp(cam.m_Orbits[0].m_Radius, currentZoom, zoomSpeed);
+        if (Mathf.Approximately(cam.m_Orbits[0].m_Radius - currentZoom, 0))
+        {
+            float newDist = Mathf.Lerp(cam.m_Orbits[0].m_Radius, currentZoom, zoomSpeed);
 
-        cam.m_Orbits[0].m_Radius = newDist;
-        cam.m_Orbits[1].m_Radius = newDist;
-        cam.m_Orbits[2].m_Radius = newDist;
+            cam.m_Orbits[0].m_Radius = newDist;
+            cam.m_Orbits[1].m_Radius = newDist;
+            cam.m_Orbits[2].m_Radius = newDist;
+        }
     }
 
     private void FixedUpdate()
