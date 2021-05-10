@@ -30,9 +30,9 @@ public class PlayerController : MonoBehaviour
     public float prev_x_speed;
     public float prev_y_speed;
     private float currentZoom = 5f;
-    public float minzoom = 5f;
+    public float minzoom = 1f;
     public float maxzoom = 8f;
-    public float zoomSpeed = 20f;
+    public float zoomSpeed = 1f;
 
 
     public bool movementEnabled;
@@ -53,6 +53,11 @@ public class PlayerController : MonoBehaviour
     private bool isGrabbing = false;
     private float normalMass;
     public PuzzleController current_puzzle;
+
+    private Vector3 moveMagnitude;
+    private Vector3 facing;
+    private Vector3 desiredForward;
+    private Vector2 vec;
 
     // Start is called before the first frame update
     void Start()
@@ -98,25 +103,24 @@ public class PlayerController : MonoBehaviour
     {
         if (movementEnabled)
         {
-            cam.m_XAxis.m_MaxSpeed = prev_x_speed;
-            cam.m_YAxis.m_MaxSpeed = prev_y_speed;
-
+            if (cam.m_XAxis.m_MaxSpeed == 0.0f && cam.m_YAxis.m_MaxSpeed == 0.0f)
+            {
+                cam.m_XAxis.m_MaxSpeed = prev_x_speed;
+                cam.m_YAxis.m_MaxSpeed = prev_y_speed;
+            }
+            
             playerMoveInput.Normalize();
             isWalking = !Mathf.Approximately(playerMoveInput.x, 0f) || !Mathf.Approximately(playerMoveInput.z, 0f);
             activeAnims.SetBool("IsWalking", isWalking);
-
-            //TODO: Figure out slope underneath player and find out if we want them to slide or not. Maybe climbable slope is based on character?
-            //guide here for a good way to implement it: http://thehiddensignal.com/unity-angle-of-sloped-ground-under-player/
-
-            Vector3 moveMagnitude = cameraTrans.forward * playerMoveInput.z + cameraTrans.right * playerMoveInput.x;  //Get the player's movement, relative to the camera.
+            moveMagnitude = cameraTrans.forward * playerMoveInput.z + cameraTrans.right * playerMoveInput.x;  //Get the player's movement, relative to the camera.
             moveMagnitude.y = 0f;
 
             //Instead 
-            Vector3 facing = transform.forward;
+            facing = transform.forward;
             facing.y = 0f;
 
 
-            Vector3 desiredForward = Vector3.RotateTowards(facing, moveMagnitude, turnSpeed * Time.deltaTime, 0f);
+            desiredForward = Vector3.RotateTowards(facing, moveMagnitude, turnSpeed * Time.deltaTime, 0f);
             //print(desiredForward);
             m_Rotation = Quaternion.LookRotation(desiredForward);
             //Now, actually move!
@@ -125,8 +129,6 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            //prev_x_speed = cam.m_XAxis.m_MaxSpeed;
-            //prev_y_speed = cam.m_YAxis.m_MaxSpeed;
             cam.m_XAxis.m_MaxSpeed = 0.0f;
             cam.m_YAxis.m_MaxSpeed = 0.0f;
         }
@@ -214,7 +216,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnMove(InputValue input)
     {
-        Vector2 vec = input.Get<Vector2>();
+        vec = input.Get<Vector2>();
 
         playerMoveInput.x = vec.x;
         playerMoveInput.z = vec.y; //Y is height in 3d, but we want our y to handle movement on the Z plane.
@@ -231,7 +233,6 @@ public class PlayerController : MonoBehaviour
         wizard.Notify();
     }
 
-    /*
     private void OnZoom(InputValue input)
     {
         Vector2 vec = input.Get<Vector2>();
@@ -249,11 +250,9 @@ public class PlayerController : MonoBehaviour
 
 
         print(currentZoom);
-
     }
-    */
+    
 
-    /*
     private void OnTriggerEnter(Collider other)
     {
         // This stops the player from adding force to the object which
@@ -298,8 +297,7 @@ public class PlayerController : MonoBehaviour
             characters[activeIndex].transform.localPosition = Vector3.zero;
         }
     }
-    */
-
+    
     /*
     private void OnTriggerStay(Collider other)
     {
@@ -313,13 +311,13 @@ public class PlayerController : MonoBehaviour
         }
     }
     */
-    /*
+    
     private void OnTriggerExit(Collider other)
     {
         isGrabbing = false;
         rigidBody.mass = normalMass;
     }
-    */
+    
     void OnReset(InputValue input) {
         if (current_puzzle != null) {
             print("RESET!");
