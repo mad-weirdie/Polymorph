@@ -230,7 +230,6 @@ public class PlayerController : MonoBehaviour
 
     private void OnZoom(InputValue input)
     {
-        return;
         Vector2 vec = input.Get<Vector2>();
         int sign = 1;
         if (vec.y == 0)
