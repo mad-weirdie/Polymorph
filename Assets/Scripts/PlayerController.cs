@@ -46,6 +46,9 @@ public class PlayerController : MonoBehaviour
 
     public DialogueController wizard;
 
+    private bool isGrabbing = false;
+    private float normalMass;
+
     // Start is called before the first frame update
     void Start()
     { 
@@ -67,6 +70,8 @@ public class PlayerController : MonoBehaviour
         {
             characters.Add(null);
         }
+
+        normalMass = rigidBody.mass;
     }
 
     void Update()
@@ -143,7 +148,6 @@ public class PlayerController : MonoBehaviour
         
         for (int i = 0; i < 3; i++)
         {
-            print("asdasd");
             CinemachineComposer comp = cam.GetRig(i).GetCinemachineComponent<CinemachineComposer>();
             comp.m_TrackedObjectOffset.x = activeAbilityScript.shapeOffsets.x;
             comp.m_TrackedObjectOffset.y = activeAbilityScript.shapeOffsets.y;
@@ -193,6 +197,12 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    private void OnGrab()
+    {
+        print("Preseed");
+        isGrabbing = !isGrabbing;
+    }
+
 
     private void OnMove(InputValue input)
     {
@@ -236,6 +246,13 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        // This stops the player from adding force to the object which
+        // can knock over objects.
+        if (other.gameObject.CompareTag("Movable"))
+        {
+            rigidBody.mass = 0;
+        }
+
         if (other.gameObject.CompareTag("Animal") && !charnames.Contains(other.name))
         {
             int activeIndex;
@@ -270,5 +287,23 @@ public class PlayerController : MonoBehaviour
             characters[activeIndex].transform.localRotation = Quaternion.identity;
             characters[activeIndex].transform.localPosition = Vector3.zero;
         }
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.CompareTag("Movable") && isGrabbing)
+        {
+            Rigidbody movingObjectBody = other.gameObject.GetComponent<Rigidbody>();
+
+            Vector3 moveMag = cameraTrans.forward * playerMoveInput.z + cameraTrans.right * playerMoveInput.x;
+
+            movingObjectBody.MovePosition(movingObjectBody.position + moveMag * baseSpeed);
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        isGrabbing = false;
+        rigidBody.mass = normalMass;
     }
 }

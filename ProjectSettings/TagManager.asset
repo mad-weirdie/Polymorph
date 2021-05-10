@@ -9,6 +9,7 @@ TagManager:
   - Interactable
   - Animal
   - Terrain
+  - Movable
   layers:
   - Default
   - TransparentFX
