@@ -231,6 +231,7 @@ public class PlayerController : MonoBehaviour
         wizard.Notify();
     }
 
+    /*
     private void OnZoom(InputValue input)
     {
         Vector2 vec = input.Get<Vector2>();
@@ -250,7 +251,9 @@ public class PlayerController : MonoBehaviour
         print(currentZoom);
 
     }
+    */
 
+    /*
     private void OnTriggerEnter(Collider other)
     {
         // This stops the player from adding force to the object which
@@ -295,7 +298,9 @@ public class PlayerController : MonoBehaviour
             characters[activeIndex].transform.localPosition = Vector3.zero;
         }
     }
+    */
 
+    /*
     private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.CompareTag("Movable") && isGrabbing)
@@ -307,12 +312,14 @@ public class PlayerController : MonoBehaviour
             movingObjectBody.MovePosition(movingObjectBody.position + moveMag * baseSpeed);
         }
     }
-
+    */
+    /*
     private void OnTriggerExit(Collider other)
     {
         isGrabbing = false;
         rigidBody.mass = normalMass;
     }
+    */
     void OnReset(InputValue input) {
         if (current_puzzle != null) {
             print("RESET!");

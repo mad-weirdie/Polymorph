@@ -5,6 +5,7 @@ using UnityEngine;
 public delegate void StateChanged(bool state);
 public class ObserverSystem : MonoBehaviour
 {
+    /*
     public List<ObserverSystem> listeners;
     public event StateChanged statechanged;
     // Start is called before the first frame update
@@ -38,6 +39,6 @@ public class ObserverSystem : MonoBehaviour
     {
         statechanged(false);
     }
-
+    */
 
 }

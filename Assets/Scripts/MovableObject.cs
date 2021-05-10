@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MovableObject : MonoBehaviour
 {
+    /*
     public Transform goal;
 
     private bool triggered;
@@ -60,4 +61,5 @@ public class MovableObject : MonoBehaviour
     {
         triggered = false;
     }
+    */
 }
