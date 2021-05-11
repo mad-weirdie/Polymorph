@@ -8889,6 +8889,8 @@ MonoBehaviour:
   shapeOffsets: {x: 0, y: 0, z: 0}
   script: {fileID: 0}
   flyingHeight: 5000
+  glidingForce: 100
+  jumpHeld: 0
 --- !u!65 &920007701
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9733,7 +9735,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.21201202, y: 0.000000017875493, z: -0.000000003877977, w: 0.9772671}
+  m_LocalRotation: {x: 0.21201202, y: -0.000000017875493, z: 0.000000003877977, w: 0.9772671}
   m_LocalPosition: {x: 2.997, y: 3.317, z: 2.0939999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -11535,6 +11537,8 @@ MonoBehaviour:
   shapeOffsets: {x: 0, y: 0, z: 0}
   script: {fileID: 0}
   flyingHeight: 5000
+  glidingForce: 2000
+  jumpHeld: 0
 --- !u!65 &1086448023
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19091,7 +19095,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1847906572}
-  m_LocalRotation: {x: 0.020564985, y: -0.97265875, z: 0.21101224, w: 0.09479408}
+  m_LocalRotation: {x: 0.020564977, y: -0.97265875, z: 0.21101224, w: 0.09479405}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:

@@ -228,10 +228,11 @@ public class PlayerController : MonoBehaviour
         playerMoveInput.z = vec.y; //Y is height in 3d, but we want our y to handle movement on the Z plane.
     }
 
-    private void OnJump()
+    private void OnJump(InputValue input)
     {
+        
         print("Thing done!");
-        activeScript.OnJump(false);
+        activeScript.OnJump(input.Get<float>() > 0f);
     }
 
     private void OnClick()
