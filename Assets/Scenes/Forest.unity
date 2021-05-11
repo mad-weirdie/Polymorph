@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.60827434, g: 0.4973325, b: 0.4333396, a: 1}
+  m_IndirectSpecularColor: {r: 0.60793847, g: 0.497079, b: 0.4331067, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1989,7 +1989,7 @@ GameObject:
   - component: {fileID: 183634344}
   m_Layer: 5
   m_Name: Dialogue
-  m_TagString: Untagged
+  m_TagString: Movable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2372,6 +2372,10 @@ PrefabInstance:
     - target: {fileID: 9001149719726596574, guid: 22191d491cab859409492e28128322b8, type: 3}
       propertyPath: m_Name
       value: Stump_05
+      objectReference: {fileID: 0}
+    - target: {fileID: 9001149719726596574, guid: 22191d491cab859409492e28128322b8, type: 3}
+      propertyPath: m_TagString
+      value: Movable
       objectReference: {fileID: 0}
     - target: {fileID: 9001149719726596574, guid: 22191d491cab859409492e28128322b8, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -6751,6 +6755,7 @@ MonoBehaviour:
   shapeOffsets: {x: 0, y: 0, z: 0}
   script: {fileID: 0}
   jumpForce: 7500
+  height: {x: 0, y: 0, z: 0}
 --- !u!65 &719201899
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8081,7 +8086,7 @@ Rigidbody:
   m_GameObject: {fileID: 871672591}
   serializedVersion: 2
   m_Mass: 20
-  m_Drag: 5
+  m_Drag: 3
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -8862,7 +8867,9 @@ MonoBehaviour:
   shapeOffsets: {x: 0, y: 0, z: 0}
   script: {fileID: 0}
   flyingHeight: 5000
-  glidingForce: 100
+  glidingForce: 250
+  height: {x: 0, y: 0, z: 0}
+  glideForce: {x: 0, y: 0, z: 0}
   jumpHeld: 0
 --- !u!65 &920007701
 BoxCollider:
@@ -11181,6 +11188,8 @@ MonoBehaviour:
   script: {fileID: 0}
   flyingHeight: 5000
   glidingForce: 2000
+  height: {x: 0, y: 0, z: 0}
+  glideForce: {x: 0, y: 0, z: 0}
   jumpHeld: 0
 --- !u!65 &1086448023
 BoxCollider:

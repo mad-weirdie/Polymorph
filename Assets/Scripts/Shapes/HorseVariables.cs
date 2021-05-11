@@ -8,6 +8,8 @@ public class HorseVariables : ShapeVariables
     // Start is called before the first frame update
 
     public float jumpForce = 7500f;
+    
+    [SerializeField]
     protected Vector3 height;
 
     private Animator horseAnimator;
@@ -25,7 +27,8 @@ public class HorseVariables : ShapeVariables
     override public void OnJump(bool isHeld)
     {
         //Actions that happen on the space bar being pressed, like jumping or flying.
-        if (Physics.Raycast(transform.position, Vector3.down, .5f))
+        Debug.DrawRay(transform.position, Vector3.down * .5f, Color.green, 5f);
+        if (isHeld && Physics.Raycast(transform.position, Vector3.down, .5f))
         {
             print("jump!");
             script.rigidBody.AddForce(height);

@@ -8,7 +8,9 @@ public class CrowVars : ShapeVariables
 
     public float flyingHeight = 2f; //force crow jumps with.
     public float glidingForce = 2000f; //force pushing crow up while gliding to counteract gravity.
+    [SerializeField]
     private Vector3 height;
+    [SerializeField]
     private Vector3 glideForce;
     [SerializeField]
     private bool jumpHeld;
@@ -47,7 +49,11 @@ public class CrowVars : ShapeVariables
         {
             crowAnimator.Play("Jump");
             crowAnimator.SetBool("IsFlying", true);
-            script.rigidBody.AddForce(height); //only jump on key down!
+            Debug.DrawRay(transform.position, Vector3.down * .5f, Color.green, 5f);
+            if (Physics.Raycast(transform.position, Vector3.down, .5f))
+            {
+                script.rigidBody.AddForce(height); //only jump on key down!
+            }
         }
         else {
             crowAnimator.SetBool("IsFlying", false);
