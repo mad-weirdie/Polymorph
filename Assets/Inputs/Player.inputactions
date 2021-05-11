@@ -97,9 +97,14 @@
                     "name": "Grab",
                     "type": "Button",
                     "id": "65456c6e-912c-4ebd-ac16-32132d6c4204",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
                     "name": "Reset",
                     "type": "Button",
-                    "id": "63f0fa61-75f9-4b8c-a524-e7216c3f66e5",
+                    "id": "7110bb70-7dfd-40c6-abb7-039cb1922ad9",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
@@ -422,7 +427,12 @@
                     "processors": "",
                     "groups": "",
                     "action": "Grab",
-                    "id": "d0f8e6d6-c50b-47c4-90fd-7847c5de5bec",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "905cf03e-ad87-4c94-aa16-63e14e006930",
                     "path": "<Keyboard>/r",
                     "interactions": "",
                     "processors": "",
