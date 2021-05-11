@@ -51,6 +51,7 @@ public class PlayerController : MonoBehaviour
     public DialogueController wizard;
 
     private bool isGrabbing = false;
+    private Rigidbody movingRigidBodyObject;
     private float normalMass;
     public PuzzleController current_puzzle;
 
@@ -82,6 +83,7 @@ public class PlayerController : MonoBehaviour
         }
 
         normalMass = rigidBody.mass;
+        movingRigidBodyObject = null;
     }
 
     void Update()
@@ -126,6 +128,11 @@ public class PlayerController : MonoBehaviour
             //Now, actually move!
             rigidBody.MovePosition(rigidBody.position + moveMagnitude * baseSpeed);
             rigidBody.MoveRotation(m_Rotation);
+
+            if (isGrabbing && movingRigidBodyObject != null)
+            {
+                movingRigidBodyObject.MovePosition(movingRigidBodyObject.position + moveMagnitude * baseSpeed);
+            }
         }
         else
         {
@@ -144,7 +151,6 @@ public class PlayerController : MonoBehaviour
 
     void ShapeShiftUpdate()
     {
-
         //Update variables that rely on activePlayer.
         activeAnims = activePlayer.GetComponent<Animator>();
         activeAnims.SetBool("IsWalking", isWalking);
@@ -257,9 +263,13 @@ public class PlayerController : MonoBehaviour
     {
         // This stops the player from adding force to the object which
         // can knock over objects.
-        if (other.gameObject.CompareTag("Movable"))
+        print("Enter");
+
+        if (other.gameObject.CompareTag("Movable") && isGrabbing)
         {
+            print(other.name);
             rigidBody.mass = 0;
+            movingRigidBodyObject = other.GetComponent<Rigidbody>();
         }
 
         if (other.gameObject.CompareTag("Animal") && !charnames.Contains(other.name))
@@ -301,21 +311,18 @@ public class PlayerController : MonoBehaviour
     /*
     private void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.CompareTag("Movable") && isGrabbing)
+        if (other.gameObject.CompareTag("Movable") && movingRigidBodyObject == null)
         {
-            Rigidbody movingObjectBody = other.gameObject.GetComponent<Rigidbody>();
-
-            Vector3 moveMag = cameraTrans.forward * playerMoveInput.z + cameraTrans.right * playerMoveInput.x;
-
-            movingObjectBody.MovePosition(movingObjectBody.position + moveMag * baseSpeed);
+            movingRigidBodyObject = other.gameObject.GetComponent<Rigidbody>();
         }
     }
     */
-    
+
     private void OnTriggerExit(Collider other)
     {
-        isGrabbing = false;
+        print("Exit");
         rigidBody.mass = normalMass;
+        movingRigidBodyObject = null;
     }
     
     void OnReset(InputValue input) {
