@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.058
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0123742735, g: 0.033835948, b: 0.018029269, a: 0.058}
+  m_IndirectSpecularColor: {r: 0.012373599, g: 0.033834275, b: 0.018028118, a: 0.058}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7509,6 +7509,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6721092324547233634, guid: 6eee7306fe377634f9645a176df43265, type: 3}
   m_PrefabInstance: {fileID: 1578075407}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1592568354 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1432110404910181331, guid: b267e01defef9cb40abfab67294b534f, type: 3}
+  m_PrefabInstance: {fileID: 5816923456991187415}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1610741069
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9707,6 +9712,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 347709560}
     - target: {fileID: 5816923457350117225, guid: b267e01defef9cb40abfab67294b534f, type: 3}
+      propertyPath: CharacterWheel
+      value: 
+      objectReference: {fileID: 1592568354}
+    - target: {fileID: 5816923457350117225, guid: b267e01defef9cb40abfab67294b534f, type: 3}
       propertyPath: CinemachineCamera
       value: 
       objectReference: {fileID: 987768135}
@@ -10001,11 +10010,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5053175796464189593, guid: 800db384af6757d4f8cef0b236e19025, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.21168041
+      value: 0.21168047
       objectReference: {fileID: 0}
     - target: {fileID: 5053175796464189593, guid: 800db384af6757d4f8cef0b236e19025, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.010557692
+      value: 0.010557696
       objectReference: {fileID: 0}
     - target: {fileID: 5053175796464189593, guid: 800db384af6757d4f8cef0b236e19025, type: 3}
       propertyPath: m_LocalRotation.y
@@ -10013,7 +10022,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5053175796464189593, guid: 800db384af6757d4f8cef0b236e19025, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.048682034
+      value: -0.04868204
       objectReference: {fileID: 0}
     - target: {fileID: 6561955889413271920, guid: 800db384af6757d4f8cef0b236e19025, type: 3}
       propertyPath: m_LocalPosition.y
