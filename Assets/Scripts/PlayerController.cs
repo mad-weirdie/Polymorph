@@ -47,6 +47,7 @@ public class PlayerController : MonoBehaviour
     private int ind_CROW = 3;
 
     public GameObject CharacterWheel;
+    public AudioSource ShapeShiftSound;
 
     public DialogueController wizard;
 
@@ -143,10 +144,14 @@ public class PlayerController : MonoBehaviour
 
     public void ShapeShiftTo(int animal_index)
     {
-        activePlayer.SetActive(false);
-        activePlayer = characters[animal_index];
-        activePlayer.SetActive(true);
-        ShapeShiftUpdate();
+        if (characters[animal_index] != activePlayer)
+        {
+            ShapeShiftSound.Play();
+            activePlayer.SetActive(false);
+            activePlayer = characters[animal_index];
+            activePlayer.SetActive(true);
+            ShapeShiftUpdate();
+        }
     }
 
     void ShapeShiftUpdate()
@@ -180,7 +185,6 @@ public class PlayerController : MonoBehaviour
 
     void OnShapeShiftHorse()
     {
-        print("Horse");
         if (characters[ind_HORSE] != null && CharacterWheel.activeSelf)
         {
             ShapeShiftTo(ind_HORSE);
@@ -189,7 +193,6 @@ public class PlayerController : MonoBehaviour
 
     void OnShapeShiftTurtle()
     {
-        print("Turtle");
         if (characters[ind_TURTLE] != null && CharacterWheel.activeSelf)
         {
             ShapeShiftTo(ind_TURTLE);
@@ -198,7 +201,6 @@ public class PlayerController : MonoBehaviour
 
     void OnShapeShiftRaccoon()
     {
-        print("Raccoon");
         if (characters[ind_RACCOON] != null && CharacterWheel.activeSelf)
         {
             ShapeShiftTo(ind_RACCOON);
@@ -206,7 +208,6 @@ public class PlayerController : MonoBehaviour
     }
     void OnShapeShiftCrow()
     {
-        print("CROW");
         if (characters[ind_CROW] != null && CharacterWheel.activeSelf)
         {
             ShapeShiftTo(ind_CROW);
@@ -215,7 +216,6 @@ public class PlayerController : MonoBehaviour
 
     private void OnGrab()
     {
-        print("Preseed");
         isGrabbing = !isGrabbing;
     }
 
@@ -264,8 +264,6 @@ public class PlayerController : MonoBehaviour
     {
         // This stops the player from adding force to the object which
         // can knock over objects.
-        print("Enter");
-
         if (other.gameObject.CompareTag("Movable") && isGrabbing)
         {
             print(other.name);
@@ -309,7 +307,6 @@ public class PlayerController : MonoBehaviour
         }
     }
     
-    /*
     private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.CompareTag("Movable") && movingRigidBodyObject == null)
@@ -317,11 +314,9 @@ public class PlayerController : MonoBehaviour
             movingRigidBodyObject = other.gameObject.GetComponent<Rigidbody>();
         }
     }
-    */
 
     private void OnTriggerExit(Collider other)
     {
-        print("Exit");
         rigidBody.mass = normalMass;
         movingRigidBodyObject = null;
     }
