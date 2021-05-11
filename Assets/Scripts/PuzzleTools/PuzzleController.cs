@@ -37,6 +37,7 @@ public class PuzzleController : MonoBehaviour
     }
 
     public void ResetPuzzle() {
+        print("puzzles resetting...");
         for (int i = 0; i < resettables.Count; i++) {
             resettables[i].reset();
         
