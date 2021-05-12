@@ -9,7 +9,8 @@ public class SeeSaw : MonoBehaviour
     private Rigidbody rb;
     private void Start()
     {
-        rb = GetComponent<Rigidbody>();   
+        rb = GetComponent<Rigidbody>();
+        rb.isKinematic = false;
     }
 
     private void OnTriggerEnter(Collider other)
