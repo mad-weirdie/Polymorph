@@ -61,12 +61,15 @@ public class PlayerController : MonoBehaviour
     private Vector3 desiredForward;
     private Vector2 vec;
 
+    private AudioSource walkingAudio;
+
     // Start is called before the first frame update
     void Start()
     {
         StartCoroutine(Hold());
         
         movementEnabled = false;
+        walkingAudio = GetComponent<AudioSource>();
         //Camera obj
         cameraTrans = Camera.main.transform;
         cam = CinemachineCamera.GetComponent<CinemachineFreeLook>();
@@ -119,7 +122,16 @@ public class PlayerController : MonoBehaviour
                 cam.m_XAxis.m_MaxSpeed = prev_x_speed;
                 cam.m_YAxis.m_MaxSpeed = prev_y_speed;
             }
-            
+
+            if (!isWalking)
+            {
+                walkingAudio.Stop();
+            }
+            else if (isWalking && !walkingAudio.isPlaying)
+            {
+                walkingAudio.Play();
+            }
+           
             playerMoveInput.Normalize();
             isWalking = !Mathf.Approximately(playerMoveInput.x, 0f) || !Mathf.Approximately(playerMoveInput.z, 0f);
             activeAnims.SetBool("IsWalking", isWalking);

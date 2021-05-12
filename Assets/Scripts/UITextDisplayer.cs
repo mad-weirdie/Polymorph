@@ -23,16 +23,10 @@ public class UITextDisplayer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(Hold());
         lookComplete = false;
         moveComplete = false;
         text.text = InteractText;
         text.gameObject.SetActive(false);
-    }
-
-    IEnumerator Hold()
-    {
-        return new WaitForSecondsRealtime(5);
     }
 
     void OnCollisionEnter(Collision interactable)
@@ -56,15 +50,16 @@ public class UITextDisplayer : MonoBehaviour
             }
         }
         else if (interactable.gameObject.name == "LeaveBed Trigger" && !moveComplete)
+        {
+            if (lookComplete)
             {
-                if (lookComplete)
-                {
-                    moveComplete = true;
-                    dialogue.SetHappening(true);
-                    text.text = "";
-                    dialogue.Notify();
-                }
+                moveComplete = true;
+                dialogue.SetHappening(true);
+                text.text = "";
+                dialogue.Notify();
             }
+        }
+       // else if (interactable.gameObject.name == "Door" && 
     }
     void OnCollisionExit(Collision interactable)
     {
