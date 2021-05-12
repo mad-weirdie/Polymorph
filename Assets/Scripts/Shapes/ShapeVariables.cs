@@ -10,7 +10,7 @@ public class ShapeVariables : MonoBehaviour
     public float turnSpeed = 2f; // do we want this?
     public GameObject player; //Ref so that actions can affect the player.
 
-    public float animalMass = 5f; //how heavy we are as an animal. Affects things like see-saws.
+    public float animalMass = 20f; //how heavy we are as an animal. Affects things like see-saws.
 
     public Vector3 shapeOffsets;
 

@@ -85,8 +85,9 @@ public class PlayerController : MonoBehaviour
         // Start as tortoise
         characters[0].SetActive(true);
         activePlayer = characters[0];
-        ShapeShiftUpdate();
+        
         rigidBody = GetComponent<Rigidbody>();
+        ShapeShiftUpdate();
 
         for (int i = 1; i < 4; i++)
         {
@@ -190,6 +191,7 @@ public class PlayerController : MonoBehaviour
         //get our movement values from the shape
         baseSpeed = activeAbilityScript.animalSpeed;
         turnSpeed = activeAbilityScript.turnSpeed;
+        rigidBody.mass = activeAbilityScript.animalMass;
 
         
         for (int i = 0; i < 3; i++)

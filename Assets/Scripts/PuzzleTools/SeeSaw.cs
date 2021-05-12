@@ -15,7 +15,9 @@ public class SeeSaw : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player") {
+        
+        if (rb.isKinematic == true && other.transform.parent != null && other.transform.parent.CompareTag("Player")) {
+            print("Player entered seesaw trigger!");
             rb.isKinematic = false;
         }
 
@@ -24,8 +26,10 @@ public class SeeSaw : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.tag == "Player")
+        
+        if (rb.isKinematic == false && other.transform.parent != null && other.transform.parent.CompareTag("Player"))
         {
+            print("Player exited! seesaw trigger!");
             rb.isKinematic = true;
         }
     }
