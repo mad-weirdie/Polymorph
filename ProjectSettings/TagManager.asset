@@ -11,6 +11,7 @@ TagManager:
   - Terrain
   - Movable
   - Object
+  - Crystal
   layers:
   - Default
   - TransparentFX
@@ -18,8 +19,8 @@ TagManager:
   - Terrain
   - Water
   - UI
-  - 
-  - 
+  - Players
+  - Interactables
   - 
   - 
   - 

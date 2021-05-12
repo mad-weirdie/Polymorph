@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class Interactable : MonoBehaviour
 {
     public string InteractText = "Press F to open the door";
-
+    public GameObject player;
     Vector2 mousePosition;
     bool inRange;
     RaycastHit hit;
@@ -21,6 +21,7 @@ public class Interactable : MonoBehaviour
     {
         text.text = InteractText;
         text.gameObject.SetActive(false);
+        
     }
 
     void OnCollisionEnter(Collision interactable)
@@ -29,6 +30,9 @@ public class Interactable : MonoBehaviour
         {
             inRange = true;
             text.gameObject.SetActive(true);
+        }
+        if (interactable.gameObject.CompareTag("Crystal"))
+        {
         }
     }
 
