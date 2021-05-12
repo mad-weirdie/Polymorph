@@ -63,7 +63,9 @@ public class PlayerController : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    { 
+    {
+        StartCoroutine(Hold());
+        
         movementEnabled = false;
         //Camera obj
         cameraTrans = Camera.main.transform;
@@ -85,6 +87,12 @@ public class PlayerController : MonoBehaviour
 
         normalMass = rigidBody.mass;
         movingRigidBodyObject = null;
+    }
+
+    IEnumerator Hold()
+    {
+        yield return new WaitForSecondsRealtime(5);
+        wizard.Notify();
     }
 
     void Update()

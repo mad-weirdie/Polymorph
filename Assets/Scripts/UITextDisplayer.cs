@@ -11,6 +11,7 @@ public class UITextDisplayer : MonoBehaviour
     Vector2 mousePosition;
     bool inRange;
     bool lookComplete;
+    bool moveComplete;
     RaycastHit hit;
     Ray ray;
     public Camera mainCamera;
@@ -22,9 +23,16 @@ public class UITextDisplayer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        StartCoroutine(Hold());
         lookComplete = false;
+        moveComplete = false;
         text.text = InteractText;
         text.gameObject.SetActive(false);
+    }
+
+    IEnumerator Hold()
+    {
+        return new WaitForSecondsRealtime(5);
     }
 
     void OnCollisionEnter(Collision interactable)
@@ -42,7 +50,21 @@ public class UITextDisplayer : MonoBehaviour
         {
             if (!dialogue.IsHappening() && !lookComplete)
                 LookCheck();
+            if (!dialogue.IsHappening() && lookComplete && !moveComplete)
+            {
+                text.text = "Use WASD to get out of bed.";
+            }
         }
+        else if (interactable.gameObject.name == "LeaveBed Trigger" && !moveComplete)
+            {
+                if (lookComplete)
+                {
+                    moveComplete = true;
+                    dialogue.SetHappening(true);
+                    text.text = "";
+                    dialogue.Notify();
+                }
+            }
     }
     void OnCollisionExit(Collision interactable)
     {
@@ -67,11 +89,11 @@ public class UITextDisplayer : MonoBehaviour
             if (hit.transform.name == "Crystal_03")
             {
                 lookComplete = true;
-                print("looking at crystl");
                 text.gameObject.SetActive(true);
                 text.text = "";
                 player.movementEnabled = false;
                 dialogue.SetHappening(true);
+                dialogue.Notify();
             }
         }
         else

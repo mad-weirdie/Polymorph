@@ -26,6 +26,7 @@ public class DialogueController : MonoBehaviour
 
     // Controls the fade in/out of the dialogue box when dialogue is happening
     private Animator dialogueAnim;
+    public Animator titleAnim;
     public GameObject dialogueBox;
 
     // ========================================================================
@@ -45,6 +46,7 @@ public class DialogueController : MonoBehaviour
             dialogueAnim = dialogueBox.GetComponent<Animator>();
             // Turn off the shaded dialogue box initially 
             dialogueAnim.SetBool("dialogueHappening", false);
+            titleAnim.SetBool("dialogueHappening", false);
             // Check a text file actually exists
             if (textFile != null)
             {
@@ -72,6 +74,10 @@ public class DialogueController : MonoBehaviour
     {
         if (dialogueHappening)
         {
+            if (currentLine == 3)
+            {
+                titleAnim.SetBool("fadeInTime", true);
+            }
             dialogueAnim.SetBool("dialogueHappening", true);
             if (currentLine < dialogueLines.Length)
             {
