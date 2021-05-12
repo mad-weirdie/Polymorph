@@ -342,6 +342,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
+        isGrabbing = false;
         rigidBody.mass = normalMass;
         movingRigidBodyObject = null;
     }
