@@ -59,7 +59,11 @@ public class UITextDisplayer : MonoBehaviour
                 dialogue.Notify();
             }
         }
-       // else if (interactable.gameObject.name == "Door" && 
+       else if (interactable.gameObject.name == "Door")
+        {
+            text.text = "Press 'F' to leave the house.";
+            inRange = true;
+        }
     }
     void OnCollisionExit(Collision interactable)
     {
@@ -73,7 +77,11 @@ public class UITextDisplayer : MonoBehaviour
     void OnGrab()
     {
         if (inRange)
+        {
             SceneManager.LoadScene("Forest", LoadSceneMode.Single);
+            dialogue.Notify();
+        }
+
     }
 
     public void LookCheck()
