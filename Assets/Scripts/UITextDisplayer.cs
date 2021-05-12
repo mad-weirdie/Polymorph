@@ -12,6 +12,8 @@ public class UITextDisplayer : MonoBehaviour
     bool inRange;
     bool lookComplete;
     bool moveComplete;
+    bool hasKey;
+
     RaycastHit hit;
     Ray ray;
     public Camera mainCamera;
@@ -23,6 +25,7 @@ public class UITextDisplayer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        hasKey = false;
         lookComplete = false;
         moveComplete = false;
         text.text = InteractText;
@@ -61,8 +64,12 @@ public class UITextDisplayer : MonoBehaviour
         }
        else if (interactable.gameObject.name == "Door")
         {
-            text.text = "Press 'F' to leave the house.";
-            inRange = true;
+            if (hasKey)
+            {
+                text.text = "Press 'F' to leave the house.";
+                inRange = true;
+            }
+           
         }
     }
     void OnCollisionExit(Collision interactable)
