@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.058
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0123742735, g: 0.033835948, b: 0.018029269, a: 0.058}
+  m_IndirectSpecularColor: {r: 0.012370905, g: 0.03382233, b: 0.018020764, a: 0.058}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6074,7 +6074,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000061035156, y: -0.000030517578}
+  m_AnchoredPosition: {x: 0.000061035156, y: 0}
   m_SizeDelta: {x: 0, y: -0.000030518}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1147376344
@@ -11078,6 +11078,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 347709560}
     - target: {fileID: 5816923457350117225, guid: b267e01defef9cb40abfab67294b534f, type: 3}
+      propertyPath: SettingsMenu
+      value: 
+      objectReference: {fileID: 5816923456991187416}
+    - target: {fileID: 5816923457350117225, guid: b267e01defef9cb40abfab67294b534f, type: 3}
       propertyPath: CharacterWheel
       value: 
       objectReference: {fileID: 1592568354}
@@ -11319,6 +11323,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b267e01defef9cb40abfab67294b534f, type: 3}
+--- !u!1 &5816923456991187416 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8582621630345731908, guid: b267e01defef9cb40abfab67294b534f, type: 3}
+  m_PrefabInstance: {fileID: 5816923456991187415}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &9212556784924546778
 PrefabInstance:
   m_ObjectHideFlags: 0

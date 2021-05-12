@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.60827434, g: 0.4973325, b: 0.4333396, a: 1}
+  m_IndirectSpecularColor: {r: 0.60793847, g: 0.497079, b: 0.4331067, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -8353,6 +8353,7 @@ MonoBehaviour:
   movementEnabled: 0
   isGrounded: 0
   CharacterWheel: {fileID: 744990241}
+  SettingsMenu: {fileID: 1284900625}
   ShapeShiftSound: {fileID: 871672596}
   wizard: {fileID: 789971808}
   current_puzzle: {fileID: 0}
@@ -13630,6 +13631,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c72f04803f678264482186da6226b2e5, type: 3}
+--- !u!1 &1284900625 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1496080275505694671, guid: c72f04803f678264482186da6226b2e5, type: 3}
+  m_PrefabInstance: {fileID: 1284900624}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1293312292
 PrefabInstance:
   m_ObjectHideFlags: 0
