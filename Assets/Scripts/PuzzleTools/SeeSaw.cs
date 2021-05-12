@@ -10,13 +10,13 @@ public class SeeSaw : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
-        rb.isKinematic = false;
+        rb.isKinematic = true;
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player") {
-            rb.isKinematic = true;
+            rb.isKinematic = false;
         }
 
 
@@ -26,7 +26,7 @@ public class SeeSaw : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            rb.isKinematic = false;
+            rb.isKinematic = true;
         }
     }
 
