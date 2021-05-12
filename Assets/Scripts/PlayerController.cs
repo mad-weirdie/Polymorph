@@ -34,6 +34,7 @@ public class PlayerController : MonoBehaviour
     public float maxzoom = 8f;
     public float zoomSpeed = .5f;
 
+    private bool movementPaused;
 
     public bool movementEnabled;
     public bool isWalking;
@@ -67,7 +68,6 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
         StartCoroutine(Hold());
         
         movementEnabled = false;
@@ -122,6 +122,9 @@ public class PlayerController : MonoBehaviour
     {
         if (movementEnabled)
         {
+            if (movementPaused)
+                UnpauseMovement();
+
             if (cam.m_XAxis.m_MaxSpeed == 0.0f && cam.m_YAxis.m_MaxSpeed == 0.0f)
             {
                 cam.m_XAxis.m_MaxSpeed = prev_x_speed;
@@ -164,7 +167,30 @@ public class PlayerController : MonoBehaviour
         {
             cam.m_XAxis.m_MaxSpeed = 0.0f;
             cam.m_YAxis.m_MaxSpeed = 0.0f;
+
+            if (!movementPaused)
+                PauseMovement();
         }
+    }
+
+    public void PauseMovement()
+    {
+        Animator anim = activePlayer.GetComponent<Animator>();
+        anim.SetBool("IsWalking", false);
+        movementEnabled = false;
+        baseSpeed = 0f;
+        turnSpeed = 0f;
+        Rigidbody rb = GetComponent<Rigidbody>();
+        rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
+    }
+
+    public void UnpauseMovement()
+    {
+        Rigidbody rb = GetComponent<Rigidbody>();
+        rb.constraints = RigidbodyConstraints.None;
+        movementEnabled = true;
+        baseSpeed = 0.04f;
+        turnSpeed = 20f;
     }
 
     public void ShapeShiftTo(int animal_index)
