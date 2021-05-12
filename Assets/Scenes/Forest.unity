@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.60827434, g: 0.4973325, b: 0.4333396, a: 1}
+  m_IndirectSpecularColor: {r: 0.60793847, g: 0.497079, b: 0.4331067, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -13357,7 +13357,7 @@ MonoBehaviour:
   prev_y_speed: 0
   minzoom: 5
   maxzoom: 8
-  zoomSpeed: 2
+  zoomSpeed: 0.5
   movementEnabled: 0
   isGrounded: 0
   CharacterWheel: {fileID: 744990241}
