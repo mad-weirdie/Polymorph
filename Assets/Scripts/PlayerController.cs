@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
 {
     //Shapeshifting attributes
     [Header("Shapeshift Settings")]
-    private GameObject activePlayer;
+    public GameObject activePlayer;
     private Animator activeAnims;
     public ShapeVariables activeScript; //ref to shape's variables. Used to call per-shape functions.
     public List<GameObject> characters;

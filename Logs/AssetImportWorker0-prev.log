@@ -1,1888 +1,838 @@
 Using pre-set license
 Built from '2020.3/release' branch; Version is '2020.3.1f1 (77a89f25062f) revision 7841951'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home; OS build 19042.928; Version 2009; 64bit' Language: 'en' Physical Memory: 16245 MB
+OS: 'Windows 10 Home; OS build 19041.928; Version 2004; 64bit' Language: 'en' Physical Memory: 32728 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Editor\Unity.exe
+E:\containment_zone\Unity\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/meera/Documents/GitHub/Polymorph
+E:/containment_zone/Polymorph
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-55403
-Successfully changed project path to: C:/Users/meera/Documents/GitHub/Polymorph
-C:/Users/meera/Documents/GitHub/Polymorph
+53260
+Successfully changed project path to: E:/containment_zone/Polymorph
+E:/containment_zone/Polymorph
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 81.42 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 79.05 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.1f1 (77a89f25062f)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/meera/Documents/GitHub/Polymorph/Assets
+[Subsystems] Discovering subsystems at path E:/containment_zone/Unity/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/containment_zone/Polymorph/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f15)
+    Renderer: NVIDIA GeForce GTX 1070 Ti (ID=0x1b82)
     Vendor:   
-    VRAM:     5980 MB
-    Driver:   27.21.14.5730
+    VRAM:     8079 MB
+    Driver:   27.21.14.6109
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56544
+Mono path[0] = 'E:/containment_zone/Unity/Editor/Data/Managed'
+Mono path[1] = 'E:/containment_zone/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'E:/containment_zone/Unity/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56344
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
-Register platform support module: C:/Program Files/Unity/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001748 seconds.
+Register platform support module: E:/containment_zone/Unity/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: E:/containment_zone/Unity/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.004015 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 78.56 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 73.64 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.941 seconds
+- Completed reload, in  1.184 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001649 seconds.
+Registered in 0.002832 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 83.12 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 79.90 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.056 seconds
+- Completed reload, in  1.127 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.81 ms, found 0 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.82 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3285 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 166.5 MB.
-System memory in use after: 166.8 MB.
+System memory in use before: 153.9 MB.
+System memory in use after: 154.0 MB.
 
-Unloading 130 unused Assets to reduce memory usage. Loaded Objects now: 3741.
-Total: 2.558900 ms (FindLiveObjects: 0.336700 ms CreateObjectMapping: 0.199900 ms MarkObjects: 1.865200 ms  DeleteObjects: 0.156300 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/Prefabs/Forest/Nature/Vegetation
-  artifactKey: Guid(1f67d8c4e62c4144392c50846992f7be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Forest/Nature/Vegetation using Guid(1f67d8c4e62c4144392c50846992f7be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '364960b06b9f3dabb860801e92dc3e1c') in 0.007953 seconds
-  Import took 0.012804 seconds .
+Unloading 131 unused Assets to reduce memory usage. Loaded Objects now: 3721.
+Total: 2.900800 ms (FindLiveObjects: 0.342400 ms CreateObjectMapping: 0.212100 ms MarkObjects: 2.165900 ms  DeleteObjects: 0.179800 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 6.015075 seconds.
-  path: Assets/Prefabs/Forest/Nature/Vegetation/Plants
-  artifactKey: Guid(4f4c8460c21aa8b4f81f3b85a3ffa824) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Forest/Nature/Vegetation/Plants using Guid(4f4c8460c21aa8b4f81f3b85a3ffa824) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f121219a87428a3b1ec0eecc21e84abe') in 0.006671 seconds
-  Import took 0.019593 seconds .
+  path: Assets/Prefabs/Buildings/Misc/Particles/Particles_Dust_02.prefab
+  artifactKey: Guid(38ffe29ac4f3cec459b4e60192e68db9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/Misc/Particles/Particles_Dust_02.prefab using Guid(38ffe29ac4f3cec459b4e60192e68db9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94d294885bc31f78094ad00dc2517c47') in 0.058846 seconds
+  Import took 0.064356 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 117.796241 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/CPT/L/CPT_Mountain_L_d_04_LOD.prefab
-  artifactKey: Guid(91ca624ed3b3be245960d033864bc535) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/CPT/L/CPT_Mountain_L_d_04_LOD.prefab using Guid(91ca624ed3b3be245960d033864bc535) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bff8d4743b9218f29060bfa37812305a') in 0.197038 seconds
-  Import took 0.202179 seconds .
+  Time since last request: 0.000298 seconds.
+  path: Assets/Prefabs/Buildings/Objects/Potion 10.prefab
+  artifactKey: Guid(6ee0226cbee361f43bcd503913997c8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/Objects/Potion 10.prefab using Guid(6ee0226cbee361f43bcd503913997c8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dc8283406b2c2b41cd2b0574df8deeb') in 0.198806 seconds
+  Import took 0.204097 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000134 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/CPT/L/CPT_Mountain_L_d_07_LOD.prefab
-  artifactKey: Guid(85d5f806d10ac3d4daacf57d6d400f80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/CPT/L/CPT_Mountain_L_d_07_LOD.prefab using Guid(85d5f806d10ac3d4daacf57d6d400f80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3169ebabc50c0cb80e9510a7706ebdef') in 0.016005 seconds
-  Import took 0.020925 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000262 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/CPT/L/CPT_Mountain_L_d_06_LOD.prefab
-  artifactKey: Guid(b8bc28845b520534e869796ba3422072) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/CPT/L/CPT_Mountain_L_d_06_LOD.prefab using Guid(b8bc28845b520534e869796ba3422072) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba0a16b4de31670a231b9b68713f9d5e') in 0.018246 seconds
-  Import took 0.023812 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000161 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/CPT/L/CPT_Mountain_L_e_02_LOD.prefab
-  artifactKey: Guid(19c671352418a244c8e0ae18d258f3e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/CPT/L/CPT_Mountain_L_e_02_LOD.prefab using Guid(19c671352418a244c8e0ae18d258f3e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b202727244dd692588146bbfd86c5d63') in 0.016592 seconds
-  Import took 0.021313 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000230 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/CPT/L/CPT_Mountain_L_d_05_LOD.prefab
-  artifactKey: Guid(0566c1747a68ba04cac9a21bc60643d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/CPT/L/CPT_Mountain_L_d_05_LOD.prefab using Guid(0566c1747a68ba04cac9a21bc60643d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca046d8e2e0f4c3b85a516a6989f5932') in 0.018139 seconds
-  Import took 0.024032 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000225 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/CPT/L/CPT_Mountain_L_e_04_LOD.prefab
-  artifactKey: Guid(1e8f4be8aecf70e43b34b12917411547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/CPT/L/CPT_Mountain_L_e_04_LOD.prefab using Guid(1e8f4be8aecf70e43b34b12917411547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbb2208f19773622a3e47c374447b8a2') in 0.023583 seconds
-  Import took 0.028594 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000140 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/CPT/L/CPT_Mountain_L_e_03_LOD.prefab
-  artifactKey: Guid(374028c0cf03add4889fc69516189f57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/CPT/L/CPT_Mountain_L_e_03_LOD.prefab using Guid(374028c0cf03add4889fc69516189f57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa05cd7025aeeabcad7d60c354bf3483') in 0.018007 seconds
-  Import took 0.023413 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000184 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/CPT/L/CPT_Mountain_L_e_01_LOD.prefab
-  artifactKey: Guid(d79843f811aec0447850730821455216) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/CPT/L/CPT_Mountain_L_e_01_LOD.prefab using Guid(d79843f811aec0447850730821455216) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8404a0c9b1d827d66215c8e9396c0e50') in 0.016025 seconds
-  Import took 0.021441 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.435731 seconds.
-  path: Assets/Prefabs/Buildings/Objects/Crate 5 Open.prefab
-  artifactKey: Guid(c35a95576918d474ebab0e3deb880ae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Buildings/Objects/Crate 5 Open.prefab using Guid(c35a95576918d474ebab0e3deb880ae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31bf901bd02b853640859a71f6576a6e') in 0.013860 seconds
-  Import took 0.019186 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.347404 seconds.
-  path: Assets/Polygrade/Top_Down Medieval City/Windmill_Free/Prefabs/Medieval_Windmill.prefab
-  artifactKey: Guid(6d9ffac09535f23449762fd769a551d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Polygrade/Top_Down Medieval City/Windmill_Free/Prefabs/Medieval_Windmill.prefab using Guid(6d9ffac09535f23449762fd769a551d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11e3b73d642b0710f4ee3ee0f29c825d') in 0.022391 seconds
-  Import took 0.027126 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000114 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_a_04_LOD.prefab
-  artifactKey: Guid(01cc2c54866990b4392bc697d5dbf303) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_a_04_LOD.prefab using Guid(01cc2c54866990b4392bc697d5dbf303) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '300d7203db8255875e9191b125db2c7b') in 0.014617 seconds
-  Import took 0.018979 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000133 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_a_09_LOD.prefab
-  artifactKey: Guid(9ac4b00ed274bd44985e4d1f576243ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_a_09_LOD.prefab using Guid(9ac4b00ed274bd44985e4d1f576243ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29c97394602a382e8c4d627dcfce570b') in 0.015812 seconds
-  Import took 0.020282 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000236 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_a_12_LOD.prefab
-  artifactKey: Guid(59102026e2077fd4a8bdb8a80fdc8f6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_a_12_LOD.prefab using Guid(59102026e2077fd4a8bdb8a80fdc8f6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7416612735a02a800861c881bb50f73c') in 0.014293 seconds
-  Import took 0.019219 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000208 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_a_01_LOD.prefab
-  artifactKey: Guid(3f90eb25e3c354b438fa0ae27a2de3d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_a_01_LOD.prefab using Guid(3f90eb25e3c354b438fa0ae27a2de3d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '432dbe737a7ac9a46acc835f6b1d9167') in 0.015682 seconds
-  Import took 0.020546 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000212 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_a_10_LOD.prefab
-  artifactKey: Guid(92dda40baaad4fb46a1806fd56541f67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_a_10_LOD.prefab using Guid(92dda40baaad4fb46a1806fd56541f67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c65640c794ed95e2e9b8fcbac6941c20') in 0.015649 seconds
-  Import took 0.020045 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000255 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_b_13_LOD.prefab
-  artifactKey: Guid(4eb77f5969810504086e90f0d7ca3fa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_b_13_LOD.prefab using Guid(4eb77f5969810504086e90f0d7ca3fa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1460adf194de10216ae3f60ec5212bd') in 0.014610 seconds
-  Import took 0.019397 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000242 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_b_16_LOD.prefab
-  artifactKey: Guid(6b52b6aaaea91c1428858666f3398104) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_b_16_LOD.prefab using Guid(6b52b6aaaea91c1428858666f3398104) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad7cbe828b9462364d27a8036d2ac3f4') in 0.016097 seconds
-  Import took 0.020273 seconds .
+  Time since last request: 0.000224 seconds.
+  path: Assets/Prefabs/Buildings/Objects/Crate 5.prefab
+  artifactKey: Guid(18595c9b97abc304a8c987a4ad2f6eaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/Objects/Crate 5.prefab using Guid(18595c9b97abc304a8c987a4ad2f6eaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf971cc6d8f66f735460211b39c15301') in 0.044001 seconds
+  Import took 0.049110 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000243 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_b_21_LOD.prefab
-  artifactKey: Guid(649621a2409b3fe4ca1e0b923d8a3b78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_b_21_LOD.prefab using Guid(649621a2409b3fe4ca1e0b923d8a3b78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ccf12ba6fe7ad41fd361337ef9971d4') in 0.014651 seconds
-  Import took 0.019244 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000198 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_b_26_LOD.prefab
-  artifactKey: Guid(448204b719012594ebf8bf27de5cf8e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_b_26_LOD.prefab using Guid(448204b719012594ebf8bf27de5cf8e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e8f9a6197376afbae265a246ea78258') in 0.014810 seconds
-  Import took 0.019369 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000213 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_c_03_LOD.prefab
-  artifactKey: Guid(a1401f66b30567647803a5b6b348e804) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_c_03_LOD.prefab using Guid(a1401f66b30567647803a5b6b348e804) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '066d3a92dd66d32a76732aba116f4a0a') in 0.014580 seconds
-  Import took 0.019066 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000235 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_c_02_LOD.prefab
-  artifactKey: Guid(18f22816814f23747981d6e9c8b736af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_c_02_LOD.prefab using Guid(18f22816814f23747981d6e9c8b736af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64a4413bc9d8b614916d3510dfebcec5') in 0.014434 seconds
-  Import took 0.018675 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000261 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_c_05_LOD.prefab
-  artifactKey: Guid(8886b775765bb6e42a6d7c7c29379eb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_c_05_LOD.prefab using Guid(8886b775765bb6e42a6d7c7c29379eb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77589c2c6088c6b0d8118fe4ebd16435') in 0.013970 seconds
-  Import took 0.018225 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000252 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_c_08_LOD.prefab
-  artifactKey: Guid(2492a00d29fea20409defdbe05a4550a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_c_08_LOD.prefab using Guid(2492a00d29fea20409defdbe05a4550a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f91b6db77ae2940cbcc90ed8607164f') in 0.014361 seconds
-  Import took 0.018573 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000213 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_c_13_LOD.prefab
-  artifactKey: Guid(45b9bf0e17ce1e54fa5ed6557d27e248) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_c_13_LOD.prefab using Guid(45b9bf0e17ce1e54fa5ed6557d27e248) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce771ba1db1747f6dc0d62a82631d4a3') in 0.014426 seconds
-  Import took 0.019097 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000211 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_c_09_LOD.prefab
-  artifactKey: Guid(7713a41b9b9f6a2499a81f3b03ff4475) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_c_09_LOD.prefab using Guid(7713a41b9b9f6a2499a81f3b03ff4475) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9641b4d2267037f2499a64b43ac5097') in 0.020181 seconds
-  Import took 0.024956 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000140 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_c_01_LOD.prefab
-  artifactKey: Guid(d053f1c891db2ef4381e0202f39b8bbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_c_01_LOD.prefab using Guid(d053f1c891db2ef4381e0202f39b8bbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab1a69a172ec813944ebe5d93fdc0b72') in 0.014580 seconds
-  Import took 0.019046 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000224 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_c_04_LOD.prefab
-  artifactKey: Guid(7eb26a2dc0d3ecf458b97c6d54f394b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_c_04_LOD.prefab using Guid(7eb26a2dc0d3ecf458b97c6d54f394b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2a1b1cb9980ea45000bbfd9e3254c87') in 0.019115 seconds
-  Import took 0.023660 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000129 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_c_16_LOD.prefab
-  artifactKey: Guid(7b7c7a47e832e0443bd966f3d3ce131e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_c_16_LOD.prefab using Guid(7b7c7a47e832e0443bd966f3d3ce131e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff60d12608d4c14dffefa135ce9b5db4') in 0.015383 seconds
-  Import took 0.020346 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000239 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_b_20_LOD.prefab
-  artifactKey: Guid(6a3a955bfb5066e44b2e8c62707cba9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_b_20_LOD.prefab using Guid(6a3a955bfb5066e44b2e8c62707cba9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '577367d50856ed1590079822908e97f9') in 0.017760 seconds
-  Import took 0.022076 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000257 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_c_06_LOD.prefab
-  artifactKey: Guid(e2f78c291fa9db34997016e19a4a88ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_c_06_LOD.prefab using Guid(e2f78c291fa9db34997016e19a4a88ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7948afc07b8281dd545caad1ac14962e') in 0.013697 seconds
-  Import took 0.018145 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000196 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_b_17_LOD.prefab
-  artifactKey: Guid(621ac81d50153ee41ba65adf67289c44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_b_17_LOD.prefab using Guid(621ac81d50153ee41ba65adf67289c44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e07c85d8e9f9f8bc1b67eb093bc204c5') in 0.013845 seconds
-  Import took 0.018143 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000264 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_a_14_LOD.prefab
-  artifactKey: Guid(5179d8db8c2f2084581b328d869b4eb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_a_14_LOD.prefab using Guid(5179d8db8c2f2084581b328d869b4eb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edd8413f7732773a9c7561906466f4b0') in 0.014228 seconds
-  Import took 0.018793 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000249 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_a_12_LOD.prefab
-  artifactKey: Guid(12ab5aca3a72c8444a8d98db3c2b6d7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_a_12_LOD.prefab using Guid(12ab5aca3a72c8444a8d98db3c2b6d7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '074662f31ddfa17e2daf1b540b2622d4') in 0.014609 seconds
-  Import took 0.019442 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000169 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_e_02_LOD.prefab
-  artifactKey: Guid(8663beb03deb8db42a4f31e05ff43c49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_e_02_LOD.prefab using Guid(8663beb03deb8db42a4f31e05ff43c49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7e26f50e4253d2d646ec8c8e91a8b83') in 0.014744 seconds
-  Import took 0.019421 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000233 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_b_08_LOD.prefab
-  artifactKey: Guid(feac9a772b58eb843807094e74d5cacb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_b_08_LOD.prefab using Guid(feac9a772b58eb843807094e74d5cacb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a3fcdac4a66df75e680d1e4f5a62ad1') in 0.014377 seconds
-  Import took 0.019024 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000248 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_c_07_LOD.prefab
-  artifactKey: Guid(9c877f7128fafb64284431a0bd4c5c74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_c_07_LOD.prefab using Guid(9c877f7128fafb64284431a0bd4c5c74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '272b363b3aafd4489667b8236c909bd2') in 0.016425 seconds
-  Import took 0.021001 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000272 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_b_02_LOD.prefab
-  artifactKey: Guid(7b664b0078c63a243a05fd3304584170) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_b_02_LOD.prefab using Guid(7b664b0078c63a243a05fd3304584170) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bd88410b2d38fb1b52485d75f0044ab') in 0.014819 seconds
-  Import took 0.020273 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000371 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_b_19_LOD.prefab
-  artifactKey: Guid(fddff448bd034704b8431b728b3e4bc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_b_19_LOD.prefab using Guid(fddff448bd034704b8431b728b3e4bc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d449cda5a4e78f63226739eabec3a89') in 0.014884 seconds
-  Import took 0.020239 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000275 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_c_14_LOD.prefab
-  artifactKey: Guid(d42ce4271626be14daa64d2570adc029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_c_14_LOD.prefab using Guid(d42ce4271626be14daa64d2570adc029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cfa00bc7442473ef0fc0860f2773ad0') in 0.015013 seconds
-  Import took 0.019524 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000179 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_a_02_LOD.prefab
-  artifactKey: Guid(e8918cbaf58eed9479926fa6b85fa380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_a_02_LOD.prefab using Guid(e8918cbaf58eed9479926fa6b85fa380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7407216ca14001e9142638171bf685a4') in 0.014698 seconds
-  Import took 0.019213 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000247 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_b_24_LOD.prefab
-  artifactKey: Guid(16c6b8fc065f0cc479b0458efbe14678) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_b_24_LOD.prefab using Guid(16c6b8fc065f0cc479b0458efbe14678) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '438ae4ec7c04578beb2bf783711625bf') in 0.015989 seconds
-  Import took 0.020256 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000197 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_b_28_LOD.prefab
-  artifactKey: Guid(41aaa82e52d27b546864d1811c107c0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_b_28_LOD.prefab using Guid(41aaa82e52d27b546864d1811c107c0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '870ef81cdd2d241cd7d5262575ad3494') in 0.015661 seconds
-  Import took 0.020372 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000160 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_a_07_LOD.prefab
-  artifactKey: Guid(4a9deb2fc827345409e422ee7e5a4b53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_a_07_LOD.prefab using Guid(4a9deb2fc827345409e422ee7e5a4b53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e650860067af6fd760cbda62c43c15cc') in 0.021218 seconds
-  Import took 0.025506 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000240 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_b_18_LOD.prefab
-  artifactKey: Guid(203553dd27678a146986f490761a8cae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_b_18_LOD.prefab using Guid(203553dd27678a146986f490761a8cae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fedbca3ae5543e163645d437dd986662') in 0.014196 seconds
-  Import took 0.018694 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000219 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_c_05_LOD.prefab
-  artifactKey: Guid(92f956ab84ed0944fa3c487d3dbce042) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_c_05_LOD.prefab using Guid(92f956ab84ed0944fa3c487d3dbce042) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58138be7b4bd2d45f8dc632c2d0ed081') in 0.014249 seconds
-  Import took 0.018763 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000212 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_c_11_LOD.prefab
-  artifactKey: Guid(4b28a90d566f8fd45b962334c7bebff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_c_11_LOD.prefab using Guid(4b28a90d566f8fd45b962334c7bebff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c28ffd2eb01e70398a4ffda85aca721') in 0.016708 seconds
-  Import took 0.021532 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000140 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_c_09_LOD.prefab
-  artifactKey: Guid(c66de93c652bac74b85c8350c675a8ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_c_09_LOD.prefab using Guid(c66de93c652bac74b85c8350c675a8ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c62a43884e86cc2bf7eedebf3da9b8b') in 0.014542 seconds
-  Import took 0.019172 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000254 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_b_16_LOD.prefab
-  artifactKey: Guid(6174976e198f30d4fb344ff414c4456f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_b_16_LOD.prefab using Guid(6174976e198f30d4fb344ff414c4456f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af2f7acd7e76685650fb326ccc072fdc') in 0.017411 seconds
-  Import took 0.022535 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000295 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_a_13_LOD.prefab
-  artifactKey: Guid(2774820f3f939a942bb882a03506fc54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_a_13_LOD.prefab using Guid(2774820f3f939a942bb882a03506fc54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49e9142fe9935a9adbc6094e38afa6f8') in 0.017114 seconds
-  Import took 0.021775 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000142 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_c_03_LOD.prefab
-  artifactKey: Guid(5ef0d02a94fc3a0499d14292ba4aab13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_c_03_LOD.prefab using Guid(5ef0d02a94fc3a0499d14292ba4aab13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36eb08f2696e99629530638a7c61e31e') in 0.013325 seconds
-  Import took 0.018072 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000208 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_a_05_LOD.prefab
-  artifactKey: Guid(21e93dbb86149df4383a4685715cbd30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_a_05_LOD.prefab using Guid(21e93dbb86149df4383a4685715cbd30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c93914ad75734003f360d24ab322e5dc') in 0.013931 seconds
-  Import took 0.018508 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000271 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_d_04_LOD.prefab
-  artifactKey: Guid(365d56a9c52d94441960076d77b7b5e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_d_04_LOD.prefab using Guid(365d56a9c52d94441960076d77b7b5e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '860d855fd415b1268b932301457fc597') in 0.015728 seconds
-  Import took 0.020498 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000337 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_b_01_LOD.prefab
-  artifactKey: Guid(0a619ba1117bb084ca22352ff8d0563e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_b_01_LOD.prefab using Guid(0a619ba1117bb084ca22352ff8d0563e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e000552f38027b818e9a19a9298904c') in 0.015305 seconds
-  Import took 0.020653 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000239 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_b_04_LOD.prefab
-  artifactKey: Guid(3b870cc00b279824facacf65fea006b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_b_04_LOD.prefab using Guid(3b870cc00b279824facacf65fea006b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6ca687c5ed8c6862319cfbc1e41c9ec') in 0.014800 seconds
-  Import took 0.018966 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000170 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_c_11_LOD.prefab
-  artifactKey: Guid(d5d76c073af00a448b6187b1bc7863cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_c_11_LOD.prefab using Guid(d5d76c073af00a448b6187b1bc7863cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '365a89d92491162ac35718a101df9262') in 0.017443 seconds
-  Import took 0.022853 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000239 seconds.
-  path: Assets/Prefabs/Terrain/Flat Stuff/Green/S/MT_Terrain_S_a_02_LOD.prefab
-  artifactKey: Guid(43637495e88d48e4f8477103a3b56b12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Flat Stuff/Green/S/MT_Terrain_S_a_02_LOD.prefab using Guid(43637495e88d48e4f8477103a3b56b12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5ea5813e293a5f6ae118bcab3eb0c29') in 0.010533 seconds
-  Import took 0.016026 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000307 seconds.
-  path: Assets/Prefabs/Terrain/Flat Stuff/Green/S/MT_Terrain_S_a_08_LOD.prefab
-  artifactKey: Guid(7bf9236fd6a2d024084855770906bc17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Flat Stuff/Green/S/MT_Terrain_S_a_08_LOD.prefab using Guid(7bf9236fd6a2d024084855770906bc17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e64f0d555a65744f6941cc299c027798') in 0.014912 seconds
-  Import took 0.020399 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000246 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_a_06_LOD.prefab
-  artifactKey: Guid(aa59545b063ed8149b30bbb40dcd7e55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_a_06_LOD.prefab using Guid(aa59545b063ed8149b30bbb40dcd7e55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9665a6affa8766a86178eed9279d956') in 0.014290 seconds
-  Import took 0.018871 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000212 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_d_06_LOD.prefab
-  artifactKey: Guid(54711639d2aa4cb45a96b04ec61de904) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_d_06_LOD.prefab using Guid(54711639d2aa4cb45a96b04ec61de904) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9b2afea2a40d12948bc3a795c8d1db4') in 0.014923 seconds
-  Import took 0.019515 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000221 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_a_09_LOD.prefab
-  artifactKey: Guid(a1998bee1ef4df5458691c8152aa0c60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_a_09_LOD.prefab using Guid(a1998bee1ef4df5458691c8152aa0c60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4291f920b804d7881de758ceaff083d7') in 0.014305 seconds
-  Import took 0.019033 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000257 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_b_14_LOD.prefab
-  artifactKey: Guid(bbac531c21ec86b4c9eed1a3c6dc8377) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_b_14_LOD.prefab using Guid(bbac531c21ec86b4c9eed1a3c6dc8377) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '331aa45ff8bfe827dce8b387c0561a94') in 0.013627 seconds
-  Import took 0.018201 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000259 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_b_26_LOD.prefab
-  artifactKey: Guid(176920bfee267ad4ca9a35b846163221) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_b_26_LOD.prefab using Guid(176920bfee267ad4ca9a35b846163221) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc55a05abb5d87f6abbffb7d511b0df1') in 0.016580 seconds
-  Import took 0.020989 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000264 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_a_17_LOD.prefab
-  artifactKey: Guid(04a5a2930cfd22a4fa4960c6aeb5923c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_a_17_LOD.prefab using Guid(04a5a2930cfd22a4fa4960c6aeb5923c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbae21a3283e2ba960003bf0db3f76ea') in 0.014887 seconds
-  Import took 0.019498 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000146 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_b_13_LOD.prefab
-  artifactKey: Guid(0ed0e2f18bc92c3479221291e9a9ce15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_b_13_LOD.prefab using Guid(0ed0e2f18bc92c3479221291e9a9ce15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '582a85f23183b82c8dc728f53df1d531') in 0.018023 seconds
-  Import took 0.022609 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000141 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_b_21_LOD.prefab
-  artifactKey: Guid(bc16ccf4d91dff34081681fb3a670983) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_b_21_LOD.prefab using Guid(bc16ccf4d91dff34081681fb3a670983) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f98fde8aa7e86881917d031b2431772') in 0.013547 seconds
-  Import took 0.018412 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000136 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_d_02_LOD.prefab
-  artifactKey: Guid(2bbe1a02308c5694db1f2bd48b12d3cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_d_02_LOD.prefab using Guid(2bbe1a02308c5694db1f2bd48b12d3cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ee177adeefd4197360e7fee09cbdcdb') in 0.017789 seconds
-  Import took 0.023029 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000159 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_b_09_LOD.prefab
-  artifactKey: Guid(5931af0f5d51ae24d9aaa1ffd88cfcae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_b_09_LOD.prefab using Guid(5931af0f5d51ae24d9aaa1ffd88cfcae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8552b34b24b7b37e2a3b40f9a95dc720') in 0.014653 seconds
-  Import took 0.019327 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000204 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_b_22_LOD.prefab
-  artifactKey: Guid(bfe9cc16bb6f7e74393cb86cdb406d37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_b_22_LOD.prefab using Guid(bfe9cc16bb6f7e74393cb86cdb406d37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f3b55dfc0dadce6672099ce7e1e2117') in 0.014299 seconds
-  Import took 0.019037 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000194 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_b_27_LOD.prefab
-  artifactKey: Guid(fd67dd74884a15b4cb19acd22091b38c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_b_27_LOD.prefab using Guid(fd67dd74884a15b4cb19acd22091b38c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d0551becc124b86a7f2a235fa2449f5') in 0.014162 seconds
-  Import took 0.018694 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000204 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_c_16_LOD.prefab
-  artifactKey: Guid(42296f43a664f7248bf92e3dddba9e05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_c_16_LOD.prefab using Guid(42296f43a664f7248bf92e3dddba9e05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c4d96b2325852fcd4fed493605fe10a') in 0.013638 seconds
-  Import took 0.018229 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000217 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_a_18_LOD.prefab
-  artifactKey: Guid(361d6ddb43fdb064e859fb45e2d59e41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_a_18_LOD.prefab using Guid(361d6ddb43fdb064e859fb45e2d59e41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf9b709855593d3f65b707c3db9e6667') in 0.009522 seconds
-  Import took 0.014307 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000215 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_c_15_LOD.prefab
-  artifactKey: Guid(d0b9df6c441e5b340881f1a0fb466b7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_c_15_LOD.prefab using Guid(d0b9df6c441e5b340881f1a0fb466b7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50c2a254eb479cf6b6158d1cd813853d') in 0.015534 seconds
-  Import took 0.020430 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000233 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_b_10_LOD.prefab
-  artifactKey: Guid(ea40d688de61ed742bb983f9e3e15578) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_b_10_LOD.prefab using Guid(ea40d688de61ed742bb983f9e3e15578) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59e32e5224c17460dad22e2445bc39b3') in 0.014879 seconds
-  Import took 0.019929 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000219 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_c_25_LOD.prefab
-  artifactKey: Guid(812a64011b08787448e04025b6f5f9e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_c_25_LOD.prefab using Guid(812a64011b08787448e04025b6f5f9e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cce589170fe096bf373957a220e7168') in 0.017248 seconds
-  Import took 0.022243 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000171 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_c_01_LOD.prefab
-  artifactKey: Guid(a9c3cb78fe41fd744bf7dcb72c6e0489) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_c_01_LOD.prefab using Guid(a9c3cb78fe41fd744bf7dcb72c6e0489) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7611844363448bdc7c6242eb5822fa77') in 0.014406 seconds
-  Import took 0.019234 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000261 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_a_15_LOD.prefab
-  artifactKey: Guid(33008f48388541e47b1244df0a2f095c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_a_15_LOD.prefab using Guid(33008f48388541e47b1244df0a2f095c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d0e517aa2cea802186a2445d535e66c') in 0.015067 seconds
-  Import took 0.019916 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000201 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_b_12_LOD.prefab
-  artifactKey: Guid(cdb6c61e7f6335f43bcb4fa5867babc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_b_12_LOD.prefab using Guid(cdb6c61e7f6335f43bcb4fa5867babc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3c3d5e0a700e4ce95ee10ca55c915b8') in 0.015289 seconds
-  Import took 0.020845 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000193 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_c_15_LOD.prefab
-  artifactKey: Guid(3ca30ce34905f4d4a95af314321a454d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_c_15_LOD.prefab using Guid(3ca30ce34905f4d4a95af314321a454d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33354b00a480041c05a018dc1e358e1d') in 0.015970 seconds
-  Import took 0.020599 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000190 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_c_10_LOD.prefab
-  artifactKey: Guid(8ea7cb8434be2e34ebb3a51b866841d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_c_10_LOD.prefab using Guid(8ea7cb8434be2e34ebb3a51b866841d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd9616691cba6145090c27870515ebb7') in 0.018924 seconds
-  Import took 0.024059 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000208 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_c_22_LOD.prefab
-  artifactKey: Guid(64a3b18f1d781654da68d7def9d88bb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_c_22_LOD.prefab using Guid(64a3b18f1d781654da68d7def9d88bb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dce335fbeda33f5fb072c2b1ce4a966c') in 0.015762 seconds
-  Import took 0.020917 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000149 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_a_16_LOD.prefab
-  artifactKey: Guid(a8c7ae7a806710e48960500bf305d06c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_a_16_LOD.prefab using Guid(a8c7ae7a806710e48960500bf305d06c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a3257111c87fab8bd322be282d5ddec') in 0.015818 seconds
-  Import took 0.021125 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000151 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_a_11_LOD.prefab
-  artifactKey: Guid(9e67d9eb1f13634459d977a7c1be8029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_a_11_LOD.prefab using Guid(9e67d9eb1f13634459d977a7c1be8029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22981d1acf664c05223ac22a94b3eecc') in 0.014610 seconds
-  Import took 0.019436 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000224 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_a_21_LOD.prefab
-  artifactKey: Guid(30f4e852cdce57f45b7fbab0694ca6e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_a_21_LOD.prefab using Guid(30f4e852cdce57f45b7fbab0694ca6e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3f4289323054e237281fa08d20124e6') in 0.010345 seconds
-  Import took 0.015642 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000172 seconds.
-  path: Assets/Prefabs/Terrain/Flat Stuff/Green/S/MT_Terrain_S_a_01.prefab
-  artifactKey: Guid(d91db2fa8aa7878449f1c80aa219745e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Flat Stuff/Green/S/MT_Terrain_S_a_01.prefab using Guid(d91db2fa8aa7878449f1c80aa219745e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e42b4f0d2358d2b89b2045576641e06') in 0.009554 seconds
-  Import took 0.014972 seconds .
+  path: Assets/Prefabs/Buildings/Misc/Particles/Particles_Fire_01.prefab
+  artifactKey: Guid(40bc18452f0a1ca43b7e841cf4fa3222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/Misc/Particles/Particles_Fire_01.prefab using Guid(40bc18452f0a1ca43b7e841cf4fa3222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edfd03a00c01b47ac8752ce1a75c2721') in 0.008571 seconds
+  Import took 0.013697 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000226 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_a_08_LOD.prefab
-  artifactKey: Guid(4673131b83d6df24fae6966f725c1a35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_a_08_LOD.prefab using Guid(4673131b83d6df24fae6966f725c1a35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '651d63a85681b515e067cb157380c788') in 0.015028 seconds
-  Import took 0.020100 seconds .
+  path: Assets/Prefabs/Buildings/Objects/Table 1.prefab
+  artifactKey: Guid(62cefe736b6f8934b9c5b7614a526072) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/Objects/Table 1.prefab using Guid(62cefe736b6f8934b9c5b7614a526072) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4941f8eb46d9ced814ba38087bba3d5e') in 0.017517 seconds
+  Import took 0.022852 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000214 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_a_20_LOD.prefab
-  artifactKey: Guid(bb46a5eea9414dd46bea939573d13bd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_a_20_LOD.prefab using Guid(bb46a5eea9414dd46bea939573d13bd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '280f55a5ce0f56188c8491bc9ebc7e50') in 0.015218 seconds
-  Import took 0.020590 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000193 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_a_17_LOD.prefab
-  artifactKey: Guid(da36cdd9d59c2174eb592f282dcebe45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_a_17_LOD.prefab using Guid(da36cdd9d59c2174eb592f282dcebe45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6de11a1bad52e312d22eee3cee231e33') in 0.017676 seconds
-  Import took 0.022705 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000171 seconds.
-  path: Assets/Prefabs/Terrain/Flat Stuff/Green/S/MT_Terrain_S_a_23_LOD.prefab
-  artifactKey: Guid(712649638876fe64cb6eefe971029113) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Flat Stuff/Green/S/MT_Terrain_S_a_23_LOD.prefab using Guid(712649638876fe64cb6eefe971029113) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '738773a6bf0d87355cb2225c2088f159') in 0.014964 seconds
-  Import took 0.020235 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000251 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_a_02_LOD.prefab
-  artifactKey: Guid(f3627ecfcaaea264d8d2fcc502f89dc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_a_02_LOD.prefab using Guid(f3627ecfcaaea264d8d2fcc502f89dc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1094bbc0b303151764da8c23f1afa3fb') in 0.016075 seconds
-  Import took 0.020980 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000212 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_b_12_LOD.prefab
-  artifactKey: Guid(0f16f4c2005db43489b7ec4c09486f99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_b_12_LOD.prefab using Guid(0f16f4c2005db43489b7ec4c09486f99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23db83860b48088f12826dcb1d64896e') in 0.015493 seconds
-  Import took 0.020571 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000167 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_a_07_LOD.prefab
-  artifactKey: Guid(7cd85b0d1f017e54fa99514654a1d867) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_a_07_LOD.prefab using Guid(7cd85b0d1f017e54fa99514654a1d867) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a465db3c6ce081d5e27d5679d49d1fa1') in 0.015886 seconds
-  Import took 0.020557 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000147 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_c_12_LOD.prefab
-  artifactKey: Guid(879894e0635a34d4887c857d685e9879) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_c_12_LOD.prefab using Guid(879894e0635a34d4887c857d685e9879) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0204c593b805276b4def074f27492b30') in 0.017438 seconds
-  Import took 0.022672 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000203 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_a_05_LOD.prefab
-  artifactKey: Guid(dbb0fdae62d28624a8274edf5640d1fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_a_05_LOD.prefab using Guid(dbb0fdae62d28624a8274edf5640d1fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06dfef08c581899d39eb561891e19791') in 0.014948 seconds
-  Import took 0.020019 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000209 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_c_06_LOD.prefab
-  artifactKey: Guid(0eb7208be4bc0eb448f0e1931727ccb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_c_06_LOD.prefab using Guid(0eb7208be4bc0eb448f0e1931727ccb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8acb18ee44bcae88d6290b8a5f9c42e7') in 0.014881 seconds
-  Import took 0.019966 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000223 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_c_08_LOD.prefab
-  artifactKey: Guid(7dc4936a5dfbc0e4eaf8f50cb470ab89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_c_08_LOD.prefab using Guid(7dc4936a5dfbc0e4eaf8f50cb470ab89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '034e4015b38b1ab11595b54754172c5a') in 0.017693 seconds
-  Import took 0.022861 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000226 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_b_22_LOD.prefab
-  artifactKey: Guid(c57fbfb928d6c8f49a59f925f123d12b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_b_22_LOD.prefab using Guid(c57fbfb928d6c8f49a59f925f123d12b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd52f3006aaecaf0405c57b6e81b46cd8') in 0.016668 seconds
-  Import took 0.021287 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000189 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_c_07_LOD.prefab
-  artifactKey: Guid(82381dfeca8ea1649a5c8f0476a5d179) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_c_07_LOD.prefab using Guid(82381dfeca8ea1649a5c8f0476a5d179) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '782599051dffcb3eb865a96824151114') in 0.014391 seconds
-  Import took 0.018838 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000176 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_c_21_LOD.prefab
-  artifactKey: Guid(889389e2b82adf94194ba0e17d27e9c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_c_21_LOD.prefab using Guid(889389e2b82adf94194ba0e17d27e9c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8da0d63a17b5cf5b992b4631175291e7') in 0.015151 seconds
-  Import took 0.020075 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000135 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_a_03_LOD.prefab
-  artifactKey: Guid(0991baa4372e16f4982acb498bdbdcd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_a_03_LOD.prefab using Guid(0991baa4372e16f4982acb498bdbdcd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05bf089c0fc11ecf4bb7b89eef65972a') in 0.014829 seconds
-  Import took 0.019570 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000142 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_a_03_LOD.prefab
-  artifactKey: Guid(170fcb74bccc3bd459b4a715df2c66f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_a_03_LOD.prefab using Guid(170fcb74bccc3bd459b4a715df2c66f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad6fff0e0dbafd138e7a0d9c433cbc9a') in 0.009488 seconds
-  Import took 0.014653 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000142 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_b_15_LOD.prefab
-  artifactKey: Guid(613bd6f436e746749bbe73a09b39cf54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_b_15_LOD.prefab using Guid(613bd6f436e746749bbe73a09b39cf54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0d7ebf2a03867707d4e70046fbad1fe') in 0.008804 seconds
-  Import took 0.013648 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000185 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_c_23_LOD.prefab
-  artifactKey: Guid(c3c3a1f16bd3ab44d91eae8574b345c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_c_23_LOD.prefab using Guid(c3c3a1f16bd3ab44d91eae8574b345c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78d5afea6e85ed4ea2bff23cbb1ed046') in 0.014843 seconds
-  Import took 0.019817 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000249 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_a_10_LOD.prefab
-  artifactKey: Guid(092b758b1a248c84e91c48ab7ffbef5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_a_10_LOD.prefab using Guid(092b758b1a248c84e91c48ab7ffbef5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc29be9df053f7820304f927840b4f72') in 0.010452 seconds
-  Import took 0.015377 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000169 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_a_11_LOD.prefab
-  artifactKey: Guid(19a5dbc0dd3c5464390141d80f7dc626) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_a_11_LOD.prefab using Guid(19a5dbc0dd3c5464390141d80f7dc626) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d44eda696b50c223434481669b99700') in 0.021376 seconds
-  Import took 0.026011 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000129 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_b_14_LOD.prefab
-  artifactKey: Guid(a3e3f5ec8e7fdff43836fd55b9f258b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_b_14_LOD.prefab using Guid(a3e3f5ec8e7fdff43836fd55b9f258b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be49e491e4d58f451ba4fece111abf53') in 0.014691 seconds
-  Import took 0.019504 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000128 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_b_25_LOD.prefab
-  artifactKey: Guid(dc1b073fe90071742a74bc02cc02de7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_b_25_LOD.prefab using Guid(dc1b073fe90071742a74bc02cc02de7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c6582802993e2c3d5032e4ec7baebc6') in 0.014485 seconds
-  Import took 0.019400 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000164 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_a_14_LOD.prefab
-  artifactKey: Guid(d1cef45592fe139418761dadc94fd1cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_a_14_LOD.prefab using Guid(d1cef45592fe139418761dadc94fd1cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9690bde35704f63f9fb8ba5cdc8a168d') in 0.015668 seconds
-  Import took 0.020438 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000307 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_c_19_LOD.prefab
-  artifactKey: Guid(edf6dea676fd6234d8ddab727b495dc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_c_19_LOD.prefab using Guid(edf6dea676fd6234d8ddab727b495dc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eddb28cb6ba2a41584ae013e652661c8') in 0.014512 seconds
-  Import took 0.019614 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000248 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_b_23_LOD.prefab
-  artifactKey: Guid(3e421f431b99e4242bf3a5525416d6a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_b_23_LOD.prefab using Guid(3e421f431b99e4242bf3a5525416d6a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d14599f5eb93b26195d18b41a82d1d7') in 0.015384 seconds
-  Import took 0.020157 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000187 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_a_08_LOD.prefab
-  artifactKey: Guid(28a75e66858b0e44291b7e92dbe6ab1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_a_08_LOD.prefab using Guid(28a75e66858b0e44291b7e92dbe6ab1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82db07aca28040e02c2ed7a6827c8f50') in 0.015449 seconds
-  Import took 0.020484 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000203 seconds.
-  path: Assets/Prefabs/Terrain/Flat Stuff/Green/S/MT_Terrain_S_b_13_LOD.prefab
-  artifactKey: Guid(eb8212357cb8850489b14d8c46647c34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Flat Stuff/Green/S/MT_Terrain_S_b_13_LOD.prefab using Guid(eb8212357cb8850489b14d8c46647c34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95f358f73aa37de8c5346ff4aa395960') in 0.015837 seconds
-  Import took 0.020273 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000134 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_b_20_LOD.prefab
-  artifactKey: Guid(b11e616dd1050cd46893b07adddc9f99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_b_20_LOD.prefab using Guid(b11e616dd1050cd46893b07adddc9f99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c73c39bf5197b26accd92cddb30884ff') in 0.014347 seconds
-  Import took 0.020517 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000217 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_a_04_LOD.prefab
-  artifactKey: Guid(eaa15aef767969342bef26d77a27adea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_a_04_LOD.prefab using Guid(eaa15aef767969342bef26d77a27adea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc084de6e892b829144d7b8521f6b724') in 0.015946 seconds
-  Import took 0.020606 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000188 seconds.
-  path: Assets/Prefabs/Terrain/Flat Stuff/Green/S/MT_Terrain_S_b_01_LOD.prefab
-  artifactKey: Guid(c54802b959f8aad49abfea78dda50163) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Flat Stuff/Green/S/MT_Terrain_S_b_01_LOD.prefab using Guid(c54802b959f8aad49abfea78dda50163) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '218e748bf541d61965a4ef378e35d7ba') in 0.014231 seconds
-  Import took 0.018844 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000225 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_b_06_LOD.prefab
-  artifactKey: Guid(1166fa109ff225945948118ad3662064) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_b_06_LOD.prefab using Guid(1166fa109ff225945948118ad3662064) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9770d4e73eb97041d7510edf2e9ae4d6') in 0.010486 seconds
-  Import took 0.015440 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000131 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_a_16_LOD.prefab
-  artifactKey: Guid(4612c07468701d4479768a486037e7d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_a_16_LOD.prefab using Guid(4612c07468701d4479768a486037e7d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0632cbbf39d9a3bb9963c98176fbe2ef') in 0.014490 seconds
-  Import took 0.019647 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000210 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_c_17_LOD.prefab
-  artifactKey: Guid(5ff18a3c039912443a0dad44493c4765) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_c_17_LOD.prefab using Guid(5ff18a3c039912443a0dad44493c4765) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad8105503eb518ecf6001f8a656d30f1') in 0.015968 seconds
-  Import took 0.020876 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000191 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_b_17_LOD.prefab
-  artifactKey: Guid(da970979f9f6cd14da40886e8026ee48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_b_17_LOD.prefab using Guid(da970979f9f6cd14da40886e8026ee48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '202b455229f01ac24de3532d4a60ba69') in 0.015372 seconds
-  Import took 0.020051 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000197 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_c_24_LOD.prefab
-  artifactKey: Guid(bb09c41ea34a2fc4daa0cc18423ca30d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_c_24_LOD.prefab using Guid(bb09c41ea34a2fc4daa0cc18423ca30d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a91e93dd607b7a4a5ee043aa10f7c3b1') in 0.015210 seconds
-  Import took 0.020314 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000146 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_b_07_LOD.prefab
-  artifactKey: Guid(cf0c00591bf769a40b106525a9424691) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_b_07_LOD.prefab using Guid(cf0c00591bf769a40b106525a9424691) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c89b8897107431a2c6d1f57b10ac21c') in 0.014476 seconds
-  Import took 0.019379 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000224 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_a_19_LOD.prefab
-  artifactKey: Guid(4687cd405a946d746a6a0c1cc8a587a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_a_19_LOD.prefab using Guid(4687cd405a946d746a6a0c1cc8a587a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4ad56613b760184d4eea52d102bed16') in 0.017678 seconds
-  Import took 0.022415 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000181 seconds.
-  path: Assets/Prefabs/Terrain/Flat Stuff/Green/S/MT_Terrain_S_a_03_LOD.prefab
-  artifactKey: Guid(4aef9cc2c3846c34fb6ed42b4983452c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Flat Stuff/Green/S/MT_Terrain_S_a_03_LOD.prefab using Guid(4aef9cc2c3846c34fb6ed42b4983452c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7efe58c496846fee3bfb5509084f7531') in 0.014298 seconds
-  Import took 0.019083 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000187 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_d_07_LOD.prefab
-  artifactKey: Guid(4e0b7a310ec6bd542a21a0401a6fa0e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_d_07_LOD.prefab using Guid(4e0b7a310ec6bd542a21a0401a6fa0e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aefd25b14cf2712922f2ac85eca2cb39') in 0.016123 seconds
-  Import took 0.021464 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000244 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_c_10_LOD.prefab
-  artifactKey: Guid(752d2da15d5c90e4d843644904179ae1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_c_10_LOD.prefab using Guid(752d2da15d5c90e4d843644904179ae1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2661b96eae92980abcf614d7ab3d2f98') in 0.014849 seconds
-  Import took 0.020502 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000149 seconds.
-  path: Assets/Prefabs/Terrain/Flat Stuff/Green/S/MT_Terrain_S_a_09_LOD.prefab
-  artifactKey: Guid(07cea1171f002c149b9dd9578e029ea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Flat Stuff/Green/S/MT_Terrain_S_a_09_LOD.prefab using Guid(07cea1171f002c149b9dd9578e029ea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0286c908d88c0501576c4fc541cf0073') in 0.015001 seconds
-  Import took 0.020059 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000288 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_c_12_LOD.prefab
-  artifactKey: Guid(720039e1fe9ddd94597ae9b7d5b243c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_c_12_LOD.prefab using Guid(720039e1fe9ddd94597ae9b7d5b243c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16920052aaf7c7bf9f2169722ab131af') in 0.015582 seconds
-  Import took 0.020753 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000165 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_e_01_LOD.prefab
-  artifactKey: Guid(8bd75574790baaa4f9a86727219523ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_e_01_LOD.prefab using Guid(8bd75574790baaa4f9a86727219523ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7eab98675929228f4d33290f2842892e') in 0.015566 seconds
-  Import took 0.020708 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000238 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_c_13_LOD.prefab
-  artifactKey: Guid(192ddb34c4a836844b13c89ec8c6931e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_c_13_LOD.prefab using Guid(192ddb34c4a836844b13c89ec8c6931e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9de557f6309c215dc1f628e72b8a0d7') in 0.015737 seconds
-  Import took 0.020753 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000200 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_a_01_LOD.prefab
-  artifactKey: Guid(800112fdc77e33044beaa9ecb8822784) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_a_01_LOD.prefab using Guid(800112fdc77e33044beaa9ecb8822784) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cc3dd111296f7dd39bbee1a89a0b69a') in 0.015855 seconds
-  Import took 0.020795 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000253 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_a_13_LOD.prefab
-  artifactKey: Guid(1e3879080b0bebc4f98ce92895eb6cb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_a_13_LOD.prefab using Guid(1e3879080b0bebc4f98ce92895eb6cb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49cf0a876b95a5cdf08ef369b563797d') in 0.016132 seconds
-  Import took 0.020945 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000164 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_c_02_LOD.prefab
-  artifactKey: Guid(0c349b6a070f0c248bfbfa741a88b43a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_c_02_LOD.prefab using Guid(0c349b6a070f0c248bfbfa741a88b43a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac8faea99e87ef4b116989eee93427b9') in 0.018861 seconds
-  Import took 0.023519 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000189 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_c_20_LOD.prefab
-  artifactKey: Guid(eca44cc805d8afb4da12c939977ea11b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_c_20_LOD.prefab using Guid(eca44cc805d8afb4da12c939977ea11b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbfe36971de9ed34c605b0d2c62ad227') in 0.016443 seconds
-  Import took 0.021804 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000138 seconds.
-  path: Assets/Prefabs/Terrain/Flat Stuff/Green/S/MT_Terrain_S_a_22_LOD.prefab
-  artifactKey: Guid(153bf0a3492aac4478671936cc3d7de9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Flat Stuff/Green/S/MT_Terrain_S_a_22_LOD.prefab using Guid(153bf0a3492aac4478671936cc3d7de9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7e04f3a96cfd015fb0765e11ac014e9') in 0.014793 seconds
-  Import took 0.019325 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000173 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_d_03_LOD.prefab
-  artifactKey: Guid(11b19f858ed98324eadb8d972e1c0faa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_d_03_LOD.prefab using Guid(11b19f858ed98324eadb8d972e1c0faa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1577f95b712974bc616ea35eeda686a') in 0.016126 seconds
-  Import took 0.021290 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000198 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_b_18_LOD.prefab
-  artifactKey: Guid(d903f7c72cb25d649882a148579f72ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_b_18_LOD.prefab using Guid(d903f7c72cb25d649882a148579f72ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfae63d2123dbd2d3efb73fc831a9204') in 0.015561 seconds
-  Import took 0.020348 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000149 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_c_14_LOD.prefab
-  artifactKey: Guid(0c1d3490e4088cb4991f65173db6bb88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_c_14_LOD.prefab using Guid(0c1d3490e4088cb4991f65173db6bb88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'def9d90b6f492565cf993b4ffaf040fd') in 0.014072 seconds
-  Import took 0.018892 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000230 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_d_01_LOD.prefab
-  artifactKey: Guid(6d4a15b86b36374449a0f35b3004a4c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_d_01_LOD.prefab using Guid(6d4a15b86b36374449a0f35b3004a4c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '056282075dd814eddd0891c6f93b49ef') in 0.016084 seconds
-  Import took 0.021641 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000133 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_b_25_LOD.prefab
-  artifactKey: Guid(60caa028f5374fe4b9f713b76aec674d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_b_25_LOD.prefab using Guid(60caa028f5374fe4b9f713b76aec674d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '146d152b0e5d631db0b9942cbb0c7e31') in 0.015989 seconds
-  Import took 0.021170 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000268 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_b_24_LOD.prefab
-  artifactKey: Guid(2e798010784a8ad42ab00667d3890de8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_b_24_LOD.prefab using Guid(2e798010784a8ad42ab00667d3890de8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50d2c965afccc5ec1c329b4b4bb692ac') in 0.015687 seconds
-  Import took 0.020505 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000251 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_c_18_LOD.prefab
-  artifactKey: Guid(5a50ce1dd6d8ff04faf42c180d9befb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_c_18_LOD.prefab using Guid(5a50ce1dd6d8ff04faf42c180d9befb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5c47f5dc6b6609ddf2fa06a284f2085') in 0.016359 seconds
-  Import took 0.021778 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000167 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_a_15_LOD.prefab
-  artifactKey: Guid(4e2a503f5d3875b4fabf1acc45670e95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_a_15_LOD.prefab using Guid(4e2a503f5d3875b4fabf1acc45670e95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56c5acab4d799f0ded86a0a95af95eee') in 0.016378 seconds
-  Import took 0.021420 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000262 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_b_05_LOD.prefab
-  artifactKey: Guid(c3a6fc2efb0719d4d9c911be77b6e46f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_b_05_LOD.prefab using Guid(c3a6fc2efb0719d4d9c911be77b6e46f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '313b2ffa8039b391a79be3f8e2fbbcaa') in 0.015015 seconds
-  Import took 0.020357 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000263 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_b_03_LOD.prefab
-  artifactKey: Guid(1ad8af1428afd8d4e97880fd37d3da32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_b_03_LOD.prefab using Guid(1ad8af1428afd8d4e97880fd37d3da32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '099c1086df8d3e14062387d3a6599ed4') in 0.009782 seconds
-  Import took 0.014182 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000263 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_d_05_LOD.prefab
-  artifactKey: Guid(d6634887941e521469df637169fab8db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_d_05_LOD.prefab using Guid(d6634887941e521469df637169fab8db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd8c80c4ed2ecac14a46f2c4a2ed235f') in 0.015685 seconds
-  Import took 0.020611 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000213 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_c_04_LOD.prefab
-  artifactKey: Guid(8687fef08d7327749993ae893c4b5c47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_c_04_LOD.prefab using Guid(8687fef08d7327749993ae893c4b5c47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '304255ede92390aa63af58f04b92597d') in 0.014060 seconds
-  Import took 0.018566 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000221 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_b_23_LOD.prefab
-  artifactKey: Guid(85c0553e83d51e248b63f568f59971ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_b_23_LOD.prefab using Guid(85c0553e83d51e248b63f568f59971ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f36a932e12c96360941a760e390d6d67') in 0.015852 seconds
-  Import took 0.021070 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000142 seconds.
-  path: Assets/Prefabs/Terrain/Flat Stuff/Green/S/MT_Terrain_S_a_10_LOD.prefab
-  artifactKey: Guid(4b532a7c3d7febb4fb4a83431c454108) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Flat Stuff/Green/S/MT_Terrain_S_a_10_LOD.prefab using Guid(4b532a7c3d7febb4fb4a83431c454108) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fa6b77216fe8d8a262d65d34e564edc') in 0.017955 seconds
-  Import took 0.022895 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000187 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_a_06_LOD.prefab
-  artifactKey: Guid(8f2d0aa4b85a7f643a7032deee7e289d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_a_06_LOD.prefab using Guid(8f2d0aa4b85a7f643a7032deee7e289d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8aed6de4ac8ef2893317e14bb781c282') in 0.015574 seconds
-  Import took 0.020751 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000245 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_b_15_LOD.prefab
-  artifactKey: Guid(ebfc9d257f9d86642bb7bb49d560b648) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_b_15_LOD.prefab using Guid(ebfc9d257f9d86642bb7bb49d560b648) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af1ce37e1afef6c01990e9c955c8b350') in 0.014508 seconds
-  Import took 0.019528 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000238 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_b_11_LOD.prefab
-  artifactKey: Guid(4d785393a5952bf4c9aa4728f267ef9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Small/LOD/MT_Mountain_S_b_11_LOD.prefab using Guid(4d785393a5952bf4c9aa4728f267ef9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8fe6556eb346c5f3fda5610a9f22710') in 0.018372 seconds
-  Import took 0.023283 seconds .
+  Time since last request: 0.000219 seconds.
+  path: Assets/Prefabs/Buildings/Objects/Crate 5 Open.prefab
+  artifactKey: Guid(c35a95576918d474ebab0e3deb880ae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/Objects/Crate 5 Open.prefab using Guid(c35a95576918d474ebab0e3deb880ae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '754312c247de0b79c3069be4f5197932') in 0.016518 seconds
+  Import took 0.022296 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000237 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_b_19_LOD.prefab
-  artifactKey: Guid(cbc924f7d753b384a9cb412b83ea4a30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_b_19_LOD.prefab using Guid(cbc924f7d753b384a9cb412b83ea4a30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52b5aea38e416bece02be2791dc9b0c4') in 0.015268 seconds
-  Import took 0.020303 seconds .
+  path: Assets/Prefabs/Buildings/Objects/Potion 8.prefab
+  artifactKey: Guid(d6a04320a4f4094469c506534c11488c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/Objects/Potion 8.prefab using Guid(d6a04320a4f4094469c506534c11488c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97fc10eed0649137a5059e063defc0a0') in 0.014812 seconds
+  Import took 0.020135 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000144 seconds.
-  path: Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_b_27_LOD.prefab
-  artifactKey: Guid(65fa320c7297eed4ca2ca618bf9da106) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Terrain/Mountains/MT/Large/LOD/MT_Mountain_L_b_27_LOD.prefab using Guid(65fa320c7297eed4ca2ca618bf9da106) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe7f4758576f9a6d16ebfde264866da9') in 0.015840 seconds
-  Import took 0.021373 seconds .
+  Time since last request: 0.000258 seconds.
+  path: Assets/Prefabs/Buildings/Misc/Particles/Particles_Dust_04.prefab
+  artifactKey: Guid(a463631688fc2684e8628c3bec3b7489) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/Misc/Particles/Particles_Dust_04.prefab using Guid(a463631688fc2684e8628c3bec3b7489) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b6698606821fb857410e8a0b30c9249') in 0.008732 seconds
+  Import took 0.013392 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 40.575707 seconds.
-  path: Assets/Prefabs/Buildings/Misc
-  artifactKey: Guid(e66c0ee90167bad4191114423bd4924a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Buildings/Misc using Guid(e66c0ee90167bad4191114423bd4924a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b3f05cd331cf29e3caaec04563afe67') in 0.005946 seconds
-  Import took 0.012701 seconds .
+  Time since last request: 0.000277 seconds.
+  path: Assets/Prefabs/Buildings/Objects/Potion 2.prefab
+  artifactKey: Guid(95e1b3482b2cad348a1fa374119adada) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/Objects/Potion 2.prefab using Guid(95e1b3482b2cad348a1fa374119adada) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ad0ec645023bb26e55e7b871b5cda2a') in 0.015626 seconds
+  Import took 0.021191 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.693568 seconds.
-  path: Assets/Prefabs/Buildings/Misc/Props
-  artifactKey: Guid(0d2d35e20272cc146b54c363602c897c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Buildings/Misc/Props using Guid(0d2d35e20272cc146b54c363602c897c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1653b35a980b138701306c2a9241a2af') in 0.006698 seconds
-  Import took 0.012168 seconds .
+  Time since last request: 0.000255 seconds.
+  path: Assets/Prefabs/Buildings/Objects/Potion 6.prefab
+  artifactKey: Guid(6ece13e5985fcc9439d71014d1837d98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/Objects/Potion 6.prefab using Guid(6ece13e5985fcc9439d71014d1837d98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a8750fdc155168d5ac8aefd5835b1c3') in 0.012797 seconds
+  Import took 0.017691 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.688082 seconds.
-  path: Assets/Prefabs/Buildings/Misc/Containers
-  artifactKey: Guid(fc5bc5139597e9345b4ed47ff049af1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Buildings/Misc/Containers using Guid(fc5bc5139597e9345b4ed47ff049af1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3736ad32823b258b63d10a5044c2312') in 0.006491 seconds
-  Import took 0.020168 seconds .
+  Time since last request: 0.000228 seconds.
+  path: Assets/Prefabs/Buildings/Misc/Particles/Particles_Fire_04.prefab
+  artifactKey: Guid(3b1487d8c10635e4cb50a2aca4d02dc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/Misc/Particles/Particles_Fire_04.prefab using Guid(3b1487d8c10635e4cb50a2aca4d02dc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '308e7f269c9f434212034ea707069289') in 0.008242 seconds
+  Import took 0.013129 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 143.676766 seconds.
-  path: Assets/LowPolyDungeons/Prefabs/Nature
-  artifactKey: Guid(2d3333c7fe782904a8bf7c413c78c6c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LowPolyDungeons/Prefabs/Nature using Guid(2d3333c7fe782904a8bf7c413c78c6c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff3280740fc86108f8815eb63a448395') in 0.005835 seconds
-  Import took 0.011146 seconds .
+  Time since last request: 0.000223 seconds.
+  path: Assets/Prefabs/Buildings/Misc/Particles/Particles_Fire_03.prefab
+  artifactKey: Guid(22a73079f416d9d41a42ddede8fd6e63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/Misc/Particles/Particles_Fire_03.prefab using Guid(22a73079f416d9d41a42ddede8fd6e63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de743a4305d73a4d7b22bd7f5103ba35') in 0.008365 seconds
+  Import took 0.013338 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 127.583652 seconds.
-  path: Assets/Textures, Materials, Meshes, etc/Textures/Colorsheet Tree Normal.png
-  artifactKey: Guid(8ba8b94b5ab0c214fa2810a7df98a1a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures, Materials, Meshes, etc/Textures/Colorsheet Tree Normal.png using Guid(8ba8b94b5ab0c214fa2810a7df98a1a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd30dbb67542fee669f5beb033212eb1') in 0.045193 seconds
-  Import took 0.050713 seconds .
+  Time since last request: 0.000261 seconds.
+  path: Assets/Prefabs/Buildings/Objects/Potion 5.prefab
+  artifactKey: Guid(23d4a995c438e954e92e0664a8f8cbbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/Objects/Potion 5.prefab using Guid(23d4a995c438e954e92e0664a8f8cbbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b4e24ac178fb45719f7f051be2a5c89') in 0.013213 seconds
+  Import took 0.018800 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000183 seconds.
-  path: Assets/Polygrade/Top_Down Medieval City/Windmill_Free/Fbxs_Textures_Mats/Tree.tga
-  artifactKey: Guid(90e54c63e14074a4da6b84bc6c50b107) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Polygrade/Top_Down Medieval City/Windmill_Free/Fbxs_Textures_Mats/Tree.tga using Guid(90e54c63e14074a4da6b84bc6c50b107) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ab80e710fb5acfac0a088b42ba1d33f') in 0.019539 seconds
-  Import took 0.024633 seconds .
+  Time since last request: 0.000233 seconds.
+  path: Assets/Prefabs/Buildings/Objects/Potion 3.prefab
+  artifactKey: Guid(9a38fe5f36201c440b4f840f2b9ca496) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/Objects/Potion 3.prefab using Guid(9a38fe5f36201c440b4f840f2b9ca496) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e2a9eca94b004db35b0fd85d0352ea9') in 0.013664 seconds
+  Import took 0.018867 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000134 seconds.
+  Time since last request: 0.000227 seconds.
+  path: Assets/Prefabs/Buildings/Objects/Potion 7.prefab
+  artifactKey: Guid(7d1851c143d351848b832d223b8a3521) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/Objects/Potion 7.prefab using Guid(7d1851c143d351848b832d223b8a3521) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44aa458ff9527e5c301a59a20da6e72f') in 0.013546 seconds
+  Import took 0.018144 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000232 seconds.
+  path: Assets/Prefabs/Buildings/Misc/Particles/Particles_Pot_01.prefab
+  artifactKey: Guid(98e16c9cb2e81034fadaa931b7dfd6ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/Misc/Particles/Particles_Pot_01.prefab using Guid(98e16c9cb2e81034fadaa931b7dfd6ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a31e9984f04f256703afc8697599d00e') in 0.007919 seconds
+  Import took 0.012573 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000314 seconds.
+  path: Assets/Prefabs/Buildings/Objects/Potion 1.prefab
+  artifactKey: Guid(9b2dcadbbf9d46a49a12a7b3a4efd540) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/Objects/Potion 1.prefab using Guid(9b2dcadbbf9d46a49a12a7b3a4efd540) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bdda3bab15d4e1b68d6c015a0bca295') in 0.015349 seconds
+  Import took 0.020113 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/Prefabs/Buildings/Misc/Particles/Particles_Dust_03.prefab
+  artifactKey: Guid(0f9d533d2dbfef044b1d12a93b13f927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/Misc/Particles/Particles_Dust_03.prefab using Guid(0f9d533d2dbfef044b1d12a93b13f927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e900ef7a0f133f43a6e1c54902958578') in 0.007719 seconds
+  Import took 0.013054 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/Prefabs/Buildings/Misc/Particles/Particles_Pot_02.prefab
+  artifactKey: Guid(a048a26cff17564439aad4d1bfef891e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/Misc/Particles/Particles_Pot_02.prefab using Guid(a048a26cff17564439aad4d1bfef891e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '976ab778da8c1fba76791412cce420c4') in 0.008497 seconds
+  Import took 0.013283 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/Prefabs/Buildings/Objects/Table 3.prefab
+  artifactKey: Guid(714fd5d0e595c1d46b42ec34983f138c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/Objects/Table 3.prefab using Guid(714fd5d0e595c1d46b42ec34983f138c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0faf58a4c94ea1f1e2bf952b088809a2') in 0.011880 seconds
+  Import took 0.016459 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/Prefabs/Buildings/Misc/Particles
+  artifactKey: Guid(dd4ecfa5fa71a5a4ca76a32f32ca2f74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/Misc/Particles using Guid(dd4ecfa5fa71a5a4ca76a32f32ca2f74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44d4f5d2714b714e1ae12dc02434ced6') in 0.005514 seconds
+  Import took 0.010770 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/Prefabs/Buildings/Objects/Potion 4.prefab
+  artifactKey: Guid(f68a5597e3678a64baea6f4f2a0a7207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/Objects/Potion 4.prefab using Guid(f68a5597e3678a64baea6f4f2a0a7207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b24a7a2b0bb0ff008e996388dcec9921') in 0.013177 seconds
+  Import took 0.018232 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/Prefabs/Buildings/Objects/Table 4.prefab
+  artifactKey: Guid(ab1ea99f2b240b44998dcf1dcd0d433f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/Objects/Table 4.prefab using Guid(ab1ea99f2b240b44998dcf1dcd0d433f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '970bfcd63576b51eef4f40f7c6dc7ad1') in 0.012318 seconds
+  Import took 0.016922 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/Prefabs/Buildings/Objects/Table 2.prefab
+  artifactKey: Guid(c469e2cbb8a77a643a57ec151373da10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/Objects/Table 2.prefab using Guid(c469e2cbb8a77a643a57ec151373da10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6b71d2c9fe7eb4603ab4edc1567bdb0') in 0.012793 seconds
+  Import took 0.017848 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/Prefabs/Buildings/Misc/Particles/Particles_Fog_01.prefab
+  artifactKey: Guid(92be0f8236c12ee469684aba39864d73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/Misc/Particles/Particles_Fog_01.prefab using Guid(92be0f8236c12ee469684aba39864d73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89904541ac46ed05932bdae95c940711') in 0.007632 seconds
+  Import took 0.013126 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/Prefabs/Buildings/Objects/Potion 9.prefab
+  artifactKey: Guid(891e4f99bc6ec174e989c4502d1891e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/Objects/Potion 9.prefab using Guid(891e4f99bc6ec174e989c4502d1891e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '653036a19d4f0fdaebac73c188e8243d') in 0.013170 seconds
+  Import took 0.017982 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/Prefabs/Buildings/Misc/Particles/Particles_Dust_01.prefab
+  artifactKey: Guid(fcc11f53283465845b98440d8e8579a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/Misc/Particles/Particles_Dust_01.prefab using Guid(fcc11f53283465845b98440d8e8579a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dbc0758938c812c174b5f775955613a') in 0.007391 seconds
+  Import took 0.011861 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/Prefabs/Buildings/Misc/Particles/Particles_Fire_02.prefab
+  artifactKey: Guid(522d8a2a883b99c4495620a382e7efe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/Misc/Particles/Particles_Fire_02.prefab using Guid(522d8a2a883b99c4495620a382e7efe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3807c38a3c7065cfaaf4b5241c8881e') in 0.008200 seconds
+  Import took 0.013240 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 214.773842 seconds.
+  path: Assets/Prefabs/Terrain/Mountains
+  artifactKey: Guid(2d30eeb79f051e54bae8b10e0bb4d525) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Terrain/Mountains using Guid(2d30eeb79f051e54bae8b10e0bb4d525) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '737e091154e2cd2f7f1d1e364f404590') in 0.005765 seconds
+  Import took 0.011356 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.892810 seconds.
+  path: Assets/Prefabs/Buildings/Furniture
+  artifactKey: Guid(f8259728d0016d047b2343f6c0198882) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/Furniture using Guid(f8259728d0016d047b2343f6c0198882) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb899ed0ee03fe2d471b90cdf88f3ea8') in 0.007929 seconds
+  Import took 0.012755 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.029502 seconds.
+  path: Assets/Prefabs/Buildings/Furniture/Bucket.prefab
+  artifactKey: Guid(6eee7306fe377634f9645a176df43265) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/Furniture/Bucket.prefab using Guid(6eee7306fe377634f9645a176df43265) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12deeacefc623c1b7279f89abed49346') in 0.010128 seconds
+  Import took 0.014666 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000291 seconds.
+  path: Assets/Prefabs/Buildings/Furniture/Fireplace.prefab
+  artifactKey: Guid(55320ad6284175349b1008aaf7238c7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/Furniture/Fireplace.prefab using Guid(55320ad6284175349b1008aaf7238c7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06d7ca033953ef9c933500797ff87fef') in 0.007117 seconds
+  Import took 0.011388 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000243 seconds.
+  path: Assets/Prefabs/Buildings/Furniture/rpgpp_lt_chair_01a.prefab
+  artifactKey: Guid(af46e0e24402dfa49aea336191bc47ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/Furniture/rpgpp_lt_chair_01a.prefab using Guid(af46e0e24402dfa49aea336191bc47ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42b003be2840dc5360e1bd5c37f2edd9') in 0.024976 seconds
+  Import took 0.029319 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/Prefabs/Buildings/Furniture/rpgpp_lt_chair_01b.prefab
+  artifactKey: Guid(7a77ea810bbc0db4992e500affe32dbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/Furniture/rpgpp_lt_chair_01b.prefab using Guid(7a77ea810bbc0db4992e500affe32dbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68d51d2c8e7f8821915c171392919e7d') in 0.027643 seconds
+  Import took 0.032335 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000312 seconds.
+  path: Assets/Prefabs/Buildings/Furniture/Stool_square.prefab
+  artifactKey: Guid(a05d4d94c1106004abcd87df4b8f1777) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/Furniture/Stool_square.prefab using Guid(a05d4d94c1106004abcd87df4b8f1777) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75cbaf1e21097bd9d35f50332ea809cb') in 0.007577 seconds
+  Import took 0.013299 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000232 seconds.
+  path: Assets/Prefabs/Buildings/Furniture/CoatHook_Full.prefab
+  artifactKey: Guid(70ecfb3272db03f45944e59708b277bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/Furniture/CoatHook_Full.prefab using Guid(70ecfb3272db03f45944e59708b277bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d0f73f80edcb06b573fb18178fee5c2') in 0.007000 seconds
+  Import took 0.011693 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000295 seconds.
+  path: Assets/Prefabs/Buildings/Furniture/rpgpp_lt_bench_wood_01.prefab
+  artifactKey: Guid(94003cdd02bfa0849b07108d63f10e24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Buildings/Furniture/rpgpp_lt_bench_wood_01.prefab using Guid(94003cdd02bfa0849b07108d63f10e24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9feff111c5af9cb908efe64d877acaf') in 0.026165 seconds
+  Import took 0.031606 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003215 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.93 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.187 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.89 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3125 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 149.4 MB.
+System memory in use after: 149.6 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 3769.
+Total: 3.271600 ms (FindLiveObjects: 0.319400 ms CreateObjectMapping: 0.158000 ms MarkObjects: 2.712800 ms  DeleteObjects: 0.079900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 396.503325 seconds.
+  path: Assets/Prefabs/Forest/Nature/Vegetation
+  artifactKey: Guid(1f67d8c4e62c4144392c50846992f7be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Forest/Nature/Vegetation using Guid(1f67d8c4e62c4144392c50846992f7be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4b084bd8ce9b5c5aa5602e9cb76e83d') in 0.010677 seconds
+  Import took 0.016248 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.033694 seconds.
+  path: Assets/Prefabs/Forest/Nature/Vegetation/Plant_01.prefab
+  artifactKey: Guid(0c65b348240f23e48965dadd31d94a41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Forest/Nature/Vegetation/Plant_01.prefab using Guid(0c65b348240f23e48965dadd31d94a41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8779801b4ebdaf52ecf65d86644ed616') in 0.126019 seconds
+  Import took 0.130802 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Assets/Prefabs/Forest/Nature/Vegetation/Plant_04.prefab
+  artifactKey: Guid(238ea10253fa67f419655a51e7879736) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Forest/Nature/Vegetation/Plant_04.prefab using Guid(238ea10253fa67f419655a51e7879736) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9803ac7f68d3a1988fd9618a82350b4b') in 0.012860 seconds
+  Import took 0.017323 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000270 seconds.
+  path: Assets/Prefabs/Forest/Nature/Vegetation/Plant_02.prefab
+  artifactKey: Guid(75acbfebb4af5594a87f066c79c5ddee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Forest/Nature/Vegetation/Plant_02.prefab using Guid(75acbfebb4af5594a87f066c79c5ddee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc46cda91ba2b2060764d113672dfc10') in 0.013409 seconds
+  Import took 0.018083 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000305 seconds.
+  path: Assets/Prefabs/Forest/Nature/Vegetation/Plant_03.prefab
+  artifactKey: Guid(44208f2e85c71bd4e9d09ad992710ced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Forest/Nature/Vegetation/Plant_03.prefab using Guid(44208f2e85c71bd4e9d09ad992710ced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ba7f9e02d57a926ab7330911a5bdb13') in 0.013250 seconds
+  Import took 0.018006 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.673579 seconds.
+  path: Assets/Prefabs/Forest/Nature/Vegetation/Plants
+  artifactKey: Guid(4f4c8460c21aa8b4f81f3b85a3ffa824) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Forest/Nature/Vegetation/Plants using Guid(4f4c8460c21aa8b4f81f3b85a3ffa824) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef36f5f12863f3b19ee1c7ee9ec5e858') in 0.005950 seconds
+  Import took 0.010448 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.062896 seconds.
+  path: Assets/Prefabs/Forest/Nature/Vegetation/Plants/Flower_09.prefab
+  artifactKey: Guid(6523261e917e1d144a80fe9eb5d5b8f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Forest/Nature/Vegetation/Plants/Flower_09.prefab using Guid(6523261e917e1d144a80fe9eb5d5b8f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c7e1c8dc19bfd5b97e80ba322437190') in 0.020361 seconds
+  Import took 0.024966 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/Prefabs/Forest/Nature/Vegetation/Plants/Grass_01.prefab
+  artifactKey: Guid(f1fc5bb90ac285e4486771552d63bcb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Forest/Nature/Vegetation/Plants/Grass_01.prefab using Guid(f1fc5bb90ac285e4486771552d63bcb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63db9d9f1a65c98e1e7beb7835543572') in 0.014801 seconds
+  Import took 0.019438 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000275 seconds.
+  path: Assets/Prefabs/Forest/Nature/Vegetation/Plants/rpgpp_lt_grass_small_01a.prefab
+  artifactKey: Guid(00e2e59cbc04eab4a982218df54ce70b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Forest/Nature/Vegetation/Plants/rpgpp_lt_grass_small_01a.prefab using Guid(00e2e59cbc04eab4a982218df54ce70b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31f93adea390affa230b60aca24113ad') in 0.011940 seconds
+  Import took 0.016496 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000259 seconds.
+  path: Assets/Prefabs/Forest/Nature/Vegetation/Plants/rpgpp_lt_plant_01.prefab
+  artifactKey: Guid(5286e490afadac545ae3a1595b1e96e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Forest/Nature/Vegetation/Plants/rpgpp_lt_plant_01.prefab using Guid(5286e490afadac545ae3a1595b1e96e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f29e7201bd8674c0b9b79a9e0c31ba9') in 0.012602 seconds
+  Import took 0.017688 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000307 seconds.
+  path: Assets/Prefabs/Forest/Nature/Vegetation/Plants/rpgpp_lt_plant_02.prefab
+  artifactKey: Guid(e85c18dfba00c9540859ea847782af5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Forest/Nature/Vegetation/Plants/rpgpp_lt_plant_02.prefab using Guid(e85c18dfba00c9540859ea847782af5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ee225e6cc5fe2d9277c788d6c631414') in 0.013174 seconds
+  Import took 0.017752 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000339 seconds.
+  path: Assets/Prefabs/Forest/Nature/Vegetation/Plants/Flower_10.prefab
+  artifactKey: Guid(7deec6e078923e94f8260fba003ce91e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Forest/Nature/Vegetation/Plants/Flower_10.prefab using Guid(7deec6e078923e94f8260fba003ce91e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcd6a511ecda9112c3327c07013a98f3') in 0.013118 seconds
+  Import took 0.018121 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/Prefabs/Forest/Nature/Vegetation/Plants/rpgpp_lt_grass_small_01b.prefab
+  artifactKey: Guid(e88b7bb02ae149940a5a0cddf34fe370) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Forest/Nature/Vegetation/Plants/rpgpp_lt_grass_small_01b.prefab using Guid(e88b7bb02ae149940a5a0cddf34fe370) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fc0185a7b8488cabe0e2f8bfeaafc45') in 0.012642 seconds
+  Import took 0.017408 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.134517 seconds.
+  path: Assets/Prefabs/Forest/Nature/Vegetation/Grass
+  artifactKey: Guid(d9a091e63ecfa8a47a09a952a7188de4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Forest/Nature/Vegetation/Grass using Guid(d9a091e63ecfa8a47a09a952a7188de4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47fc3cdc9cc21b22519a138be1add08c') in 0.005772 seconds
+  Import took 0.010408 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.048954 seconds.
+  path: Assets/Prefabs/Forest/Nature/Vegetation/Grass/Grass_01.prefab
+  artifactKey: Guid(f2734cb578d73574b9c4aac6007bd3be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Forest/Nature/Vegetation/Grass/Grass_01.prefab using Guid(f2734cb578d73574b9c4aac6007bd3be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7223ada95a40c5d79ad62553115087ee') in 0.010047 seconds
+  Import took 0.015411 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000297 seconds.
+  path: Assets/Prefabs/Forest/Nature/Vegetation/Grass/Grass_03.prefab
+  artifactKey: Guid(de4fc3bff5a929c4d9ae382d16b3694a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Forest/Nature/Vegetation/Grass/Grass_03.prefab using Guid(de4fc3bff5a929c4d9ae382d16b3694a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd765aa6ee7fab4f6e5ea454cc0005a75') in 0.014830 seconds
+  Import took 0.019661 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000296 seconds.
+  path: Assets/Prefabs/Forest/Nature/Vegetation/Grass/Grass_10.prefab
+  artifactKey: Guid(60f08f500ef7427479232218df338999) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Forest/Nature/Vegetation/Grass/Grass_10.prefab using Guid(60f08f500ef7427479232218df338999) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe4404cacbf2108c2c77ac96119adb29') in 0.012786 seconds
+  Import took 0.017399 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/Prefabs/Forest/Nature/Vegetation/Grass/Grass_06.prefab
+  artifactKey: Guid(97e5ef9525bba234089c62d11e854b47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Forest/Nature/Vegetation/Grass/Grass_06.prefab using Guid(97e5ef9525bba234089c62d11e854b47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4378d3158750217f30b2876c06f1f35c') in 0.014218 seconds
+  Import took 0.018946 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/Prefabs/Forest/Nature/Vegetation/Grass/Grass_04.prefab
+  artifactKey: Guid(1cc4956a4700caa4fb4eec5b13e36b77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Forest/Nature/Vegetation/Grass/Grass_04.prefab using Guid(1cc4956a4700caa4fb4eec5b13e36b77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a00c13d989793fc60e33ae3c90d63b3') in 0.012899 seconds
+  Import took 0.017594 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000296 seconds.
+  path: Assets/Prefabs/Forest/Nature/Vegetation/Grass/Grass_05.prefab
+  artifactKey: Guid(f6b863bf1b5e161458304d352ae0179e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Forest/Nature/Vegetation/Grass/Grass_05.prefab using Guid(f6b863bf1b5e161458304d352ae0179e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f19e086cc04e7807898944f76596ad67') in 0.013567 seconds
+  Import took 0.018203 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/Prefabs/Forest/Nature/Vegetation/Grass/Grass_02.prefab
+  artifactKey: Guid(3d17715999199314cb29efc69a62bc8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Forest/Nature/Vegetation/Grass/Grass_02.prefab using Guid(3d17715999199314cb29efc69a62bc8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '651f1922a2deca73fd2d9caed6944123') in 0.013003 seconds
+  Import took 0.018158 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000291 seconds.
+  path: Assets/Prefabs/Forest/Nature/Vegetation/Grass/Grass_07.prefab
+  artifactKey: Guid(6a7f4839d4c8cb340b20b7efce286748) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Forest/Nature/Vegetation/Grass/Grass_07.prefab using Guid(6a7f4839d4c8cb340b20b7efce286748) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11c3457cf3ad61ffae7d8c26d763e3be') in 0.013944 seconds
+  Import took 0.018510 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 248.425803 seconds.
+  path: Assets/Prefabs/Terrain/Flat Stuff/MT_Terrain_L_a_23_LOD.prefab
+  artifactKey: Guid(f3aa9140057851b4fb32409a70515db9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Terrain/Flat Stuff/MT_Terrain_L_a_23_LOD.prefab using Guid(f3aa9140057851b4fb32409a70515db9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '270f4a8ab8dcfaa02562e1cd6eb07611') in 0.029965 seconds
+  Import took 0.035557 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000295 seconds.
+  path: Assets/Prefabs/Terrain/Flat Stuff/MT_Terrain_L_c_05_LOD.prefab
+  artifactKey: Guid(80ecc7aa02be71e4ba5bd683519527c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Terrain/Flat Stuff/MT_Terrain_L_c_05_LOD.prefab using Guid(80ecc7aa02be71e4ba5bd683519527c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '048de90ec84d9d6496e81d8404bdfe2e') in 0.015010 seconds
+  Import took 0.019366 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 58.248982 seconds.
+  path: Assets/Prefabs/Terrain/Mountains/CPT
+  artifactKey: Guid(9e35cbecab525e449a32a650438e4057) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Terrain/Mountains/CPT using Guid(9e35cbecab525e449a32a650438e4057) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d5a286c2d4fb2c8be1f87ff17b9bbad') in 0.005769 seconds
+  Import took 0.011025 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.721372 seconds.
+  path: Assets/Prefabs/Terrain/Flat Stuff/Green/S
+  artifactKey: Guid(f8c8d401bd876c046986ddceafc23c57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Terrain/Flat Stuff/Green/S using Guid(f8c8d401bd876c046986ddceafc23c57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '223be57e81bda7d3669f3f1d88e579d2') in 0.005982 seconds
+  Import took 0.011139 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.048672 seconds.
+  path: Assets/Prefabs/Terrain/Flat Stuff/Green/S/MT_Terrain_S_a_01.prefab
+  artifactKey: Guid(d91db2fa8aa7878449f1c80aa219745e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Terrain/Flat Stuff/Green/S/MT_Terrain_S_a_01.prefab using Guid(d91db2fa8aa7878449f1c80aa219745e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3769b79bc8237dca0613fb7f9b57089') in 0.018846 seconds
+  Import took 0.023408 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/Prefabs/Terrain/Flat Stuff/Green/S/MT_Terrain_S_a_02_LOD.prefab
+  artifactKey: Guid(43637495e88d48e4f8477103a3b56b12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Terrain/Flat Stuff/Green/S/MT_Terrain_S_a_02_LOD.prefab using Guid(43637495e88d48e4f8477103a3b56b12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe31bcae5e7c41be433c25a681bc7a14') in 0.014334 seconds
+  Import took 0.019035 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000275 seconds.
+  path: Assets/Prefabs/Terrain/Flat Stuff/Green/S/MT_Terrain_S_a_22_LOD.prefab
+  artifactKey: Guid(153bf0a3492aac4478671936cc3d7de9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Terrain/Flat Stuff/Green/S/MT_Terrain_S_a_22_LOD.prefab using Guid(153bf0a3492aac4478671936cc3d7de9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55fc6237b7034d046e5c484b07575b01') in 0.016565 seconds
+  Import took 0.021342 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/Prefabs/Terrain/Flat Stuff/Green/S/MT_Terrain_S_a_10_LOD.prefab
+  artifactKey: Guid(4b532a7c3d7febb4fb4a83431c454108) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Terrain/Flat Stuff/Green/S/MT_Terrain_S_a_10_LOD.prefab using Guid(4b532a7c3d7febb4fb4a83431c454108) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84280ec2494aa399036f8bc1cb74685a') in 0.019423 seconds
+  Import took 0.024157 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/Prefabs/Terrain/Flat Stuff/Green/S/MT_Terrain_S_b_13_LOD.prefab
+  artifactKey: Guid(eb8212357cb8850489b14d8c46647c34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Terrain/Flat Stuff/Green/S/MT_Terrain_S_b_13_LOD.prefab using Guid(eb8212357cb8850489b14d8c46647c34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46a614d4a9c26e23a093ab8fcfba134c') in 0.016391 seconds
+  Import took 0.020952 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000254 seconds.
+  path: Assets/Prefabs/Terrain/Flat Stuff/Green/S/MT_Terrain_S_a_23_LOD.prefab
+  artifactKey: Guid(712649638876fe64cb6eefe971029113) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Terrain/Flat Stuff/Green/S/MT_Terrain_S_a_23_LOD.prefab using Guid(712649638876fe64cb6eefe971029113) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5440a3fbac3646948fc54d2f41bfdc5') in 0.018425 seconds
+  Import took 0.023328 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/Prefabs/Terrain/Flat Stuff/Green/S/MT_Terrain_S_b_01_LOD.prefab
+  artifactKey: Guid(c54802b959f8aad49abfea78dda50163) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Terrain/Flat Stuff/Green/S/MT_Terrain_S_b_01_LOD.prefab using Guid(c54802b959f8aad49abfea78dda50163) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4541161fd601e6c6fb22909698c63bc7') in 0.016899 seconds
+  Import took 0.021899 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000285 seconds.
+  path: Assets/Prefabs/Terrain/Flat Stuff/Green/S/MT_Terrain_S_a_08_LOD.prefab
+  artifactKey: Guid(7bf9236fd6a2d024084855770906bc17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Terrain/Flat Stuff/Green/S/MT_Terrain_S_a_08_LOD.prefab using Guid(7bf9236fd6a2d024084855770906bc17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67ae1e5305490bd49f0f30268bc8083d') in 0.017777 seconds
+  Import took 0.022868 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/Prefabs/Terrain/Flat Stuff/Green/S/MT_Terrain_S_a_09_LOD.prefab
+  artifactKey: Guid(07cea1171f002c149b9dd9578e029ea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Terrain/Flat Stuff/Green/S/MT_Terrain_S_a_09_LOD.prefab using Guid(07cea1171f002c149b9dd9578e029ea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '223d556fdc2b536b49e0e65dea6b3ef3') in 0.017147 seconds
+  Import took 0.022847 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/Prefabs/Terrain/Flat Stuff/Green/S/MT_Terrain_S_a_03_LOD.prefab
+  artifactKey: Guid(4aef9cc2c3846c34fb6ed42b4983452c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Terrain/Flat Stuff/Green/S/MT_Terrain_S_a_03_LOD.prefab using Guid(4aef9cc2c3846c34fb6ed42b4983452c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e23125fd488cf2942e418eb9e48713b') in 0.016867 seconds
+  Import took 0.021773 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 271.861749 seconds.
+  path: Assets/scrip.cs
+  artifactKey: Guid(507e74839a2e52942ac7a90f8f6f76b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/scrip.cs using Guid(507e74839a2e52942ac7a90f8f6f76b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92da00a50435c2bd794d3456a756db12') in 0.009273 seconds
+  Import took 0.014414 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 448.794228 seconds.
+  path: Assets/Textures, Materials, Meshes, etc/Textures
+  artifactKey: Guid(5988ec4c516a807489f307b5a3156dff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Materials, Meshes, etc/Textures using Guid(5988ec4c516a807489f307b5a3156dff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56634838516b2df1292af9959d2e621e') in 0.006599 seconds
+  Import took 0.012038 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.039907 seconds.
+  path: Assets/Textures, Materials, Meshes, etc/Textures/Color Pallet.png
+  artifactKey: Guid(da95fd055ddf13a4d9125d3707f3c974) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Materials, Meshes, etc/Textures/Color Pallet.png using Guid(da95fd055ddf13a4d9125d3707f3c974) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d21d431f763b480fdbc0c040fc525f3') in 0.067412 seconds
+  Import took 0.072094 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000297 seconds.
   path: Assets/Textures, Materials, Meshes, etc/Textures/Pine Tree Branch.png
   artifactKey: Guid(156aa8f4dc428ed40854ae13ed4a2525) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures, Materials, Meshes, etc/Textures/Pine Tree Branch.png using Guid(156aa8f4dc428ed40854ae13ed4a2525) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4351a0903aa1f016a22727aa0c66b68') in 0.008926 seconds
-  Import took 0.014598 seconds .
+Start importing Assets/Textures, Materials, Meshes, etc/Textures/Pine Tree Branch.png using Guid(156aa8f4dc428ed40854ae13ed4a2525) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d730efe95bf989cfa024d911b530db6') in 0.010161 seconds
+  Import took 0.015000 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000270 seconds.
+  path: Assets/Textures, Materials, Meshes, etc/Textures/rpgpp_lt_tex_a.tga
+  artifactKey: Guid(0bb174f69c9851a48b09bf7d8180c39e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Materials, Meshes, etc/Textures/rpgpp_lt_tex_a.tga using Guid(0bb174f69c9851a48b09bf7d8180c39e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8654b9d93236c11d329b3fd50cc683ea') in 0.012821 seconds
+  Import took 0.018438 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000297 seconds.
+  path: Assets/Textures, Materials, Meshes, etc/Textures/Texture_01.png
+  artifactKey: Guid(1cf6f1405fbd73646ae9a96dd7ed0222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Materials, Meshes, etc/Textures/Texture_01.png using Guid(1cf6f1405fbd73646ae9a96dd7ed0222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb45b215a47fdbb32c6f25c3df9c3c38') in 0.009529 seconds
+  Import took 0.013999 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000295 seconds.
+  path: Assets/Textures, Materials, Meshes, etc/Textures/Colorsheet Tree Normal.png
+  artifactKey: Guid(8ba8b94b5ab0c214fa2810a7df98a1a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Materials, Meshes, etc/Textures/Colorsheet Tree Normal.png using Guid(8ba8b94b5ab0c214fa2810a7df98a1a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42951c8958cf33adf7fdcdce55890452') in 0.010354 seconds
+  Import took 0.014993 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/Textures, Materials, Meshes, etc/Textures/NaturePackLite_Texture_01.png
+  artifactKey: Guid(28a51d508c86a8948b59df81d5188b17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Materials, Meshes, etc/Textures/NaturePackLite_Texture_01.png using Guid(28a51d508c86a8948b59df81d5188b17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87fdcabe4f1e1457ffdc5c143fe0a248') in 0.009353 seconds
+  Import took 0.014155 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/Textures, Materials, Meshes, etc/Textures/CPT_Terrain_Texture_Atlas_01.png
+  artifactKey: Guid(f7973976799eb6843bcb25e25e25522e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Materials, Meshes, etc/Textures/CPT_Terrain_Texture_Atlas_01.png using Guid(f7973976799eb6843bcb25e25e25522e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65d434b73eb124c7ea89d367022104fb') in 0.009832 seconds
+  Import took 0.014419 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/Textures, Materials, Meshes, etc/Textures/Grass.png
+  artifactKey: Guid(bf663134b34452c46b5de3af0a4ba226) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Materials, Meshes, etc/Textures/Grass.png using Guid(bf663134b34452c46b5de3af0a4ba226) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b925e69af638ed3eed93b63aeef81a9') in 0.010966 seconds
+  Import took 0.015735 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000281 seconds.
+  path: Assets/Textures, Materials, Meshes, etc/Textures/Texture_5.png
+  artifactKey: Guid(2dbee956400603f48b27a2b3d0553b01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Materials, Meshes, etc/Textures/Texture_5.png using Guid(2dbee956400603f48b27a2b3d0553b01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6918ca322c0eeb93e7b4cd50d5bfd606') in 0.009579 seconds
+  Import took 0.014509 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 42.463309 seconds.
+  path: Assets/Textures, Materials, Meshes, etc/Materials/TransitionTexture.mat
+  artifactKey: Guid(be366e05afb6a464e97c4db6046a7cc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Materials, Meshes, etc/Materials/TransitionTexture.mat using Guid(be366e05afb6a464e97c4db6046a7cc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95c527faa926c75eb566b85f3d35ccdf') in 0.026858 seconds
+  Import took 0.032543 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001759 seconds.
+Registered in 0.003221 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.77 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
-
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.834 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.19 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3124 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 163.1 MB.
-System memory in use after: 163.3 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3792.
-Total: 4.576200 ms (FindLiveObjects: 0.505200 ms CreateObjectMapping: 0.255100 ms MarkObjects: 3.795700 ms  DeleteObjects: 0.018800 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001750 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.91 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
-
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.943 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.83 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3124 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 163.1 MB.
-System memory in use after: 163.4 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3795.
-Total: 2.419700 ms (FindLiveObjects: 0.355900 ms CreateObjectMapping: 0.128300 ms MarkObjects: 1.922600 ms  DeleteObjects: 0.011800 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001735 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.99 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
-
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.895 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.79 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3124 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 163.2 MB.
-System memory in use after: 163.4 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3798.
-Total: 3.196500 ms (FindLiveObjects: 0.477500 ms CreateObjectMapping: 0.216700 ms MarkObjects: 2.464100 ms  DeleteObjects: 0.037300 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001703 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.03 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
-
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.919 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.81 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3124 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 163.2 MB.
-System memory in use after: 163.4 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3801.
-Total: 2.831100 ms (FindLiveObjects: 0.459400 ms CreateObjectMapping: 0.170200 ms MarkObjects: 2.144100 ms  DeleteObjects: 0.055100 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001681 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.75 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
-
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.896 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.79 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3124 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 163.2 MB.
-System memory in use after: 163.4 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3804.
-Total: 2.963400 ms (FindLiveObjects: 0.415200 ms CreateObjectMapping: 0.144000 ms MarkObjects: 2.389900 ms  DeleteObjects: 0.013100 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001641 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.82 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
-
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.803 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.80 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3124 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 163.2 MB.
-System memory in use after: 163.4 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3807.
-Total: 2.785800 ms (FindLiveObjects: 0.398700 ms CreateObjectMapping: 0.186700 ms MarkObjects: 2.165900 ms  DeleteObjects: 0.033300 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001617 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.76 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
-
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.856 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.79 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3124 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 163.2 MB.
-System memory in use after: 163.5 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3810.
-Total: 2.627400 ms (FindLiveObjects: 0.412600 ms CreateObjectMapping: 0.153300 ms MarkObjects: 2.025500 ms  DeleteObjects: 0.035100 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001653 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.80 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
-
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.858 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.81 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3124 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 163.2 MB.
-System memory in use after: 163.5 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3813.
-Total: 2.778500 ms (FindLiveObjects: 0.551000 ms CreateObjectMapping: 0.185800 ms MarkObjects: 2.022100 ms  DeleteObjects: 0.017400 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001726 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.86 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
-
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.850 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.08 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3124 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 163.2 MB.
-System memory in use after: 163.5 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3816.
-Total: 3.796300 ms (FindLiveObjects: 0.376900 ms CreateObjectMapping: 0.188700 ms MarkObjects: 3.210600 ms  DeleteObjects: 0.018900 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001693 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.76 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
-
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.841 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.97 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3124 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 163.2 MB.
-System memory in use after: 163.5 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3819.
-Total: 4.172500 ms (FindLiveObjects: 0.414400 ms CreateObjectMapping: 0.261000 ms MarkObjects: 3.469100 ms  DeleteObjects: 0.026700 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001625 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.76 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
-
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.862 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.79 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3124 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 163.3 MB.
-System memory in use after: 163.5 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3822.
-Total: 2.558500 ms (FindLiveObjects: 0.434700 ms CreateObjectMapping: 0.145700 ms MarkObjects: 1.942100 ms  DeleteObjects: 0.035200 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001832 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.91 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
-
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.974 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.91 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3124 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 163.3 MB.
-System memory in use after: 163.5 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3825.
-Total: 3.207000 ms (FindLiveObjects: 0.562300 ms CreateObjectMapping: 0.307600 ms MarkObjects: 2.319900 ms  DeleteObjects: 0.016100 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001788 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.97 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
-
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.930 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.86 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3124 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 163.3 MB.
-System memory in use after: 163.5 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3828.
-Total: 3.429000 ms (FindLiveObjects: 0.449100 ms CreateObjectMapping: 0.263700 ms MarkObjects: 2.695500 ms  DeleteObjects: 0.019600 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002099 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.75 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
-
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.838 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.78 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3124 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 163.3 MB.
-System memory in use after: 163.5 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3831.
-Total: 2.638300 ms (FindLiveObjects: 0.352200 ms CreateObjectMapping: 0.168600 ms MarkObjects: 2.087100 ms  DeleteObjects: 0.029500 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001781 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.88 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
-
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.834 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Refreshing native plugins compatible for Editor in 0.84 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3124 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 163.3 MB.
-System memory in use after: 163.5 MB.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3834.
-Total: 2.533300 ms (FindLiveObjects: 0.406400 ms CreateObjectMapping: 0.142600 ms MarkObjects: 1.948700 ms  DeleteObjects: 0.034700 ms)
+[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.130 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.04 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3125 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 150.1 MB.
+System memory in use after: 150.3 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 3845.
+Total: 3.241300 ms (FindLiveObjects: 0.486400 ms CreateObjectMapping: 0.255900 ms MarkObjects: 2.418800 ms  DeleteObjects: 0.078900 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001764 seconds.
+Registered in 0.002855 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.79 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.90 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Warning: Annotation not found!
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
@@ -1897,84 +847,15 @@ Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.858 seconds
+- Completed reload, in  1.104 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.81 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.80 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3124 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 163.3 MB.
-System memory in use after: 163.5 MB.
+Unloading 3125 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 150.1 MB.
+System memory in use after: 150.3 MB.
 
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3837.
-Total: 3.019200 ms (FindLiveObjects: 0.334400 ms CreateObjectMapping: 0.156000 ms MarkObjects: 2.488000 ms  DeleteObjects: 0.039700 ms)
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 3848.
+Total: 2.725700 ms (FindLiveObjects: 0.322500 ms CreateObjectMapping: 0.110700 ms MarkObjects: 2.217100 ms  DeleteObjects: 0.074100 ms)
 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001815 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.76 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
-
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.850 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.83 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3124 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 163.3 MB.
-System memory in use after: 163.6 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3840.
-Total: 2.890500 ms (FindLiveObjects: 0.578700 ms CreateObjectMapping: 0.268600 ms MarkObjects: 2.031400 ms  DeleteObjects: 0.011100 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002409 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.83 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
-
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.803 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.78 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3124 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 163.3 MB.
-System memory in use after: 163.6 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3843.
-Total: 3.466000 ms (FindLiveObjects: 0.737100 ms CreateObjectMapping: 0.261600 ms MarkObjects: 2.434300 ms  DeleteObjects: 0.031400 ms)
-
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file
