@@ -32,7 +32,7 @@ public class PlayerController : MonoBehaviour
     private float currentZoom = 5f;
     public float minzoom = 1f;
     public float maxzoom = 8f;
-    public float zoomSpeed = 1f;
+    public float zoomSpeed = .5f;
 
 
     public bool movementEnabled;
@@ -47,6 +47,7 @@ public class PlayerController : MonoBehaviour
     private int ind_CROW = 3;
 
     public GameObject CharacterWheel;
+    public GameObject SettingsMenu;
     public AudioSource ShapeShiftSound;
 
     public DialogueController wizard;
@@ -65,6 +66,9 @@ public class PlayerController : MonoBehaviour
     void Start()
     { 
         movementEnabled = false;
+
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
         //Camera obj
         cameraTrans = Camera.main.transform;
         cam = CinemachineCamera.GetComponent<CinemachineFreeLook>();
@@ -89,12 +93,12 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        m_Rotation = Quaternion.identity;
+        //m_Rotation = Quaternion.identity;
 
         //print(currentZoom);
-        if (Mathf.Approximately(cam.m_Orbits[0].m_Radius - currentZoom, 0))
+        if (!Mathf.Approximately(cam.m_Orbits[0].m_Radius - currentZoom, 0f))
         {
-            float newDist = Mathf.Lerp(cam.m_Orbits[0].m_Radius, currentZoom, zoomSpeed);
+            float newDist = Mathf.Lerp(cam.m_Orbits[0].m_Radius, currentZoom, .1f);
 
             cam.m_Orbits[0].m_Radius = newDist;
             cam.m_Orbits[1].m_Radius = newDist;
@@ -328,6 +332,25 @@ public class PlayerController : MonoBehaviour
         
         }
     
+    }
+
+    void OnEscape() {
+        print("onEscape called!");
+        print("Cursor state:");
+        print(Cursor.visible);
+        if (Cursor.lockState == CursorLockMode.Locked)
+        {
+            SettingsMenu.SetActive(true);
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+        }
+        else {
+            
+            SettingsMenu.SetActive(false);
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+
     }
 
 }

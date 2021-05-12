@@ -8028,6 +8028,7 @@ MonoBehaviour:
   movementEnabled: 0
   isGrounded: 0
   CharacterWheel: {fileID: 744990241}
+  SettingsMenu: {fileID: 1284900625}
   ShapeShiftSound: {fileID: 871672596}
   wizard: {fileID: 789971808}
   current_puzzle: {fileID: 0}
@@ -13247,8 +13248,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8880301973898827665, guid: c72f04803f678264482186da6226b2e5, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c72f04803f678264482186da6226b2e5, type: 3}
+--- !u!1 &1284900625 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1496080275505694671, guid: c72f04803f678264482186da6226b2e5, type: 3}
+  m_PrefabInstance: {fileID: 1284900624}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1293312292
 PrefabInstance:
   m_ObjectHideFlags: 0
