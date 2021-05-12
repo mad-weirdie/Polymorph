@@ -21,11 +21,12 @@ public class DialogueController : MonoBehaviour
 
     // Know if we are  in the middle of dialogue right now
     // We use this to pause player and camera movement during "cutscenes"
-    private bool dialogueHappening;
+    public bool dialogueHappening;
     public PlayerController player;
 
     // Controls the fade in/out of the dialogue box when dialogue is happening
     private Animator dialogueAnim;
+    public Animator titleAnim;
     public GameObject dialogueBox;
 
     // ========================================================================
@@ -36,7 +37,6 @@ public class DialogueController : MonoBehaviour
         // Don't try to retrieve any components if dialogue is disabled
         if (!dialogueEnabled)
         {
-            print("what??");
             return;
         }
         // Otherwise, read in the lines of dialogue from the text file
@@ -46,6 +46,7 @@ public class DialogueController : MonoBehaviour
             dialogueAnim = dialogueBox.GetComponent<Animator>();
             // Turn off the shaded dialogue box initially 
             dialogueAnim.SetBool("dialogueHappening", false);
+            titleAnim.SetBool("dialogueHappening", false);
             // Check a text file actually exists
             if (textFile != null)
             {
@@ -58,16 +59,39 @@ public class DialogueController : MonoBehaviour
 
     }
 
-    // Update is called once per frame
+    public bool IsHappening()
+    {
+        return dialogueHappening;
+    }
+
+    public void SetHappening(bool state)
+    {
+        dialogueHappening = state;
+    }
+
+
     public void Notify()
     {
         if (dialogueHappening)
         {
+            if (currentLine == 3)
+            {
+                titleAnim.SetBool("fadeInTime", true);
+            }
             dialogueAnim.SetBool("dialogueHappening", true);
             if (currentLine < dialogueLines.Length)
             {
                 string dialogue = dialogueLines[currentLine];
-                dialogueText.text = dialogue;
+                if (dialogue[0] == '#')
+                {
+                    dialogueHappening = false;
+                    dialogueAnim.SetBool("dialogueHappening", dialogueHappening);
+                    dialogueText.text = "";
+                    player.movementEnabled = true;
+                }    
+                else
+                    dialogueText.text = dialogue;
+                
                 currentLine++;
             }
             else
