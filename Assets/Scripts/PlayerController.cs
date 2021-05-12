@@ -294,7 +294,8 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.CompareTag("Movable") && isGrabbing)
         {
             print(other.name);
-            rigidBody.mass = 0;
+            // This breaks the seesaw mechanic bc you weigh nothing
+            //rigidBody.mass = 0;
             movingRigidBodyObject = other.GetComponent<Rigidbody>();
         }
 
@@ -345,7 +346,7 @@ public class PlayerController : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         isGrabbing = false;
-        rigidBody.mass = normalMass;
+        //rigidBody.mass = normalMass;
         movingRigidBodyObject = null;
     }
     

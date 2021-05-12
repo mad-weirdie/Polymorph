@@ -30,7 +30,7 @@ public class SeeSaw : MonoBehaviour
         if (rb.isKinematic == false && other.transform.parent != null && other.transform.parent.CompareTag("Player"))
         {
             print("Player exited! seesaw trigger!");
-            rb.isKinematic = true;
+            //rb.isKinematic = true;
         }
     }
 
