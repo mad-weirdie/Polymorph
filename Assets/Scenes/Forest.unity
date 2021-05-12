@@ -6364,7 +6364,7 @@ MonoBehaviour:
   animalMass: 70
   shapeOffsets: {x: 0, y: 0, z: 0}
   script: {fileID: 871672592}
-  jumpForce: 7500
+  jumpForce: 18000
   height: {x: 0, y: 0, z: 0}
 --- !u!136 &384273562
 CapsuleCollider:

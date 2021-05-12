@@ -175,7 +175,7 @@ public class UITextDisplayer : MonoBehaviour
         float ypos = key.transform.position.y;
         float zpos = key.transform.position.z;
 
-        if (xpos < 0.5f && xpos > -1.0f && zpos < 15.0f && zpos > 14.0f)
+        if (xpos < 1.5f && xpos > -1.5f && zpos < 16.0f && zpos > 13.0f)
             hasKey = true;
         else
             hasKey = false;
