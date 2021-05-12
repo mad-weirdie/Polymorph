@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.60827434, g: 0.4973325, b: 0.4333396, a: 1}
+  m_IndirectSpecularColor: {r: 0.60793847, g: 0.497079, b: 0.4331067, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9667,7 +9667,7 @@ MonoBehaviour:
   animalMass: 70
   shapeOffsets: {x: 0, y: 0, z: 0}
   script: {fileID: 0}
-  jumpForce: 1562.5
+  jumpForce: 17500
   height: {x: 0, y: 0, z: 0}
 --- !u!65 &719201899
 BoxCollider:
@@ -11924,9 +11924,9 @@ MonoBehaviour:
   animalMass: 5
   shapeOffsets: {x: 0, y: 0, z: 0}
   script: {fileID: 0}
-  flyingHeight: 5000
-  glidingForce: 100
-  height: {x: 0, y: 0, z: 0}
+  flyingHeight: 100
+  glidingForce: 25
+  height: {x: 0, y: 100, z: 0}
   glideForce: {x: 0, y: 0, z: 0}
   jumpHeld: 0
 --- !u!65 &920007701
@@ -22679,7 +22679,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2478508711694835615, guid: 9932b0089afabf44e84b7f5cf534754b, type: 3}
       propertyPath: resettables.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2478508711694835615, guid: 9932b0089afabf44e84b7f5cf534754b, type: 3}
       propertyPath: resettables.Array.data[0]
@@ -22697,6 +22697,10 @@ PrefabInstance:
       propertyPath: resettables.Array.data[3]
       value: 
       objectReference: {fileID: 98962910}
+    - target: {fileID: 2478508711694835615, guid: 9932b0089afabf44e84b7f5cf534754b, type: 3}
+      propertyPath: resettables.Array.data[4]
+      value: 
+      objectReference: {fileID: 279603065}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9932b0089afabf44e84b7f5cf534754b, type: 3}
 --- !u!4 &1816219639 stripped
