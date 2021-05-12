@@ -324,6 +324,7 @@ public class PlayerController : MonoBehaviour
             else
                 return;
 
+            other.gameObject.SetActive(false); //Remove animal for consistency + stop clipping issues!
             charnames.Add(other.name);
 
             // Disable the trigger
