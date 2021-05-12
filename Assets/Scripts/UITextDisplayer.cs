@@ -211,6 +211,11 @@ public class UITextDisplayer : MonoBehaviour
 
     }
 
+    void OnSkip()
+    {
+        SceneManager.LoadScene("Forest", LoadSceneMode.Single);
+    }
+
     public void LookCheck()
     {
         ray = mainCamera.ViewportPointToRay(new Vector3(0.5F, 0.5F, mainCamera.nearClipPlane));
