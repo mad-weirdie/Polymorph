@@ -122,8 +122,6 @@ public class PlayerController : MonoBehaviour
     {
         if (movementEnabled)
         {
-            if (movementPaused)
-                UnpauseMovement();
 
             if (cam.m_XAxis.m_MaxSpeed == 0.0f && cam.m_YAxis.m_MaxSpeed == 0.0f)
             {
@@ -139,7 +137,7 @@ public class PlayerController : MonoBehaviour
             {
                 walkingAudio.Play();
             }
-           
+
             playerMoveInput.Normalize();
             isWalking = !Mathf.Approximately(playerMoveInput.x, 0f) || !Mathf.Approximately(playerMoveInput.z, 0f);
             activeAnims.SetBool("IsWalking", isWalking);
@@ -167,30 +165,7 @@ public class PlayerController : MonoBehaviour
         {
             cam.m_XAxis.m_MaxSpeed = 0.0f;
             cam.m_YAxis.m_MaxSpeed = 0.0f;
-
-            if (!movementPaused)
-                PauseMovement();
         }
-    }
-
-    public void PauseMovement()
-    {
-        Animator anim = activePlayer.GetComponent<Animator>();
-        anim.SetBool("IsWalking", false);
-        movementEnabled = false;
-        baseSpeed = 0f;
-        turnSpeed = 0f;
-        Rigidbody rb = GetComponent<Rigidbody>();
-        rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
-    }
-
-    public void UnpauseMovement()
-    {
-        Rigidbody rb = GetComponent<Rigidbody>();
-        rb.constraints = RigidbodyConstraints.None;
-        movementEnabled = true;
-        baseSpeed = 0.04f;
-        turnSpeed = 20f;
     }
 
     public void ShapeShiftTo(int animal_index)
