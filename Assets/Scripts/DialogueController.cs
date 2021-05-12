@@ -69,6 +69,11 @@ public class DialogueController : MonoBehaviour
         dialogueHappening = state;
     }
 
+    public string GetCurrentLine()
+    {
+        return dialogueLines[currentLine];
+    }
+
 
     virtual public void Notify()
     {

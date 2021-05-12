@@ -36,7 +36,7 @@ public class PlayerController : MonoBehaviour
 
 
     public bool movementEnabled;
-    private bool isWalking;
+    public bool isWalking;
     private bool wasWalking; //Were we walking last frame?
     public bool isGrounded;
 
@@ -67,11 +67,10 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         StartCoroutine(Hold());
         
         movementEnabled = false;
-
-
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
         walkingAudio = GetComponent<AudioSource>();
