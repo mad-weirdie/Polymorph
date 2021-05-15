@@ -62,6 +62,7 @@ public class PlayerController : MonoBehaviour
     private Vector3 facing;
     private Vector3 desiredForward;
     private Vector2 vec;
+    private Vector3 grabbedObj;
 
     private AudioSource walkingAudio;
 
@@ -105,7 +106,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        //m_Rotation = Quaternion.identity;
+        m_Rotation = Quaternion.identity;
 
         //print(currentZoom);
         if (!Mathf.Approximately(cam.m_Orbits[0].m_Radius - currentZoom, 0f))
@@ -122,13 +123,14 @@ public class PlayerController : MonoBehaviour
     {
         if (movementEnabled)
         {
-
+            // Reset the camera speed if we had paused it
             if (cam.m_XAxis.m_MaxSpeed == 0.0f && cam.m_YAxis.m_MaxSpeed == 0.0f)
             {
                 cam.m_XAxis.m_MaxSpeed = prev_x_speed;
                 cam.m_YAxis.m_MaxSpeed = prev_y_speed;
             }
 
+            // Play walking audio if necessary
             if (!isWalking)
             {
                 walkingAudio.Stop();
@@ -138,10 +140,12 @@ public class PlayerController : MonoBehaviour
                 walkingAudio.Play();
             }
 
+            // Calculate player movement
             playerMoveInput.Normalize();
             isWalking = !Mathf.Approximately(playerMoveInput.x, 0f) || !Mathf.Approximately(playerMoveInput.z, 0f);
             activeAnims.SetBool("IsWalking", isWalking);
-            moveMagnitude = cameraTrans.forward * playerMoveInput.z + cameraTrans.right * playerMoveInput.x;  //Get the player's movement, relative to the camera.
+            // Get the player's movement, relative to the camera.
+            moveMagnitude = cameraTrans.forward * playerMoveInput.z + cameraTrans.right * playerMoveInput.x;
             moveMagnitude.y = 0f;
 
             //Instead 
@@ -158,7 +162,12 @@ public class PlayerController : MonoBehaviour
 
             if (isGrabbing && movingRigidBodyObject != null)
             {
-                movingRigidBodyObject.MovePosition(movingRigidBodyObject.position + moveMagnitude * baseSpeed);
+                // These shenanigans lock the object in place in front of the character
+                grabbedObj = transform.position;
+                grabbedObj.y += 1.0f;
+                grabbedObj += desiredForward*1.2f;
+                movingRigidBodyObject.MovePosition(grabbedObj);
+                movingRigidBodyObject.MoveRotation(m_Rotation);
             }
         }
         else
@@ -166,6 +175,11 @@ public class PlayerController : MonoBehaviour
             cam.m_XAxis.m_MaxSpeed = 0.0f;
             cam.m_YAxis.m_MaxSpeed = 0.0f;
         }
+    }
+
+    void OnCollisionEnter()
+    {
+        isGrounded = true;
     }
 
     public void ShapeShiftTo(int animal_index)
@@ -176,6 +190,7 @@ public class PlayerController : MonoBehaviour
             activePlayer.SetActive(false);
             activePlayer = characters[animal_index];
             activePlayer.SetActive(true);
+            rigidBody.constraints = RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezeRotationX;
             ShapeShiftUpdate();
         }
     }
@@ -244,6 +259,11 @@ public class PlayerController : MonoBehaviour
     private void OnGrab()
     {
         isGrabbing = !isGrabbing;
+        // If grabbing something, disable gravity
+        if (isGrabbing)
+            movingRigidBodyObject.useGravity = false;
+        else
+            movingRigidBodyObject.useGravity = true;
     }
 
 
@@ -260,6 +280,7 @@ public class PlayerController : MonoBehaviour
         
         print("Thing done!");
         activeScript.OnJump(input.Get<float>() > 0f);
+        //isGrounded = false;
     }
 
     private void OnClick()
@@ -293,7 +314,6 @@ public class PlayerController : MonoBehaviour
         // can knock over objects.
         if (other.gameObject.CompareTag("Movable") && isGrabbing)
         {
-            print(other.name);
             // This breaks the seesaw mechanic bc you weigh nothing
             //rigidBody.mass = 0;
             movingRigidBodyObject = other.GetComponent<Rigidbody>();
@@ -324,7 +344,7 @@ public class PlayerController : MonoBehaviour
             else
                 return;
 
-            other.gameObject.SetActive(false); //Remove animal for consistency + stop clipping issues!
+            //other.gameObject.SetActive(false); //Remove animal for consistency + stop clipping issues!
             charnames.Add(other.name);
 
             // Disable the trigger
@@ -346,9 +366,9 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        isGrabbing = false;
+        //isGrabbing = false;
         //rigidBody.mass = normalMass;
-        movingRigidBodyObject = null;
+        //movingRigidBodyObject = null;
     }
     
     void OnReset(InputValue input) {

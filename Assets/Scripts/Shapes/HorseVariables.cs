@@ -21,17 +21,15 @@ public class HorseVariables : ShapeVariables
 
     }
 
-
-  
-    //Update is called once per frame
     override public void OnJump(bool isHeld)
     {
         //Actions that happen on the space bar being pressed, like jumping or flying.
-        Debug.DrawRay(transform.position, Vector3.down * .5f, Color.green, 5f);
-        if (isHeld && Physics.Raycast(transform.position, Vector3.down, .5f))
+        // This is for debugging
+         Debug.DrawRay(transform.position, Vector3.down * .5f, Color.green, 5f);
+        if (Physics.Raycast(transform.position, Vector3.down, 0.5f))
         {
             print("jump!");
-            script.rigidBody.AddForce(height);
+            script.rigidBody.velocity = height;
             horseAnimator.Play("Jump");
 
         }

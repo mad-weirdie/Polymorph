@@ -38,6 +38,7 @@ public class UITextDisplayer : MonoBehaviour
         moveComplete = false;
         text.text = InteractText;
         text.gameObject.SetActive(false);
+        player.movementEnabled = false;
     }
 
     IEnumerator Hold()

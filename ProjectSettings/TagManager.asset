@@ -12,6 +12,7 @@ TagManager:
   - Movable
   - Object
   - Crystal
+  - Waypoint
   layers:
   - Default
   - TransparentFX

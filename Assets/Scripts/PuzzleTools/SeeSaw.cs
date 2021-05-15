@@ -5,15 +5,15 @@ using UnityEngine;
 public class SeeSaw : MonoBehaviour
 {
     // Start is called before the first frame update
-
+    /*
     private Rigidbody rb;
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
-        rb.isKinematic = true;
+        rb.isKinematic = false;
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         
         if (rb.isKinematic == true && other.transform.parent != null && other.transform.parent.CompareTag("Player")) {
@@ -33,5 +33,6 @@ public class SeeSaw : MonoBehaviour
             //rb.isKinematic = true;
         }
     }
+    */
 
 }
