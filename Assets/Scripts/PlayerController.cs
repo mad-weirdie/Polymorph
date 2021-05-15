@@ -162,12 +162,21 @@ public class PlayerController : MonoBehaviour
 
             if (isGrabbing && movingRigidBodyObject != null)
             {
-                // These shenanigans lock the object in place in front of the character
-                grabbedObj = transform.position;
-                grabbedObj.y += 1.0f;
-                grabbedObj += desiredForward*1.2f;
-                movingRigidBodyObject.MovePosition(grabbedObj);
-                movingRigidBodyObject.MoveRotation(m_Rotation);
+                print(activePlayer.name);
+                if (activePlayer.name != "Horse(Clone)")
+                {
+                    movingRigidBodyObject.useGravity = true;
+                    movingRigidBodyObject.MovePosition(movingRigidBodyObject.position + moveMagnitude * baseSpeed);
+                }
+                else
+                {
+                    movingRigidBodyObject.useGravity = false;
+                    grabbedObj = transform.position;
+                    grabbedObj.y += 1.0f;
+                    grabbedObj += desiredForward * 1.2f;
+                    movingRigidBodyObject.MovePosition(grabbedObj);
+                    movingRigidBodyObject.MoveRotation(m_Rotation);
+                }  
             }
         }
         else
@@ -259,11 +268,6 @@ public class PlayerController : MonoBehaviour
     private void OnGrab()
     {
         isGrabbing = !isGrabbing;
-        // If grabbing something, disable gravity
-        if (isGrabbing)
-            movingRigidBodyObject.useGravity = false;
-        else
-            movingRigidBodyObject.useGravity = true;
     }
 
 
@@ -279,7 +283,7 @@ public class PlayerController : MonoBehaviour
     {
         
         print("Thing done!");
-        activeScript.OnJump(input.Get<float>() > 0f);
+        activeScript.OnJump(true);
         //isGrounded = false;
     }
 
@@ -366,9 +370,11 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
+        // Gotta decide exactly how we want to do the grab "break" mechanic?
+        // Definitely want more 'leniency' than previous
         //isGrabbing = false;
         //rigidBody.mass = normalMass;
-        //movingRigidBodyObject = null;
+        movingRigidBodyObject = null;
     }
     
     void OnReset(InputValue input) {
