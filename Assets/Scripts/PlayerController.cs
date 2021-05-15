@@ -268,6 +268,10 @@ public class PlayerController : MonoBehaviour
     private void OnGrab()
     {
         isGrabbing = !isGrabbing;
+        if (!isGrabbing)
+        {
+            movingRigidBodyObject.useGravity = true;
+        }
     }
 
 
