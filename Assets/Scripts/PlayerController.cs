@@ -318,13 +318,15 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        // This stops the player from adding force to the object which
-        // can knock over objects.
-        if (other.gameObject.CompareTag("Movable") && isGrabbing)
+        // Rigid body reference should only be changed if not set to anything.
+        if (movingRigidBodyObject == null) 
         {
-            // This breaks the seesaw mechanic bc you weigh nothing
-            //rigidBody.mass = 0;
-            movingRigidBodyObject = other.GetComponent<Rigidbody>();
+            if (other.gameObject.CompareTag("Movable") && isGrabbing)
+            {
+                // This breaks the seesaw mechanic bc you weigh nothing
+                //rigidBody.mass = 0;
+                movingRigidBodyObject = other.GetComponent<Rigidbody>();
+            }
         }
 
         if (other.gameObject.CompareTag("Animal") && !charnames.Contains(other.name))
@@ -366,9 +368,15 @@ public class PlayerController : MonoBehaviour
     
     private void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.CompareTag("Movable") && movingRigidBodyObject == null)
+        // Rigid body reference should only be changed if not set to anything.
+        if (movingRigidBodyObject == null)
         {
-            movingRigidBodyObject = other.gameObject.GetComponent<Rigidbody>();
+            if (other.gameObject.CompareTag("Movable") && isGrabbing)
+            {
+                // This breaks the seesaw mechanic bc you weigh nothing
+                //rigidBody.mass = 0;
+                movingRigidBodyObject = other.GetComponent<Rigidbody>();
+            }
         }
     }
 
@@ -378,9 +386,14 @@ public class PlayerController : MonoBehaviour
         // Definitely want more 'leniency' than previous
         //isGrabbing = false;
         //rigidBody.mass = normalMass;
-        movingRigidBodyObject = null;
+        if (movingRigidBodyObject == null) { }
+        else if (other.gameObject == movingRigidBodyObject.gameObject)
+        {
+            movingRigidBodyObject = null;
+            isGrabbing = false;
+        }
     }
-    
+
     void OnReset(InputValue input) {
         if (current_puzzle != null) {
             print("RESET!");
