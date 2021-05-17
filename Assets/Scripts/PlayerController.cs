@@ -66,8 +66,6 @@ public class PlayerController : MonoBehaviour
 
     private AudioSource walkingAudio;
 
-    private HighlightGameObject highlightObject;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -98,8 +96,6 @@ public class PlayerController : MonoBehaviour
 
         normalMass = rigidBody.mass;
         movingRigidBodyObject = null;
-
-        highlightObject = new HighlightGameObject();
     }
 
     IEnumerator Hold()
@@ -276,7 +272,6 @@ public class PlayerController : MonoBehaviour
         isGrabbing = !isGrabbing;
         if (!isGrabbing && movingRigidBodyObject != null)
         {
-            highlightObject.RemoveGameObject();
             movingRigidBodyObject.useGravity = true;
         }
     }
@@ -334,9 +329,6 @@ public class PlayerController : MonoBehaviour
                 //rigidBody.mass = 0;
                 movingRigidBodyObject = other.GetComponent<Rigidbody>();
 
-                // Set the object to highlight.
-                highlightObject.SetGameObject(other.gameObject);
-                highlightObject.ChangeColor();
             }
         }
 
@@ -388,9 +380,6 @@ public class PlayerController : MonoBehaviour
                 //rigidBody.mass = 0;
                 movingRigidBodyObject = other.GetComponent<Rigidbody>();
 
-                // Set the object to highlight.
-                highlightObject.SetGameObject(other.gameObject);
-                highlightObject.ChangeColor();
             }
         }
     }
@@ -406,9 +395,6 @@ public class PlayerController : MonoBehaviour
         {
             movingRigidBodyObject = null;
             isGrabbing = false;
-
-            // Remove the object to highlight.
-            highlightObject.RemoveGameObject();
         }
     }
 
