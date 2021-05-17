@@ -66,6 +66,8 @@ public class PlayerController : MonoBehaviour
 
     private AudioSource walkingAudio;
 
+    private HighlightGameObject highlightObject;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -96,6 +98,8 @@ public class PlayerController : MonoBehaviour
 
         normalMass = rigidBody.mass;
         movingRigidBodyObject = null;
+
+        highlightObject = new HighlightGameObject();
     }
 
     IEnumerator Hold()
@@ -162,7 +166,6 @@ public class PlayerController : MonoBehaviour
 
             if (isGrabbing && movingRigidBodyObject != null)
             {
-                print(activePlayer.name);
                 if (activePlayer.name != "Horse(Clone)")
                 {
                     movingRigidBodyObject.useGravity = true;
@@ -176,7 +179,10 @@ public class PlayerController : MonoBehaviour
                     grabbedObj += desiredForward * 1.2f;
                     movingRigidBodyObject.MovePosition(grabbedObj);
                     movingRigidBodyObject.MoveRotation(m_Rotation);
-                }  
+                }
+
+                //highlightObject.ChangeColor();
+                
             }
         }
         else
@@ -268,8 +274,9 @@ public class PlayerController : MonoBehaviour
     private void OnGrab()
     {
         isGrabbing = !isGrabbing;
-        if (!isGrabbing)
+        if (!isGrabbing && movingRigidBodyObject != null)
         {
+            highlightObject.RemoveGameObject();
             movingRigidBodyObject.useGravity = true;
         }
     }
@@ -326,6 +333,10 @@ public class PlayerController : MonoBehaviour
                 // This breaks the seesaw mechanic bc you weigh nothing
                 //rigidBody.mass = 0;
                 movingRigidBodyObject = other.GetComponent<Rigidbody>();
+
+                // Set the object to highlight.
+                highlightObject.SetGameObject(other.gameObject);
+                highlightObject.ChangeColor();
             }
         }
 
@@ -376,6 +387,10 @@ public class PlayerController : MonoBehaviour
                 // This breaks the seesaw mechanic bc you weigh nothing
                 //rigidBody.mass = 0;
                 movingRigidBodyObject = other.GetComponent<Rigidbody>();
+
+                // Set the object to highlight.
+                highlightObject.SetGameObject(other.gameObject);
+                highlightObject.ChangeColor();
             }
         }
     }
@@ -391,6 +406,9 @@ public class PlayerController : MonoBehaviour
         {
             movingRigidBodyObject = null;
             isGrabbing = false;
+
+            // Remove the object to highlight.
+            highlightObject.RemoveGameObject();
         }
     }
 
@@ -421,5 +439,7 @@ public class PlayerController : MonoBehaviour
         }
 
     }
+
+
 
 }
