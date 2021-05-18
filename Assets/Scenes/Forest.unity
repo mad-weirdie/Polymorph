@@ -6113,7 +6113,7 @@ PrefabInstance:
     - target: {fileID: 394546609, guid: 45e05422636cd4644afe4e22add16ed2, type: 3}
       propertyPath: teleporter
       value: 
-      objectReference: {fileID: 995139732}
+      objectReference: {fileID: 995139731}
     - target: {fileID: 4063351088088958156, guid: 45e05422636cd4644afe4e22add16ed2, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -8940,7 +8940,7 @@ PrefabInstance:
     - target: {fileID: 394546609, guid: 45e05422636cd4644afe4e22add16ed2, type: 3}
       propertyPath: teleporter
       value: 
-      objectReference: {fileID: 995139732}
+      objectReference: {fileID: 995139731}
     - target: {fileID: 4063351088088958156, guid: 45e05422636cd4644afe4e22add16ed2, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -13295,24 +13295,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: Portal
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 995139732, guid: 73609064b16320a468c759b84be43d05, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 73609064b16320a468c759b84be43d05, type: 3}
 --- !u!4 &995139729 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4797994711682591516, guid: 73609064b16320a468c759b84be43d05, type: 3}
   m_PrefabInstance: {fileID: 995139728}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &995139732 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 995139732, guid: 73609064b16320a468c759b84be43d05, type: 3}
+--- !u!1 &995139730 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 777005821, guid: 73609064b16320a468c759b84be43d05, type: 3}
   m_PrefabInstance: {fileID: 995139728}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+--- !u!114 &995139731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 995139730}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 15e8e9b5191dd0045a6769228dcd98e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  offMaterial: {fileID: 2100000, guid: c7bd8eb4d4724b44da09ebb1051b46bf, type: 2}
+  onMaterial: {fileID: 2100000, guid: dbce56a41ad43d34f864fb38f194b987, type: 2}
+  crystals: []
 --- !u!1001 &1000423776
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17041,7 +17051,7 @@ PrefabInstance:
     - target: {fileID: 394546609, guid: 45e05422636cd4644afe4e22add16ed2, type: 3}
       propertyPath: teleporter
       value: 
-      objectReference: {fileID: 995139732}
+      objectReference: {fileID: 995139731}
     - target: {fileID: 4063351088088958156, guid: 45e05422636cd4644afe4e22add16ed2, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -27059,7 +27069,7 @@ PrefabInstance:
     - target: {fileID: 394546609, guid: 45e05422636cd4644afe4e22add16ed2, type: 3}
       propertyPath: teleporter
       value: 
-      objectReference: {fileID: 995139732}
+      objectReference: {fileID: 995139731}
     - target: {fileID: 4063351088088958156, guid: 45e05422636cd4644afe4e22add16ed2, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -31798,7 +31808,7 @@ PrefabInstance:
     - target: {fileID: 394546609, guid: 45e05422636cd4644afe4e22add16ed2, type: 3}
       propertyPath: teleporter
       value: 
-      objectReference: {fileID: 995139732}
+      objectReference: {fileID: 995139731}
     - target: {fileID: 4063351088088958156, guid: 45e05422636cd4644afe4e22add16ed2, type: 3}
       propertyPath: m_RootOrder
       value: 1

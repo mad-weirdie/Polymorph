@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class pedestals : MonoBehaviour
+public class Pedestals : MonoBehaviour
 {
     public Orbs crystal;
-    public portal teleporter;
+    public Portal teleporter;
 
     // Update is called once per frame
     void OnTriggerEnter(Collider other)
@@ -22,7 +22,7 @@ public class pedestals : MonoBehaviour
         if (other.gameObject.name == "Activation Crystal")
         {
             crystal.Deactivate();
-            teleporter.AddCrystal();
+            teleporter.RemoveCrystal();
         }
     }
 }
