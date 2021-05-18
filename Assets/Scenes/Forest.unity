@@ -4966,7 +4966,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 71362ca469581c64cb45992912bbd1a2, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.13
+  m_Volume: 0.01
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -5025,7 +5025,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 0.9388889
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -11351,7 +11351,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5005282152444805242, guid: e32f2357a99374d489e9ec62cc8cf454, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.63475
+      value: 10.42
       objectReference: {fileID: 0}
     - target: {fileID: 5005282152444805242, guid: e32f2357a99374d489e9ec62cc8cf454, type: 3}
       propertyPath: m_LocalPosition.z
@@ -11923,7 +11923,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 799cdfaf94d535d438fec09bc3a606ae, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.32
+  m_Volume: 0.052
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -11982,7 +11982,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 0.51666665
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -16668,6 +16668,14 @@ PrefabInstance:
     - target: {fileID: 1393855598215229304, guid: b267e01defef9cb40abfab67294b534f, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.323
+      objectReference: {fileID: 0}
+    - target: {fileID: 5800532206133697216, guid: b267e01defef9cb40abfab67294b534f, type: 3}
+      propertyPath: m_Volume
+      value: 0.031
+      objectReference: {fileID: 0}
+    - target: {fileID: 5800532206133697216, guid: b267e01defef9cb40abfab67294b534f, type: 3}
+      propertyPath: spreadCustomCurve.m_Curve.Array.data[0].value
+      value: 0.9638889
       objectReference: {fileID: 0}
     - target: {fileID: 5816923457350117224, guid: b267e01defef9cb40abfab67294b534f, type: 3}
       propertyPath: m_RootOrder
