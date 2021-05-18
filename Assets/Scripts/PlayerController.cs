@@ -201,7 +201,7 @@ public class PlayerController : MonoBehaviour
             activePlayer.SetActive(false);
             activePlayer = characters[animal_index];
             activePlayer.SetActive(true);
-            rigidBody.constraints = RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezeRotationX;
+            //rigidBody.constraints = RigidbodyConstraints.FreezeRotationZ;
             ShapeShiftUpdate();
         }
     }
@@ -287,10 +287,9 @@ public class PlayerController : MonoBehaviour
 
     private void OnJump(InputValue input)
     {
-        
+
         print("Thing done!");
-        activeScript.OnJump(true);
-        //isGrounded = false;
+        activeScript.OnJump(input.Get<float>() > 0f);
     }
 
     private void OnClick()

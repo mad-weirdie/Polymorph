@@ -34,8 +34,6 @@ public class CrowVars : ShapeVariables
         
         }
 
-
-
     }
 
     // Update is called once per frame

@@ -541,6 +541,8 @@ SkinnedMeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 3
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -552,6 +554,7 @@ SkinnedMeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -657,9 +660,12 @@ GameObject:
   m_Component:
   - component: {fileID: 6325651906784001151}
   - component: {fileID: 6325651906776994709}
+  - component: {fileID: 2116416422}
+  - component: {fileID: 2116416423}
+  - component: {fileID: 2116416421}
   m_Layer: 0
-  m_Name: Horse_LOD0
-  m_TagString: Untagged
+  m_Name: Horse
+  m_TagString: Animal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -673,7 +679,7 @@ Transform:
   m_GameObject: {fileID: 6325651906784288863}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.432, y: 0.432, z: 0.432}
   m_Children:
   - {fileID: 6325651906784001145}
   - {fileID: 6325651906784001131}
@@ -699,3 +705,50 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!136 &2116416422
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6325651906784288863}
+  m_Material: {fileID: 13400000, guid: c8dc898bd3bdb1540b5c74e2e92982cb, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1.0194556
+  m_Height: 2.038911
+  m_Direction: 2
+  m_Center: {x: 0.00000013010447, y: 0.8191908, z: -0.12307448}
+--- !u!65 &2116416423
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6325651906784288863}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.67, y: 4.27, z: 4.98}
+  m_Center: {x: 0, y: 2.19, z: 0}
+--- !u!114 &2116416421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6325651906784288863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99f45a17ed15619449d89252c87c779c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animalSpeed: 0.1
+  turnSpeed: 20
+  player: {fileID: 0}
+  animalMass: 70
+  shapeOffsets: {x: 0, y: 0, z: 0}
+  script: {fileID: 0}
+  jumpForce: 5
+  height: {x: 0, y: 0, z: 0}
