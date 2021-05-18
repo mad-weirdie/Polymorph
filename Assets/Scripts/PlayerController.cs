@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour
     private Transform cameraTrans;
     public float prev_x_speed;
     public float prev_y_speed;
-    private float currentZoom = 5f;
+    private float currentZoom = 10f;
     public float minzoom = 1f;
     public float maxzoom = 8f;
     public float zoomSpeed = .5f;
