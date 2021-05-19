@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/House.unity
     guid: c68c320f482127c4486c6a4c2b051cf4
   - enabled: 0
@@ -14,7 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Forest.unity
     guid: f0b081ccf12e742408fefd9c0a19d9b4
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Mines.unity
     guid: 91c29da0dc25893439323e683a03335f
   m_configObjects:
