@@ -1,0 +1,281 @@
+Using pre-set license
+Built from '2020.3/release' branch; Version is '2020.3.1f1 (77a89f25062f) revision 7841951'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19042.985; Version 2009; 64bit' Language: 'en' Physical Memory: 16245 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/meera/Documents/GitHub/Polymorph
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+49615
+Successfully changed project path to: C:/Users/meera/Documents/GitHub/Polymorph
+C:/Users/meera/Documents/GitHub/Polymorph
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 90.49 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.1f1 (77a89f25062f)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/meera/Documents/GitHub/Polymorph/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f15)
+    Vendor:   
+    VRAM:     5980 MB
+    Driver:   27.21.14.5730
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56384
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001856 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 86.10 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.976 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.001755 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 108.06 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.124 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.94 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3324 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 276.5 MB.
+System memory in use after: 276.7 MB.
+
+Unloading 129 unused Assets to reduce memory usage. Loaded Objects now: 3800.
+Total: 3.462300 ms (FindLiveObjects: 0.301600 ms CreateObjectMapping: 0.209700 ms MarkObjects: 2.829200 ms  DeleteObjects: 0.121100 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/AS_Magic_Aura_Construction_Kit_FREE/Runes/Rune_1.png
+  artifactKey: Guid(f476d2a168ad941ce955acbb3522c455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AS_Magic_Aura_Construction_Kit_FREE/Runes/Rune_1.png using Guid(f476d2a168ad941ce955acbb3522c455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03fde5e38f3b0326836236aa1ddd47c5') in 0.070196 seconds
+  Import took 0.075050 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/AS_Magic_Aura_Construction_Kit_FREE/Runes/Rune_8.png
+  artifactKey: Guid(c77ffddaec289450d8293a82f0bf0423) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AS_Magic_Aura_Construction_Kit_FREE/Runes/Rune_8.png using Guid(c77ffddaec289450d8293a82f0bf0423) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e31873b5a3467b1bd5f28f44ce5f74e2') in 0.010312 seconds
+  Import took 0.014792 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000149 seconds.
+  path: Assets/AS_Magic_Aura_Construction_Kit_FREE/Runes/Rune_7.png
+  artifactKey: Guid(ab19a59545b1949f3a52a3dfdc26b7da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AS_Magic_Aura_Construction_Kit_FREE/Runes/Rune_7.png using Guid(ab19a59545b1949f3a52a3dfdc26b7da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cd2bee691c86e0a0b751a4155ad1b76') in 0.009449 seconds
+  Import took 0.013782 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Assets/AS_Magic_Aura_Construction_Kit_FREE/Runes/Rune_4.png
+  artifactKey: Guid(25de142cce63a4513b03edb34831a88e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AS_Magic_Aura_Construction_Kit_FREE/Runes/Rune_4.png using Guid(25de142cce63a4513b03edb34831a88e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18128969c8002afc5d19c190487ed11a') in 0.009257 seconds
+  Import took 0.013522 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/AS_Magic_Aura_Construction_Kit_FREE/Runes/Rune_6.png
+  artifactKey: Guid(8ff0dc9270bbb42f9bb20bb13fb106f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AS_Magic_Aura_Construction_Kit_FREE/Runes/Rune_6.png using Guid(8ff0dc9270bbb42f9bb20bb13fb106f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bc1e4c311b7628b517e5709448b5223') in 0.009315 seconds
+  Import took 0.013553 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/AS_Magic_Aura_Construction_Kit_FREE/Runes/Rune_5.png
+  artifactKey: Guid(61f3b13a211544cc791161937176117e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AS_Magic_Aura_Construction_Kit_FREE/Runes/Rune_5.png using Guid(61f3b13a211544cc791161937176117e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db3924b96cac387e2b18e716f8c286be') in 0.009285 seconds
+  Import took 0.013346 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/AS_Magic_Aura_Construction_Kit_FREE/Runes/Rune_3.png
+  artifactKey: Guid(01df9ed1484ea4a4aae37266197c6b7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AS_Magic_Aura_Construction_Kit_FREE/Runes/Rune_3.png using Guid(01df9ed1484ea4a4aae37266197c6b7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9cf96da9fe1c871c3da27c0358a5b9c') in 0.010112 seconds
+  Import took 0.015029 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000155 seconds.
+  path: Assets/AS_Magic_Aura_Construction_Kit_FREE/Runes/Rune_9.png
+  artifactKey: Guid(f4b1e6fa0d005425487858e1fe2b1128) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AS_Magic_Aura_Construction_Kit_FREE/Runes/Rune_9.png using Guid(f4b1e6fa0d005425487858e1fe2b1128) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55aafb9a523f7518d56ca139111a88f1') in 0.011437 seconds
+  Import took 0.016620 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/AS_Magic_Aura_Construction_Kit_FREE/Runes/Rune_10.png
+  artifactKey: Guid(4b000fd91053f4129a0d41af854f093c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AS_Magic_Aura_Construction_Kit_FREE/Runes/Rune_10.png using Guid(4b000fd91053f4129a0d41af854f093c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '375b4a277b99c6d6936abf75aa91017d') in 0.010123 seconds
+  Import took 0.015199 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Assets/AS_Magic_Aura_Construction_Kit_FREE/Runes/Rune_2.png
+  artifactKey: Guid(aa39399883ba14669a7ab4747c8e5f29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AS_Magic_Aura_Construction_Kit_FREE/Runes/Rune_2.png using Guid(aa39399883ba14669a7ab4747c8e5f29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '364ac3431f4d7f3936b736c99e02e528') in 0.010771 seconds
+  Import took 0.015250 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.529407 seconds.
+  path: Assets/AS_Magic_Aura_Construction_Kit_FREE/Particles/Particle_1.png
+  artifactKey: Guid(433dc99a7560b4f599ae5fdc56664126) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AS_Magic_Aura_Construction_Kit_FREE/Particles/Particle_1.png using Guid(433dc99a7560b4f599ae5fdc56664126) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb9c3718eb96547683ecdce7cf273d7b') in 0.018136 seconds
+  Import took 0.022439 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/AS_Magic_Aura_Construction_Kit_FREE/Particles/Particle_2.png
+  artifactKey: Guid(6c9601a195390475b8b18b93e3154fba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AS_Magic_Aura_Construction_Kit_FREE/Particles/Particle_2.png using Guid(6c9601a195390475b8b18b93e3154fba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c48d1a7410efe698b68c07a4c01e89e') in 0.010018 seconds
+  Import took 0.014371 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/AS_Magic_Aura_Construction_Kit_FREE/Particles/Particle_4.png
+  artifactKey: Guid(f2a73be4a5867496ca3fed38d4822bc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AS_Magic_Aura_Construction_Kit_FREE/Particles/Particle_4.png using Guid(f2a73be4a5867496ca3fed38d4822bc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b8a1a63e56faca10c8ce39667535b9b') in 0.010957 seconds
+  Import took 0.016283 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/AS_Magic_Aura_Construction_Kit_FREE/Particles/Particle_3.png
+  artifactKey: Guid(2dc7f4fb221384b6182a7c1112718f01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AS_Magic_Aura_Construction_Kit_FREE/Particles/Particle_3.png using Guid(2dc7f4fb221384b6182a7c1112718f01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '538732c7a735ca08d6c12b41126c733d') in 0.012086 seconds
+  Import took 0.017127 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/AS_Magic_Aura_Construction_Kit_FREE/Particles/Particle_5.png
+  artifactKey: Guid(fd3fcf33c070e427e8e0450c335713d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AS_Magic_Aura_Construction_Kit_FREE/Particles/Particle_5.png using Guid(fd3fcf33c070e427e8e0450c335713d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31a8574adeca060edbb52f4d33287706') in 0.010502 seconds
+  Import took 0.015169 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.408234 seconds.
+  path: Assets/AS_Magic_Aura_Construction_Kit_FREE/Circles/Magic_Circle_1.png
+  artifactKey: Guid(90cc6544d68264765a9346ad77fac6a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AS_Magic_Aura_Construction_Kit_FREE/Circles/Magic_Circle_1.png using Guid(90cc6544d68264765a9346ad77fac6a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de4e980992328b86f2bcb16d3ab2c1f9') in 0.012339 seconds
+  Import took 0.017005 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000175 seconds.
+  path: Assets/AS_Magic_Aura_Construction_Kit_FREE/Circles/Magic_Circle_2.png
+  artifactKey: Guid(169cc9dc838ef4ef0abafc9488af0198) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AS_Magic_Aura_Construction_Kit_FREE/Circles/Magic_Circle_2.png using Guid(169cc9dc838ef4ef0abafc9488af0198) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06bf2f161c01e74a058456aefe69bf7d') in 0.010176 seconds
+  Import took 0.014540 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000138 seconds.
+  path: Assets/AS_Magic_Aura_Construction_Kit_FREE/Circles/Magic_Circle_3.png
+  artifactKey: Guid(6885cc5ccd99a4fcc94f86bcd03d9a2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AS_Magic_Aura_Construction_Kit_FREE/Circles/Magic_Circle_3.png using Guid(6885cc5ccd99a4fcc94f86bcd03d9a2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f055eb69ad0472f261e9ba5d4a25720') in 0.011295 seconds
+  Import took 0.016096 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/AS_Magic_Aura_Construction_Kit_FREE/Circles/Magic_Circle_4.png
+  artifactKey: Guid(f1dd36ae44d7d4beca104d6864664b76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AS_Magic_Aura_Construction_Kit_FREE/Circles/Magic_Circle_4.png using Guid(f1dd36ae44d7d4beca104d6864664b76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '921330cd50edee2cceb82383f14b2a60') in 0.011533 seconds
+  Import took 0.016653 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.885596 seconds.
+  path: Assets/AS_Magic_Aura_Construction_Kit_FREE/Demo Scene/Materials/Metal Plane.mat
+  artifactKey: Guid(aa03ee1f4d9b643b0969216f8712f777) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AS_Magic_Aura_Construction_Kit_FREE/Demo Scene/Materials/Metal Plane.mat using Guid(aa03ee1f4d9b643b0969216f8712f777) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b91c21c11e273732d816e2912866e727') in 0.160683 seconds
+  Import took 0.165630 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.480659 seconds.
+  path: Assets/AS_Magic_Aura_Construction_Kit_FREE/_Icon.png
+  artifactKey: Guid(ba410e66d86d04fa08db560ec201dd6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AS_Magic_Aura_Construction_Kit_FREE/_Icon.png using Guid(ba410e66d86d04fa08db560ec201dd6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b833be5fe991fe227964cc4fb4ffe86a') in 0.008070 seconds
+  Import took 0.012855 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001947 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.13 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.049 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.99 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3156 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 271.5 MB.
+System memory in use after: 271.7 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3883.
+Total: 3.015900 ms (FindLiveObjects: 0.454100 ms CreateObjectMapping: 0.333000 ms MarkObjects: 2.212800 ms  DeleteObjects: 0.014500 ms)
+
