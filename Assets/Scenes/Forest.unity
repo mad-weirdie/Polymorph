@@ -14168,8 +14168,8 @@ MonoBehaviour:
   animalMass: 10
   shapeOffsets: {x: 0, y: 0, z: 0}
   script: {fileID: 1591534543}
-  flyingHeight: 2
-  glidingForce: 500
+  flyingHeight: 1
+  glidingForce: 80
   height: {x: 0, y: 0, z: 0}
   glideForce: {x: 0, y: 0, z: 0}
   jumpHeld: 0
