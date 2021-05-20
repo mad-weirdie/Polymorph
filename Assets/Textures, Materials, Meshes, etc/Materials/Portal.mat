@@ -133,7 +133,7 @@ Material:
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _EMISSION_WEIGHT: 1
+    - _EMISSION_WEIGHT: 0.425
     - _EnvironmentReflections: 1
     - _GlossMapScale: 0
     - _Glossiness: 0
@@ -152,14 +152,14 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Surface: 0
-    - _TRANSPARENCY: 0
+    - _TRANSPARENCY: 0.525
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
     - _BASE_COLOR: {r: 0.69036174, g: 0.635671, b: 0.9056604, a: 1}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _EMISSION_COLOR: {r: 1, g: 1, b: 1, a: 0}
+    - _EMISSION_COLOR: {r: 0.050943315, g: 0.8733248, b: 1, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _REFLECTIONS_COLOR: {r: 1, g: 0, b: 0.5653572, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}

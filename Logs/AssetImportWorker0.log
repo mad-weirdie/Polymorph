@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2020.3/release' branch; Version is '2020.3.1f1 (77a89f25062f) revision 7841951'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home; OS build 19041.985; Version 2004; 64bit' Language: 'en' Physical Memory: 16166 MB
+OS: 'Windows 10 Home; OS build 19042.985; Version 2009; 64bit' Language: 'en' Physical Memory: 16245 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
@@ -11,304 +11,30 @@ C:\Program Files\Unity\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/rennt/Desktop/School/CIS 410/GITPolymorph/Polymorph
+C:/Users/meera/Documents/GitHub/Polymorph
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-51465
-Successfully changed project path to: C:/Users/rennt/Desktop/School/CIS 410/GITPolymorph/Polymorph
-C:/Users/rennt/Desktop/School/CIS 410/GITPolymorph/Polymorph
+55312
+Successfully changed project path to: C:/Users/meera/Documents/GitHub/Polymorph
+C:/Users/meera/Documents/GitHub/Polymorph
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 80.61 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 288.79 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.1f1 (77a89f25062f)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/rennt/Desktop/School/CIS 410/GITPolymorph/Polymorph/Assets
+[Subsystems] Discovering subsystems at path C:/Users/meera/Documents/GitHub/Polymorph/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1660 Ti (ID=0x2191)
+    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f15)
     Vendor:   
-    VRAM:     5991 MB
-    Driver:   27.21.14.5763
+    VRAM:     5980 MB
+    Driver:   27.21.14.5730
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56992
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56152
 Begin MonoManager ReloadAssembly
-Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
-Register platform support module: C:/Program Files/Unity/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001744 seconds.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 85.65 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.915 seconds
-Platform modules already initialized, skipping
-Registering precompiled user dll's ...
-Registered in 0.001774 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 106.79 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.207 seconds
-Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.93 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3322 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 158.6 MB.
-System memory in use after: 158.8 MB.
-
-Unloading 130 unused Assets to reduce memory usage. Loaded Objects now: 3760.
-Total: 2.983800 ms (FindLiveObjects: 0.505000 ms CreateObjectMapping: 0.285100 ms MarkObjects: 2.042000 ms  DeleteObjects: 0.151000 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/Textures, Materials, Meshes, etc/Materials/Portal.mat
-  artifactKey: Guid(dbce56a41ad43d34f864fb38f194b987) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures, Materials, Meshes, etc/Materials/Portal.mat using Guid(dbce56a41ad43d34f864fb38f194b987) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2465ce54938877ec17ed6fa3e6e387cf') in 0.628933 seconds
-  Import took 0.634601 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000279 seconds.
-  path: Assets/Scripts/Portal.cs
-  artifactKey: Guid(15e8e9b5191dd0045a6769228dcd98e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Portal.cs using Guid(15e8e9b5191dd0045a6769228dcd98e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd27aff84282ad3665d6a10bb32652217') in 0.004877 seconds
-  Import took 0.009668 seconds .
-
-========================================================================
-Received Prepare
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.66 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 90.5 MB.
-System memory in use after: 90.8 MB.
-
-Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 3865.
-Total: 3.056100 ms (FindLiveObjects: 0.347500 ms CreateObjectMapping: 0.178800 ms MarkObjects: 2.517200 ms  DeleteObjects: 0.012000 ms)
-
-========================================================================
-Received Prepare
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.99 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 90.5 MB.
-System memory in use after: 90.8 MB.
-
-Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 3865.
-Total: 3.074700 ms (FindLiveObjects: 0.331700 ms CreateObjectMapping: 0.168700 ms MarkObjects: 2.559100 ms  DeleteObjects: 0.014000 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 487.141678 seconds.
-  path: Assets/Prefabs/Puzzles
-  artifactKey: Guid(7e13f8e12880ac24ab2ea1bf4424fe27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Puzzles using Guid(7e13f8e12880ac24ab2ea1bf4424fe27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91bedf6356ba9c92dec7fbc01d18847e') in 0.008072 seconds
-  Import took 0.016112 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.067723 seconds.
-  path: Assets/Prefabs/Puzzles/Level1.prefab
-  artifactKey: Guid(fde144108ff416a43a79e8174da9071b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Puzzles/Level1.prefab using Guid(fde144108ff416a43a79e8174da9071b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73382c80aa1fff895002aa0fee832daa') in 0.081613 seconds
-  Import took 0.089266 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000250 seconds.
-  path: Assets/Prefabs/Puzzles/Minecart_filled.prefab
-  artifactKey: Guid(becd9f64fdfc58a4e8cb85cc3c3546af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Puzzles/Minecart_filled.prefab using Guid(becd9f64fdfc58a4e8cb85cc3c3546af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e9ae3d07a10ae3f82591b565e09f50e') in 0.028012 seconds
-  Import took 0.033076 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000158 seconds.
-  path: Assets/Prefabs/Puzzles/Stump_05 Variant.prefab
-  artifactKey: Guid(31ad569e25116844c8902dbba40badbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Puzzles/Stump_05 Variant.prefab using Guid(31ad569e25116844c8902dbba40badbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3da29ce4fb1c0f0455e7600956bb34d8') in 0.012410 seconds
-  Import took 0.018695 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000221 seconds.
-  path: Assets/Prefabs/Puzzles/Tower.prefab
-  artifactKey: Guid(f6ba032a9ce68c44684f3ecb35ba02aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Puzzles/Tower.prefab using Guid(f6ba032a9ce68c44684f3ecb35ba02aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fc932f794181188c8faa8bd3bab46b9') in 0.024605 seconds
-  Import took 0.030139 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000151 seconds.
-  path: Assets/Prefabs/Puzzles/Puzzle2.prefab
-  artifactKey: Guid(95e2980da76d4b140855132b5bcc1812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Puzzles/Puzzle2.prefab using Guid(95e2980da76d4b140855132b5bcc1812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ce95e1329d2e18b4c08838db866c013') in 0.095024 seconds
-  Import took 0.102073 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000180 seconds.
-  path: Assets/Prefabs/Puzzles/Level2.prefab
-  artifactKey: Guid(f99411702a8144b41a3854e90d939127) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Puzzles/Level2.prefab using Guid(f99411702a8144b41a3854e90d939127) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bef2cb809f3a236a0b9d0f076ea267b3') in 0.032383 seconds
-  Import took 0.039506 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000147 seconds.
-  path: Assets/Prefabs/Puzzles/Seesaw_type.prefab
-  artifactKey: Guid(76477f4852e025c4faa5f712457ebef7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Puzzles/Seesaw_type.prefab using Guid(76477f4852e025c4faa5f712457ebef7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e984ed3837919aa50c8c29d7e178642') in 0.010114 seconds
-  Import took 0.016149 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000155 seconds.
-  path: Assets/Prefabs/Puzzles/PuzzleController.prefab
-  artifactKey: Guid(9932b0089afabf44e84b7f5cf534754b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Puzzles/PuzzleController.prefab using Guid(9932b0089afabf44e84b7f5cf534754b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f702e357d781eccf936a4a51097cfef0') in 0.008124 seconds
-  Import took 0.013941 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 23.154121 seconds.
-  path: Assets/Prefabs/Caves/Crystals/Activation Crystal.prefab
-  artifactKey: Guid(93aa7b999f7a8ed48981dadcee7c8862) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Caves/Crystals/Activation Crystal.prefab using Guid(93aa7b999f7a8ed48981dadcee7c8862) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '048572b148a72ccd6dbca9c0be35ff72') in 0.019089 seconds
-  Import took 0.026296 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.057750 seconds.
-  path: Assets/Prefabs/Caves/Crystals/Crystal_01.prefab
-  artifactKey: Guid(0a17530742042cf4f9032256f935c2e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Caves/Crystals/Crystal_01.prefab using Guid(0a17530742042cf4f9032256f935c2e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96c5b5aa8d57e159e1c74e02b98b06e8') in 0.028361 seconds
-  Import took 0.035228 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000254 seconds.
-  path: Assets/Prefabs/Caves/Crystals/Crystal_04.prefab
-  artifactKey: Guid(c6859c6e96cc05f43a0ad898cb689f05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Caves/Crystals/Crystal_04.prefab using Guid(c6859c6e96cc05f43a0ad898cb689f05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3954c7dfcf8c7072eb8e4e718b7c6b6a') in 0.011208 seconds
-  Import took 0.016754 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000274 seconds.
-  path: Assets/Prefabs/Caves/Crystals/Crystal_99.prefab
-  artifactKey: Guid(7f2ce93b5248a1a4fb41b5b8d004be92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Caves/Crystals/Crystal_99.prefab using Guid(7f2ce93b5248a1a4fb41b5b8d004be92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '810d7122c19aa26a998d4549763f6a3c') in 0.012036 seconds
-  Import took 0.017651 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000156 seconds.
-  path: Assets/Prefabs/Caves/Crystals/Crystal_02.prefab
-  artifactKey: Guid(c88d4408ff672f145b9eb5ff9f99aed6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Caves/Crystals/Crystal_02.prefab using Guid(c88d4408ff672f145b9eb5ff9f99aed6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31076615f2846a422204b6bb365ed93f') in 0.011582 seconds
-  Import took 0.017297 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000207 seconds.
-  path: Assets/Prefabs/Caves/Crystals/Crystal_06.prefab
-  artifactKey: Guid(ef36fe1544d74d74e9fc870a473eea39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Caves/Crystals/Crystal_06.prefab using Guid(ef36fe1544d74d74e9fc870a473eea39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de6926998a0a69a5df3caff0fbe4e4ea') in 0.011526 seconds
-  Import took 0.018651 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000197 seconds.
-  path: Assets/Prefabs/Caves/Crystals/Crystal_61.prefab
-  artifactKey: Guid(f261204eaa41a21419ac4a775d2cfdc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Caves/Crystals/Crystal_61.prefab using Guid(f261204eaa41a21419ac4a775d2cfdc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e58f6c6c4a973810c1e4efc2907b765') in 0.026820 seconds
-  Import took 0.032258 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000194 seconds.
-  path: Assets/Prefabs/Caves/Crystals/Crystal_05.prefab
-  artifactKey: Guid(6c800cd87e5ade3419c391c5c825b6d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Caves/Crystals/Crystal_05.prefab using Guid(6c800cd87e5ade3419c391c5c825b6d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e86a2e6c81cc917400f35c32221efc8a') in 0.011577 seconds
-  Import took 0.017393 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000143 seconds.
-  path: Assets/Prefabs/Caves/Crystals/Crystal_17.prefab
-  artifactKey: Guid(c0ed2a71608d12c47b4a8b698ddd42df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Caves/Crystals/Crystal_17.prefab using Guid(c0ed2a71608d12c47b4a8b698ddd42df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9fa0c73e6f1ea1a01846db99ee99242') in 0.012330 seconds
-  Import took 0.018022 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000155 seconds.
-  path: Assets/Prefabs/Caves/Crystals/Crystal_12.prefab
-  artifactKey: Guid(5dff1c350e69c0f4babc2e89941a1e1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Caves/Crystals/Crystal_12.prefab using Guid(5dff1c350e69c0f4babc2e89941a1e1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65811268190d5de08eeedfe7e5354ce5') in 0.026231 seconds
-  Import took 0.032226 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.959458 seconds.
-  path: Assets/Prefabs/Caves/Crystals/Pedestal.prefab
-  artifactKey: Guid(c1f3b8b4b4897654b94a6e1b63d6c20b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Caves/Crystals/Pedestal.prefab using Guid(c1f3b8b4b4897654b94a6e1b63d6c20b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f80f79f2f25b178a9f7d816ed509833') in 0.014554 seconds
-  Import took 0.020844 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001883 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.97 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
-
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.897 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.86 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3157 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 168.9 MB.
-System memory in use after: 169.1 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3843.
-Total: 6.218400 ms (FindLiveObjects: 0.770600 ms CreateObjectMapping: 0.522600 ms MarkObjects: 4.908000 ms  DeleteObjects: 0.015200 ms)
-
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file
