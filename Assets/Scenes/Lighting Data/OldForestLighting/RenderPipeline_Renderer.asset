@@ -15,13 +15,13 @@ MonoBehaviour:
   m_Active: 1
   m_Shader: {fileID: 4800000, guid: 0849e84e3d62649e8882e9d6f056a017, type: 3}
   m_Settings:
-    Downsample: 1
-    Source: 1
+    Downsample: 0
+    Source: 0
     NormalSamples: 1
-    Intensity: 0.05
-    DirectLightingStrength: 0.201
-    Radius: 1.57
-    SampleCount: 14
+    Intensity: 0.29
+    DirectLightingStrength: 0
+    Radius: 0.16
+    SampleCount: 4
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57,7 +57,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   m_DefaultStencilState:
     overrideStencilState: 0
-    stencilReference: 6
+    stencilReference: 3
     stencilCompareFunction: 8
     passOperation: 2
     failOperation: 0
