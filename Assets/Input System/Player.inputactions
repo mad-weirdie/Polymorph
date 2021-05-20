@@ -62,7 +62,7 @@
                     "interactions": ""
                 },
                 {
-                    "name": "ShapeShiftTurtle",
+                    "name": "ShapeShift1",
                     "type": "Button",
                     "id": "194434a2-9d3b-487c-ba49-a0eca04e6975",
                     "expectedControlType": "Button",
@@ -70,7 +70,7 @@
                     "interactions": ""
                 },
                 {
-                    "name": "ShapeShiftHorse",
+                    "name": "ShapeShift2",
                     "type": "Button",
                     "id": "3870d765-aaa7-4bfb-a4a4-f742a46de0d1",
                     "expectedControlType": "Button",
@@ -78,7 +78,7 @@
                     "interactions": ""
                 },
                 {
-                    "name": "ShapeShiftRaccoon",
+                    "name": "ShapeShift3",
                     "type": "Button",
                     "id": "831bc05e-1677-4514-a576-d0500cc72178",
                     "expectedControlType": "Button",
@@ -86,9 +86,41 @@
                     "interactions": ""
                 },
                 {
-                    "name": "ShapeShiftCrow",
+                    "name": "ShapeShift4",
                     "type": "Button",
                     "id": "02b890b0-d7cf-404e-92b8-57a493eae952",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "ShapeShift5",
+                    "type": "Button",
+                    "id": "9b2ccf06-2e40-4fe1-81d0-78eb751e455d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "ShapeShift6",
+                    "type": "Button",
+                    "id": "40886c5f-0e29-40d1-b528-01a4754d4956",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "ShapeShift7",
+                    "type": "Button",
+                    "id": "32b28218-790b-41c5-8593-250d4b3e022f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "ShapeShift8",
+                    "type": "Button",
+                    "id": "48b28981-b1c8-4935-b0d8-d80897e947d7",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
@@ -359,7 +391,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "ShapeShiftTurtle",
+                    "action": "ShapeShift1",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -370,7 +402,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "ShapeShiftHorse",
+                    "action": "ShapeShift2",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -381,7 +413,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "ShapeShiftRaccoon",
+                    "action": "ShapeShift3",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -392,7 +424,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "ShapeShiftCrow",
+                    "action": "ShapeShift4",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -470,6 +502,50 @@
                     "processors": "",
                     "groups": "",
                     "action": "Skip",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "81f6deb8-1cd8-478d-924d-69107d5ed7b5",
+                    "path": "<Keyboard>/5",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ShapeShift5",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5367497a-cbc5-4a86-a95d-02d49460a8e1",
+                    "path": "<Keyboard>/6",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ShapeShift6",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "cf123aaf-6dcd-4f8d-8552-32346a94c3a1",
+                    "path": "<Keyboard>/7",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ShapeShift7",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "243f0f78-c9d4-43e4-aeef-23e8bb7beb93",
+                    "path": "<Keyboard>/8",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ShapeShift8",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

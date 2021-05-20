@@ -41,12 +41,6 @@ public class PlayerController : MonoBehaviour
     private bool wasWalking; //Were we walking last frame?
     public bool isGrounded;
 
-    /* Index values in the character array for the animals */
-    private int ind_TURTLE = 0;
-    private int ind_HORSE = 1;
-    private int ind_RACCOON = 2;
-    private int ind_CROW = 3;
-
     public GameObject CharacterWheel;
     public GameObject SettingsMenu;
     public AudioSource ShapeShiftSound;
@@ -89,11 +83,6 @@ public class PlayerController : MonoBehaviour
         
         rigidBody = GetComponent<Rigidbody>();
         ShapeShiftUpdate();
-
-        for (int i = 1; i < 4; i++)
-        {
-            characters.Add(null);
-        }
 
         normalMass = rigidBody.mass;
         movingRigidBodyObject = null;
@@ -237,36 +226,71 @@ public class PlayerController : MonoBehaviour
         CharacterWheel.SetActive(!CharacterWheel.activeSelf);
     }
 
-    void OnShapeShiftHorse()
+    void OnShapeShift1()
     {
-        if (characters[ind_HORSE] != null && CharacterWheel.activeSelf)
+        if (characters[0] != null)
         {
-            ShapeShiftTo(ind_HORSE);
+            ShapeShiftTo(0);
         }
     }
 
-    void OnShapeShiftTurtle()
+    void OnShapeShift2()
     {
-        if (characters[ind_TURTLE] != null && CharacterWheel.activeSelf)
+        if (characters[1] != null)
         {
-            ShapeShiftTo(ind_TURTLE);
+            ShapeShiftTo(1);
         }
     }
 
-    void OnShapeShiftRaccoon()
+    void OnShapeShift3()
     {
-        if (characters[ind_RACCOON] != null && CharacterWheel.activeSelf)
+        if (characters[2] != null)
         {
-            ShapeShiftTo(ind_RACCOON);
+            ShapeShiftTo(2);
         }
     }
-    void OnShapeShiftCrow()
+
+
+    void OnShapeShift4()
     {
-        if (characters[ind_CROW] != null && CharacterWheel.activeSelf)
+        if (characters[3] != null)
         {
-            ShapeShiftTo(ind_CROW);
+            ShapeShiftTo(3);
         }
     }
+
+    void OnShapeShift5()
+    {
+        if (characters[4] != null)
+        {
+            ShapeShiftTo(4);
+        }
+    }
+
+    void OnShapeShift6()
+    {
+        if (characters[5] != null)
+        {
+            ShapeShiftTo(5);
+        }
+    }
+
+    void OnShapeShift7()
+    {
+        if (characters[6] != null)
+        {
+            ShapeShiftTo(6);
+        }
+    }
+
+    void OnShapeShift8()
+    {
+        if (characters[7] != null)
+        {
+            ShapeShiftTo(7);
+        }
+    }
+
 
     private void OnGrab()
     {
@@ -336,6 +360,12 @@ public class PlayerController : MonoBehaviour
         {
             int activeIndex;
 
+            
+            characters.Add(GameObject.Instantiate(other.gameObject, this.transform, false));
+            CharacterWheel.transform.GetChild(characters.Count - 1).gameObject.SetActive(true);
+            activeIndex = characters.Count - 1;
+
+            /*
             if (other.name == "Horse")
             {
                 CharacterWheel.transform.GetChild(ind_HORSE).gameObject.SetActive(true);
@@ -356,7 +386,7 @@ public class PlayerController : MonoBehaviour
             }
             else
                 return;
-
+            */
             //other.gameObject.SetActive(false); //Remove animal for consistency + stop clipping issues!
             charnames.Add(other.name);
 
