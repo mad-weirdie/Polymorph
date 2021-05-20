@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.InputSystem;
 using Cinemachine;
 
@@ -360,18 +359,11 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.CompareTag("Animal") && !charnames.Contains(other.name))
         {
             int activeIndex;
-            Texture2D animalImage;
 
-            // Add the character to the character array.
+            
             characters.Add(GameObject.Instantiate(other.gameObject, this.transform, false));
             CharacterWheel.transform.GetChild(characters.Count - 1).gameObject.SetActive(true);
             activeIndex = characters.Count - 1;
-
-
-            // Load the resource image into the character selection frame.
-            animalImage = Resources.Load("Images/" + other.name) as Texture2D;
-            GameObject image = CharacterWheel.transform.GetChild(activeIndex).GetChild(0).gameObject;
-            image.GetComponent<RawImage>().texture = animalImage;
 
             /*
             if (other.name == "Horse")
