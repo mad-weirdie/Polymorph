@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12866376, g: 0.0784845, b: 0.08062358, a: 1}
+  m_IndirectSpecularColor: {r: 0.1288606, g: 0.078561254, b: 0.080686025, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -13260,27 +13260,27 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5053175796464189593, guid: 800db384af6757d4f8cef0b236e19025, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.2097857
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5053175796464189593, guid: 800db384af6757d4f8cef0b236e19025, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.876541
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5053175796464189593, guid: 800db384af6757d4f8cef0b236e19025, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9350062
+      value: -0.09120552
       objectReference: {fileID: 0}
     - target: {fileID: 5053175796464189593, guid: 800db384af6757d4f8cef0b236e19025, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.33851895
+      value: -0.033020947
       objectReference: {fileID: 0}
     - target: {fileID: 5053175796464189593, guid: 800db384af6757d4f8cef0b236e19025, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.09936869
+      value: 0.93583775
       objectReference: {fileID: 0}
     - target: {fileID: 5053175796464189593, guid: 800db384af6757d4f8cef0b236e19025, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.03597643
+      value: -0.33881995
       objectReference: {fileID: 0}
     - target: {fileID: 6561955889413271920, guid: 800db384af6757d4f8cef0b236e19025, type: 3}
       propertyPath: m_LocalRotation.w
@@ -13300,11 +13300,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7466538397113198766, guid: 800db384af6757d4f8cef0b236e19025, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.09234479
+      value: 0.092344806
       objectReference: {fileID: 0}
     - target: {fileID: 7466538397113198766, guid: 800db384af6757d4f8cef0b236e19025, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.029686121
+      value: 0.029686125
       objectReference: {fileID: 0}
     - target: {fileID: 7466538397113198766, guid: 800db384af6757d4f8cef0b236e19025, type: 3}
       propertyPath: m_LocalRotation.y
@@ -46179,8 +46179,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   steamSound: {fileID: 1590518358}
   steamParticles: {fileID: 640243036}
+  startDelay: 5
   repeatInterval: 7
   offsetTime: 0.8
+  steamDuration: 1
   ventForce: 200
 --- !u!136 &1590518360
 CapsuleCollider:

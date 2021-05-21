@@ -132,7 +132,7 @@ Material:
     - _EmissionColor: {r: 1, g: 0.19762555, b: 0.0603773, a: 1}
     - _LightFoamColor: {r: 1, g: 0.64615583, b: 0.21960783, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
-    - _WaterColor: {r: 1, g: 0.54979783, b: 0.23921567, a: 1}
+    - _WaterColor: {r: 1, g: 0.53301674, b: 0.07924521, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &6270002271166717094
 MonoBehaviour:
