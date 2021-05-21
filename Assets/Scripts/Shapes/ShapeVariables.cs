@@ -11,12 +11,15 @@ public class ShapeVariables : MonoBehaviour
     public GameObject player; //Ref so that actions can affect the player.
 
     public float animalMass = 20f; //how heavy we are as an animal. Affects things like see-saws.
-
     public Vector3 shapeOffsets;
+
+    public ParticleSystem magicAnimation;
+    private bool hasPlayed;
 
     public PlayerController script;
     public virtual void Start()
     {
+        hasPlayed = false;
         script = player.GetComponent<PlayerController>();
     }
 
@@ -24,6 +27,22 @@ public class ShapeVariables : MonoBehaviour
         //Actions that happen on the space bar being pressed, like jumping or flying.
         //Override in an shape-specific script.
         
+    }
+
+    public void PlayMagicEffect()
+    {
+        if (magicAnimation != null)
+        {
+            magicAnimation.Play();
+            hasPlayed = true;
+        }
+    }
+
+    public void Update()
+    {
+        if (magicAnimation && hasPlayed)
+            if (!magicAnimation.IsAlive())
+                Destroy(magicAnimation.gameObject);
     }
 
 

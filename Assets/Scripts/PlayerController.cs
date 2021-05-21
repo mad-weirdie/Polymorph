@@ -60,6 +60,7 @@ public class PlayerController : MonoBehaviour
     private Vector3 grabbedObj;
 
     private AudioSource walkingAudio;
+    public ParticleSystem magicEffect;
 
     // Start is called before the first frame update
     void Start()
@@ -342,6 +343,11 @@ public class PlayerController : MonoBehaviour
         print(currentZoom);
     }
     
+    private IEnumerator waitThenMagic(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        magicEffect.Play();
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -362,38 +368,21 @@ public class PlayerController : MonoBehaviour
             int activeIndex;
             Texture2D animalImage;
 
+            // Load the new character
             characters.Add(GameObject.Instantiate(other.gameObject, this.transform, false));
             CharacterWheel.transform.GetChild(characters.Count - 1).gameObject.SetActive(true);
             activeIndex = characters.Count - 1;
+
+            // Particle effects for new character as well as the player themselves
+            // Particle effects for the other animals are destroyed after being played
+            other.gameObject.GetComponent<ShapeVariables>().PlayMagicEffect();
+            StartCoroutine(waitThenMagic(1.0f));
 
             // Load the resource image into the character selection frame.
             animalImage = Resources.Load("Images/" + other.name) as Texture2D;
             GameObject image = CharacterWheel.transform.GetChild(activeIndex).GetChild(0).gameObject;
             image.GetComponent<RawImage>().texture = animalImage;
 
-            /*
-            if (other.name == "Horse")
-            {
-                CharacterWheel.transform.GetChild(ind_HORSE).gameObject.SetActive(true);
-                characters[ind_HORSE] = GameObject.Instantiate(other.gameObject, this.transform, false);
-                activeIndex = ind_HORSE;
-            }
-            else if (other.name == "Raccoon")
-            {
-                CharacterWheel.transform.GetChild(ind_RACCOON).gameObject.SetActive(true);
-                characters[ind_RACCOON] = GameObject.Instantiate(other.gameObject, this.transform, false);
-                activeIndex = ind_RACCOON;
-            }
-            else if (other.name == "Crow")
-            {
-                CharacterWheel.transform.GetChild(ind_CROW).gameObject.SetActive(true);
-                characters[ind_CROW] = GameObject.Instantiate(other.gameObject, this.transform, false);
-                activeIndex = ind_CROW;
-            }
-            else
-                return;
-            */
-            //other.gameObject.SetActive(false); //Remove animal for consistency + stop clipping issues!
             charnames.Add(other.name);
 
             // Disable the trigger
