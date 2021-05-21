@@ -386,14 +386,7 @@ public class PlayerController : MonoBehaviour
             charnames.Add(other.name);
 
             // Disable the trigger
-            // ^^^ We can't do this! Then our animals act as though they have a big 
-            // box around them. We are already checking that we're not duplicating
-            // the animal with !charnames.Contains(other.name) above
-
-            // If you want to disable the check completely, we should destroy the trigger.
-            Destroy(characters[activeIndex].GetComponent<BoxCollider>());
-
-            // characters[activeIndex].GetComponent<Collider>().isTrigger = false;
+            characters[activeIndex].GetComponent<Collider>().isTrigger = false;
             characters[activeIndex].SetActive(false); //disable animal
             characters[activeIndex].transform.parent = transform;
             characters[activeIndex].transform.localRotation = Quaternion.identity;
