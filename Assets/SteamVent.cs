@@ -10,6 +10,11 @@ public class SteamVent : MonoBehaviour
     public float repeatInterval;
     public float offsetTime;
 
+
+    public float ventForce = 500f;
+
+    private Vector3 ventMatrix;
+    private bool isOn;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,11 +22,15 @@ public class SteamVent : MonoBehaviour
         InvokeRepeating("TriggerSteam", 2.5f, repeatInterval);
         InvokeRepeating("SteamSound", 2.5f - offsetTime, repeatInterval);
         InvokeRepeating("ResetSteam", 2.5f, repeatInterval + 8.0f);
+
+        ventMatrix = transform.TransformDirection(Vector3.up * ventForce);
+
     }
 
     void TriggerSteam()
     {
         steamParticles.Play();
+        isOn = true;
     }
 
     void SteamSound()
@@ -33,5 +42,15 @@ public class SteamVent : MonoBehaviour
     {
         steamParticles.Stop();
         steamSound.Stop();
+        isOn = false;
     }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.attachedRigidbody && isOn) {
+            other.attachedRigidbody.AddForce(ventMatrix);
+        
+        }
+    }
+
 }
