@@ -57,14 +57,20 @@ public class PlayerController : MonoBehaviour
     private Vector2 vec;
     private Vector3 grabbedObj;
 
+    public Vector3 lastCheckpointPos;
+    public Quaternion lastCheckpointDir;
     private AudioSource walkingAudio;
     public ParticleSystem magicEffect;
+
 
     private HelpfulText text;
 
     // Start is called before the first frame update
     void Start()
     {
+        lastCheckpointPos = transform.position;
+        lastCheckpointDir = transform.rotation;
+
         currentZoom = maxzoom;
         StartCoroutine(Hold());
         
@@ -477,4 +483,11 @@ public class PlayerController : MonoBehaviour
             Cursor.lockState = CursorLockMode.Locked;
         }
     }
+
+    void SetCheckpoint() {
+        lastCheckpointPos = transform.position;
+        lastCheckpointDir = transform.rotation;
+    
+    }
+
 }

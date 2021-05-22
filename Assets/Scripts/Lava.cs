@@ -96,8 +96,9 @@ public class Lava : MonoBehaviour
     void ResetLevel()
     {
         deathScreen.SetActive(true);
-        player.transform.position = startPosition;
-        player.transform.rotation = startRotation;
+        PlayerController pc = player.GetComponent<PlayerController>();
+        player.transform.position = pc.lastCheckpointPos;
+        player.transform.rotation = pc.lastCheckpointDir;
         player.GetComponent<Rigidbody>().drag = startDrag;
         playerScript.PauseGame();
     }
