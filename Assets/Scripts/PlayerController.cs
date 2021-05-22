@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     public ShapeVariables activeScript; //ref to shape's variables. Used to call per-shape functions.
     public List<GameObject> characters;
     public List<string> charnames; //used to quickly check whether we have a shape or not
+    public List<Listener> Listeners = new List<Listener>();
 
     [Header("Movement code")]
     //Movement code attributes
@@ -35,11 +36,8 @@ public class PlayerController : MonoBehaviour
     public float maxzoom = 8f;
     public float zoomSpeed = .5f;
 
-    private bool movementPaused;
-
     public bool movementEnabled;
     public bool isWalking;
-    private bool wasWalking; //Were we walking last frame?
     public bool isGrounded;
 
     public GameObject CharacterWheel;
@@ -74,6 +72,7 @@ public class PlayerController : MonoBehaviour
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
         walkingAudio = GetComponent<AudioSource>();
+
         //Camera obj
         cameraTrans = Camera.main.transform;
         cam = CinemachineCamera.GetComponent<CinemachineFreeLook>();
@@ -96,6 +95,24 @@ public class PlayerController : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(5);
         wizard.Notify();
+    }
+
+    // Allow other scripts to pause the game
+    public void PauseGame()
+    {
+        movementEnabled = false;
+        activeAnims.SetBool("IsWalking", false);
+        walkingAudio.Stop();
+    }
+
+    public void UnpauseGame()
+    {
+        movementEnabled = true;
+    }
+
+    public void AddListener(Listener newListener)
+    {
+        Listeners.Add(newListener);
     }
 
     void Update()
@@ -145,7 +162,6 @@ public class PlayerController : MonoBehaviour
             //Instead 
             facing = transform.forward;
             facing.y = 0f;
-
 
             desiredForward = Vector3.RotateTowards(facing, moveMagnitude, turnSpeed * Time.deltaTime, 0f);
             //print(desiredForward);
@@ -323,6 +339,10 @@ public class PlayerController : MonoBehaviour
 
     private void OnClick()
     {
+        foreach (Listener scriptObject in Listeners)
+        {
+            scriptObject.Notify();
+        }
         wizard.Notify();
     }
 
@@ -338,11 +358,7 @@ public class PlayerController : MonoBehaviour
         {
             sign = -1;
         }
-        print((zoomSpeed * sign));
         currentZoom = Mathf.Clamp(currentZoom + (zoomSpeed * sign), minzoom, maxzoom);
-
-
-        print(currentZoom);
     }
     
     private IEnumerator waitThenMagic(float waitTime)
@@ -440,10 +456,8 @@ public class PlayerController : MonoBehaviour
     void OnReset(InputValue input) {
         if (current_puzzle != null) {
             print("RESET!");
-            current_puzzle.ResetPuzzle();
-        
+            current_puzzle.ResetPuzzle();  
         }
-    
     }
 
     void OnEscape() {
@@ -462,9 +476,5 @@ public class PlayerController : MonoBehaviour
             Cursor.visible = false;
             Cursor.lockState = CursorLockMode.Locked;
         }
-
     }
-
-
-
 }
