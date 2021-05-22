@@ -4,11 +4,14 @@ using UnityEngine;
 using TMPro;
 
 public class CheckTurt : HelpfulText
-{
-    public PlayerController player;
-
+{ 
     override public bool conditionsMet()
     {
         return (player.activeScript.animalName == "Turtle");
+    }
+
+    override public void Remove()
+    {
+        return;
     }
 }

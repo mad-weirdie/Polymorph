@@ -4748,10 +4748,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe2e9ec6c39e9624fb041a8e4f9fd3d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 1591534543}
   message: You're a turtle!
   HelpfulTextObject: {fileID: 826161552}
   TextShowSeconds: 2
-  player: {fileID: 1591534543}
 --- !u!1001 &239158722
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18019,6 +18019,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1988801568, guid: e0ffac09254dfcb448695d11a473d0ac, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1591534540}
+    - target: {fileID: 1988801568, guid: e0ffac09254dfcb448695d11a473d0ac, type: 3}
+      propertyPath: script
+      value: 
+      objectReference: {fileID: 1591534543}
     - target: {fileID: 2309141133492569495, guid: e0ffac09254dfcb448695d11a473d0ac, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -18095,31 +18103,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2309141133492935095, guid: e0ffac09254dfcb448695d11a473d0ac, type: 3}
   m_PrefabInstance: {fileID: 1038850736}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1038850739
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1038850737}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 148011af99d922a418996303672849cd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animalSpeed: 0.14
-  animalName: 
-  turnSpeed: 20
-  player: {fileID: 1591534540}
-  animalMass: 10
-  shapeOffsets: {x: 0, y: 0, z: 0}
-  magicAnimation: {fileID: 0}
-  script: {fileID: 1591534543}
-  flyingHeight: 750
-  glidingForce: 80
-  height: {x: 0, y: 0, z: 0}
-  glideForce: {x: 0, y: 0, z: 0}
-  jumpHeld: 0
 --- !u!65 &1038850740
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -50489,8 +50472,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5, y: 2, z: 5}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3.2168894, y: 2, z: 3.0994263}
+  m_Center: {x: 0.8915553, y: 0, z: 0.95028687}
 --- !u!4 &8400454655887030585
 Transform:
   m_ObjectHideFlags: 0

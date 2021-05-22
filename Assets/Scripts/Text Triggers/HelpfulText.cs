@@ -23,6 +23,7 @@ public class HelpfulText : MonoBehaviour
 
     private IEnumerator _show()
     {
+        HelpfulTextObject.CrossFadeAlpha(1.0f, 0.5f, false);
         print("Started");
         HelpfulTextObject.SetText(message);
         HelpfulTextObject.gameObject.SetActive(true);
@@ -32,7 +33,7 @@ public class HelpfulText : MonoBehaviour
 
     }
 
-    public void Remove()
+    public virtual void Remove()
     {
         HelpfulTextObject.gameObject.SetActive(false);
     }
