@@ -14,6 +14,7 @@ public class TurtVars : ShapeVariables
     {
         base.Start();
         height = new Vector3(0f, pushStrength, 0f);
+        animalName = "Turtle";
        // canPush = true;
     }
 

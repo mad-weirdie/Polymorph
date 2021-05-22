@@ -419,8 +419,11 @@ public class PlayerController : MonoBehaviour
         else if (other.gameObject.CompareTag("Dialogue"))
         {
             text = other.gameObject.GetComponent<HelpfulText>();
-            print("Show");
-            text.Show();
+            if (text.conditionsMet())
+            {
+                print("Show");
+                text.Show();
+            }  
         }
     }
     

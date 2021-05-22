@@ -13,6 +13,7 @@ public class HorseVariables : ShapeVariables
 
     override public void Start()
     {
+        animalName = "Horse";
         base.Start();
         jumpVector = new Vector3(0f, jumpForce, 0f);
         horseAnimator = GetComponent<Animator>();

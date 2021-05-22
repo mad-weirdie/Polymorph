@@ -20,6 +20,7 @@ public class CrowVars : ShapeVariables
 
     override public void Start()
     {
+        animalName = "Crow";
         base.Start();
         height = new Vector3(0f, flyingHeight, 0f);
         glideForce = new Vector3(0f, glidingForce, 0f);

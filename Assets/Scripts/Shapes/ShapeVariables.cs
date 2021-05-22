@@ -4,9 +4,15 @@ using UnityEngine;
 
 public class ShapeVariables : MonoBehaviour
 {
-
     // This script handles variables related to each form, as well as unique actions.
     public float animalSpeed = 2f;
+    /*
+     * CURRENT LIST OF ANIMAL NAMES
+     *     "Turtle"
+     *     "Horse"
+     *     "Crow"
+     */
+    public string animalName = "";
     public float turnSpeed = 2f; // do we want this?
     public GameObject player; //Ref so that actions can affect the player.
 
