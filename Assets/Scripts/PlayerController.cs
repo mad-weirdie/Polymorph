@@ -62,6 +62,8 @@ public class PlayerController : MonoBehaviour
     private AudioSource walkingAudio;
     public ParticleSystem magicEffect;
 
+    private HelpfulText text;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -392,6 +394,12 @@ public class PlayerController : MonoBehaviour
             characters[activeIndex].transform.localRotation = Quaternion.identity;
             characters[activeIndex].transform.localPosition = Vector3.zero;
         }
+        else if (other.gameObject.CompareTag("Dialogue"))
+        {
+            text = other.gameObject.GetComponent<HelpfulText>();
+            print("Show");
+            text.Show();
+        }
     }
     
     private void OnTriggerStay(Collider other)
@@ -420,6 +428,12 @@ public class PlayerController : MonoBehaviour
         {
             movingRigidBodyObject = null;
             isGrabbing = false;
+        }
+
+        if (other.gameObject.CompareTag("Dialogue"))
+        {
+            text = other.gameObject.GetComponent<HelpfulText>();
+            text.Remove();
         }
     }
 
