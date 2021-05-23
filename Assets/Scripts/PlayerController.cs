@@ -65,9 +65,18 @@ public class PlayerController : MonoBehaviour
 
     private HelpfulText text;
 
+    public static PersistentData PlayerData;
+
     // Start is called before the first frame update
     void Start()
     {
+        if (PlayerData == null) {
+            PlayerData = new PersistentData();
+            PersistentData.Start();
+            print("PlayerData created!");
+            print(PlayerData != null);
+        }
+
         lastCheckpointPos = transform.position;
         lastCheckpointDir = transform.rotation;
 

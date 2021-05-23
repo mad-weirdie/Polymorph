@@ -10,6 +10,8 @@ public class Collectible : MonoBehaviour
     private float animationTime = 1f;
     public float animationDuration = 4f;
 
+    public int collectibleNum = 0;
+
     private Vector3 scaleFactor;
     // Start is called before the first frame update
     void Start()
@@ -47,7 +49,9 @@ public class Collectible : MonoBehaviour
     {
         if (other.tag == "Player") {
             isAnimating = true;
-        
+            print(PersistentData.CrystalsCollected == null); 
+            PersistentData.CrystalsCollected[collectibleNum] = true;
+            print(PersistentData.CrystalsCollected[collectibleNum]);
         
         }
     }
