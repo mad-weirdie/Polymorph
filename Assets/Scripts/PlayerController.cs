@@ -483,8 +483,8 @@ public class PlayerController : MonoBehaviour
 
         if (other.gameObject.CompareTag("Dialogue"))
         {
-            text = other.gameObject.GetComponent<HelpfulText>();
-            text.Remove();
+            //text = other.gameObject.GetComponent<HelpfulText>();
+            //text.Remove();
         }
     }
 

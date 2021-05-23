@@ -9,6 +9,7 @@ public class CheckPortal : HelpfulText
 
     override public bool conditionsMet()
     {
+        print(!portal.isActivated);
         return (!portal.isActivated);
     }
 

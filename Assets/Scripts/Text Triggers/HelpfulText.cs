@@ -35,6 +35,7 @@ public class HelpfulText : MonoBehaviour
         yield return new WaitForSeconds(TextShowSeconds);
         HelpfulTextObject.CrossFadeAlpha(0.0f, 0.5f, false);
         print("Finished");
+        Remove();
 
     }
 
