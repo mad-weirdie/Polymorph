@@ -9,7 +9,6 @@ public class HorseVariables : ShapeVariables
     [SerializeField]
     protected Vector3 jumpVector;
     private Animator horseAnimator;
-    private float gravity = 1f;
 
     override public void Start()
     {

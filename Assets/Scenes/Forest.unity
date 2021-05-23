@@ -52063,19 +52063,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 837977387220376133, guid: 3be34212e64064541b7a3778fe88233b, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.96261036
+      value: 0.96261024
       objectReference: {fileID: 0}
     - target: {fileID: 837977387220376133, guid: 3be34212e64064541b7a3778fe88233b, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.21420929
+      value: 0.21420924
       objectReference: {fileID: 0}
     - target: {fileID: 837977387220376133, guid: 3be34212e64064541b7a3778fe88233b, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.16581818
+      value: 0.16581823
       objectReference: {fileID: 0}
     - target: {fileID: 837977387220376133, guid: 3be34212e64064541b7a3778fe88233b, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.00042654574
+      value: 0.00042653078
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3be34212e64064541b7a3778fe88233b, type: 3}
@@ -56783,7 +56783,8 @@ MonoBehaviour:
   player: {fileID: 1591534543}
   message: Press 'F' to enter the mines.
   HelpfulTextObject: {fileID: 826161552}
-  TextShowSeconds: 2
+  TextShowSeconds: 10000
+  nextScene: Mines
 --- !u!1001 &1976273819
 PrefabInstance:
   m_ObjectHideFlags: 0

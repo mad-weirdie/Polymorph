@@ -13,6 +13,7 @@ public class LavaNotifier : Listener
     {
         deathScreen = d;
         playerController = p;
+        listenerType = "Click";
     }
 
     public override void Notify()

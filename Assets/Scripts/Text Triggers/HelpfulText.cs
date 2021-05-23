@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
+using UnityEngine.InputSystem;
 
 public class HelpfulText : MonoBehaviour
 {
@@ -41,8 +43,8 @@ public class HelpfulText : MonoBehaviour
 
     public virtual void Remove()
     {
-        print("Removing.");
-        Destroy(this.gameObject);
+        //print("Removing.");
+        //Destroy(this.gameObject);
         //HelpfulTextObject.gameObject.SetActive(false);
     }
 }

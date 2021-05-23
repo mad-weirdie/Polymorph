@@ -353,6 +353,12 @@ public class PlayerController : MonoBehaviour
             if (activePlayer.name == "Horse")
                 movingRigidBodyObject.useGravity = true;
         }
+
+        foreach (Listener scriptObject in Listeners)
+        {
+            if (scriptObject.listenerType == "Grab")
+                scriptObject.Notify();
+        }
     }
 
 
@@ -373,7 +379,8 @@ public class PlayerController : MonoBehaviour
     {
         foreach (Listener scriptObject in Listeners)
         {
-            scriptObject.Notify();
+            if (scriptObject.listenerType == "Click")
+                scriptObject.Notify();
         }
         wizard.Notify();
     }
@@ -483,8 +490,8 @@ public class PlayerController : MonoBehaviour
 
         if (other.gameObject.CompareTag("Dialogue"))
         {
-            //text = other.gameObject.GetComponent<HelpfulText>();
-            //text.Remove();
+            text = other.gameObject.GetComponent<HelpfulText>();
+            text.HelpfulTextObject.text = "";
         }
     }
 

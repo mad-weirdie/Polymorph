@@ -6,4 +6,5 @@ public abstract class Listener
 {
     public PlayerController playerController;
     public abstract void Notify();
+    public string listenerType;
 }
