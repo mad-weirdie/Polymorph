@@ -9,7 +9,7 @@ public class HorseVariables : ShapeVariables
     [SerializeField]
     protected Vector3 jumpVector;
     private Animator horseAnimator;
-    //private float gravity = 1f;
+    private float gravity = 1f;
 
     override public void Start()
     {
@@ -35,12 +35,4 @@ public class HorseVariables : ShapeVariables
         }
         
     }
-    /*
-    void Update()
-    {
-        if (!Physics.Raycast(transform.position, Vector3.down, 0.5f))
-        {
-            //script.rigidBody.AddForce(-Vector3.up * gravity, ForceMode.Impulse);
-        }
-    }*/
 }

@@ -8,7 +8,7 @@ public class Portal : MonoBehaviour
     public Material offMaterial;
     public Material onMaterial;
 
-    bool isActivated;
+    public bool isActivated;
     public List<GameObject> crystals;
     private int crystalsActivated;
     private int crystalsRequired;

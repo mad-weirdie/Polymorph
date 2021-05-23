@@ -80,7 +80,7 @@ public class PlayerController : MonoBehaviour
         lastCheckpointPos = transform.position;
         lastCheckpointDir = transform.rotation;
 
-        currentZoom = maxzoom;
+        currentZoom = minzoom;
         StartCoroutine(Hold());
         
         movementEnabled = false;
@@ -448,7 +448,6 @@ public class PlayerController : MonoBehaviour
             text = other.gameObject.GetComponent<HelpfulText>();
             if (text.conditionsMet())
             {
-                print("Show");
                 text.Show();
             }  
         }
@@ -497,9 +496,9 @@ public class PlayerController : MonoBehaviour
     }
 
     void OnEscape() {
-        print("onEscape called!");
-        print("Cursor state:");
-        print(Cursor.visible);
+        //print("onEscape called!");
+        //print("Cursor state:");
+        //print(Cursor.visible);
         if (Cursor.lockState == CursorLockMode.Locked)
         {
             SettingsMenu.SetActive(true);

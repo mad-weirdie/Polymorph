@@ -41,21 +41,22 @@ public class CrowVars : ShapeVariables
     override public void OnJump(bool isHeld)
     {
         //Actions that happen on the space bar being pressed, like jumping or flying.
-        print("jump!");
-        print(isHeld);
+        //print("jump!");
+        //print(isHeld);
         jumpHeld = isHeld;
-        if (jumpHeld)
+        if (isHeld)
         {
             crowAnimator.Play("Jump");
             crowAnimator.SetBool("IsFlying", true);
-            Debug.DrawRay(transform.position, Vector3.down * .5f, Color.green, 5f);
-            if (Physics.Raycast(transform.position, Vector3.down, .5f))
-            {
-                script.rigidBody.AddForce(height); //only jump on key down!
-            }
         }
         else {
             crowAnimator.SetBool("IsFlying", false);
+        }
+
+        Debug.DrawRay(transform.position, Vector3.down * .5f, Color.green, 5f);
+        if (Physics.Raycast(transform.position, Vector3.down, .5f))
+        {
+            script.rigidBody.AddForce(height); //only jump on key down!
         }
 
     }

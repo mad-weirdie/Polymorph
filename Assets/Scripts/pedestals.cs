@@ -6,12 +6,19 @@ public class Pedestals : MonoBehaviour
 {
     public Orbs crystal;
     public Portal teleporter;
+    public bool isActivated;
+
+    void Start()
+    {
+        isActivated = false;
+    }
 
     // Update is called once per frame
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.name == "Activation Crystal")
         {
+            isActivated = true;
             crystal.Activate();
             teleporter.AddCrystal();
         }
@@ -21,6 +28,7 @@ public class Pedestals : MonoBehaviour
     {
         if (other.gameObject.name == "Activation Crystal")
         {
+            isActivated = false;
             crystal.Deactivate();
             teleporter.RemoveCrystal();
         }
