@@ -15,11 +15,11 @@ E:/containment_zone/Polymorph
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-61689
+54806
 Successfully changed project path to: E:/containment_zone/Polymorph
 E:/containment_zone/Polymorph
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 102.13 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 93.43 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.1f1 (77a89f25062f)
 [Subsystems] Discovering subsystems at path E:/containment_zone/Unity/Editor/Data/Resources/UnitySubsystems
@@ -36,535 +36,1189 @@ Initialize mono
 Mono path[0] = 'E:/containment_zone/Unity/Editor/Data/Managed'
 Mono path[1] = 'E:/containment_zone/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'E:/containment_zone/Unity/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56772
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56652
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: E:/containment_zone/Unity/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: E:/containment_zone/Unity/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.005681 seconds.
+Registered in 0.004125 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 127.36 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 88.94 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.379 seconds
+- Completed reload, in  1.235 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004176 seconds.
+Registered in 0.003269 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 95.83 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 103.77 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.259 seconds
+- Completed reload, in  1.411 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.94 ms, found 0 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
+Refreshing native plugins compatible for Editor in 1.07 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3334 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 167.1 MB.
-System memory in use after: 167.3 MB.
+System memory in use before: 167.2 MB.
+System memory in use after: 167.4 MB.
 
 Unloading 130 unused Assets to reduce memory usage. Loaded Objects now: 3779.
-Total: 2.726400 ms (FindLiveObjects: 0.315300 ms CreateObjectMapping: 0.125500 ms MarkObjects: 2.113400 ms  DeleteObjects: 0.171300 ms)
+Total: 3.387400 ms (FindLiveObjects: 0.416900 ms CreateObjectMapping: 0.267400 ms MarkObjects: 2.517800 ms  DeleteObjects: 0.183600 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Prefabs/Puzzles/Puzzle2.prefab
-  artifactKey: Guid(95e2980da76d4b140855132b5bcc1812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Puzzles/Puzzle2.prefab using Guid(95e2980da76d4b140855132b5bcc1812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10b254febc0ba1b0fac22e24fc8fb6bf') in 0.291139 seconds
-  Import took 0.299463 seconds .
+  path: Assets/Prefabs/Tower/Dungeon Modular/Ground_09.prefab
+  artifactKey: Guid(ea7312f547d0e064cbce8a0e86fbf25f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Ground_09.prefab using Guid(ea7312f547d0e064cbce8a0e86fbf25f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ac5a996876a836692bd74658c098910') in 0.601537 seconds
+  Import took 0.607504 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 60.362047 seconds.
-  path: Assets/Scripts/PersistentData.cs
-  artifactKey: Guid(5114b86e116728240be0850f5a107523) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/PersistentData.cs using Guid(5114b86e116728240be0850f5a107523) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68a738921a1c5c040eb300a2f06088a1') in 0.037768 seconds
-  Import took 0.043458 seconds .
+  Time since last request: 0.000280 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Tile_03.prefab
+  artifactKey: Guid(966bdd67c47354d4da1879cfc98618ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Tile_03.prefab using Guid(966bdd67c47354d4da1879cfc98618ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1f7738feff96f249c725d96c085364f') in 0.042384 seconds
+  Import took 0.048154 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 118.157491 seconds.
-  path: Assets/Scripts/PersistentData.cs
-  artifactKey: Guid(5114b86e116728240be0850f5a107523) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/PersistentData.cs using Guid(5114b86e116728240be0850f5a107523) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c45d40aa2c1f761f52e904040c9b96a') in 0.003543 seconds
-  Import took 0.010408 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003441 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.99 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
-
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.098 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.95 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3168 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 176.3 MB.
-System memory in use after: 176.5 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3833.
-Total: 3.141900 ms (FindLiveObjects: 0.440100 ms CreateObjectMapping: 0.170600 ms MarkObjects: 2.505400 ms  DeleteObjects: 0.024600 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004287 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.02 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
-
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.975 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.24 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3168 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 176.4 MB.
-System memory in use after: 176.6 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3836.
-Total: 3.589200 ms (FindLiveObjects: 0.516600 ms CreateObjectMapping: 0.305100 ms MarkObjects: 2.731300 ms  DeleteObjects: 0.035000 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004199 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.94 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
-
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.100 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.84 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3168 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 176.5 MB.
-System memory in use after: 176.7 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3839.
-Total: 4.830600 ms (FindLiveObjects: 0.723800 ms CreateObjectMapping: 0.405500 ms MarkObjects: 3.671400 ms  DeleteObjects: 0.028200 ms)
+  Time since last request: 0.000286 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/StairsPart_09.prefab
+  artifactKey: Guid(5bc623d839a5b6a41941ef12879276dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/StairsPart_09.prefab using Guid(5bc623d839a5b6a41941ef12879276dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd445dfe53b3cb9a0f9b343eae64604bd') in 0.045523 seconds
+  Import took 0.051040 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 579.419675 seconds.
-  path: Assets/Scripts/PersistentData.cs
-  artifactKey: Guid(5114b86e116728240be0850f5a107523) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/PersistentData.cs using Guid(5114b86e116728240be0850f5a107523) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97a5acb799af14b4861bd8973c6cac89') in 0.006407 seconds
-  Import took 0.013978 seconds .
+  Time since last request: 0.000197 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Column_02.prefab
+  artifactKey: Guid(cc011ba67ad47e24a944f5abea770eb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Column_02.prefab using Guid(cc011ba67ad47e24a944f5abea770eb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa23c32324eaa0afc538dc403d5474de') in 0.032012 seconds
+  Import took 0.039035 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 57.172845 seconds.
-  path: Assets/Scripts/PersistentData.cs
-  artifactKey: Guid(5114b86e116728240be0850f5a107523) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/PersistentData.cs using Guid(5114b86e116728240be0850f5a107523) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d561ebba76b7c8e1da65b665097450c') in 0.002762 seconds
-  Import took 0.010236 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002880 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.92 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
-
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.983 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.22 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3168 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 176.5 MB.
-System memory in use after: 176.7 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3842.
-Total: 4.013800 ms (FindLiveObjects: 0.421000 ms CreateObjectMapping: 0.174200 ms MarkObjects: 3.399400 ms  DeleteObjects: 0.017700 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004211 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.94 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
-
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.025 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.22 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3168 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 176.5 MB.
-System memory in use after: 176.8 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3845.
-Total: 4.586700 ms (FindLiveObjects: 0.558600 ms CreateObjectMapping: 0.281600 ms MarkObjects: 3.725800 ms  DeleteObjects: 0.019400 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004258 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.35 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
-
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.204 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.96 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3168 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 176.6 MB.
-System memory in use after: 176.8 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3848.
-Total: 2.984800 ms (FindLiveObjects: 0.326800 ms CreateObjectMapping: 0.164600 ms MarkObjects: 2.471800 ms  DeleteObjects: 0.020000 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004127 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.51 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
-
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.022 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.99 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3168 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 176.6 MB.
-System memory in use after: 176.9 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3851.
-Total: 3.610700 ms (FindLiveObjects: 0.488400 ms CreateObjectMapping: 0.160100 ms MarkObjects: 2.926500 ms  DeleteObjects: 0.022600 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003172 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.92 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
-
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.018 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 2.29 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3168 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 176.7 MB.
-System memory in use after: 176.9 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3854.
-Total: 3.468400 ms (FindLiveObjects: 0.408700 ms CreateObjectMapping: 0.204700 ms MarkObjects: 2.833000 ms  DeleteObjects: 0.020900 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003192 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.09 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
-
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.221 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.13 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3168 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 176.7 MB.
-System memory in use after: 176.9 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3857.
-Total: 3.773600 ms (FindLiveObjects: 0.516900 ms CreateObjectMapping: 0.181000 ms MarkObjects: 3.051300 ms  DeleteObjects: 0.022900 ms)
+  Time since last request: 0.000190 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Ground_05.prefab
+  artifactKey: Guid(87e2a079dac43ff418ca1f426c71f84d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Ground_05.prefab using Guid(87e2a079dac43ff418ca1f426c71f84d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f882da40a03580db2ce2a6feaefe8ca') in 0.031399 seconds
+  Import took 0.037595 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 205.118083 seconds.
-  path: Assets/Scripts/PersistentData.cs
-  artifactKey: Guid(5114b86e116728240be0850f5a107523) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/PersistentData.cs using Guid(5114b86e116728240be0850f5a107523) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbeb60e19398dc6ebe69b5b3e12a34f2') in 0.013860 seconds
-  Import took 0.023035 seconds .
+  Time since last request: 0.000191 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Arena_01.prefab
+  artifactKey: Guid(b236219772623334297e0540b4983177) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Arena_01.prefab using Guid(b236219772623334297e0540b4983177) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc9c248cb1d458fc05ee42fd79880c58') in 0.027881 seconds
+  Import took 0.035889 seconds .
 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003039 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.92 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
-
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.038 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.29 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3168 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 176.7 MB.
-System memory in use after: 177.0 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3860.
-Total: 4.055500 ms (FindLiveObjects: 0.521100 ms CreateObjectMapping: 0.271900 ms MarkObjects: 3.242100 ms  DeleteObjects: 0.018800 ms)
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Wall_12.prefab
+  artifactKey: Guid(f481917f7beaa6247b2958a38a4b24fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Wall_12.prefab using Guid(f481917f7beaa6247b2958a38a4b24fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0d77d7199d160decb2df2c6f1992b29') in 0.062504 seconds
+  Import took 0.070124 seconds .
 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003161 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.46 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
-
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.248 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 2.99 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3168 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 176.8 MB.
-System memory in use after: 177.0 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3863.
-Total: 9.706500 ms (FindLiveObjects: 5.826100 ms CreateObjectMapping: 0.468200 ms MarkObjects: 3.384400 ms  DeleteObjects: 0.025700 ms)
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Wall_26.prefab
+  artifactKey: Guid(adfdb2362d072624b90db91df1bc06a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Wall_26.prefab using Guid(adfdb2362d072624b90db91df1bc06a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4a05b4b5e05a2e6faab9930e3eeef45') in 0.013878 seconds
+  Import took 0.021952 seconds .
 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003122 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.66 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
-
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.310 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.61 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3168 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 176.8 MB.
-System memory in use after: 177.0 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3866.
-Total: 4.637400 ms (FindLiveObjects: 0.655700 ms CreateObjectMapping: 0.308600 ms MarkObjects: 3.652900 ms  DeleteObjects: 0.018500 ms)
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Bridge_01.prefab
+  artifactKey: Guid(b8010e39410a0f54d88271428eec1dd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Bridge_01.prefab using Guid(b8010e39410a0f54d88271428eec1dd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c5558c6e21a50b902674adbff0cb944') in 0.028803 seconds
+  Import took 0.035082 seconds .
 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005812 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.92 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/MetalWall_03.prefab
+  artifactKey: Guid(9000c34f5f5f817479904e98ec354679) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/MetalWall_03.prefab using Guid(9000c34f5f5f817479904e98ec354679) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70ccc78fa285a2c9098dd3953eeba5ec') in 0.014683 seconds
+  Import took 0.022174 seconds .
 
-[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Ground_08.prefab
+  artifactKey: Guid(d646a42b4a8e85c439548a50e76bb3ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Ground_08.prefab using Guid(d646a42b4a8e85c439548a50e76bb3ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5dfe512507238301b3b063c9fd5e5ca7') in 0.029310 seconds
+  Import took 0.035463 seconds .
 
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.977 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.08 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3168 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 176.8 MB.
-System memory in use after: 177.1 MB.
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Wall_31.prefab
+  artifactKey: Guid(f5f9967d408724c4a88869f7c7de6dad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Wall_31.prefab using Guid(f5f9967d408724c4a88869f7c7de6dad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b366b7fc99774d881c422b2ae15c2b8') in 0.064392 seconds
+  Import took 0.071585 seconds .
 
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3869.
-Total: 3.575700 ms (FindLiveObjects: 0.510500 ms CreateObjectMapping: 0.237900 ms MarkObjects: 2.806500 ms  DeleteObjects: 0.019500 ms)
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Mud_01.prefab
+  artifactKey: Guid(121734464a06b554189467907a24b1eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Mud_01.prefab using Guid(121734464a06b554189467907a24b1eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c509e81dca28607baa05d7ce8055c4b') in 0.028810 seconds
+  Import took 0.035174 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Wall_01.prefab
+  artifactKey: Guid(f87285e2f00713c4ea55142d0b475c31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Wall_01.prefab using Guid(f87285e2f00713c4ea55142d0b475c31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24d7c2d71dd9da04440184c6aadfd649') in 0.029812 seconds
+  Import took 0.036087 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Ground_03.prefab
+  artifactKey: Guid(fd79cb76c879c344caa2204ffe569e5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Ground_03.prefab using Guid(fd79cb76c879c344caa2204ffe569e5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd461a2896f1f854eb0a15395e122faab') in 0.029699 seconds
+  Import took 0.036387 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/StairsPart_06.prefab
+  artifactKey: Guid(84dd0aa26771dee4b8b609ee8564160d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/StairsPart_06.prefab using Guid(84dd0aa26771dee4b8b609ee8564160d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26e4fcb5c3e6bf0f036cea83a260b0bb') in 0.031877 seconds
+  Import took 0.037991 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Wall_11.prefab
+  artifactKey: Guid(0663a9044356b70439758b54fb9f4b34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Wall_11.prefab using Guid(0663a9044356b70439758b54fb9f4b34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df89607e1164189290df32242f4c1a7d') in 0.014186 seconds
+  Import took 0.020528 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/StairsPart_03.prefab
+  artifactKey: Guid(b5242ec25ee5af648bb18b4d84c2e243) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/StairsPart_03.prefab using Guid(b5242ec25ee5af648bb18b4d84c2e243) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33a5c72fadafbbc6d2606037c9189bc7') in 0.027787 seconds
+  Import took 0.033982 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Wall_29.prefab
+  artifactKey: Guid(6b8652abcb28ea14688089256146eaca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Wall_29.prefab using Guid(6b8652abcb28ea14688089256146eaca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fcdf363d013ce2500ce0c7fdb5919d0') in 0.027826 seconds
+  Import took 0.035390 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000297 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Wall_18.prefab
+  artifactKey: Guid(da9f91ce14a50c445aa96c7978f24bf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Wall_18.prefab using Guid(da9f91ce14a50c445aa96c7978f24bf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71db515157cfd427f1baf68dc1e71687') in 0.043957 seconds
+  Import took 0.051737 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/StairsPart_07.prefab
+  artifactKey: Guid(d4d1f5567fa6ef94fba20ea935aef0bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/StairsPart_07.prefab using Guid(d4d1f5567fa6ef94fba20ea935aef0bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cdc1d9c4069d96507128785ef58e0b6') in 0.039762 seconds
+  Import took 0.048179 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Stairs_01.prefab
+  artifactKey: Guid(fdd45e0392ccac049a8608445fad7343) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Stairs_01.prefab using Guid(fdd45e0392ccac049a8608445fad7343) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3df76054d9439d707c9ea612a014ae28') in 0.034065 seconds
+  Import took 0.041292 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Column_06.prefab
+  artifactKey: Guid(fce50451b3b14cb4e8d48f23dc6a3ceb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Column_06.prefab using Guid(fce50451b3b14cb4e8d48f23dc6a3ceb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a656a10f1b99c2f3c0c4add34648418d') in 0.073584 seconds
+  Import took 0.081009 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Spiral Stairs.prefab
+  artifactKey: Guid(c824b70f452190546b097d396e0ab4e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Spiral Stairs.prefab using Guid(c824b70f452190546b097d396e0ab4e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe58cc708e8f98978de305568269f25e') in 0.040640 seconds
+  Import took 0.049905 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000254 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Wall_34.prefab
+  artifactKey: Guid(4f7739deb8ac5424496633d99b8b6048) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Wall_34.prefab using Guid(4f7739deb8ac5424496633d99b8b6048) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3728ea2b07379e8b3ca66d724b0be774') in 0.035256 seconds
+  Import took 0.043272 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Bridge_02.prefab
+  artifactKey: Guid(1153e64d5ff672d4cb895ccf3da9c3ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Bridge_02.prefab using Guid(1153e64d5ff672d4cb895ccf3da9c3ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8175586bae8f22d78e5bc8e41091ecb0') in 0.041546 seconds
+  Import took 0.050803 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/WallPart_01.prefab
+  artifactKey: Guid(d5660faf22c82dc4d876cd407312d62d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/WallPart_01.prefab using Guid(d5660faf22c82dc4d876cd407312d62d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6918ef9daeee59dbf95a24d64eebe310') in 0.035585 seconds
+  Import took 0.042651 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000281 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Wall_07_Door_02.prefab
+  artifactKey: Guid(346d408901667814990ddce35159ba00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Wall_07_Door_02.prefab using Guid(346d408901667814990ddce35159ba00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8608e55b6447c53e1fa76445f3e110b0') in 0.092757 seconds
+  Import took 0.099403 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Wood_01.prefab
+  artifactKey: Guid(f2941b6f67a61fc439d8cf8bd2c57a91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Wood_01.prefab using Guid(f2941b6f67a61fc439d8cf8bd2c57a91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e50226c5cc29542cd8f0622bd9ee7a7') in 0.038207 seconds
+  Import took 0.045636 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Wall_10.prefab
+  artifactKey: Guid(dcd440bd97a94cb449c9b3b75f8b5f12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Wall_10.prefab using Guid(dcd440bd97a94cb449c9b3b75f8b5f12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64c3bf7cac4b5cc05123d3372e5db426') in 0.036494 seconds
+  Import took 0.042454 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Ground_02.prefab
+  artifactKey: Guid(a16b5b0132ccd6a41ae97c9cc483a453) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Ground_02.prefab using Guid(a16b5b0132ccd6a41ae97c9cc483a453) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7706e2301feb8390d0ef106263addbe8') in 0.030059 seconds
+  Import took 0.036600 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000266 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Bridge_03.prefab
+  artifactKey: Guid(3d1a6b8bb47ec1443b03619f31d527c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Bridge_03.prefab using Guid(3d1a6b8bb47ec1443b03619f31d527c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc3c9776fe9d06a6ac31db1ab3d58153') in 0.034604 seconds
+  Import took 0.040679 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Stairs_03.prefab
+  artifactKey: Guid(b60762046a9d05a4bbc56c7b385f41fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Stairs_03.prefab using Guid(b60762046a9d05a4bbc56c7b385f41fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6fa502b5c87e070f7f63246406e1e86') in 0.015935 seconds
+  Import took 0.022581 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Ground_11.prefab
+  artifactKey: Guid(40d47deaca22b9e4cbe24ddd6fc02670) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Ground_11.prefab using Guid(40d47deaca22b9e4cbe24ddd6fc02670) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '778233a687abd94f45382611e64ac141') in 0.037892 seconds
+  Import took 0.046229 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Wall_30.prefab
+  artifactKey: Guid(f73efc95d39416042b262ebc4da45c21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Wall_30.prefab using Guid(f73efc95d39416042b262ebc4da45c21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e1f6606accf5e17badc950ec17db8c4') in 0.033058 seconds
+  Import took 0.041733 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Ground_04.prefab
+  artifactKey: Guid(e34cd81e8abfa994eb2a3e1fdb41b4ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Ground_04.prefab using Guid(e34cd81e8abfa994eb2a3e1fdb41b4ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ac33468359888a23529b43bf8a909ea') in 0.034100 seconds
+  Import took 0.043226 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Wall_20.prefab
+  artifactKey: Guid(2a9b26a98d2d55f4ca20b5be2c0876b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Wall_20.prefab using Guid(2a9b26a98d2d55f4ca20b5be2c0876b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c80a7fcf4914830afe65511a957e2086') in 0.040227 seconds
+  Import took 0.049135 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Ground_01.prefab
+  artifactKey: Guid(a9b8ba1831e8a76488572601a09b8381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Ground_01.prefab using Guid(a9b8ba1831e8a76488572601a09b8381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9be39d46aa34cbd68ae54560893f23c1') in 0.033488 seconds
+  Import took 0.042389 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000250 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Wall_27.prefab
+  artifactKey: Guid(e813a57052639634a919c7d446f989b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Wall_27.prefab using Guid(e813a57052639634a919c7d446f989b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6662ddad1eb2d8cc64659cd79fd78dad') in 0.067797 seconds
+  Import took 0.076503 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000275 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Wall_28.prefab
+  artifactKey: Guid(cb77773e6265a0f40bf382601a287fee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Wall_28.prefab using Guid(cb77773e6265a0f40bf382601a287fee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d4908f7e0d5ea421bb926d091a5d773') in 0.037816 seconds
+  Import took 0.046893 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Ground_12.prefab
+  artifactKey: Guid(bcc59605049cf8a4995bf79279008c08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Ground_12.prefab using Guid(bcc59605049cf8a4995bf79279008c08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a63d2a0e91de5a6043c78bfe7dff0ca') in 0.037040 seconds
+  Import took 0.046130 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Stairs_02.prefab
+  artifactKey: Guid(38cb42d66914de04fafb8238bb52cb96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Stairs_02.prefab using Guid(38cb42d66914de04fafb8238bb52cb96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b5f873ccd47e573586c1f06ebd2890b') in 0.040768 seconds
+  Import took 0.050018 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Wall_02.prefab
+  artifactKey: Guid(8ab0d05ceccffa2469d030535e60f0d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Wall_02.prefab using Guid(8ab0d05ceccffa2469d030535e60f0d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42076371d5b7551bb077d8b4050c791c') in 0.033698 seconds
+  Import took 0.041840 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Ground_06.prefab
+  artifactKey: Guid(5035294e597987445a2252709e8007b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Ground_06.prefab using Guid(5035294e597987445a2252709e8007b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e599095d5a92cc331bfe7570c2a2c6dc') in 0.030116 seconds
+  Import took 0.038942 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Wood_03.prefab
+  artifactKey: Guid(b5d7e82e01a181641bff74ac2f1faa70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Wood_03.prefab using Guid(b5d7e82e01a181641bff74ac2f1faa70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b5fa09d7c4803cb321925e6f881a410') in 0.031839 seconds
+  Import took 0.041807 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Ground_13.prefab
+  artifactKey: Guid(eb77004eb1a1626438301264ef319ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Ground_13.prefab using Guid(eb77004eb1a1626438301264ef319ecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0f7a7706110857058d56351af4905ac') in 0.030774 seconds
+  Import took 0.040048 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000371 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/MetalWall_02.prefab
+  artifactKey: Guid(98124da2a5a190c49b7e76b86b2db963) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/MetalWall_02.prefab using Guid(98124da2a5a190c49b7e76b86b2db963) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b190a5c9cd77f63084f0cd832f3d49c0') in 0.043701 seconds
+  Import took 0.059368 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000261 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Ground_10.prefab
+  artifactKey: Guid(0f9515d14eddb8d438f5bb8d62e2bb26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Ground_10.prefab using Guid(0f9515d14eddb8d438f5bb8d62e2bb26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a73ef19c13b77452a18a39376749a389') in 0.051957 seconds
+  Import took 0.059760 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000394 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Wood_04.prefab
+  artifactKey: Guid(ba4dfa359602b8642bada26a3a14e439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Wood_04.prefab using Guid(ba4dfa359602b8642bada26a3a14e439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef0ad53810d13bfb754f99e8a1d1ee96') in 0.044321 seconds
+  Import took 0.052703 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000249 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Wall_36.prefab
+  artifactKey: Guid(5d73615e277fd214a8b8af6011ce23e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Wall_36.prefab using Guid(5d73615e277fd214a8b8af6011ce23e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '982f7222c5ff0915007b69a11963fd67') in 0.041072 seconds
+  Import took 0.048991 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Stairs_04.prefab
+  artifactKey: Guid(92a7c2936f466dd439d8bafd0a4096c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Stairs_04.prefab using Guid(92a7c2936f466dd439d8bafd0a4096c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '522ae27e6a557941c0498ded032a4308') in 0.062595 seconds
+  Import took 0.076107 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000295 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Wall_25.prefab
+  artifactKey: Guid(a3f30789f909ff34789b275f2a5e4620) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Wall_25.prefab using Guid(a3f30789f909ff34789b275f2a5e4620) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0fc03a41f06e33778301445608264ba') in 0.044317 seconds
+  Import took 0.053117 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Tile_04.prefab
+  artifactKey: Guid(51d27d240c0214d4fb8e2eaadc3e8efe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Tile_04.prefab using Guid(51d27d240c0214d4fb8e2eaadc3e8efe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec1751a5e61176e8b9c4fbe2b8efe253') in 0.040674 seconds
+  Import took 0.048794 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Wall_05.prefab
+  artifactKey: Guid(5f9b1450e1be9bc4f89df242c0d2b53f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Wall_05.prefab using Guid(5f9b1450e1be9bc4f89df242c0d2b53f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c4d820521248083a9c18b943ee7ff0a') in 0.041724 seconds
+  Import took 0.049689 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000291 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Wall_09.prefab
+  artifactKey: Guid(7dd5e1c856d5b444f9b8714b4ec60400) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Wall_09.prefab using Guid(7dd5e1c856d5b444f9b8714b4ec60400) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4fab988ac75fdd0921f04352e59fbb1') in 0.040622 seconds
+  Import took 0.048282 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000242 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Wall_11_Door_01.prefab
+  artifactKey: Guid(327032fc6d704d045ac7dfb46189ca2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Wall_11_Door_01.prefab using Guid(327032fc6d704d045ac7dfb46189ca2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a8c3da4583d2ddf4bdea44bac4b5485') in 0.114912 seconds
+  Import took 0.125048 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000339 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Wall_09_Door_01.prefab
+  artifactKey: Guid(81b76af0503adc246b3bbb53da35a6e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Wall_09_Door_01.prefab using Guid(81b76af0503adc246b3bbb53da35a6e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '800de3aeeac41c317d2d2c51a3910c2d') in 0.039673 seconds
+  Import took 0.048836 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Brick_01.prefab
+  artifactKey: Guid(fa101c0f6bc8deb4db66122e0340476f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Brick_01.prefab using Guid(fa101c0f6bc8deb4db66122e0340476f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8dbdcfc1a2f7c934694bc0cc6297f525') in 0.032089 seconds
+  Import took 0.038438 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Ground_07.prefab
+  artifactKey: Guid(0dbffa8461d45ae4784ddb2b1cd1cf3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Ground_07.prefab using Guid(0dbffa8461d45ae4784ddb2b1cd1cf3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97f4f886d81b28ce4dd51e93999ea423') in 0.036575 seconds
+  Import took 0.044088 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000298 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/WallPart_02.prefab
+  artifactKey: Guid(dc91d64e01b35e04fa505c980aa76d03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/WallPart_02.prefab using Guid(dc91d64e01b35e04fa505c980aa76d03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ae07b1ade5e88b3f402e3a959595165') in 0.030026 seconds
+  Import took 0.037866 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Column_08.prefab
+  artifactKey: Guid(413fa6f9b7d355443a955edd94bc850d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Column_08.prefab using Guid(413fa6f9b7d355443a955edd94bc850d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28d5b3cfc55d341267d00c37714e1e97') in 0.033626 seconds
+  Import took 0.041508 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/MetalWall_Door_02.prefab
+  artifactKey: Guid(9ad3bb031a8b94f47bbb5973f5cf153e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/MetalWall_Door_02.prefab using Guid(9ad3bb031a8b94f47bbb5973f5cf153e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dca9f5db4efb98b2f8e4ed76b805617c') in 0.046226 seconds
+  Import took 0.054441 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Wall_08_Door_01.prefab
+  artifactKey: Guid(1450bf572a9abe74f88bbed7ccc09472) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Wall_08_Door_01.prefab using Guid(1450bf572a9abe74f88bbed7ccc09472) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b924aba8f2347f45d6e04dff8d55a222') in 0.065730 seconds
+  Import took 0.074043 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000318 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/StairsPart_04.prefab
+  artifactKey: Guid(2f039ce02cc7fc34788fc4ccb134142a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/StairsPart_04.prefab using Guid(2f039ce02cc7fc34788fc4ccb134142a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f30092b80f79cb984735ee1dc58479d1') in 0.030751 seconds
+  Import took 0.038867 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/WallPart_03.prefab
+  artifactKey: Guid(aed85ab0f56166c4a82509c3117f794f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/WallPart_03.prefab using Guid(aed85ab0f56166c4a82509c3117f794f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '567896bfb4913f0e279533d79ad1f66e') in 0.034597 seconds
+  Import took 0.043008 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000250 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Column_01.prefab
+  artifactKey: Guid(2d023628663a4444eade61c5a0210259) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Column_01.prefab using Guid(2d023628663a4444eade61c5a0210259) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6dedfbc5292e02eff739994aa7f8193e') in 0.028023 seconds
+  Import took 0.034981 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/StairsPart_08.prefab
+  artifactKey: Guid(96b057dae9226a241831890c0dacdb8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/StairsPart_08.prefab using Guid(96b057dae9226a241831890c0dacdb8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7604c92f8a5a2f81769218131b85024') in 0.029240 seconds
+  Import took 0.036600 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Wall_23.prefab
+  artifactKey: Guid(db8dcf3cffc888347aca211e06518947) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Wall_23.prefab using Guid(db8dcf3cffc888347aca211e06518947) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfbaf9036643c738fc76969b32d203ac') in 0.059601 seconds
+  Import took 0.066926 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Wall_21.prefab
+  artifactKey: Guid(b8e82ee9dbc66c1408b336bca986859d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Wall_21.prefab using Guid(b8e82ee9dbc66c1408b336bca986859d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0485005717a413d35aa92f8f80b35f08') in 0.044093 seconds
+  Import took 0.051843 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Tile_06.prefab
+  artifactKey: Guid(87cf283eb5b1a2b48837cfca754775f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Tile_06.prefab using Guid(87cf283eb5b1a2b48837cfca754775f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'baa8ffa99c30f300580fa58633583a11') in 0.035474 seconds
+  Import took 0.043806 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Column_04.prefab
+  artifactKey: Guid(3bd29f258e37ef244bbce0571e0ed9b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Column_04.prefab using Guid(3bd29f258e37ef244bbce0571e0ed9b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0597d4a69be066a81a50d24e1213dae3') in 0.036514 seconds
+  Import took 0.043430 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000254 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Wall_10_Door_03.prefab
+  artifactKey: Guid(f387c03409a746c4fab1dc13f6d4451d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Wall_10_Door_03.prefab using Guid(f387c03409a746c4fab1dc13f6d4451d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7401b4bbb5d6c8dd3b6621cb74c3305b') in 0.033087 seconds
+  Import took 0.040870 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/StairsPart_01.prefab
+  artifactKey: Guid(4fc718fac5cc66b4b8a9d9bb8efca55f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/StairsPart_01.prefab using Guid(4fc718fac5cc66b4b8a9d9bb8efca55f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ab1e0063b0b2e259021a6f4039c037d') in 0.031480 seconds
+  Import took 0.038662 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/MetalWall_Door_01.prefab
+  artifactKey: Guid(960cd7da2b4732543abff8b232cd04ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/MetalWall_Door_01.prefab using Guid(960cd7da2b4732543abff8b232cd04ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '824eeda522fa8309c7e4b6df28deaa37') in 0.033650 seconds
+  Import took 0.041029 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/StairsPart_02.prefab
+  artifactKey: Guid(ebe2e8d0f92ae41499f0300144b21acc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/StairsPart_02.prefab using Guid(ebe2e8d0f92ae41499f0300144b21acc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d303904bf72668f142c68b3b38589f3') in 0.037854 seconds
+  Import took 0.046029 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Wall_06.prefab
+  artifactKey: Guid(24fe238562c0d104e95dc5f028fa3bc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Wall_06.prefab using Guid(24fe238562c0d104e95dc5f028fa3bc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2d9c7d496914b931f396f142c1f5ec3') in 0.035054 seconds
+  Import took 0.043230 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Wood_02.prefab
+  artifactKey: Guid(1845782a9012a684caeeb54dcc9e792a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Wood_02.prefab using Guid(1845782a9012a684caeeb54dcc9e792a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdf6ca8f50ab0655fd64be8008b6e94b') in 0.031903 seconds
+  Import took 0.038645 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Column_05.prefab
+  artifactKey: Guid(e2a85919981d503409e8ed76f2a7aeba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Column_05.prefab using Guid(e2a85919981d503409e8ed76f2a7aeba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb7e57ebf84540094b3a8efd2f0b54a2') in 0.031307 seconds
+  Import took 0.039743 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Wall_04.prefab
+  artifactKey: Guid(2d377aacaacf9784b87a8fbe179b4389) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Wall_04.prefab using Guid(2d377aacaacf9784b87a8fbe179b4389) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '796761e9ba1446990dc63cf65858bf8b') in 0.030584 seconds
+  Import took 0.039022 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Wall_22.prefab
+  artifactKey: Guid(0f3e15f4e5e2ca1419941e1d493dfd31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Wall_22.prefab using Guid(0f3e15f4e5e2ca1419941e1d493dfd31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c962f7c7fd3cc8f7fa4ce284ed9670b') in 0.033059 seconds
+  Import took 0.040952 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Wall_24.prefab
+  artifactKey: Guid(5f3ac93e10ff59b4d80406202225c4d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Wall_24.prefab using Guid(5f3ac93e10ff59b4d80406202225c4d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '771597f8056d55dba09a2089e1d93769') in 0.034156 seconds
+  Import took 0.041823 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Wall_14.prefab
+  artifactKey: Guid(5c9c4124d72f4794da50c15ca40dd2ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Wall_14.prefab using Guid(5c9c4124d72f4794da50c15ca40dd2ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d8a0143558e502a52ac3566f623d4ca') in 0.038969 seconds
+  Import took 0.049822 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Wall_16.prefab
+  artifactKey: Guid(59b1ff6686cc7ea4288201a5a1560651) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Wall_16.prefab using Guid(59b1ff6686cc7ea4288201a5a1560651) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3fa31046254de8e341ecc7d647fc062') in 0.038971 seconds
+  Import took 0.046187 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000331 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Wall_08_Door_02.prefab
+  artifactKey: Guid(3d3e152d258a80c4fab94117eaa1778a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Wall_08_Door_02.prefab using Guid(3d3e152d258a80c4fab94117eaa1778a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d73ac5958410a9fd26f810ff76bff0f') in 0.019876 seconds
+  Import took 0.026454 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000269 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Tile_01.prefab
+  artifactKey: Guid(b4c6ee925b6ed3048a2b66be170c8347) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Tile_01.prefab using Guid(b4c6ee925b6ed3048a2b66be170c8347) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38c958cf83fff6cc2c9f22d322f3415b') in 0.032656 seconds
+  Import took 0.042323 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Brick_02.prefab
+  artifactKey: Guid(bb5e701e8a3049948bd16968096a99d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Brick_02.prefab using Guid(bb5e701e8a3049948bd16968096a99d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c1d24788d08910fe53ec482bb2aef24') in 0.035237 seconds
+  Import took 0.042959 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Tile_05.prefab
+  artifactKey: Guid(263471ae62600f54d8fde825958951cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Tile_05.prefab using Guid(263471ae62600f54d8fde825958951cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abcfeb6918b77b1626d258e82b16fbd2') in 0.037516 seconds
+  Import took 0.047183 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Wall_12_Door_01.prefab
+  artifactKey: Guid(12f1edda0fde7624ca2da0454e0c987c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Wall_12_Door_01.prefab using Guid(12f1edda0fde7624ca2da0454e0c987c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8648b8a4838b1b53e6cb08e7fc07e479') in 0.020276 seconds
+  Import took 0.029148 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Column_07.prefab
+  artifactKey: Guid(5786d4bfb892efa4f86569b64683ad2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Column_07.prefab using Guid(5786d4bfb892efa4f86569b64683ad2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39d4b55bb5a5591e4e5876acf3016f52') in 0.041441 seconds
+  Import took 0.050205 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Wall_17.prefab
+  artifactKey: Guid(48fb1ecb128bba648b5a4da29606f7c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Wall_17.prefab using Guid(48fb1ecb128bba648b5a4da29606f7c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dc9a1d2e392ac93a9843ac5d2cb2aa3') in 0.037232 seconds
+  Import took 0.046439 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000256 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/MetalWall_01.prefab
+  artifactKey: Guid(42152f05150e2294eac81abcd97634e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/MetalWall_01.prefab using Guid(42152f05150e2294eac81abcd97634e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b0ee68998e838ae19fe882305b09b82') in 0.017825 seconds
+  Import took 0.026222 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Tile_02.prefab
+  artifactKey: Guid(ef149b86993e06f45bb54c28e4b05d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Tile_02.prefab using Guid(ef149b86993e06f45bb54c28e4b05d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91b26172817935d48cd67a52e1e031e2') in 0.015166 seconds
+  Import took 0.025226 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Wall_09_Door_02.prefab
+  artifactKey: Guid(6810a73d68345b44499b8c45b4436c2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Wall_09_Door_02.prefab using Guid(6810a73d68345b44499b8c45b4436c2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4793300aaa3c1eb694c838c13b77807') in 0.036349 seconds
+  Import took 0.045987 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Ground_14.prefab
+  artifactKey: Guid(edf30fd4df9ef1b44a1cf42f06248129) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Ground_14.prefab using Guid(edf30fd4df9ef1b44a1cf42f06248129) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e08a4fe842c0ba80d35755180b6a6d44') in 0.048623 seconds
+  Import took 0.058653 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Wall_03.prefab
+  artifactKey: Guid(c499bed2f737c0e488efed8069326c49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Wall_03.prefab using Guid(c499bed2f737c0e488efed8069326c49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f04971f5aeabe5e900a46a205f19b95f') in 0.040110 seconds
+  Import took 0.047822 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000266 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Wall_10_Door_02.prefab
+  artifactKey: Guid(11b4f7701b8350e4db55866d69bb9839) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Wall_10_Door_02.prefab using Guid(11b4f7701b8350e4db55866d69bb9839) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6852ac6262eaa5b830df2028a6512eb4') in 0.021298 seconds
+  Import took 0.029568 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Wall_13.prefab
+  artifactKey: Guid(c65ebbd459d16024790b3532db505237) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Wall_13.prefab using Guid(c65ebbd459d16024790b3532db505237) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcd390ec94bcf867c7518066c5afdf9a') in 0.036038 seconds
+  Import took 0.044273 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000254 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Brick_04.prefab
+  artifactKey: Guid(8b0e16a9b0d55fa478448d1c9363daa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Brick_04.prefab using Guid(8b0e16a9b0d55fa478448d1c9363daa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ab7af514bda5f2bda723d3750af992c') in 0.031010 seconds
+  Import took 0.038372 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000237 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Wall_19.prefab
+  artifactKey: Guid(c41528196afba3647a873f405477ea14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Wall_19.prefab using Guid(c41528196afba3647a873f405477ea14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09db6873eda9402a9a7b2b6fe6c6f089') in 0.035074 seconds
+  Import took 0.041571 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Wall_07.prefab
+  artifactKey: Guid(198593d788a3e85478fe6505e4611609) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Wall_07.prefab using Guid(198593d788a3e85478fe6505e4611609) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '042f1b867b50b3d22768e2ad9528f8f2') in 0.017609 seconds
+  Import took 0.024977 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Wall_10_Door_01.prefab
+  artifactKey: Guid(d535472e5adf302439d07f7cf365b826) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Wall_10_Door_01.prefab using Guid(d535472e5adf302439d07f7cf365b826) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fb01320a3d1dead67c758bf81fa5c63') in 0.021767 seconds
+  Import took 0.032831 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000264 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Wall_07_Door_01.prefab
+  artifactKey: Guid(b5fef02221fc65a48aafd5a7bdaa717a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Wall_07_Door_01.prefab using Guid(b5fef02221fc65a48aafd5a7bdaa717a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc6a6768b6d8f77cea9ab5af8acf1ce4') in 0.020368 seconds
+  Import took 0.031874 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Brick_03.prefab
+  artifactKey: Guid(5edc6da8c22d58a4cb3027d44d05619f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Brick_03.prefab using Guid(5edc6da8c22d58a4cb3027d44d05619f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6ec85ec083e299e5307fb65197c3496') in 0.037975 seconds
+  Import took 0.046669 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Wall_15.prefab
+  artifactKey: Guid(ea6792f0a8ddde24cacc1a0e006c4bb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Wall_15.prefab using Guid(ea6792f0a8ddde24cacc1a0e006c4bb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38a4c7294081b98eeb6144d1dfbef0aa') in 0.038028 seconds
+  Import took 0.045585 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Wall_32.prefab
+  artifactKey: Guid(58be77d7a49b30c4891195382de0c752) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Wall_32.prefab using Guid(58be77d7a49b30c4891195382de0c752) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0340dd740d69e6fd757a9bb0e13d5c9a') in 0.037449 seconds
+  Import took 0.046296 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular
+  artifactKey: Guid(980bae1af73c4b442819fd49c596e2e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular using Guid(980bae1af73c4b442819fd49c596e2e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '349d38f3fbf6b5981a468ff6da07a941') in 0.010172 seconds
+  Import took 0.018250 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Column_03.prefab
+  artifactKey: Guid(c6999de7e22f7a54ebac659205e88c4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Column_03.prefab using Guid(c6999de7e22f7a54ebac659205e88c4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03faf91ab49f26f3ffe6a166dc6d7c7d') in 0.043566 seconds
+  Import took 0.050960 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000232 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/StairsPart_05.prefab
+  artifactKey: Guid(285d342abd126a04fb875f10eb3c4afe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/StairsPart_05.prefab using Guid(285d342abd126a04fb875f10eb3c4afe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a00cf326e5af9bbe7e3b67d373321ed') in 0.035958 seconds
+  Import took 0.046596 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000288 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Wall_08.prefab
+  artifactKey: Guid(4ca8b6fd88b222f439afcb395429d94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Wall_08.prefab using Guid(4ca8b6fd88b222f439afcb395429d94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd78a9733ab81e91d11f21b9911b2f137') in 0.022013 seconds
+  Import took 0.030381 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Wall_33.prefab
+  artifactKey: Guid(2d18da8e86b86de4ea4aff51311c400b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Wall_33.prefab using Guid(2d18da8e86b86de4ea4aff51311c400b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '875291666012c3d208224b3f76bc20bd') in 0.043125 seconds
+  Import took 0.052755 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001385 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Wall_35.prefab
+  artifactKey: Guid(2c707ccafcb211e4faa7455a12f04065) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Wall_35.prefab using Guid(2c707ccafcb211e4faa7455a12f04065) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c09efd460d82d8a30b29aaaf9e0e967f') in 0.038571 seconds
+  Import took 0.051175 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000266 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Wood_05.prefab
+  artifactKey: Guid(8408849ebba020041937e08e8727e626) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Wood_05.prefab using Guid(8408849ebba020041937e08e8727e626) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17f7018fb9bfdcaf62365bd212d06db9') in 0.036635 seconds
+  Import took 0.046905 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004900 seconds.
+  path: Assets/Prefabs/Tower/Dungeon Modular/Wood_05.prefab
+  artifactKey: Guid(8408849ebba020041937e08e8727e626) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tower/Dungeon Modular/Wood_05.prefab using Guid(8408849ebba020041937e08e8727e626) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17f7018fb9bfdcaf62365bd212d06db9') in 0.014107 seconds
+  Import took 0.020959 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 105.597411 seconds.
+  path: Assets/Prefabs/Interiors/Props/Floor/Carpet 1.prefab
+  artifactKey: Guid(02822c8ede0877347a36928cedce002d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Interiors/Props/Floor/Carpet 1.prefab using Guid(02822c8ede0877347a36928cedce002d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '158393c9f9e9877f4b12d79e64070a88') in 0.022244 seconds
+  Import took 0.030061 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/Prefabs/Interiors/Props/Floor/Carpet 4.prefab
+  artifactKey: Guid(455e4e92718d8094e974ba013e973a33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Interiors/Props/Floor/Carpet 4.prefab using Guid(455e4e92718d8094e974ba013e973a33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60263408b62ff78657cc5f43a87ea585') in 0.024189 seconds
+  Import took 0.030585 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000276 seconds.
+  path: Assets/Prefabs/Interiors/Props/Floor/Carpet 5.prefab
+  artifactKey: Guid(033bfe4cae97e1647b10666b35b31e3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Interiors/Props/Floor/Carpet 5.prefab using Guid(033bfe4cae97e1647b10666b35b31e3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '914bd972adfc97d1e421c8fec4896403') in 0.017009 seconds
+  Import took 0.023484 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/Prefabs/Interiors/Props/Floor/Carpet 6.prefab
+  artifactKey: Guid(69ecd8bd375a5a44cadd50fc5d2b1062) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Interiors/Props/Floor/Carpet 6.prefab using Guid(69ecd8bd375a5a44cadd50fc5d2b1062) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29df035645f9ade6789f80632d572b56') in 0.013411 seconds
+  Import took 0.018998 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000263 seconds.
+  path: Assets/Prefabs/Interiors/Props/Floor/Carpet 11.prefab
+  artifactKey: Guid(73e013400311d684ba526651f6caa07d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Interiors/Props/Floor/Carpet 11.prefab using Guid(73e013400311d684ba526651f6caa07d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '631897a1a67fe3c760eb64dca08e1d7d') in 0.016147 seconds
+  Import took 0.023966 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/Prefabs/Interiors/Props/Floor/Carpet 9.prefab
+  artifactKey: Guid(850558ced4d4a1d4dad17985c3f53c54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Interiors/Props/Floor/Carpet 9.prefab using Guid(850558ced4d4a1d4dad17985c3f53c54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c0d2eac2eb606b0c4fe6c33dd034e2d') in 0.014367 seconds
+  Import took 0.021867 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000276 seconds.
+  path: Assets/Prefabs/Interiors/Props/Floor/Carpet 2.prefab
+  artifactKey: Guid(ebeac342b19f0b04d9084fb5baa8fcd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Interiors/Props/Floor/Carpet 2.prefab using Guid(ebeac342b19f0b04d9084fb5baa8fcd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3a022c70bbe4f5ef18793d21b5eb852') in 0.013602 seconds
+  Import took 0.020203 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/Prefabs/Interiors/Props/Floor/Carpet 8.prefab
+  artifactKey: Guid(e4b56c021761d0b4aaec2d9a3771dc5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Interiors/Props/Floor/Carpet 8.prefab using Guid(e4b56c021761d0b4aaec2d9a3771dc5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b5229daf5040f685dcf57582310547d') in 0.014294 seconds
+  Import took 0.020414 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000235 seconds.
+  path: Assets/Prefabs/Interiors/Props/Floor/Carpet 12.prefab
+  artifactKey: Guid(8082d26a4d10fa1479f57908b6ff0614) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Interiors/Props/Floor/Carpet 12.prefab using Guid(8082d26a4d10fa1479f57908b6ff0614) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21efaac3b49447b660931b47b1c0c381') in 0.014713 seconds
+  Import took 0.021183 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000288 seconds.
+  path: Assets/Prefabs/Interiors/Props/Floor/Carpet 10.prefab
+  artifactKey: Guid(fa905338e480d674188b629c8557d288) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Interiors/Props/Floor/Carpet 10.prefab using Guid(fa905338e480d674188b629c8557d288) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ce6e6089825f8316af766dd968f7126') in 0.013264 seconds
+  Import took 0.019628 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000290 seconds.
+  path: Assets/Prefabs/Interiors/Props/Floor/Carpet 3.prefab
+  artifactKey: Guid(391fc5d82e3245c408ec796aef02751b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Interiors/Props/Floor/Carpet 3.prefab using Guid(391fc5d82e3245c408ec796aef02751b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cd1d13a605a8abfc179ffc67c8ae949') in 0.012555 seconds
+  Import took 0.019092 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006995 seconds.
+  path: Assets/Prefabs/Interiors/Props/Floor/Carpet 3.prefab
+  artifactKey: Guid(391fc5d82e3245c408ec796aef02751b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Interiors/Props/Floor/Carpet 3.prefab using Guid(391fc5d82e3245c408ec796aef02751b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cd1d13a605a8abfc179ffc67c8ae949') in 0.012263 seconds
+  Import took 0.018800 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.789291 seconds.
+  path: Assets/Prefabs/Interiors/Props/Lights/Lantern 4.prefab
+  artifactKey: Guid(ec1d4e380df5faa41adc77648931a4fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Interiors/Props/Lights/Lantern 4.prefab using Guid(ec1d4e380df5faa41adc77648931a4fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e397be1ebe1745786a7ceaab90ea6b1') in 0.225752 seconds
+  Import took 0.232209 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.901997 seconds.
+  path: Assets/Prefabs/Interiors/Props/Weapons
+  artifactKey: Guid(860a7ca867243314f81255148ff2af8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Interiors/Props/Weapons using Guid(860a7ca867243314f81255148ff2af8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b9c1e6b50447de4d528029f222f2fc0') in 0.005788 seconds
+  Import took 0.012271 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.044451 seconds.
+  path: Assets/Prefabs/Interiors/Props/Weapons/Axe.prefab
+  artifactKey: Guid(6d85266e5c9195a4693c21e20f012786) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Interiors/Props/Weapons/Axe.prefab using Guid(6d85266e5c9195a4693c21e20f012786) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c0664ba20959a39cabb284f958564ef') in 0.022222 seconds
+  Import took 0.028584 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000297 seconds.
+  path: Assets/Prefabs/Interiors/Props/Weapons/Bow Quiver.prefab
+  artifactKey: Guid(0ec08d38822d1cb4db2187cbbdfc0b7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Interiors/Props/Weapons/Bow Quiver.prefab using Guid(0ec08d38822d1cb4db2187cbbdfc0b7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb03ed401e5ce9eab4802a1d6f0707aa') in 0.018889 seconds
+  Import took 0.025277 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000270 seconds.
+  path: Assets/Prefabs/Interiors/Props/Weapons/Bow Arrow.prefab
+  artifactKey: Guid(241b3dbcd4d683843921f789a5900616) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Interiors/Props/Weapons/Bow Arrow.prefab using Guid(241b3dbcd4d683843921f789a5900616) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae7ee7660e2278526a1241a85e55ebc3') in 0.014009 seconds
+  Import took 0.020561 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000299 seconds.
+  path: Assets/Prefabs/Interiors/Props/Weapons/Mace.prefab
+  artifactKey: Guid(fe617e9800321c943bdfd524d746dc5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Interiors/Props/Weapons/Mace.prefab using Guid(fe617e9800321c943bdfd524d746dc5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35499e9f8e6ded49f98e152ac63b3f21') in 0.021148 seconds
+  Import took 0.027608 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/Prefabs/Interiors/Props/Weapons/Pickaxe.prefab
+  artifactKey: Guid(bc668444155c1fb46a6b95d083117c2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Interiors/Props/Weapons/Pickaxe.prefab using Guid(bc668444155c1fb46a6b95d083117c2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c5b5bb19270577b1b6c5b2643796429') in 0.019605 seconds
+  Import took 0.025332 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000269 seconds.
+  path: Assets/Prefabs/Interiors/Props/Weapons/Hammer.prefab
+  artifactKey: Guid(f438283374c11e945a6e9baff0d0a8f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Interiors/Props/Weapons/Hammer.prefab using Guid(f438283374c11e945a6e9baff0d0a8f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce96547d45c051b51cbb9957d98e999e') in 0.039551 seconds
+  Import took 0.046047 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000312 seconds.
+  path: Assets/Prefabs/Interiors/Props/Weapons/Knife.prefab
+  artifactKey: Guid(2e80f2e357153e34e98889c4646fc233) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Interiors/Props/Weapons/Knife.prefab using Guid(2e80f2e357153e34e98889c4646fc233) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f9f106d0df3e15d6bd24fdc76c1ece2') in 0.020199 seconds
+  Import took 0.028192 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/Prefabs/Interiors/Props/Weapons/Sword.prefab
+  artifactKey: Guid(b257d2366c5af8f48add7981213d3969) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Interiors/Props/Weapons/Sword.prefab using Guid(b257d2366c5af8f48add7981213d3969) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7ab651c2470d975ab0eaacf36aa2570') in 0.027800 seconds
+  Import took 0.033777 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000365 seconds.
+  path: Assets/Prefabs/Interiors/Props/Weapons/Hatchet.prefab
+  artifactKey: Guid(78a6ed698793f7d4b8fbb29f3a4d8e56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Interiors/Props/Weapons/Hatchet.prefab using Guid(78a6ed698793f7d4b8fbb29f3a4d8e56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '399e608c32ee00bb2cf0826e38533e10') in 0.021443 seconds
+  Import took 0.027300 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/Prefabs/Interiors/Props/Weapons/Machete.prefab
+  artifactKey: Guid(ffc3ad531aca6d74bb888c415402f9a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Interiors/Props/Weapons/Machete.prefab using Guid(ffc3ad531aca6d74bb888c415402f9a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73e0dbb1415b3071d0f731bb3c868ac3') in 0.028032 seconds
+  Import took 0.033392 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000300 seconds.
+  path: Assets/Prefabs/Interiors/Props/Weapons/Bow Quiver with arrows.prefab
+  artifactKey: Guid(7fab4ab9c706f3a44adaebe792925ac8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Interiors/Props/Weapons/Bow Quiver with arrows.prefab using Guid(7fab4ab9c706f3a44adaebe792925ac8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2387ffe541ec11fc3f55ea63737dba1') in 0.014006 seconds
+  Import took 0.022129 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000320 seconds.
+  path: Assets/Prefabs/Interiors/Props/Weapons/Bow.prefab
+  artifactKey: Guid(adc3b32659015474a8faa563b5140e4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Interiors/Props/Weapons/Bow.prefab using Guid(adc3b32659015474a8faa563b5140e4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bfc0ab85a3f4ff4d1bcd9f54397b0c3') in 0.015792 seconds
+  Import took 0.022344 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/Prefabs/Interiors/Props/Weapons/Spear.prefab
+  artifactKey: Guid(9f36ee6fa577f524b8fb3df13005f0fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Interiors/Props/Weapons/Spear.prefab using Guid(9f36ee6fa577f524b8fb3df13005f0fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd04f9252be5efa600dc37d4c2e842d8d') in 0.021426 seconds
+  Import took 0.027673 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/Prefabs/Interiors/Props/Weapons/Shield.prefab
+  artifactKey: Guid(3935ca36f6652b24ebdde715779f9c8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Interiors/Props/Weapons/Shield.prefab using Guid(3935ca36f6652b24ebdde715779f9c8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d28ca493f02bdf82cf3a754a8be2178') in 0.020652 seconds
+  Import took 0.026627 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.149084 seconds.
+  path: Assets/Prefabs/Interiors/Props/Work Stations/Blacksmith
+  artifactKey: Guid(cc424a82f6d398d4ba6404afa131f782) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Interiors/Props/Work Stations/Blacksmith using Guid(cc424a82f6d398d4ba6404afa131f782) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef4c830885ee74d227c48c3ebaa67234') in 0.006861 seconds
+  Import took 0.013596 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.851502 seconds.
+  path: Assets/Prefabs/Puzzles/Activation Crystal Variant.prefab
+  artifactKey: Guid(b7785b949da6b1a499ed9013c78f65c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Puzzles/Activation Crystal Variant.prefab using Guid(b7785b949da6b1a499ed9013c78f65c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd84a9b2950b96b0c1362999aa6f01205') in 0.025150 seconds
+  Import took 0.032247 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
