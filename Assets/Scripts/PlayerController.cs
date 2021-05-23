@@ -102,6 +102,24 @@ public class PlayerController : MonoBehaviour
         rigidBody = GetComponent<Rigidbody>();
         ShapeShiftUpdate();
 
+        // Add usable characters into the list and add the character selection frame.
+        for (int i = 0; i < transform.childCount; i++)
+        {
+            Texture2D animalImage;
+            GameObject child = transform.GetChild(i).gameObject;
+
+            if (child.CompareTag("Animal"))
+            {
+                characters.Add(child);
+
+                // Load the resource image into the character selection frame.
+                animalImage = Resources.Load("Images/" + child.name) as Texture2D;
+                CharacterWheel.transform.GetChild(characters.Count - 1).gameObject.SetActive(true);
+                GameObject image = CharacterWheel.transform.GetChild(characters.Count - 1).GetChild(0).gameObject;
+                image.GetComponent<RawImage>().texture = animalImage;
+            }
+        }
+
         normalMass = rigidBody.mass;
         movingRigidBodyObject = null;
     }
@@ -332,7 +350,8 @@ public class PlayerController : MonoBehaviour
         isGrabbing = !isGrabbing;
         if (!isGrabbing && movingRigidBodyObject != null)
         {
-            movingRigidBodyObject.useGravity = true;
+            if (activePlayer.name == "Horse")
+                movingRigidBodyObject.useGravity = true;
         }
     }
 
@@ -347,8 +366,6 @@ public class PlayerController : MonoBehaviour
 
     private void OnJump(InputValue input)
     {
-
-        print("Thing done!");
         activeScript.OnJump(input.Get<float>() > 0f);
     }
 
@@ -387,6 +404,7 @@ public class PlayerController : MonoBehaviour
         // Rigid body reference should only be changed if not set to anything.
         if (movingRigidBodyObject == null) 
         {
+               
             if (other.gameObject.CompareTag("Movable") && isGrabbing)
             {
                 // This breaks the seesaw mechanic bc you weigh nothing
