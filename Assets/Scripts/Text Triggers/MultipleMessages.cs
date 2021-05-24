@@ -6,6 +6,7 @@ using TMPro;
 public class MultipleMessages : HelpfulText
 {
     public List<string> messages;
+    private bool messagesBegan;
     int messageIndex = 0;
     public float textDelay = 5f;
 

@@ -57,6 +57,7 @@ public class SceneChanger : HelpfulText
 
     override public bool conditionsMet()
     {
+        print("inside trigger: " + insideTrigger);
         return insideTrigger;
     }
 
@@ -67,8 +68,9 @@ public class SceneChanger : HelpfulText
 
     void OnTriggerEnter(Collider sceneTrigger)
     {
-        if (sceneTrigger.gameObject.CompareTag("SceneTrigger"))
+        if (sceneTrigger.gameObject.CompareTag("Player") || sceneTrigger.gameObject.CompareTag("Animal"))
         {
+            print("wowow");
             insideTrigger = true;
             sceneNotif.setActive(true);
         }   
@@ -76,7 +78,7 @@ public class SceneChanger : HelpfulText
 
     void OnTriggerExit(Collider sceneTrigger)
     {
-        if (sceneTrigger.gameObject.CompareTag("SceneTrigger"))
+        if (sceneTrigger.gameObject.CompareTag("Player") || sceneTrigger.gameObject.CompareTag("Animal"))
         {
             insideTrigger = false;
             sceneNotif.setActive(false);

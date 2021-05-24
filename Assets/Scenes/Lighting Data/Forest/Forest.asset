@@ -112,8 +112,8 @@ MonoBehaviour:
     min: -180
     max: 180
   saturation:
-    m_OverrideState: 0
-    m_Value: 1
+    m_OverrideState: 1
+    m_Value: 3
     min: -100
     max: 100
 --- !u!114 &8902819106565683981
@@ -136,11 +136,11 @@ MonoBehaviour:
     min: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 0.53
+    m_Value: 0.73
     min: 0
   scatter:
     m_OverrideState: 1
-    m_Value: 0.746
+    m_Value: 0.62
     min: 0
     max: 1
   clamp:
@@ -149,7 +149,7 @@ MonoBehaviour:
     min: 0
   tint:
     m_OverrideState: 1
-    m_Value: {r: 0.6320754, g: 0.42159435, b: 0, a: 1}
+    m_Value: {r: 0.6313726, g: 0.45408726, b: 0, a: 1}
     hdr: 0
     showAlpha: 0
     showEyeDropper: 1

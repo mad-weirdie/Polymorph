@@ -12,7 +12,6 @@ public class HelpfulText : MonoBehaviour
     public string message;
     public TextMeshProUGUI HelpfulTextObject;
     public float TextShowSeconds = 2.0f;
-    public bool messagesBegan = false;
 
     void Start()
     {
@@ -21,13 +20,12 @@ public class HelpfulText : MonoBehaviour
 
     public virtual bool conditionsMet()
     {
-        return (!messagesBegan);
+        return false;
     }
 
     public virtual void Show()
     {
         print("parent show called");
-        messagesBegan = true;
         StartCoroutine(_show());
     }
 

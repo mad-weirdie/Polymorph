@@ -1,0 +1,733 @@
+Using pre-set license
+Built from '2020.3/release' branch; Version is '2020.3.1f1 (77a89f25062f) revision 7841951'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19042.985; Version 2009; 64bit' Language: 'en' Physical Memory: 16245 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+C:/Users/meera/Documents/GitHub/Polymorph
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+53907
+Successfully changed project path to: C:/Users/meera/Documents/GitHub/Polymorph
+C:/Users/meera/Documents/GitHub/Polymorph
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 104.97 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.1f1 (77a89f25062f)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/meera/Documents/GitHub/Polymorph/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f15)
+    Vendor:   
+    VRAM:     5980 MB
+    Driver:   27.21.14.5730
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56676
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001860 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 99.82 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.065 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.002144 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 116.61 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.383 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 0.95 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3344 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 272.2 MB.
+System memory in use after: 272.4 MB.
+
+Unloading 130 unused Assets to reduce memory usage. Loaded Objects now: 3831.
+Total: 4.146800 ms (FindLiveObjects: 0.627900 ms CreateObjectMapping: 0.324100 ms MarkObjects: 2.965400 ms  DeleteObjects: 0.228700 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Textures, Materials, Meshes, etc/Meshes/Scrolls.fbx
+  artifactKey: Guid(51de81354ef2d25439e86fc4da94a27b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Materials, Meshes, etc/Meshes/Scrolls.fbx using Guid(51de81354ef2d25439e86fc4da94a27b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51b579d2e0004b9a7bdddf6daa9c4d4a') in 0.246665 seconds
+  Import took 0.252409 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/Textures, Materials, Meshes, etc/LowPolyDungeons/Models/Gold/Telescope_01.fbx
+  artifactKey: Guid(7d162891b3ba34543886d53a162065e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Materials, Meshes, etc/LowPolyDungeons/Models/Gold/Telescope_01.fbx using Guid(7d162891b3ba34543886d53a162065e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d543b28ea4c0a224849f9397617e697') in 0.030397 seconds
+  Import took 0.035520 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.784671 seconds.
+  path: Assets/Textures, Materials, Meshes, etc/Models/Nature/rpgpp_lt_hill_small_01.fbx
+  artifactKey: Guid(3602432658d7f1540978cbbd6875ad2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Materials, Meshes, etc/Models/Nature/rpgpp_lt_hill_small_01.fbx using Guid(3602432658d7f1540978cbbd6875ad2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28aa7304e8c210c93675786352620279') in 0.041673 seconds
+  Import took 0.047752 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/Textures, Materials, Meshes, etc/Models/Nature/rpgpp_lt_hill_small_02.fbx
+  artifactKey: Guid(87dc0b67e5fe70f40a31e17b0c0058b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Materials, Meshes, etc/Models/Nature/rpgpp_lt_hill_small_02.fbx using Guid(87dc0b67e5fe70f40a31e17b0c0058b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da22dbcf8be36224f92dffaa7d0f50a6') in 0.028423 seconds
+  Import took 0.033900 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/Textures, Materials, Meshes, etc/Models/Nature/rpgpp_lt_hill_small_01.fbx
+  artifactKey: Guid(3602432658d7f1540978cbbd6875ad2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Materials, Meshes, etc/Models/Nature/rpgpp_lt_hill_small_01.fbx using Guid(3602432658d7f1540978cbbd6875ad2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28aa7304e8c210c93675786352620279') in 0.017164 seconds
+  Import took 0.022372 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/Textures, Materials, Meshes, etc/Models/Nature/rpgpp_lt_hill_small_02.fbx
+  artifactKey: Guid(87dc0b67e5fe70f40a31e17b0c0058b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Materials, Meshes, etc/Models/Nature/rpgpp_lt_hill_small_02.fbx using Guid(87dc0b67e5fe70f40a31e17b0c0058b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da22dbcf8be36224f92dffaa7d0f50a6') in 0.012641 seconds
+  Import took 0.017783 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.229147 seconds.
+  path: Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/Wall_01.fbx
+  artifactKey: Guid(c1354ef837688d845bc7e73b29edb393) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/Wall_01.fbx using Guid(c1354ef837688d845bc7e73b29edb393) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9043d63d1551e884a58fa3e3e678855') in 0.028587 seconds
+  Import took 0.034712 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/Wall_02.fbx
+  artifactKey: Guid(f43aca3d2d82029478384de45896b97e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/Wall_02.fbx using Guid(f43aca3d2d82029478384de45896b97e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f51e8ed5116d9631831e9cfefb94e306') in 0.029130 seconds
+  Import took 0.035698 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/Wall_03.fbx
+  artifactKey: Guid(e613f3b2edff7134cb1873b5a44d5f38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/Wall_03.fbx using Guid(e613f3b2edff7134cb1873b5a44d5f38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a14554bcfcdfd9c0a7923e0bf9d3ecf') in 0.032643 seconds
+  Import took 0.038110 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/Wall_06.fbx
+  artifactKey: Guid(11b5bac4d99791047912e9b0b5de1114) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/Wall_06.fbx using Guid(11b5bac4d99791047912e9b0b5de1114) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4aa9d9e9507bcb94a02ff500ac71e223') in 0.028335 seconds
+  Import took 0.033936 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000162 seconds.
+  path: Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/Wall_07.fbx
+  artifactKey: Guid(bafba5b9e0c08cb428480a0f48fe3740) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/Wall_07.fbx using Guid(bafba5b9e0c08cb428480a0f48fe3740) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07b222a0a1cd884202b30f1290eb0e02') in 0.029710 seconds
+  Import took 0.035015 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000146 seconds.
+  path: Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/Wall_05.fbx
+  artifactKey: Guid(a798332b0277e8f4bb6d4d848147130a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/Wall_05.fbx using Guid(a798332b0277e8f4bb6d4d848147130a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11b61c6eb2336eb675b995149564a2d7') in 0.031941 seconds
+  Import took 0.038037 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000140 seconds.
+  path: Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/Wall_02.fbx
+  artifactKey: Guid(f43aca3d2d82029478384de45896b97e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/Wall_02.fbx using Guid(f43aca3d2d82029478384de45896b97e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f51e8ed5116d9631831e9cfefb94e306') in 0.013772 seconds
+  Import took 0.019549 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/Wall_03.fbx
+  artifactKey: Guid(e613f3b2edff7134cb1873b5a44d5f38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/Wall_03.fbx using Guid(e613f3b2edff7134cb1873b5a44d5f38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a14554bcfcdfd9c0a7923e0bf9d3ecf') in 0.017056 seconds
+  Import took 0.022392 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/Wall_01.fbx
+  artifactKey: Guid(c1354ef837688d845bc7e73b29edb393) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/Wall_01.fbx using Guid(c1354ef837688d845bc7e73b29edb393) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9043d63d1551e884a58fa3e3e678855') in 0.014344 seconds
+  Import took 0.019269 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000131 seconds.
+  path: Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/Wall_04.fbx
+  artifactKey: Guid(2619a19bde31b7f428b42168d79d5cf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/Wall_04.fbx using Guid(2619a19bde31b7f428b42168d79d5cf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0b7debd49210af379d4cf43c1a36d5d') in 0.030208 seconds
+  Import took 0.035024 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.023625 seconds.
+  path: Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/Wall_04.fbx
+  artifactKey: Guid(2619a19bde31b7f428b42168d79d5cf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/Wall_04.fbx using Guid(2619a19bde31b7f428b42168d79d5cf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0b7debd49210af379d4cf43c1a36d5d') in 0.013940 seconds
+  Import took 0.020528 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.034598 seconds.
+  path: Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/Wall_08.fbx
+  artifactKey: Guid(88b310d5ed6f2704b82e6895bfe3fb36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/Wall_08.fbx using Guid(88b310d5ed6f2704b82e6895bfe3fb36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4a9c745fa68edb18f9d9f35959b3569') in 0.032291 seconds
+  Import took 0.037311 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/Wall_10.fbx
+  artifactKey: Guid(4d3ced1d4000a434faf5d90cb8a33435) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/Wall_10.fbx using Guid(4d3ced1d4000a434faf5d90cb8a33435) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebca6db2f3d6bc0c5d9959bf6c30a174') in 0.027584 seconds
+  Import took 0.032252 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/Wall_09.fbx
+  artifactKey: Guid(bf4d78092172159459733e239f249c90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/Wall_09.fbx using Guid(bf4d78092172159459733e239f249c90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be9875bdb5d2c5d5ddee969bde2bb05f') in 0.030340 seconds
+  Import took 0.035849 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/Wall_11.fbx
+  artifactKey: Guid(6c9a0b8799010d4419df7963d9937f82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/Wall_11.fbx using Guid(6c9a0b8799010d4419df7963d9937f82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca5bf29197a2aa34159e4a28fb7d0d68') in 0.027616 seconds
+  Import took 0.032955 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/Wall_20.fbx
+  artifactKey: Guid(cd706be85ce6de24ba609e455d751126) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/Wall_20.fbx using Guid(cd706be85ce6de24ba609e455d751126) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2174b420b9a3faa9416cedaafa905265') in 0.027567 seconds
+  Import took 0.032759 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/Wall_26.fbx
+  artifactKey: Guid(0214482bcf961cc4db73dd4f7f1b8e21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/Wall_26.fbx using Guid(0214482bcf961cc4db73dd4f7f1b8e21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41118cdad57d8b040b8dafece668ef67') in 0.027832 seconds
+  Import took 0.033154 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000144 seconds.
+  path: Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/Wall_27.fbx
+  artifactKey: Guid(19e6f1cc426a1ba4eb66408fc83d8dba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/Wall_27.fbx using Guid(19e6f1cc426a1ba4eb66408fc83d8dba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc3fadf60e7cecf58bb9adcfd03cb621') in 0.047618 seconds
+  Import took 0.052820 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/Wall_25.fbx
+  artifactKey: Guid(40eb23897590fae4591869113f16093b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/Wall_25.fbx using Guid(40eb23897590fae4591869113f16093b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '707917d679f4e809a82df8bf9cfd68b1') in 0.025400 seconds
+  Import took 0.030516 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/Wall_31.fbx
+  artifactKey: Guid(8a1a7aad672e78147a116d5a34051e69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/Wall_31.fbx using Guid(8a1a7aad672e78147a116d5a34051e69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a56ec31859ee40501e6d0a9082dd23c9') in 0.027619 seconds
+  Import took 0.033411 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000317 seconds.
+  path: Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/Wall_30.fbx
+  artifactKey: Guid(e5252e7e72e2cbc4cb8b32832c6b6a86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/Wall_30.fbx using Guid(e5252e7e72e2cbc4cb8b32832c6b6a86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20e66d3040eb6f5fe9a5ea8eb02badc5') in 0.029035 seconds
+  Import took 0.034393 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/Wall_36.fbx
+  artifactKey: Guid(e0a74fc690bf9a14c89bb57df93f99f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/Wall_36.fbx using Guid(e0a74fc690bf9a14c89bb57df93f99f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb583a77cd39aa1f739288bf43d73833') in 0.026957 seconds
+  Import took 0.032525 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/Textures, Materials, Meshes, etc/LowPolyDungeons/Models/Props/WallDecor_04.fbx
+  artifactKey: Guid(301caf622dc15d6418b5a7e3bb7c3d00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Materials, Meshes, etc/LowPolyDungeons/Models/Props/WallDecor_04.fbx using Guid(301caf622dc15d6418b5a7e3bb7c3d00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '918cda279837162cdeabf64ee9ce7efd') in 0.028325 seconds
+  Import took 0.033346 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000141 seconds.
+  path: Assets/Textures, Materials, Meshes, etc/Meshes/Props/WallDecor_02.fbx
+  artifactKey: Guid(acad1c7b674a68a448dbce0b6e76212e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Materials, Meshes, etc/Meshes/Props/WallDecor_02.fbx using Guid(acad1c7b674a68a448dbce0b6e76212e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61fe899550396a21d62d8b01a0fc6065') in 0.028434 seconds
+  Import took 0.033773 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/WallPart_01.fbx
+  artifactKey: Guid(e7ad37694acb37447a2d3658ab7207ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/WallPart_01.fbx using Guid(e7ad37694acb37447a2d3658ab7207ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16ab3446ccc40b6d733c70e90d0e57ec') in 0.032055 seconds
+  Import took 0.037559 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000154 seconds.
+  path: Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/WallPart_02.fbx
+  artifactKey: Guid(9386676c18b25274fa3e5b5d93bd8df4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/WallPart_02.fbx using Guid(9386676c18b25274fa3e5b5d93bd8df4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6647bebbb4b76f377cd4fc3690c77e5a') in 0.031825 seconds
+  Import took 0.037222 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000249 seconds.
+  path: Assets/Textures, Materials, Meshes, etc/Meshes/Props/WallDecor_01.fbx
+  artifactKey: Guid(07cb2410106edcc43bae9d9e5d1017fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Materials, Meshes, etc/Meshes/Props/WallDecor_01.fbx using Guid(07cb2410106edcc43bae9d9e5d1017fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0ef09f101547de88c42a2db54f253a3') in 0.028884 seconds
+  Import took 0.034323 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/WallPart_03.fbx
+  artifactKey: Guid(bab7924747eae474489974af6cd80d84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/WallPart_03.fbx using Guid(bab7924747eae474489974af6cd80d84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '404cc754b24a88e5a51179fc31de24b9') in 0.026635 seconds
+  Import took 0.032358 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/Wall_32.fbx
+  artifactKey: Guid(1f7466b71b0b2314cb444d13aba51340) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/Wall_32.fbx using Guid(1f7466b71b0b2314cb444d13aba51340) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '295f161371cf6bd20476b0ea84fd2945') in 0.028911 seconds
+  Import took 0.034917 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000163 seconds.
+  path: Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/WallPart_03.fbx
+  artifactKey: Guid(bab7924747eae474489974af6cd80d84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/WallPart_03.fbx using Guid(bab7924747eae474489974af6cd80d84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '404cc754b24a88e5a51179fc31de24b9') in 0.016284 seconds
+  Import took 0.021454 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/Wall_33.fbx
+  artifactKey: Guid(4f2a8a761620353489d22508f1b71758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/Wall_33.fbx using Guid(4f2a8a761620353489d22508f1b71758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7eb1a560b4f21d67bd671ba7ab645699') in 0.032522 seconds
+  Import took 0.037630 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/Textures, Materials, Meshes, etc/LowPolyDungeons/Models/Props/WallDecor_01.fbx
+  artifactKey: Guid(d8f61184b92482842ba91e8d3a96dd84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Materials, Meshes, etc/LowPolyDungeons/Models/Props/WallDecor_01.fbx using Guid(d8f61184b92482842ba91e8d3a96dd84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e749e40484ab9da4d66945ea548d690b') in 0.031474 seconds
+  Import took 0.036817 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/Textures, Materials, Meshes, etc/LowPolyDungeons/Models/Props/WallDecor_02.fbx
+  artifactKey: Guid(c498ea9164672064e9a6759090cad89e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Materials, Meshes, etc/LowPolyDungeons/Models/Props/WallDecor_02.fbx using Guid(c498ea9164672064e9a6759090cad89e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c815fe492cfef203e096bb2fb9884ca3') in 0.024929 seconds
+  Import took 0.030141 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/Wall_34.fbx
+  artifactKey: Guid(da226038cda8d5147b36f4e7940ea8f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/Wall_34.fbx using Guid(da226038cda8d5147b36f4e7940ea8f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4afbec0ac481bbcf36a7074a6c47a2c5') in 0.028204 seconds
+  Import took 0.033855 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/Textures, Materials, Meshes, etc/LowPolyDungeons/Models/Props/WallDecor_03.fbx
+  artifactKey: Guid(41fa6a65a5b25134a99c04a4da86853e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Materials, Meshes, etc/LowPolyDungeons/Models/Props/WallDecor_03.fbx using Guid(41fa6a65a5b25134a99c04a4da86853e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72bfdb46e31c1cf82d84384c761a7ef5') in 0.028018 seconds
+  Import took 0.033214 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000134 seconds.
+  path: Assets/Textures, Materials, Meshes, etc/Meshes/Props/WallDecor_12.fbx
+  artifactKey: Guid(bb2c00149816fb342b1516aeb9ab3e6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Materials, Meshes, etc/Meshes/Props/WallDecor_12.fbx using Guid(bb2c00149816fb342b1516aeb9ab3e6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd18d65e0eca30fa4bc2d70585d8d998f') in 0.028517 seconds
+  Import took 0.033395 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000145 seconds.
+  path: Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/Wall_29.fbx
+  artifactKey: Guid(4dddec02d459d0b4dbb71a93f847ae6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/Wall_29.fbx using Guid(4dddec02d459d0b4dbb71a93f847ae6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b86c2bf919285a9826985132e3759c05') in 0.033031 seconds
+  Import took 0.037887 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000144 seconds.
+  path: Assets/Textures, Materials, Meshes, etc/Meshes/Props/WallDecor_03.fbx
+  artifactKey: Guid(f24e7e67a61cafc4187fa8712f416012) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Materials, Meshes, etc/Meshes/Props/WallDecor_03.fbx using Guid(f24e7e67a61cafc4187fa8712f416012) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1012393489f68d7c585a457fa5f50f18') in 0.028490 seconds
+  Import took 0.033704 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000138 seconds.
+  path: Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/Wall_22.fbx
+  artifactKey: Guid(c2d200ebed23ab94a931dc1fbf70be4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/Wall_22.fbx using Guid(c2d200ebed23ab94a931dc1fbf70be4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7adbcb7c190f8926b95b27464685f9b1') in 0.028393 seconds
+  Import took 0.034367 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/Wall_24.fbx
+  artifactKey: Guid(7792a28170f491842b1ff7be41d6432b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/Wall_24.fbx using Guid(7792a28170f491842b1ff7be41d6432b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b246919d39e8f8fd92b45090fa9b89a') in 0.030988 seconds
+  Import took 0.036549 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/Wall_28.fbx
+  artifactKey: Guid(2d5d8d7895ec14444a1acc1b740fd2a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/Wall_28.fbx using Guid(2d5d8d7895ec14444a1acc1b740fd2a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d0bb6e6bb800233da0e6906cb3e5a83') in 0.029669 seconds
+  Import took 0.035256 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000171 seconds.
+  path: Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/Wall_21.fbx
+  artifactKey: Guid(ccc612f8b6c45e448ad25176508ce12a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/Wall_21.fbx using Guid(ccc612f8b6c45e448ad25176508ce12a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '846db42f5be6d1021cbe33050457996a') in 0.043585 seconds
+  Import took 0.049505 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000254 seconds.
+  path: Assets/Textures, Materials, Meshes, etc/LowPolyDungeons/Models/Props/WallDecor_12.fbx
+  artifactKey: Guid(78ced5f3132dfd546b813ee82fc6ba28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Materials, Meshes, etc/LowPolyDungeons/Models/Props/WallDecor_12.fbx using Guid(78ced5f3132dfd546b813ee82fc6ba28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63103d5b0c7e3f82489a5e7d3dd3f87e') in 0.023540 seconds
+  Import took 0.028825 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000156 seconds.
+  path: Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/Wall_35.fbx
+  artifactKey: Guid(723f6b11a57e51447a0196dca1a5b46e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/Wall_35.fbx using Guid(723f6b11a57e51447a0196dca1a5b46e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86a61a083aba297d89ea6e3caf25320a') in 0.027406 seconds
+  Import took 0.033461 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/Wall_23.fbx
+  artifactKey: Guid(c47bec4bd4152e243beadcabf5eb8f4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Materials, Meshes, etc/Meshes/Dungeon/Wall_23.fbx using Guid(c47bec4bd4152e243beadcabf5eb8f4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ae22152a3b286e75b0ffa62638b5755') in 0.050726 seconds
+  Import took 0.056134 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000152 seconds.
+  path: Assets/Textures, Materials, Meshes, etc/Meshes/Props/WallDecor_04.fbx
+  artifactKey: Guid(3848aa7e2d488234cba2c9e66d717937) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures, Materials, Meshes, etc/Meshes/Props/WallDecor_04.fbx using Guid(3848aa7e2d488234cba2c9e66d717937) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '741aafeec12521ba05a1f96fa795297a') in 0.024172 seconds
+  Import took 0.029403 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001814 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.15 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.922 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.94 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3180 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 267.9 MB.
+System memory in use after: 268.1 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 3882.
+Total: 2.665900 ms (FindLiveObjects: 0.370600 ms CreateObjectMapping: 0.142500 ms MarkObjects: 2.011700 ms  DeleteObjects: 0.140300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001928 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.09 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.887 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.98 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3180 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 268.0 MB.
+System memory in use after: 268.1 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 3885.
+Total: 3.035800 ms (FindLiveObjects: 0.396800 ms CreateObjectMapping: 0.202800 ms MarkObjects: 2.334300 ms  DeleteObjects: 0.100800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002020 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.35 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.944 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3180 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 268.0 MB.
+System memory in use after: 268.2 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 3888.
+Total: 3.591100 ms (FindLiveObjects: 0.632700 ms CreateObjectMapping: 0.248600 ms MarkObjects: 2.605900 ms  DeleteObjects: 0.102800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002259 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.26 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.920 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.97 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3180 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 268.1 MB.
+System memory in use after: 268.3 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 3891.
+Total: 3.628600 ms (FindLiveObjects: 0.597200 ms CreateObjectMapping: 0.334000 ms MarkObjects: 2.586500 ms  DeleteObjects: 0.109300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001860 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.95 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.891 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.98 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3180 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 268.1 MB.
+System memory in use after: 268.3 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 3894.
+Total: 3.433300 ms (FindLiveObjects: 0.360300 ms CreateObjectMapping: 0.175100 ms MarkObjects: 2.725000 ms  DeleteObjects: 0.172000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002019 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.93 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.878 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.96 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3180 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 268.1 MB.
+System memory in use after: 268.3 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 3897.
+Total: 3.768000 ms (FindLiveObjects: 0.338500 ms CreateObjectMapping: 0.189000 ms MarkObjects: 3.084500 ms  DeleteObjects: 0.154700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002305 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.01 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.889 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.99 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3180 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 268.2 MB.
+System memory in use after: 268.4 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 3900.
+Total: 3.589600 ms (FindLiveObjects: 0.594800 ms CreateObjectMapping: 0.166200 ms MarkObjects: 2.615000 ms  DeleteObjects: 0.212700 ms)
+
