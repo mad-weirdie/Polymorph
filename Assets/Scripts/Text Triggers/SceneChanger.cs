@@ -12,14 +12,16 @@ public class SceneSwitchNotifier : Listener
     private string nextScene;
     private bool triggerActive;
     private Vector3 newScenePosition;
+    private Quaternion newSceneRotation;
 
-    public SceneSwitchNotifier(string s, PlayerController p, Vector3 pos)
+    public SceneSwitchNotifier(string s, PlayerController p, Vector3 pos, Quaternion rot)
     {
         triggerActive = false;
         nextScene = s;
         playerController = p;
         listenerType = "Grab";
         newScenePosition = pos;
+        newSceneRotation = rot;
     }
 
     public void setActive(bool state)
@@ -32,14 +34,16 @@ public class SceneSwitchNotifier : Listener
         if (triggerActive)
         {
             PersistentData.spawnPoint = newScenePosition;
+            PersistentData.spawnRotation = newSceneRotation;
             SceneManager.LoadScene(nextScene, LoadSceneMode.Single);
         }
     }
 }
 
-public class MineEntrance : HelpfulText
+public class SceneChanger : HelpfulText
 {
-    public Vector3 newSpawn;
+    public Vector3 newSpawnPosition;
+    public Quaternion newSpawnRotation;
     bool insideTrigger = false;
     public string nextScene;
     SceneSwitchNotifier sceneNotif;
@@ -47,7 +51,7 @@ public class MineEntrance : HelpfulText
     void Start()
     {
         // This receives input from our player, mainly clicking
-        sceneNotif = new SceneSwitchNotifier(nextScene, player, newSpawn);
+        sceneNotif = new SceneSwitchNotifier(nextScene, player, newSpawnPosition, newSpawnRotation);
         player.GetComponent<PlayerController>().AddListener(sceneNotif);
     }
 

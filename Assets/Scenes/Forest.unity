@@ -25006,13 +25006,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 988240291}
-  m_LocalRotation: {x: -0, y: -0.10205541, z: -0, w: 0.99477875}
+  m_LocalRotation: {x: -0, y: 0.66123766, z: -0, w: -0.75017655}
   m_LocalPosition: {x: 69.02, y: 15.96, z: -65.81}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -11.715, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -442.789, z: 0}
 --- !u!4 &992996866 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7993883801498559230, guid: 1e3786c2a3f9a2b409611f39a49e6ecb, type: 3}
@@ -52760,19 +52760,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 837977387220376133, guid: 3be34212e64064541b7a3778fe88233b, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.96261024
+      value: 0.96261036
       objectReference: {fileID: 0}
     - target: {fileID: 837977387220376133, guid: 3be34212e64064541b7a3778fe88233b, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.21420924
+      value: 0.21420929
       objectReference: {fileID: 0}
     - target: {fileID: 837977387220376133, guid: 3be34212e64064541b7a3778fe88233b, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.16581823
+      value: 0.16581818
       objectReference: {fileID: 0}
     - target: {fileID: 837977387220376133, guid: 3be34212e64064541b7a3778fe88233b, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.00042653078
+      value: 0.00042654574
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3be34212e64064541b7a3778fe88233b, type: 3}
@@ -57558,7 +57558,8 @@ MonoBehaviour:
   message: Press 'F' to enter the mines.
   HelpfulTextObject: {fileID: 826161552}
   TextShowSeconds: 10000
-  newSpawn: {x: 0, y: 0, z: 0}
+  newSpawnPosition: {x: 0, y: 0, z: 0}
+  newSpawnRotation: {x: 0, y: 0, z: 0, w: 0}
   nextScene: Mines
 --- !u!1001 &1976273819
 PrefabInstance:

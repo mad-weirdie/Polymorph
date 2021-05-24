@@ -70,12 +70,14 @@ public class PlayerController : MonoBehaviour
         if (PersistentData.spawnPoint != null)
         {
             // The spawnPoint will be (0,0,0) if we don't want to do anything yet
-            if (!(PersistentData.spawnPoint.x == 0f &&
-                PersistentData.spawnPoint.y == 0f &&
+            if (!(PersistentData.spawnPoint.x == 0f && PersistentData.spawnPoint.y == 0f &&
                 PersistentData.spawnPoint.z == 0f))
+            {
                 // Otherwise, set it to the saved new position from the exit
                 // trigger game object 
                 activePlayer.transform.position = PersistentData.spawnPoint;
+                activePlayer.transform.rotation = PersistentData.spawnRotation;
+            }
         }
         
         

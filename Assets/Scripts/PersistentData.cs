@@ -8,6 +8,7 @@ public static class PersistentData
     public static List<bool> CrystalsCollected;
     public static bool hasInit;
     public static Vector3 spawnPoint;
+    public static Quaternion spawnRotation;
 
     public static void Start()
     {
@@ -18,6 +19,7 @@ public static class PersistentData
         }
 
         spawnPoint = new Vector3(0f, 0f, 0f);
+        spawnRotation = Quaternion.identity;
     }
 
 
