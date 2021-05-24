@@ -27,6 +27,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animalSpeed: 0.06
+  animalName: 
   turnSpeed: 10
   player: {fileID: 1393855598214869848}
   animalMass: 10
@@ -106,6 +107,8 @@ MonoBehaviour:
   ShapeShiftSound: {fileID: 1591534541}
   wizard: {fileID: 0}
   current_puzzle: {fileID: 0}
+  lastCheckpointPos: {x: 0, y: 0, z: 0}
+  lastCheckpointDir: {x: 0, y: 0, z: 0, w: 0}
   magicEffect: {fileID: 685113360}
 --- !u!114 &5816923457350117226
 MonoBehaviour:
@@ -617,6 +620,10 @@ PrefabInstance:
     - target: {fileID: 7001886437224296750, guid: c72f04803f678264482186da6226b2e5, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 487.00015
+      objectReference: {fileID: 0}
+    - target: {fileID: 7145222361256983162, guid: c72f04803f678264482186da6226b2e5, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8072523252593920018, guid: c72f04803f678264482186da6226b2e5, type: 3}
       propertyPath: m_Name
