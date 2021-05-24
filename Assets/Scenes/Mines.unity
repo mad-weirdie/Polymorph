@@ -15191,7 +15191,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh110162
+  m_Name: pb_Mesh219920
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -27696,7 +27696,8 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1132166883}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 64538179, guid: c1f3b8b4b4897654b94a6e1b63d6c20b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c1f3b8b4b4897654b94a6e1b63d6c20b, type: 3}
 --- !u!4 &642591125 stripped
 Transform:
@@ -31609,6 +31610,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1944603777}
     - target: {fileID: 5816923457350117225, guid: b267e01defef9cb40abfab67294b534f, type: 3}
+      propertyPath: activeScript
+      value: 
+      objectReference: {fileID: 1804947322}
+    - target: {fileID: 5816923457350117225, guid: b267e01defef9cb40abfab67294b534f, type: 3}
       propertyPath: CharacterWheel
       value: 
       objectReference: {fileID: 723532527}
@@ -32115,7 +32120,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh110518
+  m_Name: pb_Mesh220280
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -34560,7 +34565,8 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 391967668}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 64538179, guid: c1f3b8b4b4897654b94a6e1b63d6c20b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c1f3b8b4b4897654b94a6e1b63d6c20b, type: 3}
 --- !u!1 &843982092 stripped
 GameObject:
@@ -49783,7 +49789,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh110002
+  m_Name: pb_Mesh219760
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -50763,6 +50769,7 @@ MonoBehaviour:
   message: Press 'F' to exit the mines.
   HelpfulTextObject: {fileID: 769706355}
   TextShowSeconds: 10000
+  newSpawn: {x: 69.02, y: 15.96, z: -65.81}
   nextScene: Forest
 --- !u!1 &1232197258
 GameObject:
@@ -59275,7 +59282,8 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 798320995}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 64538179, guid: c1f3b8b4b4897654b94a6e1b63d6c20b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c1f3b8b4b4897654b94a6e1b63d6c20b, type: 3}
 --- !u!4 &1372246100 stripped
 Transform:
@@ -68398,7 +68406,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh111046
+  m_Name: pb_Mesh220810
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -84196,6 +84204,17 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!114 &1804947322 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5816923458126187670, guid: b267e01defef9cb40abfab67294b534f, type: 3}
+  m_PrefabInstance: {fileID: 769706354}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c4a65b615d88704e95910a34d5a4c6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1805460564
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -99353,7 +99372,8 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1667769566}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 64538179, guid: c1f3b8b4b4897654b94a6e1b63d6c20b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c1f3b8b4b4897654b94a6e1b63d6c20b, type: 3}
 --- !u!4 &2132991870 stripped
 Transform:

@@ -62,21 +62,23 @@ public class PlayerController : MonoBehaviour
     private AudioSource walkingAudio;
     public ParticleSystem magicEffect;
 
-
     private HelpfulText text;
-
-    public static PersistentData PlayerData;
 
     // Start is called before the first frame update
     void Start()
     {
-        if (PlayerData == null) {
-            PlayerData = new PersistentData();
-            PersistentData.Start();
-            print("PlayerData created!");
-            print(PlayerData != null);
+        if (PersistentData.spawnPoint != null)
+        {
+            // The spawnPoint will be (0,0,0) if we don't want to do anything yet
+            if (!(PersistentData.spawnPoint.x == 0f &&
+                PersistentData.spawnPoint.y == 0f &&
+                PersistentData.spawnPoint.z == 0f))
+                // Otherwise, set it to the saved new position from the exit
+                // trigger game object 
+                activePlayer.transform.position = PersistentData.spawnPoint;
         }
-
+        
+        
         lastCheckpointPos = transform.position;
         lastCheckpointDir = transform.rotation;
 
@@ -357,7 +359,12 @@ public class PlayerController : MonoBehaviour
         foreach (Listener scriptObject in Listeners)
         {
             if (scriptObject.listenerType == "Grab")
+            {
+                print("changing spawn point");
+                print(PersistentData.spawnPoint == null);
                 scriptObject.Notify();
+            }
+                
         }
     }
 
