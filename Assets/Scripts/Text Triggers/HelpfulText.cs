@@ -12,6 +12,7 @@ public class HelpfulText : MonoBehaviour
     public string message;
     public TextMeshProUGUI HelpfulTextObject;
     public float TextShowSeconds = 2.0f;
+    public bool messagesBegan = false;
 
     void Start()
     {
@@ -20,31 +21,30 @@ public class HelpfulText : MonoBehaviour
 
     public virtual bool conditionsMet()
     {
-        return false;
+        return (!messagesBegan);
     }
 
-    public void Show()
+    public virtual void Show()
     {
+        print("parent show called");
+        messagesBegan = true;
         StartCoroutine(_show());
     }
 
-    private IEnumerator _show()
+    public virtual IEnumerator _show()
     {  
         HelpfulTextObject.CrossFadeAlpha(1.0f, 0.5f, false);
-        print("Started");
         HelpfulTextObject.gameObject.SetActive(true);
         HelpfulTextObject.SetText(message);
         yield return new WaitForSeconds(TextShowSeconds);
         HelpfulTextObject.CrossFadeAlpha(0.0f, 0.5f, false);
-        print("Finished");
         Remove();
-
     }
 
     public virtual void Remove()
     {
-        //print("Removing.");
-        //Destroy(this.gameObject);
+        print("Removing.");
+        Destroy(this.gameObject);
         //HelpfulTextObject.gameObject.SetActive(false);
     }
 }

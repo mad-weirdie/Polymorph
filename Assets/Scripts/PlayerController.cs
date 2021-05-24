@@ -79,8 +79,11 @@ public class PlayerController : MonoBehaviour
                 activePlayer.transform.rotation = PersistentData.spawnRotation;
             }
         }
-        
-        
+
+        //Camera obj
+        cameraTrans = Camera.main.transform;
+        cam = CinemachineCamera.GetComponent<CinemachineFreeLook>();
+
         lastCheckpointPos = transform.position;
         lastCheckpointDir = transform.rotation;
 
@@ -92,9 +95,7 @@ public class PlayerController : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         walkingAudio = GetComponent<AudioSource>();
 
-        //Camera obj
-        cameraTrans = Camera.main.transform;
-        cam = CinemachineCamera.GetComponent<CinemachineFreeLook>();
+        
 
         prev_x_speed = cam.m_XAxis.m_MaxSpeed;
         prev_y_speed = cam.m_YAxis.m_MaxSpeed;
@@ -354,8 +355,7 @@ public class PlayerController : MonoBehaviour
         isGrabbing = !isGrabbing;
         if (!isGrabbing && movingRigidBodyObject != null)
         {
-            if (activePlayer.name == "Horse")
-                movingRigidBodyObject.useGravity = true;
+            movingRigidBodyObject.useGravity = true;
         }
 
         foreach (Listener scriptObject in Listeners)
@@ -493,6 +493,7 @@ public class PlayerController : MonoBehaviour
         if (movingRigidBodyObject == null) { }
         else if (other.gameObject == movingRigidBodyObject.gameObject)
         {
+            movingRigidBodyObject.useGravity = true;
             movingRigidBodyObject = null;
             isGrabbing = false;
         }
@@ -500,7 +501,6 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.CompareTag("Dialogue"))
         {
             text = other.gameObject.GetComponent<HelpfulText>();
-            text.HelpfulTextObject.text = "";
         }
     }
 

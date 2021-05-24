@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 7861776642519618081}
   - component: {fileID: 5126927622627417530}
   - component: {fileID: 5207790768740239229}
-  - component: {fileID: 5326481489392636890}
+  - component: {fileID: 4156933836823980361}
+  - component: {fileID: 8729606801571990297}
   m_Layer: 0
   m_Name: Stone 12
   m_TagString: Untagged
@@ -55,6 +56,8 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -79,8 +82,9 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &5326481489392636890
-MeshCollider:
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4156933836823980361
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -89,7 +93,22 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: -1571610706155866244, guid: 82de1f12eb23f9d4ab1dc321682749b2, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 2.054204, y: 0.84539115, z: 0.8465602}
+  m_Center: {x: -0.035396934, y: 0.40490365, z: 0.039235115}
+--- !u!54 &8729606801571990297
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7076123552898181792}
+  serializedVersion: 2
+  m_Mass: 7
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0

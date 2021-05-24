@@ -65,16 +65,21 @@ public class SceneChanger : HelpfulText
         return;
     }
 
-    void OnTriggerEnter()
+    void OnTriggerEnter(Collider sceneTrigger)
     {
-        insideTrigger = true;
-        sceneNotif.setActive(true);
+        if (sceneTrigger.gameObject.CompareTag("SceneTrigger"))
+        {
+            insideTrigger = true;
+            sceneNotif.setActive(true);
+        }   
     }
 
-    void OnTriggerExit()
+    void OnTriggerExit(Collider sceneTrigger)
     {
-        insideTrigger = false;
-        sceneNotif.setActive(false);
-
+        if (sceneTrigger.gameObject.CompareTag("SceneTrigger"))
+        {
+            insideTrigger = false;
+            sceneNotif.setActive(false);
+        }
     }
 }

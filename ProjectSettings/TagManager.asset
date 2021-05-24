@@ -14,6 +14,8 @@ TagManager:
   - Crystal
   - Waypoint
   - Dialogue
+  - FxTemporaire
+  - SceneTrigger
   layers:
   - Default
   - TransparentFX
