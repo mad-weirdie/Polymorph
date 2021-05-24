@@ -21,13 +21,14 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Water_01
-  m_Shader: {fileID: -6465566751694194690, guid: cbbcc0188b8c6b848806049bcc3bc448, type: 3}
-  m_ShaderKeywords: _ALPHAPREMULTIPLY_ON _SPECULAR_SETUP
-  m_LightmapFlags: 4
+  m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
+  m_ShaderKeywords: _ALPHAPREMULTIPLY_ON _EMISSION _RECEIVE_SHADOWS_OFF _SPECULARHIGHLIGHTS_OFF
+  m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
+  m_CustomRenderQueue: 3000
+  stringTagMap:
+    RenderType: Transparent
   disabledShaderPasses:
   - SHADOWCASTER
   m_SavedProperties:
@@ -116,27 +117,27 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.802
     - _GlossyReflections: 1
-    - _Metallic: 0
+    - _Metallic: 0.117
     - _Mode: 3
     - _OcclusionStrength: 1
     - _Opacity: 0.76
     - _Parallax: 0.02
     - _QueueOffset: 0
-    - _ReceiveShadows: 1
+    - _ReceiveShadows: 0
     - _Size: 2
-    - _Smoothness: 0.802
+    - _Smoothness: 0.912
     - _SmoothnessTextureChannel: 0
-    - _SpecularHighlights: 1
+    - _SpecularHighlights: 0
     - _SrcBlend: 1
     - _Surface: 1
     - _UVSec: 0
-    - _WorkflowMode: 0
+    - _WorkflowMode: 1
     - _ZWrite: 0
     m_Colors:
-    - _BaseColor: {r: 0.4188473, g: 0.912514, b: 0.9338235, a: 0.753}
+    - _BaseColor: {r: 0, g: 0.51677847, b: 1, a: 0.8156863}
     - _Color: {r: 0.41884732, g: 0.912514, b: 0.9338235, a: 0.753}
     - _DarkFoamColor: {r: 0.18123916, g: 0.5608159, b: 0.872, a: 1}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _EmissionColor: {r: 0, g: 0.003603112, b: 0.5188679, a: 1}
     - _LightFoamColor: {r: 0.010341718, g: 0.7830189, b: 0.64436674, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
     - _WaterColor: {r: 0, g: 0.8301887, b: 0.66941357, a: 1}
