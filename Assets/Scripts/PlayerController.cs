@@ -79,6 +79,10 @@ public class PlayerController : MonoBehaviour
                 activePlayer.transform.position = PersistentData.spawnPoint;
                 activePlayer.transform.rotation = PersistentData.spawnRotation;
             }
+            print("Crystal statuses!: ");
+            for (int i = 0; i < PersistentData.CrystalsCollected.Count; i++) {
+                print(PersistentData.CrystalsCollected[i]);
+            }
         }
 
         //Camera obj
@@ -259,7 +263,7 @@ public class PlayerController : MonoBehaviour
     {
         //Update variables that rely on activePlayer.
         activeAnims = activePlayer.GetComponent<Animator>();
-        activePlayer.tag = "Player";
+        
         activeAnims.SetBool("IsWalking", isWalking);
         ShapeVariables activeAbilityScript = activePlayer.GetComponent<ShapeVariables>();
         activeScript = activeAbilityScript;
