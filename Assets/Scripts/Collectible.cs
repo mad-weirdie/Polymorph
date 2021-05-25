@@ -47,9 +47,8 @@ public class Collectible : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player") {
+        if (other.gameObject.transform.parent.tag == "Player") {
             isAnimating = true;
-            print(PersistentData.CrystalsCollected == null); 
             PersistentData.CrystalsCollected[collectibleNum] = true;
             print(PersistentData.CrystalsCollected[collectibleNum]);
         

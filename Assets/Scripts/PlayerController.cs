@@ -69,6 +69,7 @@ public class PlayerController : MonoBehaviour
     {
         if (PersistentData.spawnPoint != null)
         {
+            PersistentData.Start(); // Make sure our list is initialized.
             // The spawnPoint will be (0,0,0) if we don't want to do anything yet
             if (!(PersistentData.spawnPoint.x == 0f && PersistentData.spawnPoint.y == 0f &&
                 PersistentData.spawnPoint.z == 0f))
@@ -258,6 +259,7 @@ public class PlayerController : MonoBehaviour
     {
         //Update variables that rely on activePlayer.
         activeAnims = activePlayer.GetComponent<Animator>();
+        activePlayer.tag = "Player";
         activeAnims.SetBool("IsWalking", isWalking);
         ShapeVariables activeAbilityScript = activePlayer.GetComponent<ShapeVariables>();
         activeScript = activeAbilityScript;
