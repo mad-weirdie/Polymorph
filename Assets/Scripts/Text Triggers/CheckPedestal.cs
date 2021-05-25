@@ -9,7 +9,6 @@ public class CheckPedestal : HelpfulText
 
     override public bool conditionsMet()
     {
-        print(!pedestal.isActivated);
         return (!pedestal.isActivated);
         
     }

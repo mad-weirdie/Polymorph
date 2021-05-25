@@ -27,6 +27,7 @@ public class Portal : MonoBehaviour
         crystalsActivated++;
         if (crystalsActivated == crystalsRequired)
         {
+            print("crystals required: " + crystalsRequired);
             ActivatePortal();
         }
     }
@@ -47,7 +48,7 @@ public class Portal : MonoBehaviour
     {
         if (isActivated)
         {
-            SceneManager.LoadScene("Forest", LoadSceneMode.Single);
+            SceneManager.LoadScene("Tower", LoadSceneMode.Single);
         }
     }
 }

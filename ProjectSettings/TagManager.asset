@@ -16,6 +16,7 @@ TagManager:
   - Dialogue
   - FxTemporaire
   - SceneTrigger
+  - Explosive
   layers:
   - Default
   - TransparentFX

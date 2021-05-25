@@ -215,12 +215,7 @@ public class PlayerController : MonoBehaviour
 
             if (isGrabbing && movingRigidBodyObject != null)
             {
-                if (activePlayer.name != "Horse(Clone)")
-                {
-                    movingRigidBodyObject.useGravity = true;
-                    movingRigidBodyObject.MovePosition(movingRigidBodyObject.position + moveMagnitude * baseSpeed);
-                }
-                else
+                if (activePlayer.name == "Horse(Clone)")
                 {
                     movingRigidBodyObject.useGravity = false;
                     grabbedObj = transform.position;
@@ -228,6 +223,22 @@ public class PlayerController : MonoBehaviour
                     grabbedObj += desiredForward * 1.2f;
                     movingRigidBodyObject.MovePosition(grabbedObj);
                     movingRigidBodyObject.MoveRotation(m_Rotation);
+                }
+                else if (activePlayer.name == "Crow(Clone)")
+                {
+                    movingRigidBodyObject.useGravity = false;
+                    movingRigidBodyObject.mass = 0.1f;
+                    grabbedObj = transform.position;
+                    grabbedObj.y += 0.5f;
+                    grabbedObj += desiredForward * 0.5f;
+                    movingRigidBodyObject.MovePosition(grabbedObj);
+                    movingRigidBodyObject.MoveRotation(m_Rotation);
+                }
+                else
+                {
+                    
+                    movingRigidBodyObject.useGravity = true;
+                    movingRigidBodyObject.MovePosition(movingRigidBodyObject.position + moveMagnitude * baseSpeed);
                 }
 
                 //highlightObject.ChangeColor();
@@ -358,24 +369,25 @@ public class PlayerController : MonoBehaviour
 
     private void OnGrab()
     {
-        isGrabbing = !isGrabbing;
-        if (!isGrabbing && movingRigidBodyObject != null)
+        if (isGrabbing && movingRigidBodyObject != null)
         {
+            isGrabbing = false;
             movingRigidBodyObject.useGravity = true;
+            movingRigidBodyObject.mass = 5.0f;
+            print("release");
         }
+        else
+            isGrabbing = true;
 
         foreach (Listener scriptObject in Listeners)
         {
             if (scriptObject.listenerType == "Grab")
             {
-                print("changing spawn point");
-                print(PersistentData.spawnPoint == null);
                 scriptObject.Notify();
             }
                 
         }
     }
-
 
     private void OnMove(InputValue input)
     {
@@ -419,6 +431,22 @@ public class PlayerController : MonoBehaviour
     {
         yield return new WaitForSeconds(waitTime);
         magicEffect.Play();
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        // Rigid body reference should only be changed if not set to anything.
+        if (movingRigidBodyObject == null)
+        {
+
+            if (other.gameObject.CompareTag("Movable") && isGrabbing)
+            {
+                // This breaks the seesaw mechanic bc you weigh nothing
+                //rigidBody.mass = 0;
+                movingRigidBodyObject = other.GetComponent<Rigidbody>();
+
+            }
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -472,21 +500,6 @@ public class PlayerController : MonoBehaviour
             {
                 text.Show();
             }  
-        }
-    }
-    
-    private void OnTriggerStay(Collider other)
-    {
-        // Rigid body reference should only be changed if not set to anything.
-        if (movingRigidBodyObject == null)
-        {
-            if (other.gameObject.CompareTag("Movable") && isGrabbing)
-            {
-                // This breaks the seesaw mechanic bc you weigh nothing
-                //rigidBody.mass = 0;
-                movingRigidBodyObject = other.GetComponent<Rigidbody>();
-
-            }
         }
     }
 

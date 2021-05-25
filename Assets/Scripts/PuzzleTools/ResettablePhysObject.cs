@@ -12,7 +12,6 @@ public class ResettablePhysObject : resettableObject
     {
         initialRotation = transform.rotation;
         initialPosition = transform.position;
-        print("SAVED");
         return true;
         
     }
