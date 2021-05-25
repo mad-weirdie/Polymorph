@@ -47,6 +47,7 @@ public class PlayerController : MonoBehaviour
     public DialogueController wizard;
 
     private bool isGrabbing = false;
+    private bool isClimbing = false;
     private Rigidbody movingRigidBodyObject;
     private float normalMass;
     public PuzzleController current_puzzle;
@@ -63,7 +64,7 @@ public class PlayerController : MonoBehaviour
     public ParticleSystem magicEffect;
 
     private HelpfulText text;
-
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -198,19 +199,34 @@ public class PlayerController : MonoBehaviour
             playerMoveInput.Normalize();
             isWalking = !Mathf.Approximately(playerMoveInput.x, 0f) || !Mathf.Approximately(playerMoveInput.z, 0f);
             activeAnims.SetBool("IsWalking", isWalking);
-            // Get the player's movement, relative to the camera.
-            moveMagnitude = cameraTrans.forward * playerMoveInput.z + cameraTrans.right * playerMoveInput.x;
-            moveMagnitude.y = 0f;
-
+            
             //Instead 
             facing = transform.forward;
             facing.y = 0f;
 
-            desiredForward = Vector3.RotateTowards(facing, moveMagnitude, turnSpeed * Time.deltaTime, 0f);
-            //print(desiredForward);
-            m_Rotation = Quaternion.LookRotation(desiredForward);
+            if (!isClimbing)
+            {
+                // Get the player's movement, relative to the camera.
+                moveMagnitude = cameraTrans.forward * playerMoveInput.z + cameraTrans.right * playerMoveInput.x;
+                moveMagnitude.y = 0f;
+
+                desiredForward = Vector3.RotateTowards(facing, moveMagnitude, turnSpeed * Time.deltaTime, 0f);
+                m_Rotation = Quaternion.LookRotation(desiredForward);
+            }
+            else
+            {
+                // Get the player's movement, relative to the camera.
+                moveMagnitude = cameraTrans.up * playerMoveInput.z; // z is the forward movement
+                moveMagnitude.z = 0f;
+                moveMagnitude.x = 0f;
+                cameraTrans.position = rigidBody.position;
+                desiredForward = Vector3.RotateTowards(facing, moveMagnitude, 0f, 0f);
+                m_Rotation = Quaternion.LookRotation(desiredForward);
+            }
+
             //Now, actually move!
             rigidBody.MovePosition(rigidBody.position + moveMagnitude * baseSpeed);
+
             rigidBody.MoveRotation(m_Rotation);
 
             if (isGrabbing && movingRigidBodyObject != null)
@@ -241,8 +257,6 @@ public class PlayerController : MonoBehaviour
                     movingRigidBodyObject.MovePosition(movingRigidBodyObject.position + moveMagnitude * baseSpeed);
                 }
 
-                //highlightObject.ChangeColor();
-                
             }
         }
         else
@@ -265,7 +279,6 @@ public class PlayerController : MonoBehaviour
             activePlayer.SetActive(false);
             activePlayer = characters[animal_index];
             activePlayer.SetActive(true);
-            //rigidBody.constraints = RigidbodyConstraints.FreezeRotationZ;
             ShapeShiftUpdate();
         }
     }
@@ -399,6 +412,9 @@ public class PlayerController : MonoBehaviour
 
     private void OnJump(InputValue input)
     {
+        if (activeScript.animalName == "Raccoon")
+            isClimbing = !isClimbing;
+
         activeScript.OnJump(input.Get<float>() > 0f);
     }
 
@@ -441,8 +457,6 @@ public class PlayerController : MonoBehaviour
 
             if (other.gameObject.CompareTag("Movable") && isGrabbing)
             {
-                // This breaks the seesaw mechanic bc you weigh nothing
-                //rigidBody.mass = 0;
                 movingRigidBodyObject = other.GetComponent<Rigidbody>();
 
             }
@@ -454,11 +468,8 @@ public class PlayerController : MonoBehaviour
         // Rigid body reference should only be changed if not set to anything.
         if (movingRigidBodyObject == null) 
         {
-               
             if (other.gameObject.CompareTag("Movable") && isGrabbing)
             {
-                // This breaks the seesaw mechanic bc you weigh nothing
-                //rigidBody.mass = 0;
                 movingRigidBodyObject = other.GetComponent<Rigidbody>();
 
             }
@@ -507,8 +518,6 @@ public class PlayerController : MonoBehaviour
     {
         // Gotta decide exactly how we want to do the grab "break" mechanic?
         // Definitely want more 'leniency' than previous
-        //isGrabbing = false;
-        //rigidBody.mass = normalMass;
         if (movingRigidBodyObject == null) { }
         else if (other.gameObject == movingRigidBodyObject.gameObject)
         {
