@@ -8431,11 +8431,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6721092324547233634, guid: 6eee7306fe377634f9645a176df43265, type: 3}
   m_PrefabInstance: {fileID: 1578075407}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1592568354 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1432110404910181331, guid: b267e01defef9cb40abfab67294b534f, type: 3}
-  m_PrefabInstance: {fileID: 5816923456991187415}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1610741069
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10932,7 +10927,7 @@ PrefabInstance:
     - target: {fileID: 5816923457350117225, guid: b267e01defef9cb40abfab67294b534f, type: 3}
       propertyPath: CharacterWheel
       value: 
-      objectReference: {fileID: 1592568354}
+      objectReference: {fileID: 0}
     - target: {fileID: 5816923457350117225, guid: b267e01defef9cb40abfab67294b534f, type: 3}
       propertyPath: CinemachineCamera
       value: 
