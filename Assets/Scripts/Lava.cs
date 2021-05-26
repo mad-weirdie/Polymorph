@@ -52,8 +52,8 @@ public class Lava : MonoBehaviour
         // Remember player's starting position/rotation/"gravity" for level reset
         // I've tried using DontDestroyOnLoad and scene changes to reset,
         // but it makes a huge mess trying to preserve old variable data.
-        startPosition = player.transform.position;
-        startRotation = player.transform.rotation;
+        //5/22: Players now have a checkpoint system, which is stored on the player model. We use that value to reset the player.
+
         startDrag = player.GetComponent<Rigidbody>().drag;
 
         playerScript = player.GetComponent<PlayerController>();
