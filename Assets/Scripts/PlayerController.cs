@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
 
     [Header("Camera code")]
     public GameObject CinemachineCamera;
-    private CinemachineFreeLook cam;
+    public CinemachineFreeLook cam;
     private Transform cameraTrans;
     public float prev_x_speed;
     public float prev_y_speed;
