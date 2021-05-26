@@ -119,7 +119,7 @@ public class PlayerController : MonoBehaviour
             Texture2D animalImage;
             GameObject child = transform.GetChild(i).gameObject;
 
-            if (child.CompareTag("Animal"))
+            if (child.CompareTag("Animal") || (child.CompareTag("Player") && child.name != "Tortoise"))
             {
                 characters.Add(child);
 
@@ -479,6 +479,7 @@ public class PlayerController : MonoBehaviour
         {
             int activeIndex;
             Texture2D animalImage;
+            other.gameObject.tag = "Player";
 
             // Load the new character
             characters.Add(GameObject.Instantiate(other.gameObject, this.transform, false));
