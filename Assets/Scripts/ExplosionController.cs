@@ -58,7 +58,7 @@ public class ExplosionController : MonoBehaviour
             }
         }
 
-        //Destroy(this);
+        Destroy(this);
 
     }
 }
