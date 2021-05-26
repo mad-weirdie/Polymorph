@@ -188,6 +188,14 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "ResetToCheckpoint",
+                    "type": "Button",
+                    "id": "f565ff96-99dd-441f-afde-03417daf10dd",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -584,6 +592,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "TowerCheat",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6a4081e9-b8f4-46aa-a6ca-685865080992",
+                    "path": "<Keyboard>/f1",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ResetToCheckpoint",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

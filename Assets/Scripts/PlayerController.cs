@@ -565,15 +565,25 @@ public class PlayerController : MonoBehaviour
     
     }
 
+
+    //Various cheats and debug points live here.  
     void OnMineCheat() {
 
-        //Cheat to immediately go to the mines.
+        //Cheat to immediately go to the mines. Keybind: f11
         SceneManager.LoadScene("Mines", LoadSceneMode.Single);
 
     }
 
     void OnTowerCheat() {
+        //Cheat to immediately go to the tower. keybind: f12
         SceneManager.LoadScene("Tower", LoadSceneMode.Single);
+    }
+
+    void OnResetToCheckpoint() {
+        //Teleport back to the last checkpoint! Keybind: f1
+        transform.position = lastCheckpointPos;
+        transform.rotation = lastCheckpointDir;
+    
     }
 
 }
