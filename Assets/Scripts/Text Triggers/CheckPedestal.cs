@@ -5,7 +5,7 @@ using TMPro;
 
 public class CheckPedestal : HelpfulText
 {
-    public Pedestals pedestal;
+    public pedestals pedestal;
 
     override public bool conditionsMet()
     {

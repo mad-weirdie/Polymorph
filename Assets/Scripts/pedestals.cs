@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Pedestals : MonoBehaviour
+public class pedestals : MonoBehaviour
 {
     public Orbs crystal;
     public Portal teleporter;

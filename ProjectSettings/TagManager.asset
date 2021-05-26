@@ -17,6 +17,7 @@ TagManager:
   - FxTemporaire
   - SceneTrigger
   - Explosive
+  - Climeable
   layers:
   - Default
   - TransparentFX
