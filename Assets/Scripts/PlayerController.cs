@@ -126,6 +126,12 @@ public class PlayerController : MonoBehaviour
 
                 // Load the resource image into the character selection frame.
                 animalImage = Resources.Load("Images/" + child.name) as Texture2D;
+                if (animalImage == null)
+                {
+                    ShapeVariables test = child.GetComponent<ShapeVariables>();
+                    animalImage = Resources.Load("Images/" + child.GetComponent<ShapeVariables>().animalName) as Texture2D;
+                }
+
                 CharacterWheel.transform.GetChild(characters.Count - 1).gameObject.SetActive(true);
                 GameObject image = CharacterWheel.transform.GetChild(characters.Count - 1).GetChild(0).gameObject;
                 image.GetComponent<RawImage>().texture = animalImage;
