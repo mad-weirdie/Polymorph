@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.316
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 2094105446}
-  m_IndirectSpecularColor: {r: 0.1873041, g: 0.1496859, b: 0.12019501, a: 0.316}
+  m_IndirectSpecularColor: {r: 0.1873011, g: 0.14967778, b: 0.12017751, a: 0.316}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6671,6 +6671,10 @@ PrefabInstance:
       propertyPath: script
       value: 
       objectReference: {fileID: 5816923458189819854}
+    - target: {fileID: 1988801568, guid: e0ffac09254dfcb448695d11a473d0ac, type: 3}
+      propertyPath: animalName
+      value: Crow
+      objectReference: {fileID: 0}
     - target: {fileID: 1988801568, guid: e0ffac09254dfcb448695d11a473d0ac, type: 3}
       propertyPath: animalSpeed
       value: 0.1
@@ -16179,19 +16183,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 837977387178136062, guid: 3be34212e64064541b7a3778fe88233b, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9683002
+      value: 0.96830016
       objectReference: {fileID: 0}
     - target: {fileID: 837977387178136062, guid: 3be34212e64064541b7a3778fe88233b, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.15926318
+      value: 0.15926316
       objectReference: {fileID: 0}
     - target: {fileID: 837977387178136062, guid: 3be34212e64064541b7a3778fe88233b, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.19210282
+      value: 0.19210273
       objectReference: {fileID: 0}
     - target: {fileID: 837977387178136062, guid: 3be34212e64064541b7a3778fe88233b, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.011249609
+      value: 0.011249608
       objectReference: {fileID: 0}
     - target: {fileID: 837977387220376123, guid: 3be34212e64064541b7a3778fe88233b, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -16211,31 +16215,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 837977387220376133, guid: 3be34212e64064541b7a3778fe88233b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.8441267
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 837977387220376133, guid: 3be34212e64064541b7a3778fe88233b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.7818091
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 837977387220376133, guid: 3be34212e64064541b7a3778fe88233b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.9182878
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 837977387220376133, guid: 3be34212e64064541b7a3778fe88233b, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.47587305
+      value: 0.96187586
       objectReference: {fileID: 0}
     - target: {fileID: 837977387220376133, guid: 3be34212e64064541b7a3778fe88233b, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.09616858
+      value: 0.19433151
       objectReference: {fileID: 0}
     - target: {fileID: 837977387220376133, guid: 3be34212e64064541b7a3778fe88233b, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.8740287
+      value: 0.19238466
       objectReference: {fileID: 0}
     - target: {fileID: 837977387220376133, guid: 3be34212e64064541b7a3778fe88233b, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.01924198
+      value: 0.0042640637
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3be34212e64064541b7a3778fe88233b, type: 3}
@@ -36937,6 +36941,10 @@ PrefabInstance:
       propertyPath: script
       value: 
       objectReference: {fileID: 5816923458189819854}
+    - target: {fileID: 2116416421, guid: 9f0d87823266e5247a3d06868ac3b52c, type: 3}
+      propertyPath: animalName
+      value: Horse
+      objectReference: {fileID: 0}
     - target: {fileID: 2116416421, guid: 9f0d87823266e5247a3d06868ac3b52c, type: 3}
       propertyPath: animalSpeed
       value: 0.12
