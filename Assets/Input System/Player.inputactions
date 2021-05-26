@@ -172,6 +172,22 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "MineCheat",
+                    "type": "Button",
+                    "id": "6fd52853-c70e-48a0-9e60-3ce6bac7170b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "TowerCheat",
+                    "type": "Button",
+                    "id": "c454184a-9f24-4aa7-8fa4-7e7752af0ab8",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -546,6 +562,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "ShapeShift8",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c3c53a88-d10e-40c1-b0c3-e1d2d3c2a382",
+                    "path": "<Keyboard>/f11",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MineCheat",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1e527a2b-caf2-425f-a990-e3ea6d9dbf32",
+                    "path": "<Keyboard>/f12",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TowerCheat",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

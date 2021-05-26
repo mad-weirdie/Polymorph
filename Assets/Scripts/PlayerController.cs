@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
 using Cinemachine;
+using UnityEngine.SceneManagement; // For level change cheats.
 
 public class PlayerController : MonoBehaviour
 {
@@ -562,6 +563,17 @@ public class PlayerController : MonoBehaviour
         lastCheckpointPos = transform.position;
         lastCheckpointDir = transform.rotation;
     
+    }
+
+    void OnMineCheat() {
+
+        //Cheat to immediately go to the mines.
+        SceneManager.LoadScene("Mines", LoadSceneMode.Single);
+
+    }
+
+    void OnTowerCheat() {
+        SceneManager.LoadScene("Tower", LoadSceneMode.Single);
     }
 
 }
