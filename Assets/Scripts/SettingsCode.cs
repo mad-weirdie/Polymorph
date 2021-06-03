@@ -16,7 +16,7 @@ public class SettingsCode : MonoBehaviour
     public void CameraSensitivityChanged(float S) {
 
         print(S);
-        player.cam.m_XAxis.m_MaxSpeed = Mathf.Clamp(200f * S, 50, 400);
+        player.cam.m_XAxis.m_MaxSpeed = Mathf.Clamp(100f * S, 50, 400);
     }
 
 

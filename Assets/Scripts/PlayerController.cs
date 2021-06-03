@@ -55,6 +55,7 @@ public class PlayerController : MonoBehaviour
 
     private Vector3 moveMagnitude;
     private Vector3 facing;
+    private Vector3 cameraDirection;
     private Vector3 desiredForward;
     private Vector2 vec;
     private Vector3 grabbedObj;
@@ -214,7 +215,11 @@ public class PlayerController : MonoBehaviour
             if (!isClimbing)
             {
                 // Get the player's movement, relative to the camera.
-                moveMagnitude = cameraTrans.forward * playerMoveInput.z + cameraTrans.right * playerMoveInput.x;
+
+                cameraDirection = transform.position - cameraTrans.position; // Construct vector FROM camera TO us
+                cameraDirection.Normalize();
+
+                moveMagnitude = cameraDirection * playerMoveInput.z + ((Quaternion.AngleAxis(90, Vector3.up) * cameraDirection) * playerMoveInput.x);
                 moveMagnitude.y = 0f;
 
                 desiredForward = Vector3.RotateTowards(facing, moveMagnitude, turnSpeed * Time.deltaTime, 0f);
