@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.316
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 2094105446}
-  m_IndirectSpecularColor: {r: 0.1873041, g: 0.1496859, b: 0.12019501, a: 0.316}
+  m_IndirectSpecularColor: {r: 0.18721941, g: 0.14960591, b: 0.12012178, a: 0.316}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6775,6 +6775,10 @@ PrefabInstance:
       propertyPath: script
       value: 
       objectReference: {fileID: 5816923458189819854}
+    - target: {fileID: 1988801568, guid: e0ffac09254dfcb448695d11a473d0ac, type: 3}
+      propertyPath: height.y
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1988801568, guid: e0ffac09254dfcb448695d11a473d0ac, type: 3}
       propertyPath: animalName
       value: Crow
@@ -16650,7 +16654,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 837977387220376133, guid: 3be34212e64064541b7a3778fe88233b, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.29998338
+      value: 0.2999834
       objectReference: {fileID: 0}
     - target: {fileID: 837977387220376133, guid: 3be34212e64064541b7a3778fe88233b, type: 3}
       propertyPath: m_LocalRotation.y
@@ -38353,6 +38357,10 @@ PrefabInstance:
       propertyPath: animalSpeed
       value: 0.12
       objectReference: {fileID: 0}
+    - target: {fileID: 2116416421, guid: 9f0d87823266e5247a3d06868ac3b52c, type: 3}
+      propertyPath: shapeOffsets.y
+      value: 0.7
+      objectReference: {fileID: 0}
     - target: {fileID: 6325651906784001151, guid: 9f0d87823266e5247a3d06868ac3b52c, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -45614,6 +45622,42 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 388208911}
     m_Modifications:
+    - target: {fileID: 3261704148687706625, guid: b267e01defef9cb40abfab67294b534f, type: 3}
+      propertyPath: m_Value
+      value: 0.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 3261704148687706625, guid: b267e01defef9cb40abfab67294b534f, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3261704148687706625, guid: b267e01defef9cb40abfab67294b534f, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3261704148687706625, guid: b267e01defef9cb40abfab67294b534f, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1945622713}
+    - target: {fileID: 3261704148687706625, guid: b267e01defef9cb40abfab67294b534f, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3261704148687706625, guid: b267e01defef9cb40abfab67294b534f, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CameraSensitivityChanged
+      objectReference: {fileID: 0}
+    - target: {fileID: 3261704148687706625, guid: b267e01defef9cb40abfab67294b534f, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SettingsCode, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3261704148687706625, guid: b267e01defef9cb40abfab67294b534f, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5520641745320250266, guid: b267e01defef9cb40abfab67294b534f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: d38ba59c3023492479f174517fd0e1fc, type: 3}
       propertyPath: m_Name
       value: Book_01
@@ -45682,42 +45726,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: d08a0d1aba6bbce4b815d4bd76548e32, type: 2}
-    - target: {fileID: 3261704148687706625, guid: b267e01defef9cb40abfab67294b534f, type: 3}
-      propertyPath: m_Value
-      value: 0.95
-      objectReference: {fileID: 0}
-    - target: {fileID: 3261704148687706625, guid: b267e01defef9cb40abfab67294b534f, type: 3}
-      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3261704148687706625, guid: b267e01defef9cb40abfab67294b534f, type: 3}
-      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3261704148687706625, guid: b267e01defef9cb40abfab67294b534f, type: 3}
-      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1945622713}
-    - target: {fileID: 3261704148687706625, guid: b267e01defef9cb40abfab67294b534f, type: 3}
-      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3261704148687706625, guid: b267e01defef9cb40abfab67294b534f, type: 3}
-      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: CameraSensitivityChanged
-      objectReference: {fileID: 0}
-    - target: {fileID: 3261704148687706625, guid: b267e01defef9cb40abfab67294b534f, type: 3}
-      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: SettingsCode, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 3261704148687706625, guid: b267e01defef9cb40abfab67294b534f, type: 3}
-      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 5520641745320250266, guid: b267e01defef9cb40abfab67294b534f, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d38ba59c3023492479f174517fd0e1fc, type: 3}
 --- !u!4 &1741172748 stripped
@@ -48531,6 +48539,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d49387f37f6bfa4a82672a575e06d8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lastS: 1
 --- !u!1001 &1947051664
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -80206,7 +80215,8 @@ MonoBehaviour:
   turnSpeed: 10
   player: {fileID: 1945622700}
   animalMass: 10
-  shapeOffsets: {x: 0, y: 0, z: 0}
+  shapeOffsets: {x: 0, y: 0.5, z: 0}
+  LowCameraYOffset: 1
   magicAnimation: {fileID: 0}
   script: {fileID: 5816923458189819854}
   pushStrength: 2
@@ -80459,18 +80469,21 @@ MonoBehaviour:
   prev_y_speed: 0
   minzoom: 12
   maxzoom: 12
+  LowRadiusOffset: -1
   zoomSpeed: 0.05
   movementEnabled: 0
   isWalking: 0
   isGrounded: 0
   CharacterWheel: {fileID: 8809803158275613858}
   SettingsMenu: {fileID: 8582621628991571939}
+  AchievementMenu: {fileID: 0}
   ShapeShiftSound: {fileID: 757807978}
   wizard: {fileID: 1762064465}
   current_puzzle: {fileID: 0}
   lastCheckpointPos: {x: 0, y: 0, z: 0}
   lastCheckpointDir: {x: 0, y: 0, z: 0, w: 0}
   magicEffect: {fileID: 1510983538}
+  settings: {fileID: 0}
 --- !u!4 &5816923458189819855
 Transform:
   m_ObjectHideFlags: 0

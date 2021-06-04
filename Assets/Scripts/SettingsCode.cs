@@ -7,11 +7,12 @@ public class SettingsCode : MonoBehaviour
 {
     // Start is called before the first frame update
     private PlayerController player;
-    public float lastS;
+    public float lastS = 1f;
 
     private void Start()
     {
         player = GetComponent<PlayerController>();
+        lastS = 1f;
     }
 
     public void CameraSensitivityChanged(float S) {
