@@ -18,6 +18,8 @@ public class HelpfulText : MonoBehaviour
         HelpfulTextObject.CrossFadeAlpha(0.0f, 0.0f, false);
     }
 
+    void OnGrab() { }
+
     public virtual bool conditionsMet()
     {
         return false;

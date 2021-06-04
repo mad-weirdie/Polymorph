@@ -122,7 +122,7 @@ public class UITextDisplayer : MonoBehaviour
         }
     }
 
-    void OnGrab()
+    void OnInteract()
     {
         if (inRange && hasKey)
         {

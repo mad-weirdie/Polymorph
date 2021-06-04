@@ -12,7 +12,7 @@ public class CheckKey : HelpfulText
     override public bool conditionsMet()
     {
         if (keyInRange())
-            message = "Press 'F' to leave the house";
+            message = "Press 'E' to leave the house";
         else
             message = "The door is locked. You need to find the key.";
 
