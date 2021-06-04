@@ -43,6 +43,7 @@ public class PlayerController : MonoBehaviour
 
     public GameObject CharacterWheel;
     public GameObject SettingsMenu;
+    public GameObject AchievementMenu;
     public AudioSource ShapeShiftSound;
 
     public DialogueController wizard;
@@ -70,6 +71,9 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        StartCoroutine(Hold());
+
+        // ------------------------- CHECK SPAWNPOINT -------------------------
         if (PersistentData.spawnPoint != null)
         {
             PersistentData.Start(); // Make sure our list is initialized.
@@ -82,32 +86,23 @@ public class PlayerController : MonoBehaviour
                 activePlayer.transform.position = PersistentData.spawnPoint;
                 activePlayer.transform.rotation = PersistentData.spawnRotation;
             }
-            print("Crystal statuses!: ");
-            for (int i = 0; i < PersistentData.CrystalsCollected.Count; i++) {
-                print(PersistentData.CrystalsCollected[i]);
-            }
         }
-
-        //Camera obj
-        cameraTrans = Camera.main.transform;
-        cam = CinemachineCamera.GetComponent<CinemachineFreeLook>();
 
         lastCheckpointPos = transform.position;
         lastCheckpointDir = transform.rotation;
 
-        currentZoom = minzoom;
-        StartCoroutine(Hold());
-        
+        // --------------------------- CAMERA STUFF ---------------------------
+        cameraTrans = Camera.main.transform;
+        cam = CinemachineCamera.GetComponent<CinemachineFreeLook>();
+        prev_x_speed = cam.m_XAxis.m_MaxSpeed;
+        prev_y_speed = cam.m_YAxis.m_MaxSpeed;
         movementEnabled = false;
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
         walkingAudio = GetComponent<AudioSource>();
+        currentZoom = minzoom;
 
-        
-
-        prev_x_speed = cam.m_XAxis.m_MaxSpeed;
-        prev_y_speed = cam.m_YAxis.m_MaxSpeed;
-
+        // ------------------------- SET ANIMAL FORMS -------------------------
         // Start as tortoise
         characters[0].SetActive(true);
         activePlayer = characters[0];
@@ -139,13 +134,29 @@ public class PlayerController : MonoBehaviour
             }
         }
 
+        // ------------------- GET PERSISTENT ANIMAL FORMS --------------------
+        if (SceneManager.GetActiveScene().name == "Forest")
+        {
+            if (!PersistentData.firstTimeLoadingForest)
+            {
+                GameObject horse = GameObject.Find("Horse");
+                AddAnimal(horse.GetComponent<Collider>());
+                GameObject crow = GameObject.Find("Crow");
+                AddAnimal(crow.GetComponent<Collider>());
+            }
+            else
+            {
+                PersistentData.firstTimeLoadingForest = false;
+            }
+        }
+
         normalMass = rigidBody.mass;
         movingRigidBodyObject = null;
     }
 
     IEnumerator Hold()
     {
-        yield return new WaitForSecondsRealtime(5);
+        yield return new WaitForSecondsRealtime(0);
         wizard.Notify();
     }
 
@@ -172,6 +183,7 @@ public class PlayerController : MonoBehaviour
         m_Rotation = Quaternion.identity;
 
         //print(currentZoom);
+
         if (!Mathf.Approximately(cam.m_Orbits[0].m_Radius - currentZoom, 0f))
         {
             float newDist = Mathf.Lerp(cam.m_Orbits[0].m_Radius, currentZoom, .1f);
@@ -263,8 +275,7 @@ public class PlayerController : MonoBehaviour
                     movingRigidBodyObject.MoveRotation(m_Rotation);
                 }
                 else
-                {
-                    
+                {     
                     movingRigidBodyObject.useGravity = true;
                     movingRigidBodyObject.MovePosition(movingRigidBodyObject.position + moveMagnitude * baseSpeed);
                 }
@@ -399,7 +410,6 @@ public class PlayerController : MonoBehaviour
             isGrabbing = false;
             movingRigidBodyObject.useGravity = true;
             movingRigidBodyObject.mass = 5.0f;
-            print("release");
         }
         else
             isGrabbing = true;
@@ -432,12 +442,16 @@ public class PlayerController : MonoBehaviour
 
     private void OnClick()
     {
-        foreach (Listener scriptObject in Listeners)
+        if (movementEnabled)
         {
-            if (scriptObject.listenerType == "Click")
-                scriptObject.Notify();
+            foreach (Listener scriptObject in Listeners)
+            {
+                if (scriptObject.listenerType == "Click")
+                    scriptObject.Notify();
+            }
+            wizard.Notify();
         }
-        wizard.Notify();
+        
     }
 
     private void OnZoom(InputValue input)
@@ -475,6 +489,37 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    private void AddAnimal(Collider other)
+    {
+        int activeIndex;
+        Texture2D animalImage;
+        other.gameObject.tag = "Player";
+
+        // Load the new character
+        characters.Add(GameObject.Instantiate(other.gameObject, this.transform, false));
+        CharacterWheel.transform.GetChild(characters.Count - 1).gameObject.SetActive(true);
+        activeIndex = characters.Count - 1;
+
+        // Particle effects for new character as well as the player themselves
+        // Particle effects for the other animals are destroyed after being played
+        other.gameObject.GetComponent<ShapeVariables>().PlayMagicEffect();
+        StartCoroutine(waitThenMagic(1.0f));
+
+        // Load the resource image into the character selection frame.
+        animalImage = Resources.Load("Images/" + other.name) as Texture2D;
+        GameObject image = CharacterWheel.transform.GetChild(activeIndex).GetChild(0).gameObject;
+        image.GetComponent<RawImage>().texture = animalImage;
+
+        charnames.Add(other.name);
+
+        // Disable the trigger
+        characters[activeIndex].GetComponent<Collider>().isTrigger = false;
+        characters[activeIndex].SetActive(false); //disable animal
+        characters[activeIndex].transform.parent = transform;
+        characters[activeIndex].transform.localRotation = Quaternion.identity;
+        characters[activeIndex].transform.localPosition = Vector3.zero;
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         // Rigid body reference should only be changed if not set to anything.
@@ -489,34 +534,9 @@ public class PlayerController : MonoBehaviour
 
         if (other.gameObject.CompareTag("Animal") && !charnames.Contains(other.name))
         {
-            int activeIndex;
-            Texture2D animalImage;
-            other.gameObject.tag = "Player";
-
-            // Load the new character
-            characters.Add(GameObject.Instantiate(other.gameObject, this.transform, false));
-            CharacterWheel.transform.GetChild(characters.Count - 1).gameObject.SetActive(true);
-            activeIndex = characters.Count - 1;
-
-            // Particle effects for new character as well as the player themselves
-            // Particle effects for the other animals are destroyed after being played
-            other.gameObject.GetComponent<ShapeVariables>().PlayMagicEffect();
-            StartCoroutine(waitThenMagic(1.0f));
-
-            // Load the resource image into the character selection frame.
-            animalImage = Resources.Load("Images/" + other.name) as Texture2D;
-            GameObject image = CharacterWheel.transform.GetChild(activeIndex).GetChild(0).gameObject;
-            image.GetComponent<RawImage>().texture = animalImage;
-
-            charnames.Add(other.name);
-
-            // Disable the trigger
-            characters[activeIndex].GetComponent<Collider>().isTrigger = false;
-            characters[activeIndex].SetActive(false); //disable animal
-            characters[activeIndex].transform.parent = transform;
-            characters[activeIndex].transform.localRotation = Quaternion.identity;
-            characters[activeIndex].transform.localPosition = Vector3.zero;
+            AddAnimal(other);
         }
+
         else if (other.gameObject.CompareTag("Dialogue"))
         {
             text = other.gameObject.GetComponent<HelpfulText>();
@@ -553,20 +573,18 @@ public class PlayerController : MonoBehaviour
     }
 
     void OnEscape() {
-        //print("onEscape called!");
-        //print("Cursor state:");
-        //print(Cursor.visible);
         if (Cursor.lockState == CursorLockMode.Locked)
         {
             SettingsMenu.SetActive(true);
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
+            PauseGame();
         }
-        else {
-            
+        else {  
             SettingsMenu.SetActive(false);
             Cursor.visible = false;
             Cursor.lockState = CursorLockMode.Locked;
+            UnpauseGame();
         }
     }
 
@@ -575,7 +593,6 @@ public class PlayerController : MonoBehaviour
         lastCheckpointDir = transform.rotation;
     
     }
-
 
     //Various cheats and debug points live here.  
     void OnMineCheat() {

@@ -14,7 +14,6 @@ public class ExplodingCrystal : MonoBehaviour
 
     void OnCollisionEnter(Collision data)
     {
-        print("impact!");
         if (data.impulse.y > 20 && inRange)
         {
             
@@ -26,7 +25,6 @@ public class ExplodingCrystal : MonoBehaviour
     {
         if (other.gameObject.name == "Explosion Controller")
         {
-            print("crystal in range");
             inRange = true;
         }
     }

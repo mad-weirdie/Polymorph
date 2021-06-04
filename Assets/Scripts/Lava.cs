@@ -102,5 +102,6 @@ public class Lava : MonoBehaviour
         player.transform.rotation = pc.lastCheckpointDir;
         player.GetComponent<Rigidbody>().drag = startDrag;
         playerScript.PauseGame();
+        playerScript.movementEnabled = true;
     }
 }

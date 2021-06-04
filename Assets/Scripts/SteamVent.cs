@@ -40,7 +40,6 @@ public class SteamVent : MonoBehaviour
     {
         steamParticles.Play();
         isOn = true;
-        print("Steam vent on!");
         StartCoroutine(ResetSteam(steamDuration));
     }
 
@@ -57,8 +56,6 @@ public class SteamVent : MonoBehaviour
         steamParticles.Stop();
         steamSound.Stop();
         isOn = false;
-
-        print("Steam vent off!");
     }
 
     // Add force to the steam!

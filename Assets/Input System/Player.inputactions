@@ -196,6 +196,14 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "AchievementMenu",
+                    "type": "Button",
+                    "id": "37de0907-8f87-46c9-955c-ca08116a8552",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -333,33 +341,11 @@
                 },
                 {
                     "name": "",
-                    "id": "c1f7a91b-d0fd-4a62-997e-7fb9b69bf235",
-                    "path": "<Gamepad>/rightStick",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Gamepad",
-                    "action": "Look",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "8c8e490b-c610-4785-884f-f04217b23ca4",
-                    "path": "<Pointer>/delta",
+                    "path": "<Mouse>/delta",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse;Touch",
-                    "action": "Look",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "3e5f5442-8668-4b27-a940-df99bad7e831",
-                    "path": "<Joystick>/{Hatswitch}",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Joystick",
                     "action": "Look",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -603,6 +589,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "ResetToCheckpoint",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6317ac8a-5474-4a00-92ee-9f3dd5162f4b",
+                    "path": "<Keyboard>/tab",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AchievementMenu",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
