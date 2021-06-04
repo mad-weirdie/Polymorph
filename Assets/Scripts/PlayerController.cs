@@ -39,6 +39,7 @@ public class PlayerController : MonoBehaviour
     public float zoomSpeed = .75f;
 
     public bool movementEnabled;
+    public bool clickingEnabled;
     public bool isWalking;
     public bool isGrounded;
 
@@ -98,6 +99,7 @@ public class PlayerController : MonoBehaviour
         prev_x_speed = cam.m_XAxis.m_MaxSpeed;
         prev_y_speed = cam.m_YAxis.m_MaxSpeed;
         movementEnabled = false;
+        clickingEnabled = false;
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
         walkingAudio = GetComponent<AudioSource>();
@@ -175,6 +177,7 @@ public class PlayerController : MonoBehaviour
     public void PauseGame()
     {
         movementEnabled = false;
+        clickingEnabled = false;
         activeAnims.SetBool("IsWalking", false);
         walkingAudio.Stop();
     }
@@ -182,6 +185,7 @@ public class PlayerController : MonoBehaviour
     public void UnpauseGame()
     {
         movementEnabled = true;
+        clickingEnabled = true;
     }
 
     public void AddListener(Listener newListener)
@@ -455,16 +459,13 @@ public class PlayerController : MonoBehaviour
 
     private void OnClick()
     {
-        if (movementEnabled)
+        foreach (Listener scriptObject in Listeners)
         {
-            foreach (Listener scriptObject in Listeners)
-            {
-                if (scriptObject.listenerType == "Click")
-                    scriptObject.Notify();
-            }
-            wizard.Notify();
+            if (scriptObject.listenerType == "Click" && (movementEnabled || clickingEnabled))
+                scriptObject.Notify();
         }
-        
+        if (movementEnabled || clickingEnabled)
+            wizard.Notify();
     }
 
     private void OnZoom(InputValue input)

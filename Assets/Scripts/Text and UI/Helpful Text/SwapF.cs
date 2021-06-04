@@ -37,7 +37,7 @@ public class SwapF : HelpfulText
     public void Start()
     {
        swapper = new swapListener(s, player);
-        player.AddListener(swapper);
+       player.AddListener(swapper);
     }
 
     override public bool conditionsMet()

@@ -78,6 +78,9 @@ public class DialogueController : MonoBehaviour
     {
         if (dialogueHappening)
         {
+            if (currentLine <= 17)
+                player.PauseGame();
+            player.clickingEnabled = true;
             if (currentLine == 3)
             {
                 titleAnim.SetBool("fadeInTime", true);
@@ -103,6 +106,10 @@ public class DialogueController : MonoBehaviour
                 dialogueHappening = false;
                 dialogueAnim.SetBool("dialogueHappening", false);
             }
+        }
+        else
+        {
+            player.UnpauseGame();
         }
     }
 }
