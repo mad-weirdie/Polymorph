@@ -23,7 +23,7 @@ public class swapListener : Listener
         {
             swapText.message = swapText.firstText;
         }
-        swapText.Show();
+        //swapText.Show();
     }
 }
 
