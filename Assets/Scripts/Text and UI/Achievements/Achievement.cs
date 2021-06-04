@@ -8,7 +8,6 @@ public class Achievement
     public string text;
     public bool isUnlocked;
     
-
     // Default constructor
     public Achievement()
     {

@@ -10,7 +10,6 @@ public class PuzzleController : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player") {
-            print("Player entered a puzzle!");
             PlayerController pc = other.gameObject.GetComponentInParent<PlayerController>();
             if (pc == null) {
                 print("WHAT");
@@ -24,7 +23,6 @@ public class PuzzleController : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         if (other.tag == "Player") {
-            print("Player Left a puzzle!");
             PlayerController pc = other.gameObject.GetComponentInParent<PlayerController>();
             if (pc == null)
             {

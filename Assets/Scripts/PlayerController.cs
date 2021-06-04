@@ -158,8 +158,17 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator Hold()
     {
-        yield return new WaitForSecondsRealtime(0);
+        int waitTime;
+        if (SceneManager.GetActiveScene().name == "Forest")
+            waitTime = 0;
+        else if (SceneManager.GetActiveScene().name == "House")
+            waitTime = 5;
+        else
+            waitTime = 0;
+
+        yield return new WaitForSecondsRealtime(waitTime);
         wizard.Notify();
+        UnpauseGame();
     }
 
     // Allow other scripts to pause the game
@@ -535,7 +544,6 @@ public class PlayerController : MonoBehaviour
 
             }
         }
-
         if (other.gameObject.CompareTag("Animal") && !charnames.Contains(other.name))
         {
             AddAnimal(other);
