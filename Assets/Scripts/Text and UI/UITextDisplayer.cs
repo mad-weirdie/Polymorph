@@ -158,7 +158,12 @@ public class UITextDisplayer : MonoBehaviour
         }
         else
         {
-            text.text = "Use the mouse to look at the crystal.";
+            lookComplete = true;
+            text.gameObject.SetActive(true);
+            text.text = "";
+            dialogue.SetHappening(true);
+            dialogue.Notify();
+            //text.text = "Use the mouse to look at the crystal.";
             text.gameObject.SetActive(true);
         }
 

@@ -49,7 +49,7 @@ public class PlayerController : MonoBehaviour
 
     public DialogueController wizard;
 
-    private bool isGrabbing = false;
+    public bool isGrabbing = false;
     private bool isClimbing = false;
     private Rigidbody movingRigidBodyObject;
     private float normalMass;
