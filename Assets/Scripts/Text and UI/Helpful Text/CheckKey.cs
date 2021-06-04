@@ -5,6 +5,7 @@ using TMPro;
 
 public class CheckKey : HelpfulText
 {
+    public UITextDisplayer display;
     bool hasKey = false;
     public GameObject key;
 
@@ -33,6 +34,9 @@ public class CheckKey : HelpfulText
             hasKey = true;
         else
             hasKey = false;
+
+        display.UpdateKey(hasKey);
+
         return hasKey;
     }
 }

@@ -368,12 +368,12 @@ GameObject:
   - component: {fileID: 47747962}
   - component: {fileID: 47747961}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Dialogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &47747961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -529,7 +529,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 132719043540291485, guid: da9f90ac9d94a8649aa9479c8b62b155, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.117
+      value: -4.821
       objectReference: {fileID: 0}
     - target: {fileID: 132719043540291485, guid: da9f90ac9d94a8649aa9479c8b62b155, type: 3}
       propertyPath: m_LocalPosition.y
@@ -537,7 +537,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 132719043540291485, guid: da9f90ac9d94a8649aa9479c8b62b155, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 9.538
+      value: 11.995
       objectReference: {fileID: 0}
     - target: {fileID: 132719043540291485, guid: da9f90ac9d94a8649aa9479c8b62b155, type: 3}
       propertyPath: m_LocalRotation.w
@@ -644,6 +644,7 @@ MonoBehaviour:
   message: The door is locked. You need to find the key.
   HelpfulTextObject: {fileID: 1787737366}
   TextShowSeconds: 2
+  display: {fileID: 0}
   key: {fileID: 58874783}
 --- !u!1001 &75218151
 PrefabInstance:
@@ -1465,6 +1466,7 @@ MonoBehaviour:
   message: The door is locked. Find the key and bring it back here!
   HelpfulTextObject: {fileID: 1787737366}
   TextShowSeconds: 2
+  display: {fileID: 1151486483}
   key: {fileID: 58874783}
 --- !u!1 &134228394 stripped
 GameObject:
@@ -5159,7 +5161,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4108335079457225371, guid: 70ecfb3272db03f45944e59708b277bc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.8229
+      value: 3.55
       objectReference: {fileID: 0}
     - target: {fileID: 4108335079457225371, guid: 70ecfb3272db03f45944e59708b277bc, type: 3}
       propertyPath: m_LocalPosition.z
@@ -10944,6 +10946,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4931211907768612, guid: e88b7bb02ae149940a5a0cddf34fe370, type: 3}
   m_PrefabInstance: {fileID: 1615915123}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1617437247
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1617437248}
+  m_Layer: 0
+  m_Name: Interact
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1617437248
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1617437247}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.7250896, y: 2.791, z: 7.0521073}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 33
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1625746002
 GameObject:
   m_ObjectHideFlags: 0
@@ -14337,11 +14369,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5053175796464189593, guid: 800db384af6757d4f8cef0b236e19025, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.19654757
+      value: -0.19654761
       objectReference: {fileID: 0}
     - target: {fileID: 5053175796464189593, guid: 800db384af6757d4f8cef0b236e19025, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.057965055
+      value: 0.057965066
       objectReference: {fileID: 0}
     - target: {fileID: 6561955889413271920, guid: 800db384af6757d4f8cef0b236e19025, type: 3}
       propertyPath: m_LocalPosition.x

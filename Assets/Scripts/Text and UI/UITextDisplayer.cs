@@ -13,9 +13,6 @@ public class UITextDisplayer : MonoBehaviour
     bool lookComplete;
     bool moveComplete;
     bool hasKey;
-    bool foundLockedDoor;
-    bool draggingExplanationStarted;
-    bool finishedExplanation;
 
     public GameObject key;
 
@@ -30,10 +27,7 @@ public class UITextDisplayer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        finishedExplanation = false;
-        foundLockedDoor = false;
         hasKey = false;
-        draggingExplanationStarted = false;
         lookComplete = false;
         moveComplete = false;
         text.text = InteractText;
@@ -46,22 +40,6 @@ public class UITextDisplayer : MonoBehaviour
         yield return new WaitForSecondsRealtime(2);
         dialogue.Notify();
         text.text = "";
-    }
-
-    IEnumerator WaitForInstruction()
-    {
-        draggingExplanationStarted = true;
-        yield return new WaitForSecondsRealtime(2);
-        text.text = "Press 'F' to grab an object.";
-
-        StartCoroutine(NextInstruction());
-    }
-
-    IEnumerator NextInstruction()
-    {
-        yield return new WaitForSecondsRealtime(3);
-        text.text = "Press 'F' again to release.";
-        StartCoroutine(EndInstructions());
     }
 
     IEnumerator EndInstructions()
@@ -83,13 +61,9 @@ public class UITextDisplayer : MonoBehaviour
             inRange = true;
             text.gameObject.SetActive(true);
         }
-    }
-
-    void FixedUpdate()
-    {
-        if (!dialogue.IsHappening() && finishedExplanation && !hasKey && foundLockedDoor && !draggingExplanationStarted)
+        if (interactable.gameObject.name == "Door")
         {
-            StartCoroutine(WaitForInstruction());
+            inRange = true;
         }
     }
 
@@ -107,7 +81,6 @@ public class UITextDisplayer : MonoBehaviour
                 rb.constraints = RigidbodyConstraints.None;
                 player.baseSpeed = 0.04f;
                 player.turnSpeed = 20f;
-                finishedExplanation = true;
             }
 
         if (interactable.gameObject.name == "Start")
@@ -142,7 +115,7 @@ public class UITextDisplayer : MonoBehaviour
 
     void OnCollisionExit(Collision interactable)
     {
-        if (interactable.gameObject.CompareTag("Object"))
+        if (interactable.gameObject.name == "Door")
         {
             inRange = false;
             text.gameObject.SetActive(false);
@@ -151,13 +124,17 @@ public class UITextDisplayer : MonoBehaviour
 
     void OnGrab()
     {
-        if (inRange)
+        if (inRange && hasKey)
         {
             SceneManager.LoadScene("Forest", LoadSceneMode.Single);
             dialogue.Notify();
             dialogue.Notify();
         }
+    }
 
+    public void UpdateKey(bool keyState)
+    {
+        hasKey = keyState;
     }
 
     void OnSkip()
