@@ -19,6 +19,7 @@ public class AchievementController : MonoBehaviour
     public Achievement A4;
     public Achievement A5;
     public Achievement A6;
+    public Achievement A7;
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +30,7 @@ public class AchievementController : MonoBehaviour
         A4 = new Achievement("Tiny Disaster");
         A5 = new Achievement("I never liked any of that stuff anyway.");
         A6 = new Achievement("ITS HIM!!!!");
+        A7 = new Achievement("Well that was nice of you!");
 
         if (SceneManager.GetActiveScene().name == "Forest")
         {
