@@ -59,6 +59,7 @@ MonoBehaviour:
   player: {fileID: 1393855598214869848}
   animalMass: 10
   shapeOffsets: {x: 0, y: 0, z: 0}
+  LowCameraYOffset: 1
   magicAnimation: {fileID: 0}
   script: {fileID: 5816923457350117225}
   pushStrength: 2
@@ -162,7 +163,8 @@ MonoBehaviour:
   prev_y_speed: 0
   minzoom: 5
   maxzoom: 8
-  zoomSpeed: 0.05
+  LowRadiusOffset: -1
+  zoomSpeed: 0.75
   movementEnabled: 0
   isWalking: 0
   isGrounded: 0
@@ -175,6 +177,7 @@ MonoBehaviour:
   lastCheckpointPos: {x: 0, y: 0, z: 0}
   lastCheckpointDir: {x: 0, y: 0, z: 0, w: 0}
   magicEffect: {fileID: 685113360}
+  settings: {fileID: 0}
 --- !u!114 &5816923457350117226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -425,6 +428,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d49387f37f6bfa4a82672a575e06d8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lastS: 0
 --- !u!1 &8310938637821330698
 GameObject:
   m_ObjectHideFlags: 0

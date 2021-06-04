@@ -35,7 +35,8 @@ public class PlayerController : MonoBehaviour
     private float currentZoom;
     public float minzoom = 1f;
     public float maxzoom = 8f;
-    public float zoomSpeed = .5f;
+    public float LowRadiusOffset = -1f;
+    public float zoomSpeed = .75f;
 
     public bool movementEnabled;
     public bool isWalking;
@@ -65,7 +66,7 @@ public class PlayerController : MonoBehaviour
     public Quaternion lastCheckpointDir;
     private AudioSource walkingAudio;
     public ParticleSystem magicEffect;
-
+    public SettingsCode settings;
     private HelpfulText text;
     
     // Start is called before the first frame update
@@ -101,6 +102,7 @@ public class PlayerController : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         walkingAudio = GetComponent<AudioSource>();
         currentZoom = minzoom;
+        settings = GetComponent<SettingsCode>();
 
         // ------------------------- SET ANIMAL FORMS -------------------------
         // Start as tortoise
@@ -190,7 +192,7 @@ public class PlayerController : MonoBehaviour
 
             cam.m_Orbits[0].m_Radius = newDist;
             cam.m_Orbits[1].m_Radius = newDist;
-            cam.m_Orbits[2].m_Radius = newDist;
+            cam.m_Orbits[2].m_Radius = newDist + LowRadiusOffset;
         }
     }
 
@@ -201,8 +203,7 @@ public class PlayerController : MonoBehaviour
             // Reset the camera speed if we had paused it
             if (cam.m_XAxis.m_MaxSpeed == 0.0f && cam.m_YAxis.m_MaxSpeed == 0.0f)
             {
-                cam.m_XAxis.m_MaxSpeed = prev_x_speed;
-                cam.m_YAxis.m_MaxSpeed = prev_y_speed;
+                settings.CameraSensitivityChanged(settings.lastS); //Reload our X axis speed from our settings menu.
             }
 
             // Play walking audio if necessary
@@ -326,6 +327,9 @@ public class PlayerController : MonoBehaviour
             CinemachineComposer comp = cam.GetRig(i).GetCinemachineComponent<CinemachineComposer>();
             comp.m_TrackedObjectOffset.x = activeAbilityScript.shapeOffsets.x;
             comp.m_TrackedObjectOffset.y = activeAbilityScript.shapeOffsets.y;
+            if (i == 2) {
+                comp.m_TrackedObjectOffset.y += activeAbilityScript.LowCameraYOffset; // i is lowest rig. We offset UP so we can look upwards.
+            }
             comp.m_TrackedObjectOffset.z = activeAbilityScript.shapeOffsets.z;
         }
         

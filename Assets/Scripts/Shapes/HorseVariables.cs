@@ -26,6 +26,9 @@ public class HorseVariables : ShapeVariables
         // Debug.DrawRay(transform.position, Vector3.down * .5f, Color.green, 5f);
 
         // Check if horse is on the ground
+        if (isHeld == false) {
+            return; //Only run the jump on press.
+        }
         if (Physics.Raycast(transform.position, Vector3.down, 0.5f))
         {
             // print("jump!");

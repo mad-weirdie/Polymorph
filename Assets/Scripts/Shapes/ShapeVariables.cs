@@ -18,6 +18,7 @@ public class ShapeVariables : MonoBehaviour
 
     public float animalMass = 20f; //how heavy we are as an animal. Affects things like see-saws.
     public Vector3 shapeOffsets;
+    public float LowCameraYOffset = 1f;
 
     public ParticleSystem magicAnimation;
     private bool hasPlayed;
