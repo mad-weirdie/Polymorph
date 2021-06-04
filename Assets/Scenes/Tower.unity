@@ -12003,7 +12003,7 @@ HingeJoint:
   m_BreakTorque: Infinity
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
-  m_MassScale: 1
+  m_MassScale: 20
   m_ConnectedMassScale: 1
 --- !u!54 &363381190
 Rigidbody:
@@ -12013,9 +12013,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 363381188}
   serializedVersion: 2
-  m_Mass: 10
+  m_Mass: 20
   m_Drag: 2
-  m_AngularDrag: 0.05
+  m_AngularDrag: 2
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -16344,6 +16344,14 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 837977385671463534, guid: 3be34212e64064541b7a3778fe88233b, type: 3}
+      propertyPath: m_LookaheadTime
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 837977385671463534, guid: 3be34212e64064541b7a3778fe88233b, type: 3}
+      propertyPath: m_LookaheadSmoothing
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 837977385809135880, guid: 3be34212e64064541b7a3778fe88233b, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
@@ -16374,22 +16382,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 837977385809135882, guid: 3be34212e64064541b7a3778fe88233b, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.93341714
+      value: 0.9334171
       objectReference: {fileID: 0}
     - target: {fileID: 837977385809135882, guid: 3be34212e64064541b7a3778fe88233b, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.30444258
+      value: 0.30444255
       objectReference: {fileID: 0}
     - target: {fileID: 837977385809135882, guid: 3be34212e64064541b7a3778fe88233b, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.18902704
+      value: 0.18902698
       objectReference: {fileID: 0}
     - target: {fileID: 837977385809135882, guid: 3be34212e64064541b7a3778fe88233b, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.017776594
+      value: -0.017776614
       objectReference: {fileID: 0}
     - target: {fileID: 837977385911983266, guid: 3be34212e64064541b7a3778fe88233b, type: 3}
       propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 837977385911983276, guid: 3be34212e64064541b7a3778fe88233b, type: 3}
+      propertyPath: m_LookaheadTime
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 837977385911983276, guid: 3be34212e64064541b7a3778fe88233b, type: 3}
+      propertyPath: m_LookaheadSmoothing
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 837977386000228472, guid: 3be34212e64064541b7a3778fe88233b, type: 3}
@@ -16552,6 +16568,14 @@ PrefabInstance:
       propertyPath: m_Transitions.m_OnCameraLive.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 837977386588878328, guid: 3be34212e64064541b7a3778fe88233b, type: 3}
+      propertyPath: m_LookaheadTime
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 837977386588878328, guid: 3be34212e64064541b7a3778fe88233b, type: 3}
+      propertyPath: m_LookaheadSmoothing
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 837977386588878334, guid: 3be34212e64064541b7a3778fe88233b, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
@@ -16642,7 +16666,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 837977387220376133, guid: 3be34212e64064541b7a3778fe88233b, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.021211982
+      value: -0.021211997
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3be34212e64064541b7a3778fe88233b, type: 3}
@@ -16677,7 +16701,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 541244775}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad3239f1671e5734f87e4ab53fd416b3, type: 3}
+  m_Script: {fileID: 0}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &542470015
@@ -17267,7 +17291,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh60318
+  m_Name: pb_Mesh206654
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -20781,7 +20805,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh61852
+  m_Name: pb_Mesh208306
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -21731,6 +21755,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RequiredCrystals: 3
+  text: {fileID: 678074166}
 --- !u!65 &678074163
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24824,7 +24849,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 87122105257376781, guid: 28a8812d80273af40aa3e42fba354805, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.79113704
+      value: 0.791137
       objectReference: {fileID: 0}
     - target: {fileID: 87122105257376781, guid: 28a8812d80273af40aa3e42fba354805, type: 3}
       propertyPath: m_LocalRotation.z
@@ -27181,7 +27206,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh61780
+  m_Name: pb_Mesh208232
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -28488,7 +28513,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.0364922, y: 0.18864745, z: 1.3230565}
+  m_Size: {x: 1.5, y: 0.18864745, z: 1.3230565}
   m_Center: {x: 0.018244565, y: 0.09410571, z: 0.020988407}
 --- !u!4 &968225255 stripped
 Transform:
@@ -33098,7 +33123,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh60400
+  m_Name: pb_Mesh206746
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -80249,11 +80274,12 @@ MonoBehaviour:
   cam: {fileID: 0}
   prev_x_speed: 0
   prev_y_speed: 0
-  minzoom: 5
-  maxzoom: 5
+  minzoom: 4
+  maxzoom: 4
   LowRadiusOffset: 0
   zoomSpeed: 0.75
   movementEnabled: 0
+  clickingEnabled: 0
   isWalking: 0
   isGrounded: 0
   CharacterWheel: {fileID: 8809803158275613858}
