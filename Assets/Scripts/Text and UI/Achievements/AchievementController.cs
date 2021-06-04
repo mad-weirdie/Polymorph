@@ -13,28 +13,30 @@ public class AchievementController : MonoBehaviour
     public PlayerController player;
 
     public List<Achievement> Achievements = new List<Achievement>();
-    Achievement A1;
-    Achievement A2;
-    Achievement A3;
-    Achievement A4;
+    public Achievement A1;
+    public Achievement A2;
+    public Achievement A3;
+    public Achievement A4;
     // Start is called before the first frame update
     void Start()
     {
         A1 = new Achievement("Left the house");
         A2 = new Achievement("Fried Chicken");
         A3 = new Achievement("New Heights");
+        A4 = new Achievement("Tiny Disaster");
 
         if (SceneManager.GetActiveScene().name == "Forest")
         {
-            print("YEA");
-            StartCoroutine(WaitThenDisplay(A1));
+            Activate(A1);
         }
     }
 
     // Update is called once per frame
-    void Update()
+    public void Activate(Achievement obtained)
     {
-        
+        if (!obtained.isUnlocked)
+            StartCoroutine(WaitThenDisplay(obtained));
+        obtained.isUnlocked = true;
     }
 
     void OnTriggerEnter(Collider other)
@@ -44,7 +46,7 @@ public class AchievementController : MonoBehaviour
             print("wow");
             if (other.gameObject.name == "THE FLOOR IS LAVA")
             {
-                StartCoroutine(WaitThenDisplay(A2));
+                Activate(A2);
             }
         }
         else
@@ -57,11 +59,6 @@ public class AchievementController : MonoBehaviour
         displayAchievement(obtained);
         yield return new WaitForSecondsRealtime(3);
         RemoveAchievement();
-    }
-
-    public void achievementUnlocked()
-    {
-
     }
 
     public void displayAchievement(Achievement obtained)

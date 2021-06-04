@@ -46,14 +46,13 @@ public class DialogueController : MonoBehaviour
             dialogueAnim = dialogueBox.GetComponent<Animator>();
             // Turn off the shaded dialogue box initially 
             dialogueAnim.SetBool("dialogueHappening", false);
-            titleAnim.SetBool("dialogueHappening", false);
+            titleAnim.SetBool("fadeInTime", false);
             // Check a text file actually exists
             if (textFile != null)
             {
                 dialogueLines = (textFile.text.Split('\n'));
                 currentLine = 0;
                 dialogueHappening = true;
-                player.movementEnabled = false;
             }
         }
 
@@ -92,7 +91,6 @@ public class DialogueController : MonoBehaviour
                     dialogueHappening = false;
                     dialogueAnim.SetBool("dialogueHappening", dialogueHappening);
                     dialogueText.text = "";
-                    player.movementEnabled = true;
                 }    
                 else
                     dialogueText.text = dialogue;
@@ -103,13 +101,8 @@ public class DialogueController : MonoBehaviour
             {
                 dialogueText.text = "";
                 dialogueHappening = false;
-                dialogueAnim.SetBool("dialogueHappening", dialogueHappening);
-                player.movementEnabled = true;
+                dialogueAnim.SetBool("dialogueHappening", false);
             }
-        }
-        else
-        {
-            player.movementEnabled = true;
         }
     }
 }

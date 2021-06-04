@@ -100,20 +100,7 @@ public class UITextDisplayer : MonoBehaviour
             text.text = "";
         }
 
-        if (interactable.gameObject.name == "Pause movement")
-        {
-            if (dialogue.IsHappening() && player.movementEnabled)
-            {
-                Animator anim = player.activePlayer.GetComponent<Animator>();
-                anim.SetBool("IsWalking", false);
-                player.movementEnabled = false;
-                player.baseSpeed = 0f;
-                player.turnSpeed = 0f;
-                Rigidbody rb = player.GetComponent<Rigidbody>();
-                rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
-                
-            }
-            else if (!dialogue.IsHappening())
+        if (!dialogue.IsHappening())
             {
                 player.movementEnabled = true;
                 Rigidbody rb = player.GetComponent<Rigidbody>();
@@ -122,7 +109,6 @@ public class UITextDisplayer : MonoBehaviour
                 player.turnSpeed = 20f;
                 finishedExplanation = true;
             }
-        }
 
         if (interactable.gameObject.name == "Start")
         {
@@ -143,44 +129,6 @@ public class UITextDisplayer : MonoBehaviour
                 dialogue.Notify();
             }
         }
-       else if (interactable.gameObject.name == "Door")
-        {
-            hasKey = keyInRange();
-            if (hasKey)
-            {
-                text.text = "Press 'F' to leave the house.";
-                inRange = true;
-                Animator anim = player.activePlayer.GetComponent<Animator>();
-
-                StartCoroutine(WaitToForest());
-
-            }
-            else if (!hasKey && finishedExplanation)
-            {
-                text.text = "The door is locked.";
-                if (!foundLockedDoor)
-                {
-                    foundLockedDoor = true;
-                    dialogue.SetHappening(true);
-                    // This gives a brief delay between the door saying it's locked
-                    // and the wizard starting to talk again
-                    StartCoroutine(Hold());
-                }
-            }
-        }
-    }
-
-    bool keyInRange()
-    {
-        float xpos = key.transform.position.x;
-        float ypos = key.transform.position.y;
-        float zpos = key.transform.position.z;
-
-        if (xpos < 1.5f && xpos > -1.5f && zpos < 16.0f && zpos > 13.0f)
-            hasKey = true;
-        else
-            hasKey = false;
-        return hasKey;
     }
 
     void OnTriggerExit(Collider interactable)
@@ -227,7 +175,6 @@ public class UITextDisplayer : MonoBehaviour
                 lookComplete = true;
                 text.gameObject.SetActive(true);
                 text.text = "";
-                player.movementEnabled = false;
                 dialogue.SetHappening(true);
                 dialogue.Notify();
             }
